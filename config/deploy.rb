@@ -32,7 +32,7 @@
 lock '3.2.1'
 
 set :application, 'leadshareapp'
-set :repo_url, 'https://github.com/ninabreznik/LeadShareApp.git'
+set :repo_url, 'git://github.com/ninabreznik/LeadShareApp.git'
 set :rbenv_ruby, '2.1.3'
 
 server '5.39.51.100', user: 'ninabreznik', roles: %w{web app}
