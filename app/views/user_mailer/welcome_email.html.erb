@@ -4,12 +4,16 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to Sosed.biz, </h1>
+    <h1>Welcome to <%= root_url %>, </h1>
     <p>
       You have successfully signed up to our app with <%= @user.email %>.<br>
     </p>
+    <%- if @pass %>
+      <p>Your temporary password is: <%= @pass %></p>
+      <p>You should change this once you logged in!</p>
+    <%- end %>
     <p>
-      To login to the site, just follow this link: <%= %>.
+      To login to the site, just follow this  <%= link_to "link", root_url %>.
     </p>
     <p>Thanks for joining and have a great day!</p>
       <br>

@@ -9,6 +9,8 @@ class Lead < ActiveRecord::Base
                                    class_name: "Order",
                                    dependent: :destroy
   has_many :selectors, through: :reverse_orders, source: :selector
+  belongs_to :user
+  
   attr_writer :current_step
 
   # :::::::::::::: VALIDATIONS :::::::::::::::::::
