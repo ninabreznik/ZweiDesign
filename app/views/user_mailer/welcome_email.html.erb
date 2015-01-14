@@ -4,19 +4,26 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to <%= root_url %>, </h1>
+    <h1>Dobrodošli na <%= root_url %>, </h1>
     <p>
-      You have successfully signed up to our app with <%= @user.email %>.<br>
+      Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.<br>
     </p>
     <%- if @pass %>
-      <p>Your temporary password is: <%= @pass %></p>
-      <p>You should change this once you logged in!</p>
+      <p>
+        Vaše začasno geslo je: <%= @pass %>
+      </p>
+      <p>
+        Predlagamo vam, da ga ob naslednji prijavi v aplikacijo zamenjate!
+      </p>
     <%- end %>
     <p>
-      To login to the site, just follow this  <%= link_to "link", root_url %>.
+      Za prijavo v aplikacijo kliknite na <%= link_to "to povezavo", root_url %>.
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>
+      Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo! 
+      <br><br>Lep dan še naprej.
+    </p>
       <br>
-    <p>Nina</p>
+    <p>Nina Breznik, <%= root_url %></p>
   </body>
 </html>
