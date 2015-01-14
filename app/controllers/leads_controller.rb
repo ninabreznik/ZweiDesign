@@ -197,6 +197,7 @@ class LeadsController < ApplicationController
                  password_confirmation: pass
                )
         lead.user_id = user.id
+        user.leads << lead
         UserMailer.welcome_email(user, pass).deliver 
       end
     end
