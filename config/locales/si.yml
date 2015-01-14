@@ -345,8 +345,8 @@ si:
 # ############################################################################################
 
   lead-new:
-    title:  "Pošljite brezplačno povpraševanje"
-    instructions: "Oddajte povpraševanje in 5 preverjenih izvajalcev se vam bo oglasilo s ponudbami in predstavitvijo."
+    title:  "Oddajte povpraševanje"
+    instructions: "Pošljite opis projekta in povezali vas bom z izvajalci, zainteresiranimi za sodelovanje."
     form:
       business-types:
         architecture: "Arhitekti"

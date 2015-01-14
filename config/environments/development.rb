@@ -9,6 +9,8 @@ Rails.application.configure do
     password:             'GnUQAUKHxIO7YpSGcY2Lzg',
     authentication:       'plain',
     enable_starttls_auto: true  }
+    
+  config.action_mailer.perform_deliveries = true
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -17,7 +19,6 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-  config.action_mailer.perform_deliveries = true
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
