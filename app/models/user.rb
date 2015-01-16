@@ -21,5 +21,17 @@ class User < ActiveRecord::Base
     orders.create!(selected_id: one_lead.id)
   end
 
+  private
+
+#Mailboxer
+
+  def name
+    email
+  end
+
+  def mailboxer_email(object)
+    email
+  end
+
 
 end
