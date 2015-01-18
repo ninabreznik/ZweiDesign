@@ -6,6 +6,7 @@ ActiveAdmin.register User do
     selectable_column
     id_column
     column :email  
+    column :name
     column :wallet
     column :sign_in_count
     column :last_sign_in_at
@@ -18,6 +19,7 @@ ActiveAdmin.register User do
   end
 
     filter :email  
+    filter :name
     filter :wallet
     filter :sign_in_count
     filter :last_sign_in_at
@@ -29,6 +31,7 @@ ActiveAdmin.register User do
   form do |f|
     f.inputs "User Details" do
       f.input :email
+      f.input :name
       f.input :wallet
     end
     f.actions
