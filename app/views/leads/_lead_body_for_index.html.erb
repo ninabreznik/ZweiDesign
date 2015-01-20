@@ -10,11 +10,11 @@
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.name' %>:</div>        
     <%= lead.name %>       <br>
   <div class="lead_subtitle"> Datum objave:</div>        
-    <%= lead.created_at.strftime("%d.%m.%Y") %>       <br>
+    <%= lead.created_at.strftime("%d.%m.%Y") %> <br>
   <div class="lead_subtitle"> Št.zakupov:</div>
-  <% if lead.selectors.count > 4 %>
+  <% if lead.reverse_orders.where(paid: true).count > 4 %>
     Kontakt ni več na voljo   
   <% else %>     
-    <%= lead.selectors.count %>       <br>
+    <%= lead.reverse_orders.where(paid: true).count %> <br>
   <% end %>
 </div>
