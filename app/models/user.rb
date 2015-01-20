@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  acts_as_messageable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
@@ -18,6 +19,18 @@ class User < ActiveRecord::Base
 
   def select!(one_lead)
     orders.create!(selected_id: one_lead.id)
+  end
+
+  private
+
+#Mailboxer
+
+  def name
+    email
+  end
+
+  def mailboxer_email(object)
+    email
   end
 
 

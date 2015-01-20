@@ -57,6 +57,8 @@ end
 
 #Dashing related stuff
 gem 'puma'
+
+gem 'mailboxer'
 # gem 'nokogiri'
 # gem 'htmlentities'
 

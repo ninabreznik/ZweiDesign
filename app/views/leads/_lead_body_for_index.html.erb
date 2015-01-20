@@ -9,4 +9,6 @@
     <%= lead.description %><br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.name' %>:</div>        
     <%= lead.name %>       <br>
+  <div class="lead_subtitle"> Datum objave:</div>        
+    <%= lead.created_at.strftime("%d.%m.%Y") %>       <br>
 </div>
