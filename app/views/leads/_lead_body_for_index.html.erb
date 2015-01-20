@@ -13,7 +13,7 @@
     <%= lead.created_at.strftime("%d.%m.%Y") %>       <br>
   <div class="lead_subtitle"> Št.zakupov:</div>
   <% if lead.selectors.count > 4 %>
-    <%= 5/5 %>   
+    Kontakt ni več na voljo   
   <% else %>     
     <%= lead.selectors.count %>       <br>
   <% end %>
