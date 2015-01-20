@@ -11,4 +11,6 @@
     <%= lead.name %>       <br>
   <div class="lead_subtitle"> Datum objave:</div>        
     <%= lead.created_at.strftime("%d.%m.%Y") %>       <br>
+  <div class="lead_subtitle"> Št.zakupov:</div>        
+    <%= lead.selectors.count %>       <br>
 </div>
