@@ -9,7 +9,7 @@
     <%= lead.description %><br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.name' %>:</div>        
     <%= lead.name %>       <br>
-  <div class="lead_subtitle"> Datum zadnje spremembe:</div>        
+  <div class="lead_subtitle"> Aktualizirano:</div>        
     <%= lead.updated_at.strftime("%d.%m.%Y") %> <br>
   <div class="lead_subtitle"> Št.zakupov:</div>
   <% if lead.reverse_orders.where(paid: true).count > 4 %>
