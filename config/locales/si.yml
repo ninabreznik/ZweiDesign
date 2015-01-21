@@ -154,7 +154,7 @@ si:
 
 # Payment buttons
   ordersshow-payment-buttons:
-    choose-payment-text: "Nadaljujte z nakupom kontakta. Izberite način plačila"
+    choose-payment-text: "Cena kontakta je 10€. Izberite način plačila"
     paypal-checkout: "Paypal" 
     wallet: "Denarnica" 
     bank-transfer: "Predračun" 
