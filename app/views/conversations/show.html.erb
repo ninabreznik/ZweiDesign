@@ -1,16 +1,21 @@
-<h1>
+<div class="conversations_title">Conversations</div>
+<ul>
+  <%= render collection: mailbox.inbox, partial: 'conversation' %>
+</ul>
+
+<div class="conversation_subject">
   <%= conversation.subject %>
-</h1>
+</div>
 <ul>
   <%= content_tag_for(:li, conversation.receipts_for(current_user)) do |receipt| %>
     <% message = receipt.message %>
-    <h3>
-      <%= message.subject %>
-    </h3>
+    <div class="conversation_message_sender">
+      <%= message.sender.email %>
+    </div>
     <p>
       <%= message.body %>
     </p>
   <% end %>
 </ul>
 
-<%= render 'conversations/form', conversation: conversation %>
+<%= render 'conversations/reply_form', conversation: conversation %>

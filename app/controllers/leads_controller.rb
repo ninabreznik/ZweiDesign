@@ -5,6 +5,8 @@ class LeadsController < ApplicationController
     @lead = Lead.find_by_id(params[:id])
     @user = current_user
     @sorted_leads = @leads.sort.reverse
+    @sold_out = sold_out(@lead) 
+    @bought_count = bought_count(@lead)
   end
 
   def show
@@ -204,10 +206,21 @@ class LeadsController < ApplicationController
     lead.save
   end
 
-
   def current_lead
     current_lead=(lead)
     @current_lead = lead
+  end
+
+  def sold_out(lead) 
+    if lead.present?
+      lead.reverse_orders.where(paid: true).count > 4
+    end
+  end
+
+  def bought_count(lead)
+    if lead.present?
+      reverse_orders.where(paid: true).count
+    end
   end
 
 end
