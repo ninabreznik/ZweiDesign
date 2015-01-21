@@ -4,7 +4,7 @@ Mailboxer.setup do |config|
   config.uses_emails = true
 
   #Configures the default from for emails sent for Messages and Notifications
-  config.default_from = "no-reply@sosed.si"
+  config.default_from = "admin@sosed.biz"
 
   #Configures the methods needed by mailboxer
   config.email_method = :mailboxer_email

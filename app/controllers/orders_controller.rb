@@ -92,7 +92,7 @@ class OrdersController < ApplicationController
   end
 
   def create_conversation(beta)
-   current_user.send_message(beta, "Hello, I am interested in the project. Please let me know more about it.", "Your project")
+   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt. Kako vam lahko pomagam?", "Vaš projekt na Sosed.biz")
   end
  
 end

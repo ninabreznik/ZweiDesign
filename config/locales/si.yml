@@ -995,3 +995,14 @@ si:
   time:
     formats:
       long: "%d/%m/%Y %H:%M"
+
+# ############################################################################################
+# MAILBOXER
+# ############################################################################################
+
+  mailboxer:
+    message_mailer:
+      subject_new: "Novo sporočilo: %{subject}"
+      subject_reply: "Nov odgovor: %{subject}"
+    notification_mailer:
+      subject: "Novo sporočilo: %{subject}"
