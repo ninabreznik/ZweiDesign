@@ -1,5 +1,7 @@
 <%= content_tag_for(:li, conversation) do |conversation| %>
   <p>
+    <%= current_user.messages.where(conversation_id: conversation).last.sender.email %>
     <%= link_to conversation.subject, conversation_path(conversation) %>
+    | <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %>
   </p>
 <% end %>

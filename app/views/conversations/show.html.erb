@@ -1,7 +1,9 @@
 <div class="conversations_title">Conversations</div>
+<h2>Converations</h2>
 <ul>
-  <%= render collection: mailbox.inbox, partial: 'conversation' %>
+  <%= render collection: mailbox.conversations, partial: 'conversation' %>
 </ul>
+
 
 <div class="conversation_subject">
   <%= conversation.subject %>
@@ -13,7 +15,8 @@
       <%= message.sender.email %>
     </div>
     <p>
-      <%= message.body %>
+      <%= message.body %> 
+      | <%= message.updated_at.strftime("%d.%m. ob %H:%M") %>
     </p>
   <% end %>
 </ul>
