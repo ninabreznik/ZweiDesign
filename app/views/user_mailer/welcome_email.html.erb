@@ -4,7 +4,7 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Dobrodošli na <%= root_url %>, </h1>
+    <h2>Dobrodošli na <%= link_to "Sosed.biz", root_url %>, </h2>
     <p>
       Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.<br>
     </p>
@@ -17,13 +17,13 @@
       </p>
     <%- end %>
     <p>
-      Za prijavo v aplikacijo kliknite na <%= link_to "to povezavo", root_url %>.
+      Za prijavo v aplikacijo kliknite na <%= link_to "to povezavo", new_user_session_url %>.
     </p>
     <p>
       Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo! 
       <br><br>Lep dan še naprej.
     </p>
       <br>
-    <p>Nina Breznik, <%= root_url %></p>
+    <p>Nina Breznik, <%= link_to "Sosed.biz", root_url %></p>
   </body>
 </html>

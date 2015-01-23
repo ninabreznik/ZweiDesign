@@ -30,7 +30,7 @@ class OrdersController < ApplicationController
     if current_user.wallet >= 10
       @order.update_attributes(:paid => true)
       @beta = User.find_by_id(@order.selected.user_id)
-      create_conversation(@beta)
+      create_conversation(@beta, @order)
       @price = 10
       new_wallet_status = current_user.wallet - @price
       current_user.update_attributes(:wallet => new_wallet_status)
@@ -91,8 +91,8 @@ class OrdersController < ApplicationController
     )
   end
 
-  def create_conversation(beta)
-   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt. Kako vam lahko pomagam?", "Vaš projekt na Sosed.biz")
+  def create_conversation(beta, order)
+   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description}). Kako vam lahko pomagam?", "Pogovor za #{order.selected.business_type} (#{order.selected.zip}) na Sosed.biz")
   end
  
 end

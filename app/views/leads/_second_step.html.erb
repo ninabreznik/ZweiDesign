@@ -12,10 +12,19 @@
   <%= l.label :"#{I18n.t'lead-new.form.name'}"  %>
   <%= l.text_field :name %>
 </div>
-<div class="lead_new_form_email">
-  <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
-  <%= l.text_field :email %>
-</div>
+
+<% if user_signed_in? %>
+  <div class="lead_new_form_email">
+    <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
+    <%= l.text_field :email, value: "#{current_user.email}" %>
+  </div>
+<% else %>
+  <div class="lead_new_form_email">
+    <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
+    <%= l.text_field :email %>
+  </div>
+<% end %>
+
 <div class="lead_new_form_phone">
   <%= l.label :"#{I18n.t'lead-new.form.phone'}" %>
   <%= l.text_field :phone %>

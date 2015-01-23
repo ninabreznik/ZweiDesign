@@ -1,16 +1,28 @@
-Dobrodošli na <%= root_url %>
+Dobrodošli na Sosed.biz
 ===============================================
  
 Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.
+
 <%- if @pass %>
 Vaše začasno geslo je: <%= @pass %>
 Predlagamo vam, da ga ob naslednji prijavi v aplikacijo zamenjate!
 <%- end %>
 
-Za prijavo v aplikacijo kliknite na <%= link_to "to povezavo", root_url %>.
+Za prijavo v aplikacijo obiščite <%= @sosed_signin_url %>
 
 Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo! 
 
 Lep dan še naprej.
 
-Nina Breznik, <%= root_url %>
+Nina Breznik, <%= @sosed_home_url %>
+
+
+
+
+
+
+
+
+
+
+
