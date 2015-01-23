@@ -11,9 +11,9 @@ si:
       signup: "registriraj se"
     bottom-menu:
       home: " DOMOV"
-      reserved: " SPREMLJAM"
+      messages: " SPOROČILA"
       address-book: " IMENIK KONTAKTOV"
-      profile: " PROFIL"
+      profile: " MOJ PROFIL"
 
 
 # ############################################################################################
@@ -358,6 +358,7 @@ si:
         renovations: "Prenova"
         painting: "Slikopleskarstvo"
         masonry: "Zidarstvo"
+        other: "Drugo"
       form-time:
         asap: "Takoj"
         fourteendays: "V naslednjih 14 dneh"

@@ -23,18 +23,32 @@
 
     <div class="lead_box">
       <div class ="profile_dashboard_title">
-        Gradbenik gradbeniku:
+        Moja povpraševanja:
       </div>
-      <div class="profile_dashboard_body"> 
-        <div class="profile_dashboard_body_not_signed_in"> 
-          Oddajte storitev, ki je ne izvajate - vzemite tisto, ki jo potrebujete.
+      <% if Lead.all.where(user_id: current_user.id).count < 1 %>
+        <div class="profile_dashboard_body"> 
+            <div class="profile_dashboard_body_not_signed_in"> 
+              Oddajte storitev, ki je ne izvajate - vzemite tisto, ki jo potrebujete.
+            </div>
+          <div class="profile_dashboard_body_wallet_buttons">
+            <div class="profile_dashboard_body_wallet_button">
+              <%= link_to "Oddaj storitev", delim_path %>
+            </div> 
+          </div> 
         </div>
+      <% else %>
+        <div class="profile_dashboard_body"> 
+          <div class="profile_dashboard_body_not_signed_in"> 
+            Št.oddanih povpraševanj:
+            <%= Lead.all.where(user_id: current_user.id).count %>
+          </div>
         <div class="profile_dashboard_body_wallet_buttons">
           <div class="profile_dashboard_body_wallet_button">
             <%= link_to "Oddaj storitev", delim_path %>
           </div> 
         </div> 
       </div>
+      <% end %>
     </div>
 
     <div class="lead_box">

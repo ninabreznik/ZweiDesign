@@ -1,0 +1,6 @@
+<%= content_tag_for(:li, conversation) do |conversation| %>
+  <p>
+    <%= link_to conversation.subject, conversation_path(conversation) %>
+    | <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %>
+  </p>
+<% end %>

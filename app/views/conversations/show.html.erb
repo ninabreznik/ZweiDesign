@@ -1,20 +1,12 @@
-ALL
-<div class="conversations_title">Conversations</div>
-<h2>Conversations</h2>
-<ul>
-  <%= render collection: mailbox.conversations, partial: 'conversation' %>
-</ul>
-<br>
-<br>
-CURRENT
+<div class="conversations_title"><h2>Conversation:</h2></div>
 <div class="conversation_subject">
-  <%= conversation.subject %>
+  <h3><%= conversation.subject %></h3>
 </div>
 <ul>
   <%= content_tag_for(:li, conversation.receipts_for(current_user)) do |receipt| %>
     <% message = receipt.message %>
     <div class="conversation_message_sender">
-      <%= message.sender.email %>
+      <h3><%= message.sender.email %></h3>
     </div>
     <p>
       <%= message.body %> 
@@ -24,3 +16,6 @@ CURRENT
 </ul>
 
 <%= render 'conversations/reply_form', conversation: conversation %>
+<br>
+<br>
+<%= link_to "Nazaj na Prejeto pošto", conversations_url %>
