@@ -1,13 +1,16 @@
-<h1>Conversations</h1>
-<h2>Prejeta pošta</h2>
-<ul>
-  <%= render collection: mailbox.inbox, partial: 'conversation' %>
-</ul>
-<h2>Poslano</h2>
-<ul>
-  <%= render collection: mailbox.sentbox, partial: 'conversation' %>
-</ul>
-<h2>Izbrisano</h2>
-<ul>
-  <%= render collection: mailbox.trash, partial: 'conversation' %>
-</ul>
+<div class="body_conversations">
+  <div class="conversations_title">Sporočila</div>
+
+  <div class="conversations_inbox_title"><i class="fa fa-inbox"></i>Prejeta</div>
+  <div class="conversations_inbox_list">
+    <%= render collection: mailbox.inbox, partial: 'conversation' %>
+  </div>
+  <div class="conversations_sent_title"><i class="fa fa-paper-plane"></i>Poslana</div>
+  <div class="conversations_sent_list">
+    <%= render collection: mailbox.sentbox, partial: 'conversation' %>
+  </div>
+  <div class="conversations_trash_title"><i class="fa fa-trash"></i>Izbrisana</div>
+  <div class="conversations_trash_list">
+    <%= render collection: mailbox.trash, partial: 'conversation' %>
+  </div>
+</div>

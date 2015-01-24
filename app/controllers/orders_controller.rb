@@ -84,7 +84,7 @@ class OrdersController < ApplicationController
   end
 
   def create_conversation(beta, order)
-   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description}). Kako vam lahko pomagam?", "Pogovor na Sosed.biz (Projekt: #{order.selected.business_type}, Ponudnik: #{order.selected.email.split("@")[0]})")
+   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Sosed.biz pogovor med uporabnikoma ::#{order.selected.email.split("@")[0]}:: in ::#{current_user.email.split("@")[0]}::")
   end
  
 end

@@ -1,8 +1,15 @@
-<%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
-  Message<br>
-  <%= f.text_field :body %><br>
-  <div class="form-actions">
-    <%= f.button :submit, class: 'btn-primary' %>
-    <%= submit_tag 'Cancel', type: :reset, class: 'btn btn-danger' %>
-  </div>
+<div class="conversation_reply">
+    <div class="conversation_reply_message_pic">
+      <div class="conversation_reply_message_pic_initials">
+        <%= current_user.email[0] %>
+      </div>      
+    </div>
+    <div class="conversation_reply_message_body">
+    <%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
+      <%= f.text_field :body %>
+    </div>
+    <div class="conversation_reply_message_body_sent_button">
+      <%= f.button :Pošlji, class: 'btn-primary' %>
+    </div>
 <% end %>
+</div>

@@ -282,7 +282,7 @@
         .order_show_buy_buttons
           padding 7px
           padding-bottom 40px
-          shift 0.21
+          shift 0.25
           .order_show_buy   
             display inline-block
           .order_show_buy input,   
@@ -1402,5 +1402,198 @@
           font-weight italics
           padding-bottom 20px
 
+  /* :::::::::::::::::::::::: CONVERSATIONS / SHOW  (messages) :::::::::::::::::::::::::: */
+    .body_messages
+      column(3/5)
+      shift(1/5) 
+      margin-top 47px 
+      color Offer-Font-Color
+      font-family App-Font-Family
+      a  
+        text-decoration none
+        color Offer-Font-Color
+        font-family App-Font-Family 
+      margin-bottom 15px
+      .conversation_messages
+        padding 0 0 250px 0
+        font-size 12px   
+        .conversation_messages_title
+          text-transform: uppercase
+          margin-bottom 30px
+          padding 25px 20px 25px 20px
+          text-align center
+          font-weight bold
+          font-size 16px
+          background-color Lead-Blue
+          color white
+        .conversation_message_sender_my_pic,
+        .conversation_message_sender_other_pic
+          width 42px
+          height 42px
+          border-radius 50%
+          overflow hidden
+          margin 0 15px 0 0
+          float left !important
+          .conversation_message_sender_pic_initials
+            line-height: 42px
+            display: block
+            color white
+            text-align: center
+            text-transform: uppercase
+        .conversation_message_sender_my_pic
+          background-color Lead-Orange         
+        .conversation_message_sender_other_pic
+          background-color Lead-Blue
+        .conversation_message_sender_body_time
+          padding 0 10px 0 10px
+          text-align: right
+          float right !important
+          font-size 14px
+          color #606060
+        .conversation_message_sender_body
+          display block
+          overflow hidden
+          margin 30px 0 20px 0
+          .conversation_message_sender_body_name
+            margin 1px 0 4px
+            margin-top 0px
+            display inline-bloc
+            font-size 15px
+            color Lead-Blue
+            font-weight bold
+          .conversation_message_sender_body_text
+            word-wrap break-word
+            line-height 150%
+            font-size 14px
+      .conversation_reply
+        padding-top 20px
+        background-color white
+        column(3/5)
+        shift(1/5) 
+        position fixed
+        z-index 999
+        bottom 35px
+        .conversation_reply_message_pic
+          width 42px
+          height 42px
+          border-radius 50%
+          overflow hidden
+          margin 0 15px 0 0
+          float left !important
+          background-color Lead-Orange
+          .conversation_reply_message_pic_initials
+            line-height: 42px
+            display: block
+            color white
+            text-align: center
+            text-transform: uppercase
+        #message_body
+          width 90%
+          color #606060
+          font-size 14px
+          border-radius: 0;
+          border: 0;
+          box-shadow: none;
+          outline: none;
+          box-shadow: 0 1px 0 0 #e8e8e8;
+          padding: 1px 30px 20px 0;
+          margin: 0;
+          min-height: 50px;
+          line-height: 20px;
+          height: auto;
+        .conversation_reply_message_body_sent_button
+          color: #499dd9;
+          font-size: 13px;
+          line-height: 18px;
+          height: 18px;
+          border-radius: 0;
+          float: right !important
+          min-width: 0;
+          margin-top: 5px;
+          margin-left: 10px;
+          width: auto;
+          padding: 0;
+          padding-bottom 100px
+          font-weight: bold;
+          .btn-primary
+            button(Lead-Orange)
 
 
+  /* :::::::::::::::::::::::: CONVERSATIONS / INDEX  (all messages) :::::::::::::::::::::::::: */
+    .body_conversations
+      width 60%
+      shift(1/5) 
+      margin-top 29px 
+      font-family App-Font-Family
+      margin-bottom 15px
+      padding 0 0px 100px 0px
+      a  
+        text-decoration none
+        font-family App-Font-Family 
+      .conversations_title
+        text-transform: uppercase
+        margin-bottom 10px
+        text-align center
+        padding 25px 20px 25px 20px
+        font-weight bold
+        font-size 16px
+        color white
+        background-color Lead-Orange
+      .conversations_inbox_title,
+      .conversations_sent_title,
+      .conversations_trash_title
+        padding 0px 8px 8px 8px
+        text-decoration none
+        color Menu-Bottom-Button-Color
+        text-align left
+        font-size defaultFontSize
+        -webkit-font-smoothing: antialiased
+        text-transform: uppercase
+        color Lead-Orange
+        font-weight bold
+        a
+        text-decoration none
+        color Lead-Orange
+        font-weight bold
+        .fa.fa-inbox,
+        .fa.fa-paper-plane,
+        .fa.fa-trash
+          text-align center
+          color white
+          height 50px
+          width 50px
+          font-size 18px
+          padding 4px
+          margin 20px 10px 0 0px
+          border-radius 50%
+          background-color Lead-Orange
+          line-height: 42px
+      .conversations_inbox_list,
+      .conversations_sent_list,
+      .conversations_trash_list
+        width 350px
+        text-align left
+        font-size 14px
+        margin 7px 0px 0 55px
+        .mailboxer_conversation
+          padding-bottom 10px
+          color #aaa
+          a
+            text-decoration none
+            color #222
+            &:hover
+              opacity 0.7  
+          .fa.fa-comments
+            font-size 20px
+            color #222
+
+        
+        
+      
+          
+        
+
+
+        
+        
+      
