@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150118040307) do
+ActiveRecord::Schema.define(version: 20150123010547) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -119,7 +119,7 @@ ActiveRecord::Schema.define(version: 20150118040307) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "paid",        default: false
-    t.text     "notes"
+    t.text     "notes",       default: "Vaši osebni zapiski o stranki in projektu.Vidni so samo vam."
   end
 
   add_index "orders", ["selector_id", "selected_id"], name: "index_orders_on_selector_id_and_selected_id", unique: true

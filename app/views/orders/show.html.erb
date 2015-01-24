@@ -37,8 +37,8 @@
                 <%= @lead.phone %> 
             </div> 
             <div class="lead_show_item"> 
-              <div class="lead_show_subtitle"><%= I18n.t'ordersshow-lead.email' %>:</div>
-                <%= @lead.email %>          
+              <div class="lead_show_subtitle">Uporabniško ime:</div>
+                <%= @lead.email.split("@")[0] %>          
             </div>
           </div>
             <div class="order_show_notes">

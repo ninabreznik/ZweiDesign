@@ -4,9 +4,9 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>You have a new message: <%= @subject %></h1>
+    <h1>Novo sporočilo na Sosed.biz: <%= @subject %></h1>
     <p>
-      You have received a new message:
+      Prejeli ste novo sporočilo:
     </p>
     <blockquote>
       <p>
@@ -14,7 +14,7 @@
       </p>
     </blockquote>
     <p>
-      Visit <%= link_to root_url, root_url %> and go to your inbox for more info.
+      Obiščite <%= link_to "Moja sporočila", conversations_url %> za več informacij.
     </p>
   </body>
 </html>

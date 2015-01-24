@@ -1,10 +1,12 @@
-You have a new reply: <%= @subject %>
+Nov odgovor na Sosed.biz: <%= @subject %>
 ===============================================
 
-You have received a new reply:
+Prejeli ste nov odgovor:
 
 -----------------------------------------------
 <%= @message.body.html_safe? ? @message.body : strip_tags(@message.body) %>
 -----------------------------------------------
 
-Visit <%= root_url %> and go to your inbox for more info.
+Obiščite <%= link_to "Moja sporočila", conversations_url %> za več informacij.
+
+

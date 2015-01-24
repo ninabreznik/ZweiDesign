@@ -12,6 +12,7 @@ class ConversationsController < ApplicationController
     redirect_to conversation_path(conversation)
   end
 
+
   def reply
     current_user.reply_to_conversation(conversation, *message_params(:body, :subject))
     redirect_to conversation_path(conversation)

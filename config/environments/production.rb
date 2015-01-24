@@ -1,4 +1,24 @@
 Rails.application.configure do
+
+  ##########################################
+  # ActionMailer settings
+  ##########################################
+ 
+  # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.mandrillapp.com',
+    port:                 587,
+    #domain:               'gmail.com',
+    user_name:            'ninabreznik@gmail.com',
+    password:             'GnUQAUKHxIO7YpSGcY2Lzg',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+    
+  config.action_mailer.perform_deliveries = true
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
