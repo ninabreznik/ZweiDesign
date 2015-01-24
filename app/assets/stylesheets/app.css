@@ -227,7 +227,7 @@ html {
   box-sizing: inherit;
 }
 
-/* line 1588 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1587 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 @media only screen and (max-width: 5000px) {
@@ -4200,8 +4200,8 @@ a
 .body_conversations .conversations_trash_title .fa.fa-trash {
   text-align: center;
   color: #fff;
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   font-size: 18px;
   padding: 4px;
   margin: 20px 10px 0 0px;
@@ -4214,13 +4214,12 @@ a
 .body_conversations .conversations_inbox_list,
 .body_conversations .conversations_sent_list,
 .body_conversations .conversations_trash_list {
-  width: 350px;
   text-align: left;
-  font-size: 14px;
-  margin: 7px 0px 0 55px;
+  font-size: 15px;
+  margin: 7px 0px 0 65px;
 }
 
-/* line 1578 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1577 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_inbox_list .mailboxer_conversation,
 .body_conversations .conversations_sent_list .mailboxer_conversation,
 .body_conversations .conversations_trash_list .mailboxer_conversation {
@@ -4228,7 +4227,7 @@ a
   color: #aaa;
 }
 
-/* line 1581 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1580 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_inbox_list .mailboxer_conversation a,
 .body_conversations .conversations_sent_list .mailboxer_conversation a,
 .body_conversations .conversations_trash_list .mailboxer_conversation a {
@@ -4236,14 +4235,14 @@ a
   color: #222;
 }
 
-/* line 1584 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1583 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_inbox_list .mailboxer_conversation a:hover,
 .body_conversations .conversations_sent_list .mailboxer_conversation a:hover,
 .body_conversations .conversations_trash_list .mailboxer_conversation a:hover {
   opacity: 0.7;
 }
 
-/* line 1586 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1585 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_inbox_list .mailboxer_conversation .fa.fa-comments,
 .body_conversations .conversations_sent_list .mailboxer_conversation .fa.fa-comments,
 .body_conversations .conversations_trash_list .mailboxer_conversation .fa.fa-comments {
