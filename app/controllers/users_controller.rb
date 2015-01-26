@@ -1,12 +1,5 @@
-class UsersController < ApplicationController
+class UsersController < Devise::UsersController
   before_filter :authenticate_user!
-
-  def create
-    if @user.save
-      # Tell the UserMailer to send a welcome email after save
-      UserMailer.welcome_email(user, pass).deliver 
-    end
-  end
 
   def show
   end
@@ -23,9 +16,8 @@ class UsersController < ApplicationController
 
   private
 
-  # def correct_user
-  #   @user = User.find_by_id(params[:id])
-  #   redirect_to(root_path) unless current_user?(@user)
+  # def create_conversation(beta)
+  #   User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko izberete nov kontakt in kliknete 'Kontaktirajte ponudnika' boste poslali ponudniku avtomatično sporočilo. Tukaj pa nato nadaljujete pogovor z njim. Za vsa vprašanja pa imate sedaj tudi moj kontakt. Z veseljem sem vam vedno na voljo.", "Sosed.biz sporočilo")
   # end
 
 end

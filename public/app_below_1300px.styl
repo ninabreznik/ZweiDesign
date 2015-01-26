@@ -1457,13 +1457,17 @@
           display block
           // overflow hidden
           margin 30px 0 20px 0
-          .conversation_message_sender_body_name
+          .conversation_message_sender_body_my_name,
+          .conversation_message_sender_body_other_name
             margin 1px 0 4px
             margin-top 0px
             display inline-bloc
             font-size 15px
-            color Lead-Blue
             font-weight bold
+          .conversation_message_sender_body_my_name
+            color Lead-Orange
+          .conversation_message_sender_body_other_name
+            color Lead-Blue
           .conversation_message_sender_body_text
             word-wrap break-word
             line-height 150%
@@ -1560,7 +1564,7 @@
         position relative
         display inline-block
         width 30%
-        padding 80px 0 50px 5%
+        padding 80px 10% 50px 5%
         overflow: scroll
         .conversations_inbox_title,
         .conversations_sent_title,
@@ -1576,7 +1580,7 @@
           font-weight bold
           a
           text-decoration none
-          color Lead-Orange
+          color Lead-Blue
           font-weight bold
           .fa.fa-inbox,
           .fa.fa-paper-plane,
@@ -1589,7 +1593,7 @@
             padding 6px
             margin 20px 10px 0 0px
             border-radius 50%
-            background-color Lead-Orange
+            background-color Lead-Blue
             line-height: 42px
         .conversations_inbox_list,
         .conversations_sent_list,

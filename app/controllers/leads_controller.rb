@@ -122,6 +122,8 @@ class LeadsController < ApplicationController
         lead.user_id = user.id
         user.leads << lead
         UserMailer.welcome_email(user, pass).deliver 
+        beta = user
+        User.find_by_id(1).send_message(beta, "Pozdravljeni, še informacija glede pošiljanja sporočil ostalim uporabnikom. Vsakič ko izberete nov kontakt in kliknete 'Kontaktirajte ponudnika' boste poslali ponudniku avtomatično sporočilo. In obratno - kadar oddate povpraševanje, vas bodo uporabniki lahko kontaktaktirali. Vsa prejeta in poslana sporočila najdete pod gumbom 'Sporočila'. Za vsa vprašanja pa imate sedaj tudi moj kontakt. Z veseljem sem vam vedno na voljo za več informacij.", "Sosed.biz sporočilo od Sosede Nine")
       end
     end
     lead.save

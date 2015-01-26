@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
     @order.update_attributes(:paid => true)
     @beta = User.find_by_id(@order.selected.user_id)
     create_conversation(@beta, @order)
-    redirect_to conversations_path(id: current_user.mailbox.sentbox.last.id )
+    redirect_to conversations_path
   end
 
   def destroy

@@ -22,9 +22,15 @@
       <%= message.updated_at.strftime("%d.%m. ob %H:%M") %>
     </div>
     <div class="conversation_message_sender_body">
-      <div class="conversation_message_sender_body_name">
+      <% if message.sender.email == current_user.email %>
+        <div class="conversation_message_sender_body_my_name">
+          <%= message.sender.email.split("@")[0] %>
+        </div>
+    <% else %>
+      <div class="conversation_message_sender_body_other_name">
         <%= message.sender.email.split("@")[0] %>
       </div>
+    <% end %>
       <div class="conversation_message_sender_body_text">
         <%= message.body %> 
       </div>
