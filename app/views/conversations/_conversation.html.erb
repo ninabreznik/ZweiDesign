@@ -1,11 +1,11 @@
 <%= content_tag_for(:div, conversation) do |conversation| %>
-      <i class="fa fa-comments"></i>
-      <%= link_to conversation.subject, conversation_path(conversation) %>
-    | <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %>
+
+      <%= link_to conversation.subject, conversation_path(conversation), target: :chat_window %>
+    <br> <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %>
     |
     <% if conversation.is_completely_trashed?(current_user) %>
       <%= link_to '<i class="fa fa-undo"></i>'.html_safe, untrash_conversation_path(conversation), method: :post %>
     <% else %>
-      <%= link_to '<i class="fa fa-trash"></i>'.html_safe, trash_conversation_path(conversation), method: :post %>
+      <%= link_to '<i class="fa fa-archive"></i>'.html_safe, trash_conversation_path(conversation), method: :post %>
     <% end %>
 <% end %>

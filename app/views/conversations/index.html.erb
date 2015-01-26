@@ -1,16 +1,21 @@
 <div class="body_conversations">
   <div class="conversations_title">Sporočila</div>
-
-  <div class="conversations_inbox_title"><i class="fa fa-inbox"></i>Prejeta</div>
-  <div class="conversations_inbox_list">
-    <%= render collection: mailbox.inbox, partial: 'conversation' %>
+  <div class="conversations_wrapper">
+    <div class="conversations_inbox_title"><i class="fa fa-inbox"></i>Prejeta</div>
+    <div class="conversations_inbox_list">
+      <%= render collection: mailbox.inbox, partial: 'conversation' %>
+    </div>
+    <div class="conversations_sent_title"><i class="fa fa-paper-plane"></i>Poslana</div>
+    <div class="conversations_sent_list">
+      <%= render collection: mailbox.sentbox, partial: 'conversation' %>
+    </div>
+    <div class="conversations_trash_title"><i class="fa fa-archive"></i></i>Arhiv</div>
+    <div class="conversations_trash_list">
+      <%= render collection: mailbox.trash, partial: 'conversation' %>
+    </div>
   </div>
-  <div class="conversations_sent_title"><i class="fa fa-paper-plane"></i>Poslana</div>
-  <div class="conversations_sent_list">
-    <%= render collection: mailbox.sentbox, partial: 'conversation' %>
-  </div>
-  <div class="conversations_trash_title"><i class="fa fa-trash"></i>Izbrisana</div>
-  <div class="conversations_trash_list">
-    <%= render collection: mailbox.trash, partial: 'conversation' %>
-  </div>
+  <iframe src="/" name="chat_window" id="chat_window_iframe"></iframe>
 </div>
+
+
+

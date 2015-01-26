@@ -12,6 +12,14 @@ class ConversationsController < ApplicationController
     redirect_to conversation_path(conversation)
   end
 
+  def show
+    render 'show', layout: 'adwords_layout'
+  end
+
+  def index
+    render 'index', layout: 'chat_layout'
+  end
+
 
   def reply
     current_user.reply_to_conversation(conversation, *message_params(:body, :subject))

@@ -1,8 +1,8 @@
 <div class="body_messages">
-  <div class="conversation_messages">
     <div class="conversation_messages_title">
       <%= conversation.subject %>
     </div>
+  <div class="conversation_messages">
   <%= content_tag_for(:div, conversation.receipts_for(current_user)) do |receipt| %>
     <% message = receipt.message %>
     <% if message.sender.email == current_user.email %>
@@ -45,5 +45,6 @@
       <%= f.button :Pošlji, class: 'btn-primary' %>
     </div>
 <% end %>
+</div>
 </div>
 </div>
