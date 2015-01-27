@@ -7,7 +7,7 @@
   <% elsif user_signed_in? && @orders.present? %>
   <div class="columns">
     <ul class="wookmark">
-      <% @orders.where(selector_id: current_user.id, paid: true).sort.reverse.each do |order| %>
+      <% @bought_orders.each do |order| %>
         <div class="lead_box">
           <div class ="address_book_lead_title">
             <%= order.selected.business_type %>

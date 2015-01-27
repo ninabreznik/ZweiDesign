@@ -10,9 +10,8 @@ class LeadsController < ApplicationController
   def show
     @lead = Lead.find_by_id(params[:id])
     @leads = Lead.all
-    # @reserved_leads = @lead.reverse_orders.where(selector_id: current_user.id)
-
-    #@order = @lead.reverse_orders.where(selector_id: current_user.id)
+    lead_atrributes(@lead)
+    orders_present(@lead)
   end
 
   def new
@@ -132,6 +131,29 @@ class LeadsController < ApplicationController
   def current_lead
     current_lead=(lead)
     @current_lead = lead
+  end
+
+
+  def lead_atrributes(lead)
+    if lead.present? 
+      @lead_business_type = @lead.business_type
+      @lead_location = lead.location
+      @lead_zip = lead.zip
+      @lead_time = lead.time
+      @lead_description = lead.description
+      @lead_name = lead.name
+      @lead_updated = lead.updated_at.strftime("%d.%m.%Y")
+      @lead_bought_count = lead.reverse_orders.where(paid: true).count
+    end
+  end
+
+  def orders_present(lead)
+    if lead.present?
+      @orders_present = lead.reverse_orders.where(selector_id: current_user.id).present?
+      if @order_present
+        @bought_orders = @lead.reverse_orders.where(selector_id: current_user.id).first.paid == true
+      end
+    end
   end
 
 

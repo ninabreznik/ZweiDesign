@@ -227,7 +227,7 @@ html {
   box-sizing: inherit;
 }
 
-/* line 1617 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 @media only screen and (max-width: 5000px) {
@@ -4154,7 +4154,7 @@ html {
   position: relative;
   display: inline-block;
   width: 30%;
-  padding: 80px 10% 50px 5%;
+  padding: 80px 0% 50px 5%;
   overflow: scroll;
 }
 

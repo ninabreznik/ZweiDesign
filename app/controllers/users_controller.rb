@@ -1,6 +1,7 @@
 class UsersController < Devise::UsersController
   before_filter :authenticate_user!
 
+
   def show
   end
 

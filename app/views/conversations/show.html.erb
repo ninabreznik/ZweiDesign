@@ -1,6 +1,6 @@
 <div class="body_messages">
     <div class="conversation_messages_title">
-      <%= conversation.subject %>
+      <%= @conversation_subject%>
     </div>
   <div class="conversation_messages">
   <%= content_tag_for(:div, conversation.receipts_for(current_user)) do |receipt| %>
@@ -40,7 +40,7 @@
   <div class="conversation_reply">
     <div class="conversation_reply_message_pic">
       <div class="conversation_reply_message_pic_initials">
-        <%= current_user.email[0] %>
+        <%= @current_user_nick %>
       </div>      
     </div>
     <div class="conversation_reply_message_body">

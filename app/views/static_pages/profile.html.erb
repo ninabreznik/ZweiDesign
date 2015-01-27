@@ -10,7 +10,7 @@
       </div>
       <div class="profile_dashboard_body"> 
         <div class="profile_dashboard_body_username">  
-          <%= current_user.email %> 
+          <%= @user_email %> 
         </div>
         <div class="profile_dashboard_body_logout">
           <%= link_to "#{I18n.t'staticpagesprofile-links.logout'}", destroy_user_session_path, method: :get %> 
@@ -25,7 +25,7 @@
       <div class ="profile_dashboard_title">
         Moja povpraševanja:
       </div>
-      <% if Lead.all.where(user_id: current_user.id).count < 1 %>
+      <% if @no_shared_leads %>
         <div class="profile_dashboard_body"> 
             <div class="profile_dashboard_body_not_signed_in"> 
               Oddajte storitev, ki je ne izvajate - vzemite tisto, ki jo potrebujete.
@@ -39,12 +39,12 @@
       <% else %>
         <div class="profile_dashboard_body"> 
           <div class="profile_dashboard_body_not_signed_in"> 
-            Št.oddanih povpraševanj:
-            <%= Lead.all.where(user_id: current_user.id).count %>
+            Število oddanih povpraševanj:
+            <%= @shared_leads_number %>
           </div>
         <div class="profile_dashboard_body_wallet_buttons">
           <div class="profile_dashboard_body_wallet_button">
-            <%= link_to "Oddaj storitev", delim_path %>
+            <%= link_to "Oddaj povpraševanje", delim_path %>
           </div> 
         </div> 
       </div>
@@ -57,24 +57,24 @@
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_wallet_amount">
-          <%= current_user.wallet %> € 
+          <%= @current_user_wallet %>  
         </div>
-        <div class="profile_dashboard_body_wallet_buttons">
+  <!--       <div class="profile_dashboard_body_wallet_buttons">
           <div class="profile_dashboard_body_wallet_button">
             <%= link_to "#{I18n.t'staticpagesprofile-notification.wallet-buttons.bank'}", wallet_payment_url %> 
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <% if Order.all.where(selector_id: current_user.id, paid: true).present? %>
+    <% if @paid_orders_present %>
       <div class="lead_box">
         <div class ="profile_dashboard_title">
           <%= I18n.t'staticpagesprofile-notification.bought-leads' %>:
         </div>
         <div class="profile_dashboard_body"> 
           <div class="profile_dashboard_body_bought_leads_amount">  
-            <%= Order.all.where(selector_id: current_user.id, paid: true).count %>
+            <%= @paid_orders_count%>
           </div> 
         </div>
       </div>
@@ -85,7 +85,8 @@
         </div>
         <div class="profile_dashboard_body"> 
           <div class="profile_dashboard_body_bought_leads_last">  
-            <%= Order.all.where(selector_id: current_user.id, paid: true).last.selected.business_type %> (<%= Order.all.where(selector_id: current_user.id, paid: true).last.selected.location %>) 
+            <%= @last_bought_lead_business_type %> 
+            (<%= @last_bought_lead_location %>) 
           </div> 
         </div>
       </div>

@@ -13,6 +13,8 @@ class ConversationsController < ApplicationController
   end
 
   def show
+    @conversation_subject = conversation.subject 
+    @current_user_nick = current_user.email[0]
     render 'show', layout: 'adwords_layout'
   end
 
@@ -63,4 +65,5 @@ class ConversationsController < ApplicationController
       end
     end
   end
+
 end

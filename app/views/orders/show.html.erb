@@ -1,31 +1,31 @@
 
 <div class="body_orders_show">
   <a class="back_to_main_page_button" href="/"></a>
-  <% if @order.present? %>
+  <% if @order_present %>
     <div class="order_show">
       <div class="order_show_title">
-        <%= @lead.business_type %> 
+        <%= @lead_business_type %> 
       </div>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div> 
-              <%= @lead.location %>
+              <%= @lead_location %>
           </div> 
           <div class="lead_show_item">          
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.zip' %>:</div> 
-              <%= @lead.zip %> 
+              <%= @lead_zip %> 
           </div> 
           <div class="lead_show_item">             
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %>:</div> <%= @lead.time %>
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %>:</div> <%= @lead_time %>
           </div>
           <div class="lead_show_item">          
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
-              <%= @lead.description %> 
+              <%= @lead_description %> 
           </div>
           <div class="lead_show_item">    
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.name' %>:</div> 
-              <%= @lead.name %> 
+              <%= @lead_name %> 
           </div> 
         </div>         
     <% if user_signed_in? %> 
@@ -34,11 +34,11 @@
           <div class="lead_show_items_short_additional">
             <div class="lead_show_item"> 
               <div class="lead_show_subtitle"><%= I18n.t'ordersshow-lead.phone' %>:</div>
-                <%= @lead.phone %> 
+                <%= @lead_phone %> 
             </div> 
             <div class="lead_show_item"> 
               <div class="lead_show_subtitle">Uporabniško ime:</div>
-                <%= @lead.email.split("@")[0] %>          
+                <%= @lead_email_split %>          
             </div>
           </div>
             <div class="order_show_notes">

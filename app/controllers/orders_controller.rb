@@ -22,6 +22,8 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @lead = @order.selected
+    @order_present = @order.present?
+    lead_atrributes(@lead)
   end
 
   def edit
@@ -60,6 +62,7 @@ class OrdersController < ApplicationController
 
   def address_book
     @orders = Order.all
+    @bought_orders = @orders.where(selector_id: current_user.id, paid: true).sort.reverse
   end
 
   def reserved
@@ -86,5 +89,6 @@ class OrdersController < ApplicationController
   def create_conversation(beta, order)
    current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Sosed.biz pogovor med uporabnikoma ::#{order.selected.email.split("@")[0]}:: in ::#{current_user.email.split("@")[0]}::")
   end
+
  
 end

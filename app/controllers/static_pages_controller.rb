@@ -13,6 +13,14 @@ class StaticPagesController < ApplicationController
   end
 
   def profile
+    @user_email = current_user.email
+    @no_shared_leads = Lead.all.where(user_id: current_user.id).count < 1
+    @shared_leads_number = Lead.all.where(user_id: current_user.id).count
+    @current_user_wallet = current_user.wallet
+    @paid_orders_present = Order.all.where(selector_id: current_user.id, paid: true).present?
+    @paid_orders_count = Order.all.where(selector_id: current_user.id, paid: true).count 
+    @last_bought_lead_business_type = Order.all.where(selector_id: current_user.id, paid: true).last.selected.business_type
+    @last_bought_lead_location = Order.all.where(selector_id: current_user.id, paid: true).last.selected.location
   end
 
   def contact
