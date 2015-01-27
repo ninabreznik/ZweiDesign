@@ -4,10 +4,10 @@
   <div class="address_book_link_to_signup">
     <%= I18n.t'ordersindex-notifications.signed_in_but_no_bought' %>   
   </div> 
-  <% elsif user_signed_in? && @orders.present? %>
+  <% elsif user_signed_in? && @orders.where(selector_id: current_user.id, paid:true).count > 0 %>
   <div class="columns">
     <ul class="wookmark">
-      <% @bought_orders.each do |order| %>
+      <% @orders.where(selector_id: current_user.id, paid: true).sort.reverse.each do |order| %>
         <div class="lead_box">
           <div class ="address_book_lead_title">
             <%= order.selected.business_type %>

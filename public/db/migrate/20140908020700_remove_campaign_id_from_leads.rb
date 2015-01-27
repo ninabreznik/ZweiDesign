@@ -1,1 +1,0 @@
-../../../db/migrate/20140908020700_remove_campaign_id_from_leads.rb

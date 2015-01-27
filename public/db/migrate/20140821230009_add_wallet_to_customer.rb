@@ -1,1 +1,0 @@
-../../../db/migrate/20140821230009_add_wallet_to_customer.rb

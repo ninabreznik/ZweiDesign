@@ -1,1 +1,0 @@
-../../../db/migrate/20140722200232_devise_create_users.rb

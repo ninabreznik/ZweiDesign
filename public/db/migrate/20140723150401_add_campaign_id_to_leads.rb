@@ -1,1 +1,0 @@
-../../../db/migrate/20140723150401_add_campaign_id_to_leads.rb

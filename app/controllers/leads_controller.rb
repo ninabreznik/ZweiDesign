@@ -148,7 +148,7 @@ class LeadsController < ApplicationController
   end
 
   def orders_present(lead)
-    if lead.present?
+    if lead.present? && user_signed_in?
       @orders_present = lead.reverse_orders.where(selector_id: current_user.id).present?
       if @order_present
         @bought_orders = @lead.reverse_orders.where(selector_id: current_user.id).first.paid == true

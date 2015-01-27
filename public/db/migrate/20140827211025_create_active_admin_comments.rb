@@ -1,1 +1,0 @@
-../../../db/migrate/20140827211025_create_active_admin_comments.rb

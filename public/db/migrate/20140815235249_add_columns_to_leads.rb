@@ -1,1 +1,0 @@
-../../../db/migrate/20140815235249_add_columns_to_leads.rb

@@ -1,31 +1,32 @@
 
 <div class="body_orders_show">
   <a class="back_to_main_page_button" href="/"></a>
-  <% if @order_present %>
+  <% if @order.present? %>
     <div class="order_show">
       <div class="order_show_title">
-        <%= @lead_business_type %> 
+        <%= @order_selected_business_type %> 
       </div>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div> 
-              <%= @lead_location %>
+              <%= @order_selected_location %>
           </div> 
           <div class="lead_show_item">          
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.zip' %>:</div> 
-              <%= @lead_zip %> 
+              <%= @order_selected_zip %> 
           </div> 
           <div class="lead_show_item">             
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %>:</div> <%= @lead_time %>
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %>:</div> 
+            <%= @order_selected_time %>
           </div>
           <div class="lead_show_item">          
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
-              <%= @lead_description %> 
+              <%= @order_selected_description %> 
           </div>
           <div class="lead_show_item">    
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.name' %>:</div> 
-              <%= @lead_name %> 
+              <%= @order_selected_name %> 
           </div> 
         </div>         
     <% if user_signed_in? %> 
@@ -34,11 +35,11 @@
           <div class="lead_show_items_short_additional">
             <div class="lead_show_item"> 
               <div class="lead_show_subtitle"><%= I18n.t'ordersshow-lead.phone' %>:</div>
-                <%= @lead_phone %> 
+                <%= @lead.phone %> 
             </div> 
             <div class="lead_show_item"> 
-              <div class="lead_show_subtitle">Uporabniško ime:</div>
-                <%= @lead_email_split %>          
+              <div class="lead_show_subtitle"><%= I18n.t'ordersshow-lead.email' %>:</div>
+                <%= @lead.email %>          
             </div>
           </div>
             <div class="order_show_notes">
@@ -58,6 +59,7 @@
           <%= render 'leads/payment_buttons' %>
         <% end %>
       <% else %>
+        <%= render 'buy_popup' %> 
         <%= form_for(current_user.orders.build(selected_id: @lead.id)) do |o| %>
           <%= o.hidden_field :selected_id %>
           <div class="order_show_buy">       

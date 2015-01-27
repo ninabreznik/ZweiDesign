@@ -1,1 +1,0 @@
-../../../db/migrate/20140820021917_add_payment_to_orders.rb

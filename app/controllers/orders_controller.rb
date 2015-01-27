@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
     @lead = @order.selected
     @order_present = @order.present?
-    lead_atrributes(@lead)
+    order_attributes(@order)
   end
 
   def edit
@@ -62,7 +62,8 @@ class OrdersController < ApplicationController
 
   def address_book
     @orders = Order.all
-    @bought_orders = @orders.where(selector_id: current_user.id, paid: true).sort.reverse
+    # @bought = @orders.where(selector_id: current_user.id, paid:true).count != 0
+    @bought_orders = user_signed_in? && @orders.where(selector_id: current_user.id, paid:true).count > 0
   end
 
   def reserved
@@ -88,6 +89,19 @@ class OrdersController < ApplicationController
 
   def create_conversation(beta, order)
    current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Sosed.biz pogovor med uporabnikoma ::#{order.selected.email.split("@")[0]}:: in ::#{current_user.email.split("@")[0]}::")
+  end
+
+  def order_attributes(order)
+    if order.present? 
+      @order_selected_business_type = @order.selected.business_type
+      @order_selected_location = order.selected.location
+      @order_selected_zip = order.selected.zip
+      @order_selected_time = order.selected.time
+      @order_selected_description = order.selected.description
+      @order_selected_name = order.selected.name
+      @order_selected_updated = order.selected.updated_at.strftime("%d.%m.%Y")
+      @order_selected_bought_count = order.selected.reverse_orders.where(paid: true).count
+    end
   end
 
  
