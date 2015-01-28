@@ -9,7 +9,28 @@
       <div class ="lead_title">
         <%= link_to "#{lead.business_type}", lead_path(lead) %> 
       </div>
-      <%= render 'lead_body_for_index', :lead => lead %>
+      <div class="lead_body">
+        <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.location' %>:</div>     
+          <%= lead.location %>   <br>
+        <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.zip' %>:</div>          
+          <%= lead.zip %>        <br>
+        <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.time' %>:</div>         
+          <%= lead.time %>       <br>
+        <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.description' %>:</div>  
+          <%= lead.description %><br>
+        <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.name' %>:</div>        
+          <%= lead.name %>       <br>
+        <div class="lead_subtitle"> Aktualizirano:</div>        
+          <%= lead.updated_at.strftime("%d.%m.%Y") %> <br>
+        <% if user_signed_in? %>
+          <% if @paid_leads %>
+            <div class="lead_subtitle">Stranko ste že kontaktirali.</div>   
+          <% else %>     
+            <div class="lead_subtitle"> Št.zakupov:</div>
+            <%= lead.reverse_orders.where(paid: true).count %> <br>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 <% else %>

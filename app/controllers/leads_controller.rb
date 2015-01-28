@@ -136,7 +136,7 @@ class LeadsController < ApplicationController
 
   def lead_atrributes(lead)
     if lead.present? 
-      @lead_business_type = @lead.business_type
+      @lead_business_type = lead.business_type
       @lead_location = lead.location
       @lead_zip = lead.zip
       @lead_time = lead.time
@@ -144,6 +144,7 @@ class LeadsController < ApplicationController
       @lead_name = lead.name
       @lead_updated = lead.updated_at.strftime("%d.%m.%Y")
       @lead_bought_count = lead.reverse_orders.where(paid: true).count
+      @paid_leads = @lead.reverse_orders.where(selector_id: current_user.id, paid: true).any?
     end
   end
 
@@ -156,5 +157,18 @@ class LeadsController < ApplicationController
     end
   end
 
+  # def show_lead_in_index(leads)
+  #   @sorted_leads = @leads.sort.reverse
+  #   @sorted_leads.each do |lead|
+  #     @lead_business_type = lead.business_type
+  #     @lead_location = lead.location
+  #     @lead_zip = lead.zip
+  #     @lead_time = lead.time
+  #     @lead_description = lead.description
+  #     @lead_name = lead.name
+  #     @lead_updated = lead.updated_at.strftime("%d.%m.%Y")
+  #     @lead_orders_count = lead.reverse_orders.where(paid: true).count
+  #   end
+  # end
 
 end

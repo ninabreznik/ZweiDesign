@@ -45,7 +45,7 @@
     </div>
     <div class="conversation_reply_message_body">
     <%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
-      <%= f.text_field :body, :placeholder => "Napišite novo sporočilo" %>
+      <%= f.text_area :body, :placeholder => "Napišite novo sporočilo" %>
     </div>
     <div class="conversation_reply_message_body_sent_button">
       <%= f.button :Pošlji, class: 'btn-primary' %>

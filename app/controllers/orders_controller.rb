@@ -63,7 +63,9 @@ class OrdersController < ApplicationController
   def address_book
     @orders = Order.all
     # @bought = @orders.where(selector_id: current_user.id, paid:true).count != 0
-    @bought_orders = user_signed_in? && @orders.where(selector_id: current_user.id, paid:true).count > 0
+    if user_signed_in? && @orders.where(selector_id: current_user.id, paid:true).count > 0
+      @bought_orders = @orders.where(selector_id: current_user.id, paid: true).sort.reverse
+    end
   end
 
   def reserved
@@ -88,7 +90,7 @@ class OrdersController < ApplicationController
   end
 
   def create_conversation(beta, order)
-   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Sosed.biz pogovor med uporabnikoma ::#{order.selected.email.split("@")[0]}:: in ::#{current_user.email.split("@")[0]}::")
+   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "#{order.selected.email.split("@")[0]} in #{current_user.email.split("@")[0]}")
   end
 
   def order_attributes(order)

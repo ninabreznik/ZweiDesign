@@ -227,7 +227,7 @@ html {
   box-sizing: inherit;
 }
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1614 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 @media only screen and (max-width: 5000px) {
@@ -3920,7 +3920,7 @@ html {
     z-index: 999;
     top: 0px;
     width: 100%;
-    padding: 25px 20px 25px 20px;
+    padding: 33px 20px 33px 20px;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
@@ -3930,7 +3930,7 @@ html {
 
 /* line 1427 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
   .body_messages .conversation_messages {
-    padding: 80px 5% 250px 5%;
+    padding: 100px 5% 250px 5%;
     font-size: 12px;
   }
 
@@ -4048,18 +4048,16 @@ html {
     color: #606060;
     font-size: 14px;
     border-radius: 0;
-    border: 0;
-    box-shadow: none;
-    outline: none;
-    box-shadow: 0 1px 0 0 #e8e8e8;
-    padding: 1px 30px 20px 0;
+    border: 2px solid #ffae4d;
+    padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
     line-height: 20px;
     height: auto;
+    max-height: 284px;
   }
 
-/* line 1512 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1513 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
   .body_messages .conversation_reply .conversation_reply_message_body_sent_button {
     color: #499dd9;
     font-size: 13px;
@@ -4075,7 +4073,7 @@ html {
     font-weight: bold;
   }
 
-/* line 1525 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1526 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
   .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary {
     font-size: 13px;
     padding: 10px 22px;
@@ -4105,7 +4103,7 @@ html {
   }
 }
 
-/* line 1530 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1531 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations {
   width: 100%;
   margin-top: 0px;
@@ -4114,13 +4112,13 @@ html {
   padding: 0 0px 100px 0px;
 }
 
-/* line 1537 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1538 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations a {
   text-decoration: none;
   font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
 }
 
-/* line 1540 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1541 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations #chat_window_iframe {
   width: 70%;
   height: 100%;
@@ -4132,7 +4130,7 @@ html {
   border-left: 2px solid #82c0c7;
 }
 
-/* line 1549 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1550 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_title {
   position: fixed;
   z-index: 999;
@@ -4143,101 +4141,95 @@ html {
   text-align: center;
   padding: 25px 20px 25px 20px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
   color: #fff;
   background-color: #82c0c7;
 }
 
-/* line 1562 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1563 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper {
   height: 450px;
   position: relative;
   display: inline-block;
   width: 30%;
-  padding: 80px 0% 50px 5%;
+  padding: 90px 0% 50px 5%;
   overflow: scroll;
 }
 
-/* line 1569 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1570 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_title,
-.body_conversations .conversations_wrapper .conversations_sent_title,
-.body_conversations .conversations_wrapper .conversations_trash_title {
-  padding: 0px 8px 8px 8px;
+.body_conversations .conversations_wrapper .conversations_sent_title {
+  border-bottom: 2px dotted #eee;
+  padding: 14px 8px 12px 8px;
   text-decoration: none;
   color: #222;
   text-align: left;
   font-size: defaultFontSize;
   -webkit-font-smoothing: antialiased;
   text-transform: uppercase;
-  color: #ffae4d;
   font-weight: bold;
-a
-  text-decoration: none;
   color: #82c0c7;
+}
+
+/* line 1582 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+.body_conversations .conversations_wrapper .conversations_inbox_title a,
+.body_conversations .conversations_wrapper .conversations_sent_title a {
+  color: #82c0c7;
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* line 1585 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1586 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_title .fa.fa-inbox,
 .body_conversations .conversations_wrapper .conversations_sent_title .fa.fa-inbox,
-.body_conversations .conversations_wrapper .conversations_trash_title .fa.fa-inbox,
 .body_conversations .conversations_wrapper .conversations_inbox_title .fa.fa-paper-plane,
-.body_conversations .conversations_wrapper .conversations_sent_title .fa.fa-paper-plane,
-.body_conversations .conversations_wrapper .conversations_trash_title .fa.fa-paper-plane,
-.body_conversations .conversations_wrapper .conversations_inbox_title .fa.fa-archive,
-.body_conversations .conversations_wrapper .conversations_sent_title .fa.fa-archive,
-.body_conversations .conversations_wrapper .conversations_trash_title .fa.fa-archive {
+.body_conversations .conversations_wrapper .conversations_sent_title .fa.fa-paper-plane {
   text-align: center;
   color: #fff;
   height: 42px;
   width: 42px;
-  font-size: 18px;
-  padding: 6px;
+  font-size: 20px;
   margin: 20px 10px 0 0px;
   border-radius: 50%;
   background-color: #82c0c7;
   line-height: 42px;
 }
 
-/* line 1598 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1597 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_list,
-.body_conversations .conversations_wrapper .conversations_sent_list,
-.body_conversations .conversations_wrapper .conversations_trash_list {
+.body_conversations .conversations_wrapper .conversations_sent_list {
   text-align: left;
   font-size: 14px;
   line-height: 20px;
-  margin: 10px 15px 0 10px;
+  margin: 10px 15px 0 60px;
 }
 
-/* line 1606 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+/* line 1603 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation,
-.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation,
-.body_conversations .conversations_wrapper .conversations_trash_list .mailboxer_conversation {
-  padding-bottom: 25px;
-  color: #aaa;
+.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation {
+  padding-bottom: 15px;
+  padding-top: 7px;
+  color: #606060;
+  border-bottom: 2px dotted #eee;
+}
+
+/* line 1608 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
+.body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation:hover,
+.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation:hover {
+  color: #82c0c7;
 }
 
 /* line 1610 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a,
-.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a,
-.body_conversations .conversations_wrapper .conversations_trash_list .mailboxer_conversation a {
+.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a {
   text-decoration: none;
-  color: #222;
+  color: inherit;
 }
 
 /* line 1613 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
 .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
-.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover,
-.body_conversations .conversations_wrapper .conversations_trash_list .mailboxer_conversation a:hover {
-  opacity: 0.7;
-}
-
-/* line 1615 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */
-.body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation .fa.fa-comments,
-.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation .fa.fa-comments,
-.body_conversations .conversations_wrapper .conversations_trash_list .mailboxer_conversation .fa.fa-comments {
-  font-size: 20px;
-  color: #222;
+.body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
+  opacity: 0.9;
 }
 
 /* line 1320 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_1300px.styl */

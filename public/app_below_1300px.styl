@@ -1418,14 +1418,14 @@
         z-index 999
         top 0px
         width 100%
-        padding 25px 20px 25px 20px
+        padding 33px 20px 33px 20px
         text-align center
         font-weight bold
         font-size 16px
         background-color Lead-Blue
         color white
       .conversation_messages
-        padding 80px 5% 250px 5%
+        padding 100px 5% 250px 5%
         font-size 12px   
         .mailboxer_receipt
           padding 0 10px 0 10px
@@ -1500,15 +1500,16 @@
           color #606060
           font-size 14px
           border-radius: 0;
-          border: 0;
-          box-shadow: none;
-          outline: none;
-          box-shadow: 0 1px 0 0 #e8e8e8;
-          padding: 1px 30px 20px 0;
+          border 2px solid Lead-Orange
+          // box-shadow: none;
+          // outline: none;
+          // box-shadow: 1px 2px 1px 1px Lead-Orange
+          padding: 10px 10px 10px 10px
           margin: 0;
           min-height: 50px;
           line-height: 20px;
-          height: auto;
+          height auto
+          max-height: 284px
         .conversation_reply_message_body_sent_button
           color: #499dd9;
           font-size: 13px;
@@ -1556,7 +1557,7 @@
         text-align center
         padding 25px 20px 25px 20px
         font-weight bold
-        font-size 16px
+        font-size 30px
         color white
         background-color Lead-Blue
       .conversations_wrapper
@@ -1564,61 +1565,56 @@
         position relative
         display inline-block
         width 30%
-        padding 80px 0% 50px 5%
+        padding 90px 0% 50px 5%
         overflow: scroll
         .conversations_inbox_title,
-        .conversations_sent_title,
-        .conversations_trash_title
-          padding 0px 8px 8px 8px
+        .conversations_sent_title
+          border-bottom 2px dotted #eee
+          padding 14px 8px 12px 8px
           text-decoration none
           color Menu-Bottom-Button-Color
           text-align left
           font-size defaultFontSize
           -webkit-font-smoothing: antialiased
           text-transform: uppercase
-          color Lead-Orange
           font-weight bold
-          a
-          text-decoration none
           color Lead-Blue
-          font-weight bold
+          a
+            color Lead-Blue
+            text-decoration none
+            font-weight bold
           .fa.fa-inbox,
-          .fa.fa-paper-plane,
-          .fa.fa-archive
+          .fa.fa-paper-plane
             text-align center
             color white
             height 42px
             width 42px
-            font-size 18px
-            padding 6px
+            font-size 20px
             margin 20px 10px 0 0px
             border-radius 50%
             background-color Lead-Blue
             line-height: 42px
         .conversations_inbox_list,
-        .conversations_sent_list,
-        .conversations_trash_list
+        .conversations_sent_list
           text-align left
           font-size 14px
           line-height 20px
-          margin 10px 15px 0 10px
-          // overflow: hidden
+          margin 10px 15px 0 60px
           .mailboxer_conversation
-            padding-bottom 25px
-            color #aaa
-            // overflow: hidden
+            padding-bottom 15px
+            padding-top 7px
+            color #606060
+            border-bottom 2px dotted #eee
+            &:hover
+              color Lead-Blue
             a
               text-decoration none
-              color #222
+              color inherit
               &:hover
-                opacity 0.7  
-            .fa.fa-comments
-              font-size 20px
-              color #222
+                opacity 0.9
+        
 
         
-        
-      
           
         
 

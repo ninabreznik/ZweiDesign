@@ -1003,7 +1003,7 @@ si:
 
   mailboxer:
     message_mailer:
-      subject_new: "Novo sporočilo: %{subject}"
+      subject_new: "Novo Sosed.biz sporočilo: %{subject}"
       subject_reply: "Nov odgovor: %{subject}"
     notification_mailer:
-      subject: "Novo sporočilo: %{subject}"
+      subject: "Novo Sosed.biz sporočilo: %{subject}"
