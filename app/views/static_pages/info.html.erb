@@ -1,77 +1,96 @@
-<div class="body_leads_new">
-<section class="lead_new_photo">
-  <div class="lead_new_explanation">
-    <div class="lead_new_explanation_first">  
-      <i class="fa fa-pencil"></i>         Delite povpraševanje </div>
-    <div class="lead_new_explanation_second"> 
-      <i class="fa fa-files-o"></i>        Spoznajte zainteresirane izvajalce </div>
-    <div class="lead_new_explanation_third">  
-      <i class="fa fa-check-square-o"></i> Dogovorite se za provizijo </div>
-  </div>
-  <div class="lead_new">
-    <div class="lead_new_title">
-      Gradbenik gradbeniku 
-    </div>
-    <div class="lead_new_instructions">
-      Oddajte storitev, ki je ne izvajate - dogovorite se za provizijo. <br><br>Delite povpraševanje in povezali vas bomo z izvajalci, zainteresiranimi za sodelovanje.<br>
-    </div>
-  </div>
-</section>
-<section class="lead_new_we_help">
-  <div class="lead_new_we_help_title">
-    Zaslužite s projekti, ki jih ne morete sprejeti. <br><br><%= link_to "Oddajte povpraševanje", delim_path %><br><br> Oddajte povpraševanje in se z izbranim izvajalcem dogovorite za provizijo. 
-  </div>
-  <div class="lead_new_we_help_categories_title">
-    Uspešni so tisti, ki se znajo povezati.<br>
-    Za vsako povpraševanje, ki ga boste oddali, si boste prislužili tudi Značko Sosed guruja. Kasneje bomo vse vaše pridobljene značke objavili tudi na vašem profilu.
-  </div>
-  <div class="lead_new_we_help_categories_list">
-    <i class="fa fa-check-square-o"> Arhitekti</i> 
-    <i class="fa fa-check-square-o"> Gradnja</i> 
-    <i class="fa fa-check-square-o"> Zidarstvo</i> 
-    <i class="fa fa-check-square-o"> Prenove</i>  
-    <i class="fa fa-check-square-o"> Strojne instalacije</i> 
-    <i class="fa fa-check-square-o"> Električne instalacije</i> 
-    <i class="fa fa-check-square-o"> Slikopleskarstvo</i> 
-    <i class="fa fa-check-square-o"> Fasade</i> 
-    <i class="fa fa-check-square-o"> Strehe</i> 
-  </div>
-</section> 
-<section class="lead_new_testimonials">
-  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Super zadeva. S projekti, ki jih ne morem opraviti lahko torej vsaj nekaj zaslužim.<i class="fa fa-quote-right"></i>(Janez)</div>
-  
-
-  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Bravo, zdi se mi zelo pametno, da si podjetniki pomagamo med sabo. Enkrat dobiš projekt ti, drugič ga pa nekdo drug dobi preko tebe.<i class="fa fa-quote-right"></i>(Maja)</div>
-  
-
-  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Zelo pametna zadeva. Všeč mi je, da lahko preko aplikacije urejamo sodelovanje in se dogovarjamo glede provizije. Tako je vse črno na belem in je potem več verjetnosti za pozitivno sodelovanje.<i class="fa fa-quote-right"></i>(Srečko)</div>
-</section>
-<section class="section_form">
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//sosed.us1.list-manage.com/subscribe/post?u=2228fd24f2a4419c938ef2fdb&amp;id=e61cfef23e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <label for="mce-EMAIL">Prijavite se na naše e-novice!</label>
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_2228fd24f2a4419c938ef2fdb_e61cfef23e" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
+<div class="body_info_singlepage">
+  <section class="section_welcome">
+    <div class="section_welcome_title">Dobrodošli na Sosed.biz</div>
+    <div class="section_welcome_subtitle">STE PRIPRAVLJENI NA NOVE STRANKE?</div>
+    <div class="section_welcome_text"> <%= link_to "Izberite", root_path %> nova dela za vaše podjetje ali <%= link_to "oddajte", delim_path %> povpraševanje ter poiščite primernega izvajalca za vaš projekt. Uporaba aplikacije je brezplačna.</div>
   </section>
-<section class="lead_new_company_info">
-  <div class="lead_new_company_info_phone"> 080 4144</div>
-  <div class="lead_new_company_info_name">Moj sosed d.o.o.</div>
-  <div class="lead_new_company_info_address">Radehova 39, 2230 Lenart</div>
-  <div class="lead_new_company_info_address">Jablonskistr. 24, 10405 Berlin</div>
-  <div class="lead_new_company_info_contact"><%= mail_to "info@sosed.si", "info@sosed.si" %></div>
-</section> 
+
+  <section class="section_divided">
+    <div class="section_divided_left">
+      Na Sosed.biz najdete kontakte do strank ali drugih gradbenikov, ki iščejo izvajalce za svoje projekte.
+    </div>
+    <div class="section_divided_right">
+      Lahko pa oddate povpraševanje za svoj projekt ali za storitev, ki je sami ne boste izvedli.
+    </div>
+  </section>
+
+  <section class="section_how_it_works">
+    <div class="section_how_it_works_image"></div>
+    <div class="section_how_it_works_title">Kako deluje?</div>
+    <div class="section_how_it_works_text">Ponudnik dela odgovori na vprašanja glede njegovega projekta. Informacije objavimo na naši strani in zainteresirani izvajalci lahko vzpostavijo stik s ponudnikom ter predstavijo svoje storitve, cene in način dela.</div>
+    <div class="section_how_it_works_title">Kako vas nekdo izbere za svojega izvajalca?</div>
+    <div class="section_how_it_works_text">Recepta ni. Ključni dejavniki pa so: profesionalnost, držanje obljub in zaupanje. Ter seveda primerno razmerje med ceno in kakovostjo dela.</div>
+  </section>
+
+  <section class="section_our_team">
+    <i class="fa fa-heart"></i>
+    <div class="section_our_team_title">Kdo smo mi?</div>
+    <div class="section_our_team_text">Skupina zanesenjakov, ki želi spremeniti svet na boljše. V ekipi smo programerji, oblikovalci, ter strokovnjaki za spletni marketing. Pomagamo vam tudi z brezplačnimi nasveti glede vprašanj s teh področij. Pišite nam!</div>
+  </section>
+
+  <section class="section_budget">
+    <i class="fa fa-calculator"></i>
+    <div class="section_budget_title">Uspešni so tisti, ki se znajo povezati.</div>
+    <div class="section_budget_text">Za vsako povpraševanje, ki ga boste delili z ostalimi, si boste prislužili Značko Sosed guruja. Kasneje bomo vse vaše pridobljene značke objavili tudi na vašem profilu.</div>
+  </section>
+
+  <section class="section_what_customers_want">
+    <div class="section_what_customers_want_title">Kaj stranke iščejo?</div>
+
+    <div class="section_what_customers_want_item"><i class="fa fa-check-square-o"></i>Izvajalca, ki je na razpolago.</div>
+    <div class="section_what_customers_want_item"><i class="fa fa-check-square-o"></i>Strokovnjaka, ki mu lahko zaupajo in ki jim bo svetoval.</div>
+    <div class="section_what_customers_want_item"><i class="fa fa-check-square-o"></i>In izvajalca, ki bo poskrbel, da bodo imeli s storitvijo lepo izkušnjo.</div>
+  </section>
+
+  <section class="section_join_sosed">
+    <div class="section_why_sosed_image"></div>
+    <i class="fa fa-line-chart"></i>
+    <div class="section_join_sosed_introduce">Oddajte delo ali poiščite prosta dela</div>
+    <i class="fa fa-paper-plane-o"></i>
+    <div class="section_join_sosed_cooperation">Spoznajte zainteresirane izvajalce ali stranke</div> 
+    <i class="fa fa-thumbs-up"></i>   
+    <div class="section_join_sosed_success">Pomagajte graditi sodelovalno skupnost</div>  
+  </section>
+
+  <section class="section_why_sosed">
+    <div class="section_why_sosed_title">Zakaj naj se vpišem na Sosed.biz?</div>
+    <div class="section_why_sosed_text">Spoznajte nove stranke in nove partnerje. Pridobite nova dela. Na desetine uporabnikov uporablja storitve Sosed.biz in svoje poslovanje so uspeli v tem času povečati. Kliknite <%= link_to "tukaj", root_path %> in si oglejte sveža povpraševanja.</div>
+  </section>
+
+  <section class="section_form">
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+    <form action="//sosed.us4.list-manage.com/subscribe/post?u=e833ef94f0704d1475029ac8e&amp;id=5387f2bff4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Prijavite se na naše e-novice!</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="elektronski naslov" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div class="clear"><input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </section>
+  <section class="section_company_info">
+    <div class="section_company_info_name">Priporočajte nas prijateljem</div>
+<ul class="share-buttons" >
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.sosed.biz&t=Sosed.biz" target="_blank" style="color:#606060;" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.sosed.biz&text=Sosed.biz:%20http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.sosed.biz&title=Sosed.biz&summary=Sosed&source=http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+<a href="mailto:?subject=Sosed.biz&body=Sosed:%20http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><i class="fa fa-envelope fa-2x"></i></a>
+</ul>
+<br><br>
+    <div class="section_company_info_name">Moj sosed d.o.o.</div>
+    <div class="section_company_info_street">Radehova 39</div>
+    <div class="section_company_info_city">2230 Lenart</div>
+    <div class="section_company_info_tax_number">Davčna številka: 49595105</div>
+    <div class="section_company_info_bank_account">TRR: SI56 0410 2000 2065 311</div>
+    <div class="section_company_info_contact">Kontakt: info@sosed.si</div>
+  </section>
+</div>
