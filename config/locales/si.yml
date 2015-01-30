@@ -11,7 +11,7 @@ si:
       signup: "registriraj se"
     bottom-menu:
       home: " DOMOV"
-      reserved: " SPREMLJAM"
+      reserved: " SPOROČILA"
       address-book: " IMENIK KONTAKTOV"
       profile: " PROFIL"
 
@@ -214,7 +214,7 @@ si:
     customer-info: "Kontaktne informacije stranke"
     customer-info-explanation: "na voljo le ob nakupu tega kontakta."
     to-see-address-book: "Dobrodošli! Za dostop do imenika kontaktov je potrebna"
-    signed_in_but_no_orders: "Tukaj vas bodo čakali vsi kontakti, pri katerih niste dokončali nakupa."
+    signed_in_but_no_orders: "Kmalu boste tukaj lahko pošiljali in sprejemali sporočila iskalcev in ponudnikov storitev."
     signed_in_but_no_bought: "V imeniku kontaktov vas bodo čakali kontakti strank, ki ste jih izbrali. Zraven vsakega kontakta imate tudi beležko, kamor zabeležite, v kateri fazi dogovorov ste trenutno s stranko."
 # Buttons
   ordersindex-buttons: 
@@ -226,7 +226,7 @@ si:
 
 # Users not signed_in text box
   ordersindex_not_signed_in:
-    text_box: "Dobrodošli! Naj tej strani najdete kontakte, ki jih spremljate - tiste, ki jih boste morda izbrali v prihodnje. Za dodajanje novih ali brskanje kontaktov, ki jih spremljate, je potrebna "
+    text_box: "Dobrodošli! Kmalu boste tukaj lahko pošiljali in sprejemali sporočila iskalcev in ponudnikov storitev. "
 
 
 
