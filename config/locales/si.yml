@@ -154,7 +154,7 @@ si:
 
 # Payment buttons
   ordersshow-payment-buttons:
-    choose-payment-text: "Cena kontakta je 10€. Izberite način plačila"
+    choose-payment-text: "Kliknite in prejmite kontaktne podatke stranke brezplačno"
     paypal-checkout: "Paypal" 
     wallet: "Denarnica" 
     bank-transfer: "Predračun" 
@@ -184,9 +184,9 @@ si:
       bank: "Polnjenje denarnice"
     logged-in-as: "Prijavljeni ste kot"
     not-logged-in: "Niste prijavljeni"
-    bought-leads: "Število zakupljenih kontaktov"
-    last-bought-lead: "Zadnji zakupljen kontakt"
-    no-bought-leads: "Trenutno nimate nobenih zakupljenih kontaktov."
+    bought-leads: "Število izbranih kontaktov"
+    last-bought-lead: "Zadnji izbran kontakt"
+    no-bought-leads: "Trenutno nimate nobenih izbranih kontaktov."
     you-need-to-sign-in: "Za pregled teh informacij morate biti prijavljeni."
 
 # ############################################################################################
@@ -196,7 +196,7 @@ si:
 # Titles
   ordersindex-titles:
     reserved: "Trenutno ne spremljate nobenih kontaktov."
-    address-book: "Trenutno nimate nobenega zakupljenega kontakta."
+    address-book: "Trenutno nimate nobenega izbranega kontakta."
 
 # Lead body
   ordersindex-lead:
@@ -215,7 +215,7 @@ si:
     customer-info-explanation: "na voljo le ob nakupu tega kontakta."
     to-see-address-book: "Dobrodošli! Za dostop do imenika kontaktov je potrebna"
     signed_in_but_no_orders: "Tukaj vas bodo čakali vsi kontakti, pri katerih niste dokončali nakupa."
-    signed_in_but_no_bought: "V imeniku kontaktov vas bodo čakali kontakti strank, ki ste jih zakupili. Zraven vsakega kontakta imate tudi beležko, kamor zabeležite, v kateri fazi dogovorov ste trenutno s stranko."
+    signed_in_but_no_bought: "V imeniku kontaktov vas bodo čakali kontakti strank, ki ste jih izbrali. Zraven vsakega kontakta imate tudi beležko, kamor zabeležite, v kateri fazi dogovorov ste trenutno s stranko."
 # Buttons
   ordersindex-buttons: 
     buy: "Izberi"
@@ -226,7 +226,7 @@ si:
 
 # Users not signed_in text box
   ordersindex_not_signed_in:
-    text_box: "Dobrodošli! Naj tej strani najdete kontakte, ki jih spremljate - tiste, ki jih boste morda zakupili v prihodnje. Za dodajanje novih ali brskanje kontaktov, ki jih spremljate, je potrebna "
+    text_box: "Dobrodošli! Naj tej strani najdete kontakte, ki jih spremljate - tiste, ki jih boste morda izbrali v prihodnje. Za dodajanje novih ali brskanje kontaktov, ki jih spremljate, je potrebna "
 
 
 
