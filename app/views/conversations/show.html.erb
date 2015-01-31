@@ -1,16 +1,56 @@
-<h1>
-  <%= conversation.subject %>
-</h1>
-<ul>
-  <%= content_tag_for(:li, conversation.receipts_for(current_user)) do |receipt| %>
+<div class="body_messages">
+    <div class="conversation_messages_title">
+      <%= @conversation_subject%>
+    </div>
+  <div class="conversation_messages">
+  <%= content_tag_for(:div, conversation.receipts_for(current_user)) do |receipt| %>
     <% message = receipt.message %>
-    <h3>
-      <%= message.subject %>
-    </h3>
-    <p>
-      <%= message.body %>
-    </p>
+    <% if message.sender.email == current_user.email %>
+      <div class="conversation_message_sender_my_pic">
+        <div class="conversation_message_sender_pic_initials">
+        <%= initial = message.sender.email[0] %>
+        </div>      
+      </div>
+    <% else %>
+      <div class="conversation_message_sender_other_pic">
+        <div class="conversation_message_sender_pic_initials">
+        <%= initial = message.sender.email[0] %>
+        </div>      
+      </div>
+    <% end %>
+    <div class="conversation_message_sender_body_time">
+      <%= message.updated_at.strftime("%d.%m. ob %H:%M") %>
+    </div>
+    <div class="conversation_message_sender_body">
+      <% if message.sender.email == current_user.email %>
+        <div class="conversation_message_sender_body_my_name">
+          <%= message.sender.email.split("@")[0] %>
+        </div>
+    <% else %>
+      <div class="conversation_message_sender_body_other_name">
+        <%= message.sender.email.split("@")[0] %>
+      </div>
+    <% end %>
+      <div class="conversation_message_sender_body_text">
+        <%= message.body %> 
+      </div>
+    </div>
   <% end %>
-</ul>
-
-<%= render 'conversations/form', conversation: conversation %>
+  </div>
+  <div class="conversation_reply">
+    <div class="conversation_reply_message_pic">
+      <div class="conversation_reply_message_pic_initials">
+        <%= @current_user_nick %>
+      </div>      
+    </div>
+    <div class="conversation_reply_message_body">
+    <%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
+      <%= f.text_area :body, :placeholder => "Napišite novo sporočilo" %>
+    </div>
+    <div class="conversation_reply_message_body_sent_button">
+      <%= f.button :Pošlji, class: 'btn-primary' %>
+    </div>
+<% end %>
+</div>
+</div>
+</div>

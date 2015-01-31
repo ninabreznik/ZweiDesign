@@ -25,11 +25,15 @@ class OrdersController < ApplicationController
     @lead = @order.selected
   end
 
+
   def edit
     @order = Order.find(params[:id])
     @order.update_attributes(:paid => true)
-    redirect_to payment_confirmation_url
+    @beta = User.find_by_id(@order.selected.user_id)
+    create_conversation(@beta, @order)
+    redirect_to conversations_path
   end
+
 
   def destroy
     Order.find(params[:id]).destroy
@@ -82,8 +86,8 @@ class OrdersController < ApplicationController
     )
   end
 
-  # def create_conversation(beta)
-  #  current_user.send_message(beta, "Pozdrav, zanima me vaš projekt. Kako vam lahko pomagam?", "Vaš projekt na Sosed.biz")
-  # end
+  def create_conversation(beta, order)
+   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "#{order.selected.email.split("@")[0]} in #{current_user.email.split("@")[0]}")
+  end
  
 end

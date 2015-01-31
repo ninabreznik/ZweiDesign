@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
+
     resources :conversations, only: [:index, :show, :new, :create] do
       member do
         post :reply
@@ -23,14 +24,14 @@ Rails.application.routes.draw do
     match '/slikopleskarstvo',        to: 'leads#new',        via: 'get'
     match '/zidarstvo',               to: 'leads#new',        via: 'get'
 
-    match '/delim',                   to: 'leads#share',      via: 'get'
+    match '/delim',                   to: 'leads#new',      via: 'get'
 
   resources :paypal_notifications, only: [:create]
     match '/paypal_notification',       to: 'paypal_notifications#create',        via: 'post'
   
   resources :orders
     get '/address_book' => 'orders#address_book'
-    get '/reserved' => 'orders#reserved'
+    get '/messages' => 'conversations#index'
     get '/bank_transaction' => 'orders#bank_transaction'
     get '/wallet_payment_from_lead' => 'orders#wallet_payment_from_lead'
     # match '/orders/:id',       to: 'orders#show',          via: 'get'

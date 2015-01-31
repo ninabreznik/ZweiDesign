@@ -12,6 +12,17 @@ class ConversationsController < ApplicationController
     redirect_to conversation_path(conversation)
   end
 
+  def show
+    @conversation_subject = conversation.subject 
+    @current_user_nick = current_user.email[0]
+    render 'show', layout: 'adwords_layout'
+  end
+
+  def index
+    render 'index', layout: 'chat_layout'
+  end
+
+
   def reply
     current_user.reply_to_conversation(conversation, *message_params(:body, :subject))
     redirect_to conversation_path(conversation)
@@ -54,4 +65,5 @@ class ConversationsController < ApplicationController
       end
     end
   end
+
 end

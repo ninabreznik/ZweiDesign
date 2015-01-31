@@ -11,7 +11,7 @@ en:
       signup: "Sign up"
     bottom-menu:
       home: " Home"
-      reserved: " Reserved"
+      messages: " Sporočila"
       address-book: " Address book"
       profile: " Profile"
 
@@ -370,6 +370,7 @@ en:
         renovations: "Prenova"
         painting: "Slikopleskarstvo"
         masonry: "Zidarstvo"
+        other: "Drugo"
       form-time:
         asap: "As soon as possible"
         fourteendays: "In the next 14 days"
@@ -1018,4 +1019,3 @@ en:
       subject_reply: "Mailboxer new reply: %{subject}"
     notification_mailer:
       subject: "Mailboxer new notification: %{subject}"
-
