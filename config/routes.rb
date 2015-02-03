@@ -13,7 +13,10 @@ Rails.application.routes.draw do
 
   resources :users 
     match '/users/:id/edit',          to: 'users#edit',       via: 'edit'
-  
+    match '/users/:id',               to: 'users#show',       via: 'get'
+    match '/users',                   to: 'users#index',      via: 'get'
+
+
   resources :leads
     match '/arhitekt',                to: 'leads#new',        via: 'get'
     match '/fasaderstvo',             to: 'leads#new',        via: 'get'
