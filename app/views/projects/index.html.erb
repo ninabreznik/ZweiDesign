@@ -1,0 +1,3 @@
+<% @projects.each do |project| %>
+ <ul><%= project.title %> by <%= User.where(id: project.user_id).first.email %> </ul>
+<% end %>

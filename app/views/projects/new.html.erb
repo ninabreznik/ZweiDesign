@@ -1,0 +1,16 @@
+<div class="body_leads_new">
+  <div class="lead_new">
+    <%= form_for (@project) do |p| %>
+      <div class="lead_new_form_description">
+        <%= p.label "Title" %>
+        <%= p.text_field :title %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.text_field :user_id, type: "hidden", value: "#{current_user.id}" %>
+      </div>
+      <div class="lead_new_form_submit">
+        <%= p.submit "Shrani" %>
+      </div>
+    <% end %> 
+  </div>
+</div>
