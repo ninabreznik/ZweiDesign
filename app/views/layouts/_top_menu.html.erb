@@ -4,12 +4,36 @@
     <div class="logged_user"> 
       <%= link_to current_user.email, profile_path %> 
     </div>
+    <select id="menu_bar_select" class="lead_new_form_business_type">
+    <option value=""></option>
+    <option value="<%= root_path %>">Home</option>
+    <option value="<%= edit_user_registration_path %>">Edit profile</option>
+    <option value="<%= leads_path %>">Leads</option>
+    <option value="<%= info_path %>">Info</option>
+    <option value="<%= user_path(current_user)%>">My profile</option>
+  </select>
+  <div class="logged_user"> 
+    <%= link_to "Objavite svoj projekt", new_project_path %> 
+  </div>
+  <div class="logged_user"> 
+    <%= link_to "MAIL", messages_path %>
+  </div>
   <% else %>
     <div class="not_logged_user">
     <%= link_to "#{I18n.t'application.top-menu.login'}", new_user_session_path %> | <%= link_to "#{I18n.t'application.top-menu.signup'}", new_user_registration_path %>
     </div>
-  <% end %>
-  <div class="info">
-    <a href="<%= info_path %>"><i class="fa fa-info-circle"></i></a>
+  <div class="logged_user"> 
+    <%= link_to "Objavite svoj projekt", new_project_path %> 
   </div>
+  <% end %>
+
+
+  <script>
+    document.getElementById("menu_bar_select").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+  </script>
+  
 </div>

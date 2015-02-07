@@ -1,16 +1,25 @@
 <div class="body_leads_new">
   <div class="lead_new">
-    <%= form_for (@project) do |p| %>
+    <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
       <div class="lead_new_form_description">
         <%= p.label "Title" %>
         <%= p.text_field :title %>
       </div>
       <div class="lead_new_form_description">
-        <%= p.text_field :user_id, type: "hidden", value: "#{current_user.id}" %>
+        <%= p.label "Description" %>
+        <%= p.text_area :description %>
       </div>
+      <%= p.file_field :picture %>
+      <% if user_signed_in? %>
+        <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
       <div class="lead_new_form_submit">
         <%= p.submit "Shrani" %>
-      </div>
+      </div>  
+      <% else %>
+        <div class="lead_new_form_description">  
+          <%= link_to "Shrani", new_user_registration_path %>
+        </div>
+      <% end %>
     <% end %> 
   </div>
 </div>

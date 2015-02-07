@@ -1,1 +1,14 @@
-<%= @user.email %>
+<% if @user.present? %>
+  <%= image_tag @user.picture.url(:thumb)%> <br>
+  <%= @user.first_name %> <%= @user.surname %><br>
+  <%= @user.city %><br>
+  <%= @user.bio %><br>
+<% end %>
+
+<% Project.all.where(user_id: @user.id).each do |project| %>
+ <ul>
+    <h2><%= link_to "#{project.title}", project_path(project) %></h2> by <h3><%= project.email %></h3>
+    <%= image_tag project.picture.url(:medium) %>
+    <%= project.description %>
+ </ul>
+<% end %>

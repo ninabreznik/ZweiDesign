@@ -4,15 +4,36 @@
   <%= I18n.t'users-edit.edit-title' %>
 </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+:html => { :multipart => true }
+
+<%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="user_edit_form_email"><%= f.label :"#{I18n.t'users-edit.edit-fields.email'}" %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
+  <div class="user_edit_form_email"><%= f.label :"First name" %><br />
+  <%= f.text_field :first_name%></div>
+
+  <div class="user_edit_form_email"><%= f.label :"Surname" %><br />
+  <%= f.text_field :surname%></div>
+
+  <div class="user_edit_form_email"><%= f.label :"City" %><br />
+  <%= f.text_field :city%></div>
+
+  <div class="user_edit_form_email"><%= f.label :"Bio" %><br />
+  <%= f.text_area :bio%></div>
+
+  <div class="user_edit_form_email"><%= f.label :"Profile picture" %><br />
+    <%= f.file_field :picture %></div>
+  
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
+
+  <div class="user_edit_form_current_password"><%= f.label :"#{I18n.t'users-edit.edit-fields.current-password'}" %> <i>(<%= I18n.t'users-edit.current-password-tip' %>)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off" %></div>
 
   <div class="user_edit_form_password"><%= f.label :"#{I18n.t'users-edit.edit-fields.password'}" %> <i>(<%= I18n.t'users-edit.password-tip' %>)</i><br />
     <%= f.password_field :password, autocomplete: "off" %></div>
@@ -20,8 +41,6 @@
   <div class="user_edit_form_password_confirmation"><%= f.label :"#{I18n.t'users-edit.edit-fields.password-confirmation'}" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
-  <div class="user_edit_form_current_password"><%= f.label :"#{I18n.t'users-edit.edit-fields.current-password'}" %> <i>(<%= I18n.t'users-edit.current-password-tip' %>)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %></div>
 
   <div class="user_edit_form_submit"><%= f.submit "#{I18n.t'users-edit.update-button'}" %></div>
 <% end %>

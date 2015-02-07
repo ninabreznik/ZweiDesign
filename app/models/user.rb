@@ -7,8 +7,11 @@ class User < ActiveRecord::Base
 
   has_many :orders, foreign_key: "selector_id"
   has_many :selected_leads, through: :orders, source: :selected 
-  has_many :leads
-  has_many :projects
+  has_many :leads, dependent: :destroy
+  has_many :projects, dependent: :destroy
+
+  has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
 
 
    # #############################################################################

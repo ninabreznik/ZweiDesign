@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     end
 
   resources :users 
-    match '/users/:id/edit',          to: 'users#edit',       via: 'edit'
+    # match '/users/:id/edit',          to: 'users#edit',       via: 'edit'
     match '/users/:id',               to: 'users#show',       via: 'get'
     match '/users',                   to: 'users#index',      via: 'get'
 
@@ -47,7 +47,7 @@ Rails.application.routes.draw do
 
 
   # You can have the root of your site routed with "root"
-  root 'leads#index'
+  root 'projects#index'
 
   #post 'paypal_confirm'  => 'orders#paypal_payment_notification'  #'paypal_confirm' is a callback I provide to Paypal and it triggers 'orders#paypal_confirm'
 

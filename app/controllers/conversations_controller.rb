@@ -15,11 +15,11 @@ class ConversationsController < ApplicationController
   def show
     @conversation_subject = conversation.subject 
     @current_user_nick = current_user.email[0]
-    render 'show', layout: 'chat_layout'
+    # render 'show', layout: 'chat_layout'
   end
 
   def index
-    render 'index', layout: 'chat_layout'
+    # render 'index', layout: 'chat_layout'
   end
 
 

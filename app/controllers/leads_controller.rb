@@ -54,55 +54,7 @@ class LeadsController < ApplicationController
       ["Ne, potrebovali bomo tudi material."]
     ]
 
-    render 'new', layout: 'adwords_layout'
-  end
-
-  def architect
-    session[:lead_params] ||= {}
-    @lead = Lead.new(session[:lead_params])
-    @lead.current_step = session[:lead_step]
-
-     @business_types = [
-      ["#{I18n.t'lead-new.form.business-types.architecture'}", "#{I18n.t'lead-new.form.business-types.architecture'}"], 
-      ["#{I18n.t'lead-new.form.business-types.fasades'}", "#{I18n.t'lead-new.form.business-types.fasades'}"], 
-      ["#{I18n.t'lead-new.form.business-types.building_house'}", "#{I18n.t'lead-new.form.business-types.building_house'}"],
-      ["#{I18n.t'lead-new.form.business-types.mechanical_instalations'}", "#{I18n.t'lead-new.form.business-types.mechanical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.electrical_instalations'}", "#{I18n.t'lead-new.form.business-types.electrical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.roofing'}", "#{I18n.t'lead-new.form.business-types.roofing'}"], 
-      ["#{I18n.t'lead-new.form.business-types.renovations'}", "#{I18n.t'lead-new.form.business-types.renovations'}"], 
-      ["#{I18n.t'lead-new.form.business-types.painting'}", "#{I18n.t'lead-new.form.business-types.painting'}"],
-      ["#{I18n.t'lead-new.form.business-types.masonry'}", "#{I18n.t'lead-new.form.business-types.masonry'}"], 
-    ]
-
-    @time 
-    @property_types
-    @material_supply 
-
-    render 'architect', layout: 'adwords_layout'
-  end
-
-  def painting
-    session[:lead_params] ||= {}
-    @lead = Lead.new(session[:lead_params])
-    @lead.current_step = session[:lead_step]
-
-     @business_types = [
-      ["#{I18n.t'lead-new.form.business-types.architecture'}", "#{I18n.t'lead-new.form.business-types.architecture'}"], 
-      ["#{I18n.t'lead-new.form.business-types.fasades'}", "#{I18n.t'lead-new.form.business-types.fasades'}"], 
-      ["#{I18n.t'lead-new.form.business-types.building_house'}", "#{I18n.t'lead-new.form.business-types.building_house'}"],
-      ["#{I18n.t'lead-new.form.business-types.mechanical_instalations'}", "#{I18n.t'lead-new.form.business-types.mechanical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.electrical_instalations'}", "#{I18n.t'lead-new.form.business-types.electrical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.roofing'}", "#{I18n.t'lead-new.form.business-types.roofing'}"], 
-      ["#{I18n.t'lead-new.form.business-types.renovations'}", "#{I18n.t'lead-new.form.business-types.renovations'}"], 
-      ["#{I18n.t'lead-new.form.business-types.painting'}", "#{I18n.t'lead-new.form.business-types.painting'}"],
-      ["#{I18n.t'lead-new.form.business-types.masonry'}", "#{I18n.t'lead-new.form.business-types.masonry'}"], 
-    ]
-
-    @time 
-    @property_types
-    @material_supply 
-
-    render 'painting', layout: 'adwords_layout'
+    # render 'new', layout: 'adwords_layout'
   end
 
   def share
@@ -200,7 +152,7 @@ class LeadsController < ApplicationController
         user.leads << lead
         UserMailer.welcome_email(user, pass).deliver
         beta = user
-        User.find_by_id(1).send_message(beta, "Pozdravljeni, še informacija glede pošiljanja sporočil ostalim uporabnikom. Vsakič ko izberete nov kontakt in kliknete 'Kontaktirajte ponudnika' boste poslali ponudniku avtomatično sporočilo. In obratno - kadar oddate povpraševanje, vas bodo uporabniki lahko kontaktaktirali. Vsa prejeta in poslana sporočila najdete pod gumbom 'Sporočila'. Za vsa vprašanja pa imate sedaj tudi moj kontakt. Z veseljem sem vam vedno na voljo za več informacij.", "Sosed.biz sporočilo od Sosede Nine")
+        User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili. Za vsa vprašanja pa smo vam vedno na voljo na nina.breznik@sosed.si.", "Sosed.biz sporočila.")
       end
     end
     lead.save

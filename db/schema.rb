@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150203193906) do
+ActiveRecord::Schema.define(version: 20150207002908) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -134,11 +134,23 @@ ActiveRecord::Schema.define(version: 20150203193906) do
     t.integer  "order_id"
   end
 
+  create_table "pictures", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "project_id"
+  end
+
   create_table "projects", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "title"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.string   "description"
+    t.string   "email"
   end
 
   create_table "users", force: true do |t|
@@ -155,8 +167,14 @@ ActiveRecord::Schema.define(version: 20150203193906) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "wallet",                 default: 0
-    t.string   "name"
-    t.boolean  "is_provider"
+    t.string   "surname"
+    t.text     "bio"
+    t.string   "city"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.string   "first_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -61,7 +61,7 @@ gem 'puma'
 gem 'mailboxer'
 # gem 'nokogiri'
 # gem 'htmlentities'
-
+gem "paperclip", "~> 4.2"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

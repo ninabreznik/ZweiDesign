@@ -1,1 +1,7 @@
-<%= @project.title %>
+<h1><%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%></h1>
+<h2><%= @project_title %></h2>
+<%= @project_description %>
+<%= image_tag @project.picture.url(:medium) %>
+
+
+<!-- order_path(id: @lead.reverse_orders.where(selector_id: current_user.id).first.id) -->
