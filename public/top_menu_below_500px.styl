@@ -1,0 +1,82 @@
++below(500px)
+  /* :::::::::::: APPLICATION.html.erb => menu buttons & login :::::::::::: */
+  // .zopim
+  //   bottom 38px !important
+  body
+    margin 0px
+    padding 0px
+    .top_menu_bar
+      position fixed
+      top 0
+      z-index 999
+      width 100%
+      background-color Menu-Top-Color
+      blur-mixin(intensity =  0px)
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom 0.5px solid #ccc
+      padding-top 0px
+      font-family App-Font-Family
+      .logged_user, 
+      .not_logged_user
+        shift 0.18
+        padding-bottom 2px
+        font-size 11px
+        -webkit-font-smoothing: antialiased
+        font-weight bold
+        display inline-block
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
+      .publish_project,
+      .messages
+        padding-bottom 1px
+        -webkit-font-smoothing: antialiased
+        font-weight bold
+        display inline-block
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
+      .publish_project
+        shift 0.195
+        // text-transform uppercase
+        font-size 9px !important
+        button(Lead-Orange)
+        bottom 6px
+        margin-left 2px
+      .messages
+        margin-left -92px
+        font-size 18px
+        bottom 2px
+      .logo
+        top 4px
+        shift(0.09)
+        height 29px
+        display inline-block
+        &:hover
+          opacity 0.7
+      .select_bar
+        shift(0.092)
+        display: inline-block;
+        width: 100px;
+        height: 20px;
+        padding: 3px 6px;
+        margin-bottom: 9px;
+        font-size: 11px;
+        line-height: 20px;
+        color: black
+        vertical-align: middle;
+        border: 0px
+      .info
+        padding-bottom 2px
+        shift(0.63)
+        font-size 21px
+        display inline-block
+        .fa.fa-info-circle
+          color Offer-Font-Color
+          &:hover
+            color Lead-Orange   

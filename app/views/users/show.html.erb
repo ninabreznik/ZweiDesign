@@ -1,3 +1,44 @@
+<div class="body_leads_index">
+
+<div class="columns">
+
+<ul class="wookmark">
+<% if @user.present? %>
+  <div class="lead_box">
+    <div class="lead_title"><%= @user.email %></div>     
+    <div class="lead_body">
+      <div class="lead_subtitle" ></div>
+        <%= image_tag @user.picture.url(:thumb)%>  <br>
+      <div class="lead_subtitle"></div>          
+        <%= @user.first_name %> <%= @user.surname %><br><br>
+      <div class="lead_subtitle"></div>         
+        <%= @user.city %><br>
+      <div class="lead_subtitle"></div>         
+        <%= @user.bio %><br>
+    </div>
+  </div> 
+  <% Project.all.where(user_id: @user.id).each do |project| %>
+    <div class="lead_box">
+      <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
+      <div class="lead_body">
+        <div class="lead_subtitle"></div>
+          <%= image_tag project.picture.url(:medium) %> <br>
+        <div class="lead_subtitle">Avtor:</div>          
+          <%= project.email %><br>
+        <div class="lead_subtitle">Opis:</div>         
+          <%= project.description %><br>
+      </div>
+    </div>        
+  <% end %>
+<% end %>
+</ul>
+</div>
+</div>
+
+
+
+
+<!-- 
 <% if @user.present? %>
   <%= image_tag @user.picture.url(:thumb)%> <br>
   <%= @user.first_name %> <%= @user.surname %><br>
@@ -11,4 +52,4 @@
     <%= image_tag project.picture.url(:medium) %>
     <%= project.description %>
  </ul>
-<% end %>
+<% end %> -->

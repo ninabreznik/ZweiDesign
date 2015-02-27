@@ -1,10 +1,11 @@
 +below(5000px)
   /* :::::::::::: APPLICATION.html.erb => menu buttons & login :::::::::::: */
-  .zopim
-    bottom 38px !important
+  // .zopim
+  //   bottom 38px !important
   body
     margin 0px
     padding 0px
+    
     .top_menu_bar
       position fixed
       top 0
@@ -19,6 +20,7 @@
       font-family App-Font-Family
       .logged_user, 
       .not_logged_user
+        shift 0.07
         padding-bottom 2px
         font-size 13px
         -webkit-font-smoothing: antialiased
@@ -29,12 +31,45 @@
         a
           text-decoration none
           color Menu-Top-Button-Color
+      .publish_project,
+      .messages
+        padding-bottom 2px
+        font-size 13px
+        -webkit-font-smoothing: antialiased
+        font-weight bold
+        display inline-block
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
+      .publish_project
+        shift 0.6
+        button(Lead-Orange)
+        bottom 4px
+        margin-left 4px
+      .messages
+        shift 0.43
+        font-size 22px
       .logo
-        shift(0.44)
+        top 4px
+        shift(0.05)
         height 37px
         display inline-block
         &:hover
           opacity 0.7
+      .select_bar
+        shift(0.55)
+        display: inline-block;
+        width: 150px;
+        height: 20px;
+        padding: 3px 6px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #606060;
+        vertical-align: middle;
+        border: 0px
       .info
         padding-bottom 2px
         shift(0.63)
@@ -43,7 +78,8 @@
         .fa.fa-info-circle
           color Offer-Font-Color
           &:hover
-            color Lead-Orange       
+            color Lead-Orange   
+                
     .bottom_menu_bar
       background-color Menu-Bottom-Color
       position fixed
@@ -884,7 +920,7 @@
             #lead_business_type,    
             #lead_time,
             #lead_property_type,
-            #lead_material_supply
+            #lead_title
               color Offer-Font-Color
               font-weight bold
               font-size 12px
@@ -896,7 +932,9 @@
               border 1px solid #E8E8E8   
             #lead_name,
             #lead_email,
-            #lead_phone
+            #lead_phone,
+            #project_title,
+            #project_description
               center()
               padding 4px
               border-radius 4px

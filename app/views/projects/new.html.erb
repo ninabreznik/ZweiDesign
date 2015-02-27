@@ -1,4 +1,4 @@
-<div class="body_leads_new">
+<!-- <div class="body_leads_new">
   <div class="lead_new">
     <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
       <div class="lead_new_form_description">
@@ -23,3 +23,78 @@
     <% end %> 
   </div>
 </div>
+ -->
+
+<div class="body_leads_new">
+<section class="lead_new_photo">
+  <div class="lead_new_explanation">
+    <div class="lead_new_explanation_first">  
+      <i class="fa fa-pencil"></i>         Opišite projekt.      </div>
+    <div class="lead_new_explanation_second"> 
+      <i class="fa fa-files-o"></i>        Dodajte fotko.      </div>
+    <div class="lead_new_explanation_third">  
+      <i class="fa fa-check-square-o"></i> Predstavite se.  </div>
+  </div>
+  <div class="lead_new">
+    <div class="lead_new_title">
+      Objavite projekt na Sosed.biz 
+    </div>
+    <div class="lead_new_instructions">
+      Na Sosed.biz lahko brezplačno objavite predstavitev vaših končanih projektov. Priporočamo, da za predstavitev izberete kvalitetno fotografijo končanega projekta.<br><br> 
+      Za objavo morate biti prijavljeni.
+    </div>
+    <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
+      <div class="lead_new_form_description">
+        <%= p.label "Naslov projekta" %>
+        <%= p.text_field :title %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "Opis" %>
+        <%= p.text_area :description %>
+      </div>
+      <div class="lead_new_form_description"> 
+        <%= p.file_field :picture %>
+      </div>
+      <% if user_signed_in? %>
+        <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+      <div class="lead_new_form_submit">
+        <%= p.submit "Objavi" %>
+      </div>  
+      <% else %>
+        <div class="lead_new_form_submit"> 
+          <%= link_to "Objavi", new_user_registration_path %>
+        </div>
+      <% end %>
+    <% end %> 
+  </div>
+</section>
+<section class="lead_new_we_help">
+  <div class="lead_new_we_help_title">
+    Pomagamo vam najti izkušene izvajalce, ki jih zanima sodelovanje z vami.
+  </div>
+  <div class="lead_new_we_help_categories_title">
+    Več sto strank je že uspešno našlo izvajalce v skupaj preko 10 kategorijah.
+  </div>
+  <div class="lead_new_we_help_categories_list">
+    <i class="fa fa-check-square-o"> Arhitekti</i> 
+    <i class="fa fa-check-square-o"> Gradnja</i> 
+    <i class="fa fa-check-square-o"> Zidarstvo</i> 
+    <i class="fa fa-check-square-o"> Prenove</i>  
+    <i class="fa fa-check-square-o"> Strojne instalacije</i> 
+    <i class="fa fa-check-square-o"> Električne instalacije</i> 
+    <i class="fa fa-check-square-o"> Slikopleskarstvo</i> 
+    <i class="fa fa-check-square-o"> Fasade</i> 
+    <i class="fa fa-check-square-o"> Strehe</i> 
+  </div>
+</section> 
+<section class="lead_new_company_info">
+  <div class="lead_new_company_info_phone"> Priporočajte nas prijateljem</div>
+  <ul class="share-buttons" >
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.sosed.biz&t=Sosed.biz" target="_blank" style="color:#606060;" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.sosed.biz&text=Sosed.biz:%20http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.sosed.biz&title=Sosed.biz&summary=Sosed&source=http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+<a href="mailto:?subject=Sosed.biz&body=Sosed:%20http%3A%2F%2Fwww.sosed.biz" target="_blank" style="color:#606060;" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><i class="fa fa-envelope fa-2x"></i></a>
+</ul><br>
+  <div class="lead_new_company_info_name">Moj sosed d.o.o.</div>
+  <div class="lead_new_company_info_contact"><%= mail_to "info@sosed.si", "info@sosed.si" %></div>
+</section> 

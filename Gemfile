@@ -10,6 +10,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'turbolinks'
 
+gem 'rmagick', '2.13.2'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 

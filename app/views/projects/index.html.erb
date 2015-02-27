@@ -1,7 +1,22 @@
-<% @projects.each do |project| %>
- <ul>
-    <h2><%= link_to "#{project.title}", project_path(project) %></h2> by <h3><%= project.email %></h3>
-    <%= image_tag project.picture.url(:medium) %>
-    <%= project.description %>
- </ul>
-<% end %>
+<div class="body_leads_index">
+
+<div class="columns">
+
+<ul class="wookmark">
+
+  <% @projects.each do |project| %>
+  <div class="lead_box">
+    <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
+    <div class="lead_body">
+      <div class="lead_subtitle" ></div>
+        <%= image_tag project.picture.url(:medium) %> <br>
+      <div class="lead_subtitle">Avtor:</div>          
+        <%= project.email %> <br>
+      <div class="lead_subtitle">Opis:</div>         
+      <%= project.description %>      <br>
+    </div>
+  </div>        
+  <% end %>
+</ul>
+</div>
+</div>
