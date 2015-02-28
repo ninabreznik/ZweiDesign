@@ -2,18 +2,17 @@
   <a class="back_to_main_page_button" href="/"></a>
     <div class="lead_show">
       <div class="lead_show_title">
-        <%= @project_title %>
+        <%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%>
       </div>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">             
             <div class="lead_show_subtitle"></div> 
-            <%= image_tag @project.picture.url(:medium) %>
+            <%= image_tag @project.picture.url(:large) %>
           </div>
           <div class="lead_show_item">
-            <div class="lead_show_subtitle">Avtor:</div> 
-              <%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%><br>
-            <div class="lead_show_subtitle">Opis:</div> 
+            <div class="lead_show_subtitle"><%= @project_title %></div>  <br>
+            <div class="lead_show_subtitle"></div> 
             <%= @project_description %>
           </div> 
         </div> 
@@ -23,12 +22,3 @@
 
 
 
-
-
-<!-- <h1><%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%></h1>
-<h2><%= @project_title %></h2>
-<%= @project_description %>
-<%= image_tag @project.picture.url(:medium) %> -->
-
-
-<!-- order_path(id: @lead.reverse_orders.where(selector_id: current_user.id).first.id) -->

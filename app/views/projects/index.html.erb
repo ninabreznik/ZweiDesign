@@ -3,7 +3,7 @@
 <div class="columns">
 
 <ul class="wookmark">
-
+<% if @projects.present? %>
   <% @projects.each do |project| %>
   <div class="lead_box">
     <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
@@ -17,6 +17,54 @@
     </div>
   </div>        
   <% end %>
+<% end %>
 </ul>
 </div>
 </div>
+
+<!-- include jQuery -->
+<script src="js/jquery-1.7.1.min.js"></script>
+ 
+<!-- Include the plug-in -->
+<script src="js/jquery.wookmark.js"></script>
+<script type="text/javascript">
+    $(document).ready(new function() {
+      // Prepare layout options.
+      var options = {
+        autoResize: true, // This will auto-update the layout when the browser window is resized.
+        container: $('#main'), // Optional, used for some extra CSS styling
+        offset: 2, // Optional, the distance between grid items
+        itemWidth: 210 // Optional, the width of a grid item
+      };
+      
+      // Get a reference to your grid items.
+      var handler = $('#tiles li');
+      
+      // Call the layout function.
+      handler.wookmark(options);
+      
+      // Capture clicks on grid items.
+      handler.click(function(){
+        // Randomize the height of the clicked item.
+        // 
+        var newHeight = $('iframe', this).height() + Math.round(Math.random()*300+30);
+        var newHeight = $('img', this).height() + Math.round(Math.random()*300+30);
+        $(this).css('height', newHeight+'px');
+        
+        // Update the layout.
+        handler.wookmark();
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    var leadboxes = document.querySelectorAll('.lead_box');
+    for(var i = 0; i < leadboxes.length; i++) {
+      (function leadbox (ID) {
+        leadboxes[ID].addEventListener('click', function onClick (event) {
+          var leadpath =leadboxes[ID].querySelector('a').getAttribute('href');
+          window.location.href = leadpath;
+        });
+      })(i);
+    }
+</script>

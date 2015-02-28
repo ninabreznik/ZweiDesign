@@ -12,20 +12,25 @@ class ConversationsController < ApplicationController
     redirect_to conversation_path(conversation)
   end
 
+#message = current_user.mailbox.inbox.last.receipts_for(a).first.message
+#senders_email = mailbox.inbox.last.receipts_for(a).first.message.sender.email
+#conversation_receipts = conversation.receipts_for(current_user)
+
   def show
     @conversation_subject = conversation.subject 
     @current_user_nick = current_user.email[0]
-    # render 'show', layout: 'chat_layout'
+    render 'show', layout: 'chat_layout'
   end
 
   def index
-    # render 'index', layout: 'chat_layout'
+    @first_message = current_user.mailbox.conversations.count > 1
+    @last_received_conversation = current_user.mailbox.inbox.last.receipts_for(current_user).first.message
   end
 
 
   def reply
     current_user.reply_to_conversation(conversation, *message_params(:body, :subject))
-    redirect_to conversation_path(conversation)
+    redirect_to conversation_path(conversation, anchor: 'after_all_messages')
   end
 
   def trash

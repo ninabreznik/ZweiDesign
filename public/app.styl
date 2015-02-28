@@ -46,8 +46,9 @@ App-Font-Family = 'Helvetica','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic 
 
 // :::::::::::: MIXINS :::::::::::::: //
 
-body-mixin(backgroundImage = url(/images/cream_pixels.png)) 
+body-mixin() 
   top_menu_bar()
+  background-color #eee
   background-image  backgroundImage  
   background-repeat: no-repeat;
   background-position: center top;
@@ -58,6 +59,7 @@ body-mixin(backgroundImage = url(/images/cream_pixels.png))
   font-size 12px
   color Offer-Font-Color
   font-family App-Font-Family
+  padding-bottom 200px
   a  
     text-decoration none
     color Offer-Font-Color
@@ -106,7 +108,7 @@ wookmarkMixin(defautPadding = 0px)
 leadBoxMixin(defaultMarginLeft = 42px)
   margin-left defaultMarginLeft
   width 303px
-  padding: 15px;
+  padding: 6px;
   display none
   background: #FEFEFE;
   border: 2px solid #FAFAFA;

@@ -124,7 +124,8 @@
         color Lead-Orange      
     /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
     .body_leads_index
-      body-mixin(backgroundImage: url(/images/interior1.png))
+      body-mixin()
+      background-color #eee
       .columns
         column-mixin()
         .wookmark
@@ -132,7 +133,6 @@
           .lead_box
             leadBoxMixin()
             .lead_title
-              opacity 0.85
               background-color Lead-Orange
               padding 15px
               color Offer-Font-Color
@@ -176,8 +176,9 @@
         line-height 150%
     /* :::::::::::: LEADS/show => individual lead :::::::::::: */
     .body_leads_show
-      body-mixin(backgroundImage: url(/images/interior2.png))
-      padding-bottom 600px
+      body-mixin()
+      background-color #eee
+      // padding-bottom 600px
       .back_to_main_page_button
         width 100%
         height 100%
@@ -187,8 +188,7 @@
       .lead_show
         shift 0.15
         margin-right 7px
-        opacity 0.9
-        margin 29px 0px 0px 0px
+        margin 37px 0px 0px 0px
         padding 30px
         width 70%
         max-width 1290px
@@ -829,7 +829,7 @@
       padding-bottom 1050px
       .user_edit
         padding-top 30px
-        margin-left 20px  
+        shift 0.12
         .user_edit_title
           font-size 28px
           font-weight bold
@@ -844,13 +844,20 @@
           #user_email,
           #user_password,
           #user_password_confirmation,
-          #user_current_password
+          #user_current_password,
+          #user_first_name,
+          #user_surname,
+          #user_city,
+          #user_bio
             padding 4px
             border-radius 4px
             margin-top 4px
             height 30px
             width 200px
-            border 1px solid #E8E8E8  
+            border 1px solid #E8E8E8
+          #user_bio
+            width 40%
+            height 200px  
         .user_edit_form_submit input
         .user_edit_form_submit a 
           margin-top 10px
@@ -1442,7 +1449,7 @@
  /* :::::::::::::::::::::::: CONVERSATIONS / SHOW  (chat window / iframe) :::::::::::::::::::::::::: */
     .body_messages
       width 100%
-      padding-right 2%
+      padding-right 5%
       color Offer-Font-Color
       font-family App-Font-Family
       a  
@@ -1451,18 +1458,20 @@
         font-family App-Font-Family 
       margin-bottom 15px
       .conversation_messages_title
-        position fixed
-        z-index 999
-        top 0px
-        width 100%
-        padding 33px 20px 33px 20px
+        margin-top 80px
         text-align center
         font-weight bold
         font-size 16px
-        background-color Lead-Blue
-        color white
+        color #606060
+        text-transform uppercase
+        // position fixed
+        // z-index 999
+        // top 0px
+        // width 100%
+        // padding 33px 20px 33px 20px
+        // background-color Lead-Blue
       .conversation_messages
-        padding 100px 5% 250px 5%
+        padding 20px 5% 250px 5%
         font-size 12px   
         .mailboxer_receipt
           padding 0 10px 0 10px
@@ -1488,7 +1497,7 @@
           padding 0 10px 0 10px
           text-align: right
           float right !important
-          font-size 14px
+          font-size 12px
           color #606060
         .conversation_message_sender_body
           display block
@@ -1499,7 +1508,7 @@
             margin 1px 0 4px
             margin-top 0px
             display inline-bloc
-            font-size 15px
+            font-size 12px
             font-weight bold
           .conversation_message_sender_body_my_name
             color Lead-Orange
@@ -1508,7 +1517,7 @@
           .conversation_message_sender_body_text
             word-wrap break-word
             line-height 150%
-            font-size 14px
+            font-size 12px
       .conversation_reply
         padding-top 20px
         background-color white
@@ -1535,7 +1544,7 @@
         #message_body
           width 90%
           color #606060
-          font-size 14px
+          font-size 12px
           border-radius: 0;
           border 2px solid Lead-Orange
           // box-shadow: none;
@@ -1576,14 +1585,14 @@
         text-decoration none
         font-family App-Font-Family 
       #chat_window_iframe
-        width 70%
+        width 60%
         height 100%
         top 0px
         padding-right 5%
         position absolute
         display inline-block
         border 0px 
-        border-left 2px solid Lead-Blue
+        // border-left 1px solid #eee
       .conversations_title
         position fixed
         z-index 999
@@ -1602,12 +1611,16 @@
         position relative
         display inline-block
         width 30%
-        padding 90px 0% 50px 5%
-        overflow: scroll
+        padding 50px 0% 40px 20px
+        overflow: scroll  
+        border-right 1px solid #eee
+        &:hover
+          border-right 1px solid Lead-Orange 
         .conversations_inbox_title,
         .conversations_sent_title
-          border-bottom 2px dotted #eee
-          padding 14px 8px 12px 8px
+          // margin-left 10px
+          font-size 14px
+          padding 10px 14px 20px 8px
           text-decoration none
           color Menu-Bottom-Button-Color
           text-align left
@@ -1615,41 +1628,53 @@
           -webkit-font-smoothing: antialiased
           text-transform: uppercase
           font-weight bold
-          color Lead-Blue
+          color Lead-Orange
           a
-            color Lead-Blue
+            color #606060
             text-decoration none
             font-weight bold
-          .fa.fa-inbox,
-          .fa.fa-paper-plane
-            text-align center
-            color white
-            height 42px
-            width 42px
-            font-size 20px
-            margin 20px 10px 0 0px
-            border-radius 50%
-            background-color Lead-Blue
-            line-height: 42px
         .conversations_inbox_list,
         .conversations_sent_list
-          text-align left
-          font-size 14px
-          line-height 20px
-          margin 10px 15px 0 60px
-          .mailboxer_conversation
-            padding-bottom 15px
-            padding-top 7px
-            color #606060
-            border-bottom 2px dotted #eee
-            &:hover
-              color Lead-Blue
+          text-align center
+          font-size 12px
+          line-height 150%
+          display inline-block
+          // button(#eee)
+          color #606060
+          &:hover
+              color #606060
             a
+              color #606060
               text-decoration none
-              color inherit
+              font-weight bold
               &:hover
-                opacity 0.9
-        
+                color #606060
+          .mailboxer_conversation
+            margin-bottom 20px
+            text-align left
+            width 345px
+            padding-bottom 10px
+            padding-left 30px
+            border-left 9px solid Lead-Orange
+            a 
+             color #606060  
+             &:hover
+                  color Lead-Orange
+            .inbox_pic
+              width 42px
+              height 42px
+              border-radius 50%
+              margin 0 15px 0 0
+              float left !important
+              background-color #aaa
+              .inbox_pic_initials
+                line-height: 42px
+                display: block
+                color white
+                text-align: center
+                text-transform: uppercase
+
+                
 
         
           

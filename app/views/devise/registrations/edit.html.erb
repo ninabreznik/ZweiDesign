@@ -1,10 +1,10 @@
+<!-- :html => { :multipart => true } -->
 <div class="body_devise_users_edit">
   <div class="user_edit">
 <div class="user_edit_title">
   <%= I18n.t'users-edit.edit-title' %>
 </div>
 
-:html => { :multipart => true }
 
 <%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
