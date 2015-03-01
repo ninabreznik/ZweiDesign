@@ -12,42 +12,40 @@
   <div class="user_edit_form_email"><%= f.label :"#{I18n.t'users-edit.edit-fields.email'}" %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
-  <div class="user_edit_form_email"><%= f.label :"First name" %><br />
-  <%= f.text_field :first_name%></div>
+  <div class="user_edit_form_email">
+    <%= f.label :"Ime in priimek" %><br>
+    <%= f.text_field :first_name%>
+    <%= f.text_field :surname%></div>
 
-  <div class="user_edit_form_email"><%= f.label :"Surname" %><br />
-  <%= f.text_field :surname%></div>
-
-  <div class="user_edit_form_email"><%= f.label :"City" %><br />
+  <div class="user_edit_form_email"><%= f.label :"Kraj" %><br />
   <%= f.text_field :city%></div>
 
-  <div class="user_edit_form_email"><%= f.label :"Bio" %><br />
-  <%= f.text_area :bio%></div>
+  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev" %><br />
+  <%= f.text_area :bio%></div><br>
 
-  <div class="user_edit_form_email"><%= f.label :"Profile picture" %><br />
-    <%= f.file_field :picture %></div>
+  <div class="user_edit_form_email"><%= f.label :"Profilna fotka" %><br />
+    <%= f.file_field :picture %></div><br>
   
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="user_edit_form_current_password"><%= f.label :"#{I18n.t'users-edit.edit-fields.current-password'}" %> <i>(<%= I18n.t'users-edit.current-password-tip' %>)</i><br />
+  <div class="user_edit_form_current_password"><%= f.label :"Geslo" %> <br />
     <%= f.password_field :current_password, autocomplete: "off" %></div>
-
-  <div class="user_edit_form_password"><%= f.label :"#{I18n.t'users-edit.edit-fields.password'}" %> <i>(<%= I18n.t'users-edit.password-tip' %>)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
-
-  <div class="user_edit_form_password_confirmation"><%= f.label :"#{I18n.t'users-edit.edit-fields.password-confirmation'}" %><br />
+............................................................<br><br>
+  <div class="user_edit_form_password">
+    <%= f.label :"Novo geslo" %> - pustite prazno, če ne želite spreminjati <br>
+    <%= f.password_field :password, autocomplete: "off" %><br><br>
+    <%= f.label :"Potrditev novega gesla" %><br>
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+............................................................<br>
+
+  <div class="user_edit_form_submit"><%= f.submit "Uredi" %></div>
+<% end %><br><br><br><br><br>
 
 
-  <div class="user_edit_form_submit"><%= f.submit "#{I18n.t'users-edit.update-button'}" %></div>
-<% end %>
-
-<div class="user_edit_cancel_acount"><%= I18n.t'users-edit.cancel-account' %></div>
-
-<div class="user_edit_unhappy"><%= I18n.t'users-edit.unhappy' %> </div>
+<div class="user_edit_unhappy"><%= mail_to 'nina.breznik@sosed.si', 'Niste zadovoljni? Povejte nam, zakaj. Dali bomo vse od sebe, da najdemo rešitev.' %> </div>
   <div class="user_edit_button_cancel_account">
     <%= button_to "#{I18n.t'users-edit.cancel-account-button'}", registration_path(resource_name), data: { confirm: "#{I18n.t'users-edit.sure'}"}, method: :delete %>
   </div>
