@@ -1,7 +1,7 @@
 <div class="body_messages">
-    <div class="conversation_messages_title">
-      <%= @conversation_subject%>
-    </div>
+  <div class="conversation_messages_title">
+    <%= @conversation_subject%>
+  </div>
   <div class="conversation_messages">
   <%= content_tag_for(:div, conversation.receipts_for(current_user)) do |receipt| %>
     <% message = receipt.message %>

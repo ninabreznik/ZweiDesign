@@ -86,20 +86,18 @@ blur-mixin(intensity = 1.6px)
   -webkit-filter blur(intensity) 
   -moz-filter blur(intensity) 
   -o-filter blur(intensity) 
-  // -ms-filter blur(intensity) 
   filter blur(intensity)
   
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::: 
-//                 LEAD LISTING MIXINS 
-// ::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+                LEAD LISTING MIXINS 
+ :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   
 column-mixin(defaultTop = 37px)
   position: relative;
   margin-top: defaultTop
   padding-top 40px
   padding-bottom 1050px
-  // height 100%
-
+  
 wookmarkMixin(defautPadding = 0px)
   list-style-type: none;
   position: relative; /** Needed to ensure items are laid out relative to this container **/
@@ -155,6 +153,14 @@ bottomButtonMixin(defaultFontSize = 12px)
 @import "top_menu_below_720px"
 @import "top_menu_below_650px"
 @import "top_menu_below_500px"
+@import "messages_below_5000px"
+@import "messages_below_1150px"
+@import "messages_below_1000px"
+@import "messages_below_900px"
+@import "messages_below_800px"
+@import "messages_below_700px"
+@import "messages_below_600px"
+@import "messages_below_500px"
 
  
   

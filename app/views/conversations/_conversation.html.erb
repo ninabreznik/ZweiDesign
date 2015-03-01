@@ -1,15 +1,17 @@
-<%= content_tag_for(:div, conversation) do |conversation| %><br>
-  <div class="inbox_pic">
-    <div class="inbox_pic_initials">
-      <%= conversation.last_message.sender.email[0] %> 
+<% if conversation.last_message.sender.present? %>
+  <%= content_tag_for(:div, conversation) do |conversation| %><br>
+    <div class="inbox_pic">
+      <div class="inbox_pic_initials">
+        <%= conversation.last_message.sender.email[0] %> 
+      </div>
     </div>
-  </div>
-  <div class="index_message" >
-    <%= link_to conversation.subject, conversation_path(conversation, anchor: 'after_all_messages'), target: :chat_window %> <br>
-    <%= conversation.last_message.body[0..90] + "..." %> <br>
-    <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %><br>
-  </div>
-<% end %> 
+    <div class="index_message" >
+      <%= link_to conversation.subject, conversation_path(conversation, anchor: 'after_all_messages'), target: :chat_window %> <br>
+      <%= conversation.last_message.body[0..90] + "..." %> <br>
+      <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %><br>
+    </div>
+  <% end %> 
+<% end %>
 
 
 <script type="text/javascript">

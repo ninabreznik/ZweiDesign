@@ -9,6 +9,10 @@ class StaticPagesController < ApplicationController
     render 'about', layout: false
   end
 
+  def first_message
+    render 'first_message', layout: 'chat_layout'
+  end
+
   def info
   end
 

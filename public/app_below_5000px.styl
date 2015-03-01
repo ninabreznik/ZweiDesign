@@ -1,7 +1,5 @@
 +below(5000px)
   /* :::::::::::: APPLICATION.html.erb => menu buttons & login :::::::::::: */
-  // .zopim
-  //   bottom 38px !important
   body
     margin 0px
     padding 0px
@@ -178,7 +176,6 @@
     .body_leads_show
       body-mixin()
       background-color #eee
-      // padding-bottom 600px
       .back_to_main_page_button
         width 100%
         height 100%
@@ -323,14 +320,12 @@
             display inline-block
           .order_show_buy input,   
           .order_show_buy a 
-            // margin-left 1px
             button(color: Lead-Orange)
             font-size 22px
       .order_show_notes
         margin-top 5px
         margin-bottom 50px
         font-size 20px
-        // shift(0.08)
         .order_show_notes_title
           padding 7px
           margin-top 40px
@@ -384,7 +379,6 @@
         padding-bottom 70px
         background-color white
         .offer_title
-          // center(420px)
           color Offer-Font-Color
           font-weight bold
           font-size 28px
@@ -407,7 +401,6 @@
           margin 10px 10px 20px 10px
           text-align left
         .offer_sosed_info
-          // shift(0.075)
           margin-top 20px
           color Offer-Font-Color
           text-align left
@@ -426,10 +419,7 @@
         .offer_show_lead
           margin-top 37px
           padding-bottom 20px
-          // center(70%)
-          // shift(-0.07)
           height 30%
-          // width 70%
           vertical-align bottom
           -webkit-column-break-inside: avoid
           -moz-column-break-inside: avoid
@@ -466,11 +456,9 @@
             .ordersindex-notifications.customer-info
               color red
         .offer_instructions
-          // width 70%
           margin-top 20px
           font-size 12px
           font-weight bold
-          // shift(0.08)
     /* :::::::::::: ORDERS/RESERVED => Reserved Leads :::::::::::: */       
     .body_orders_reserved
       body-mixin(backgroundImage: url(/images/interior5.png))
@@ -526,7 +514,6 @@
                 margin 10px 0px 5px 50px
                 button(color = Lead-Orange)
                 decoration none
-                // text-decoration none
     .body_dummy_orders_reserved
       position relative
       blur-mixin(intensity = 1.1px)
@@ -741,7 +728,6 @@
           button(color = Lead-Orange)
         .login_shared_links
           font-size 14px
-          // font-weight bold 
           &:hover
             text-decoration underline
     /* :::::::::::: DEVISE/SIGNUP (registrations/new) :::::::::::: */
@@ -784,7 +770,6 @@
           background-color Lead-Orange
         .signup_shared_links
           font-size 14px
-          // font-weight bold 
           &:hover
             text-decoration underline
     /* :::::::::::: DEVISE/PASSWORD/NEW (passwords/new) :::::::::::: */
@@ -1446,243 +1431,3 @@
         .plans_faq_item_answer
           font-weight italics
           padding-bottom 20px
- /* :::::::::::::::::::::::: CONVERSATIONS / SHOW  (chat window / iframe) :::::::::::::::::::::::::: */
-    .body_messages
-      width 100%
-      padding-right 5%
-      color Offer-Font-Color
-      font-family App-Font-Family
-      a  
-        text-decoration none
-        color Offer-Font-Color
-        font-family App-Font-Family 
-      margin-bottom 15px
-      .conversation_messages_title
-        margin-top 80px
-        text-align center
-        font-weight bold
-        font-size 16px
-        color #606060
-        text-transform uppercase
-        // position fixed
-        // z-index 999
-        // top 0px
-        // width 100%
-        // padding 33px 20px 33px 20px
-        // background-color Lead-Blue
-      .conversation_messages
-        padding 20px 5% 250px 5%
-        font-size 12px   
-        .mailboxer_receipt
-          padding 0 10px 0 10px
-        .conversation_message_sender_my_pic,
-        .conversation_message_sender_other_pic
-          width 42px
-          height 42px
-          border-radius 50%
-          // overflow hidden
-          margin 0 15px 0 0
-          float left !important
-          .conversation_message_sender_pic_initials
-            line-height: 42px
-            display: block
-            color white
-            text-align: center
-            text-transform: uppercase
-        .conversation_message_sender_my_pic
-          background-color Lead-Orange         
-        .conversation_message_sender_other_pic
-          background-color Lead-Blue
-        .conversation_message_sender_body_time
-          padding 0 10px 0 10px
-          text-align: right
-          float right !important
-          font-size 12px
-          color #606060
-        .conversation_message_sender_body
-          display block
-          // overflow hidden
-          margin 30px 0 20px 0
-          .conversation_message_sender_body_my_name,
-          .conversation_message_sender_body_other_name
-            margin 1px 0 4px
-            margin-top 0px
-            display inline-bloc
-            font-size 12px
-            font-weight bold
-          .conversation_message_sender_body_my_name
-            color Lead-Orange
-          .conversation_message_sender_body_other_name
-            color Lead-Blue
-          .conversation_message_sender_body_text
-            word-wrap break-word
-            line-height 150%
-            font-size 12px
-      .conversation_reply
-        padding-top 20px
-        background-color white
-        width 100%
-        position fixed
-        z-index 999
-        bottom 0px
-        padding-left 5%
-        padding-right 5%
-        .conversation_reply_message_pic
-          width 42px
-          height 42px
-          border-radius 50%
-          // overflow hidden
-          margin 0 15px 0 0
-          float left !important
-          background-color Lead-Orange
-          .conversation_reply_message_pic_initials
-            line-height: 42px
-            display: block
-            color white
-            text-align: center
-            text-transform: uppercase
-        #message_body
-          width 90%
-          color #606060
-          font-size 12px
-          border-radius: 0;
-          border 2px solid Lead-Orange
-          // box-shadow: none;
-          // outline: none;
-          // box-shadow: 1px 2px 1px 1px Lead-Orange
-          padding: 10px 10px 10px 10px
-          margin: 0;
-          min-height: 50px;
-          line-height: 20px;
-          height auto
-          max-height: 284px
-        .conversation_reply_message_body_sent_button
-          color: #499dd9;
-          font-size: 13px;
-          line-height: 18px;
-          height: 18px;
-          border-radius: 0;
-          float: right !important
-          min-width: 0;
-          margin-top: 5px;
-          width: 100px
-          padding: 0;
-          padding-bottom 80px
-          font-weight: bold;
-          .btn-primary
-            button(Lead-Orange)
-
-
-  /* :::::::::::::::::::::::: CONVERSATIONS / INDEX  (all messages) :::::::::::::::::::::::::: */
-    .body_conversations
-      width 100%
-      // shift(1/5) 
-      margin-top 0px 
-      font-family App-Font-Family
-      margin-bottom 15px
-      padding 0 0px 100px 0px
-      a  
-        text-decoration none
-        font-family App-Font-Family 
-      #chat_window_iframe
-        width 60%
-        height 100%
-        top 0px
-        padding-right 5%
-        position absolute
-        display inline-block
-        border 0px 
-        // border-left 1px solid #eee
-      .conversations_title
-        position fixed
-        z-index 999
-        top 0px
-        width 25%
-        margin-left 5%
-        text-transform: uppercase
-        text-align center
-        padding 25px 20px 25px 20px
-        font-weight bold
-        font-size 30px
-        color white
-        background-color Lead-Blue
-      .conversations_wrapper
-        height 450px
-        position relative
-        display inline-block
-        width 30%
-        padding 50px 0% 40px 20px
-        overflow: scroll  
-        border-right 1px solid #eee
-        &:hover
-          border-right 1px solid Lead-Orange 
-        .conversations_inbox_title,
-        .conversations_sent_title
-          // margin-left 10px
-          font-size 14px
-          padding 10px 14px 20px 8px
-          text-decoration none
-          color Menu-Bottom-Button-Color
-          text-align left
-          font-size defaultFontSize
-          -webkit-font-smoothing: antialiased
-          text-transform: uppercase
-          font-weight bold
-          color Lead-Orange
-          a
-            color #606060
-            text-decoration none
-            font-weight bold
-        .conversations_inbox_list,
-        .conversations_sent_list
-          text-align center
-          font-size 12px
-          line-height 150%
-          display inline-block
-          // button(#eee)
-          color #606060
-          &:hover
-              color #606060
-            a
-              color #606060
-              text-decoration none
-              font-weight bold
-              &:hover
-                color #606060
-          .mailboxer_conversation
-            margin-bottom 20px
-            text-align left
-            width 345px
-            padding-bottom 10px
-            padding-left 30px
-            border-left 9px solid Lead-Orange
-            a 
-             color #606060  
-             &:hover
-                  color Lead-Orange
-            .inbox_pic
-              width 42px
-              height 42px
-              border-radius 50%
-              margin 0 15px 0 0
-              float left !important
-              background-color #aaa
-              .inbox_pic_initials
-                line-height: 42px
-                display: block
-                color white
-                text-align: center
-                text-transform: uppercase
-
-                
-
-        
-          
-        
-
-
-        
-        
-      
-
-
