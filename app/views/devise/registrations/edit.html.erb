@@ -9,7 +9,7 @@
 <%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="user_edit_form_email"><%= f.label :"#{I18n.t'users-edit.edit-fields.email'}" %><br />
+  <div class="user_edit_form_email"><%= f.label :"Eektronski naslov (ne spreminjajte)" %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
   <div class="user_edit_form_email">
