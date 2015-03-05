@@ -110,7 +110,7 @@ set :rails_env, 'production'
 
 set :linked_files, %w{db/production.sqlite3}
 
-set :linked_dirs, %w{public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Simple Role Syntax
 # ==================
