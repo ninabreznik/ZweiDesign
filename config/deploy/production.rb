@@ -110,6 +110,8 @@ set :rails_env, 'production'
 
 set :linked_files, %w{db/production.sqlite3}
 
+set :linked_dirs, %w{public/system}
+
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary
