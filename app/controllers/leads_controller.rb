@@ -21,15 +21,16 @@ class LeadsController < ApplicationController
     @lead.current_step = session[:lead_step]
 
      @business_types = [
-      ["#{I18n.t'lead-new.form.business-types.architecture'}", "#{I18n.t'lead-new.form.business-types.architecture'}"], 
-      ["#{I18n.t'lead-new.form.business-types.fasades'}", "#{I18n.t'lead-new.form.business-types.fasades'}"], 
-      ["#{I18n.t'lead-new.form.business-types.building_house'}", "#{I18n.t'lead-new.form.business-types.building_house'}"],
-      ["#{I18n.t'lead-new.form.business-types.mechanical_instalations'}", "#{I18n.t'lead-new.form.business-types.mechanical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.electrical_instalations'}", "#{I18n.t'lead-new.form.business-types.electrical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.roofing'}", "#{I18n.t'lead-new.form.business-types.roofing'}"], 
-      ["#{I18n.t'lead-new.form.business-types.renovations'}", "#{I18n.t'lead-new.form.business-types.renovations'}"], 
-      ["#{I18n.t'lead-new.form.business-types.painting'}", "#{I18n.t'lead-new.form.business-types.painting'}"],
-      ["#{I18n.t'lead-new.form.business-types.masonry'}", "#{I18n.t'lead-new.form.business-types.masonry'}"], 
+      ["Arhitekti & Projektanti"], 
+      ["Izvajalci splošnih gradbenih del"],
+      ["Zidarji"], 
+      ["Notranji oblikovalci & Dekoraterji"], 
+      ["Arhitekti in Projektanti kuhinj & kopalnic"], 
+      ["Renoviranje kuhinj & kopalnic"], 
+      ["Načrtovalci okolice"], 
+      ["Urejanje okolice"], 
+      ["Kamen, tlakovci & beton"], 
+      ["Keramika, kamen & marmor"]
     ]
 
     @time = [

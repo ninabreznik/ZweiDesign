@@ -2,10 +2,20 @@ class ProjectsController < ApplicationController
   
   def new
     @project = Project.new
+    @categories = [
+      ["Kuhinje"],
+      ["Kopalnice"],
+      ["Spalnice"],
+      ["Dnevni prostor"],
+      ["Okolica"],
+      ["Svetila"],
+      ["Dekor"]
+    ]
   end
 
   def create
     @project = Project.new(project_params)
+    @user = current_user
       if @project.save
         auto_create_user!(@project)
         # if params[:images]
@@ -14,7 +24,7 @@ class ProjectsController < ApplicationController
         #     @project.pictures.create(image: image)
         #   }
         # end
-      redirect_to project_path(@project)
+      redirect_to user_path(@user)
       else 
       redirect_to new_project_path
       end
@@ -59,7 +69,8 @@ class ProjectsController < ApplicationController
       :user_id,
       :picture,
       :email,
-      :description
+      :description,
+      :category
     )
   end
 

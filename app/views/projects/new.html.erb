@@ -14,20 +14,19 @@
       Objavite svoj projekt 
     </div>
     <div class="lead_new_instructions">
-      Brezplačno predstavite vaš projekt in ga predstavite strankam. Potrebujete le eno kvalitetno fotografijo, naslov in kratek opis (lokacija, leto izvedbe, naročnik)
+      Predstavite svoj kreativni projekt. Potrebujete le naslov projekta in kakovostno fotografijo.
       <% if current_user.present? %>
       <% else %>
         <br><br>Za objavo morate biti prijavljeni.
       <% end %>
     </div>
     <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
+      <div class="lead_new_form_business_type">
+        <%= p.select :category, @categories, :prompt=>"S katerega področja je vaš projekt?"%> 
+      </div>
       <div class="lead_new_form_description">
         <%= p.label "Naslov projekta" %>
         <%= p.text_field :title %>
-      </div>
-      <div class="lead_new_form_description">
-        <%= p.label "Opis" %>
-        <%= p.text_area :description %>
       </div>
       <div class="lead_new_form_description"> 
         <%= p.file_field :picture %>

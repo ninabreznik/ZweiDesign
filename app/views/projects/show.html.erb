@@ -2,7 +2,7 @@
   <a class="back_to_main_page_button" href="/"></a>
     <div class="lead_show">
       <div class="lead_show_title">
-        <%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%>
+        <%= link_to "#{@project.title}", user_path(id: User.all.where(email: @project.email).first.id)%>
       </div>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
@@ -11,9 +11,11 @@
             <%= image_tag @project.picture.url(:full), :width => "770" %>
           </div>
           <div class="lead_show_item">
-            <div class="lead_show_subtitle"><%= @project_title %></div>
-            <div class="lead_show_subtitle"></div> 
-            <%= @project_description %>
+            <div class="lead_show_subtitle">
+              <%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%>
+              </div>
+            <!-- <div class="lead_show_subtitle"></div> 
+            <%= @project_description %> -->
           </div> 
         </div> 
       </div> 

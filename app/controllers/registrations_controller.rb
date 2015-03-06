@@ -1,5 +1,6 @@
 class RegistrationsController < Devise::RegistrationsController
 
+
 def create
   super()
   user = User.last
@@ -25,7 +26,22 @@ private
   # end
  
   def account_update_params
-    params.require(:user).permit(:first_name, :surname, :city, :bio, :picture, :email, :password, :password_confirmation, :current_password)
+    params.require(:user).permit(
+      :first_name, 
+      :surname, 
+      :business_type,
+      :service,
+      :company,
+      :tax_id,
+      :website,
+      :phone,
+      :city, 
+      :bio, 
+      :picture, 
+      :email, 
+      :password, 
+      :password_confirmation, 
+      :current_password)
   end
 
 end

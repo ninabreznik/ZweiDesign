@@ -229,7 +229,7 @@
         .lead_show_buy a 
           shift 0.4
           margin 40px 0 40px 0px
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
           background-color Lead-Orange
           font-size 22px
     /* :::::::::::: ORDERS/show => buy lead :::::::::::: */
@@ -363,7 +363,7 @@
           margin-top 10px
           margin-bottom 40px
           margin-right 5px 
-          button(color = Lead-Orange)    
+          button(color = Lead-Orange-dark)    
     /* :::::::::::: BANK TRANSACTION => offer for the lead :::::::::::: */
     .body_bank_transaction
       body-mixin(backgroundImage: url(/images/interior4.png))
@@ -508,11 +508,11 @@
               margin-top 20px
               .address_book_buy_button
                 margin-left 80px
-                button(color = Lead-Orange)
+                button(color = Lead-Orange-dark)
               .address_book_remove_button input,
               .address_book_remove_button a 
                 margin 10px 0px 5px 50px
-                button(color = Lead-Orange)
+                button(color = Lead-Orange-dark)
                 decoration none
     .body_dummy_orders_reserved
       position relative
@@ -585,7 +585,7 @@
                 border 2px solid #82c0c7 
               .address_book_lead_notes_button input,
               .address_book_lead_notes_button a
-                button(color = Lead-Orange)
+                button(color = Lead-Orange-dark)
                 shift(0.66)
                 margin-bottom 7px
                 margin-top 3px
@@ -725,7 +725,7 @@
           padding-right 20px
           margin-top 10px
           margin-bottom 10px  
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
         .login_shared_links
           font-size 14px
           &:hover
@@ -766,7 +766,7 @@
           padding-right 20px
           margin-top 10px
           margin-bottom 10px  
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
           background-color Lead-Orange
         .signup_shared_links
           font-size 14px
@@ -800,7 +800,7 @@
         .password_new_form_submit a 
           margin-top 10px
           margin-bottom 10px  
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
           background-color Lead-Orange
         .password_new_shared_links
           font-size 14px
@@ -833,7 +833,13 @@
           #user_first_name,
           #user_surname,
           #user_city,
-          #user_bio
+          #user_bio,
+          #user_business_type,
+          #user_service,
+          #user_company,
+          #user_tax_id,
+          #user_website,
+          #user_phone
             padding 4px
             border-radius 4px
             margin-top 4px
@@ -847,7 +853,7 @@
         .user_edit_form_submit a 
           margin-top 10px
           margin-bottom 10px  
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
         .user_edit_cancel_acount,
         .user_edit_unhappy,
         .user_edit_back
@@ -858,7 +864,7 @@
         .user_edit_button_cancel_account a
           margin-top 10px
           margin-bottom 10px  
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
     /* :::::::::::: LEADS/NEW (new lead - for end customers (B2C))  :::::::::::: */
     .body_leads_new
       margin-top 27px
@@ -912,7 +918,8 @@
             #lead_business_type,    
             #lead_time,
             #lead_property_type,
-            #lead_title
+            #lead_title,
+            #project_category
               color Offer-Font-Color
               font-weight bold
               font-size 12px
@@ -969,7 +976,7 @@
           .lead_new_form_submit a 
             shift 0.57
             color white
-            button(color = Lead-Orange)
+            button(color = Lead-Orange-dark)
             background-color Lead-Orange
           .lead_new_shared_links
             font-size 12px
@@ -1411,7 +1418,7 @@
           bottom 20px
           right 100px
           font-size 16px !important
-          button(color = Lead-Orange)
+          button(color = Lead-Orange-dark)
       .plans_item_note
         color black
         font-size 14px
