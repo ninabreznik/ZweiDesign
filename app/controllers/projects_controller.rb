@@ -41,6 +41,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    @project = Project.find_by_id(params[:id])
   end
 
   def update 
