@@ -22,7 +22,7 @@
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
       <div class="lead_body">
         <div class="lead_subtitle"></div>
-          <%= image_tag project.picture.url(:medium), :height => "167"  %> <br>
+          <%= image_tag project.picture.url(:medium), :width => "250"  %> <br>
         <div class="lead_subtitle">Avtor:</div>          
           <%= project.email %><br>
         <div class="lead_subtitle">Opis:</div>         
