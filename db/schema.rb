@@ -137,7 +137,6 @@ ActiveRecord::Schema.define(version: 20150306204535) do
   create_table "pictures", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "project_id"
   end
 
   create_table "projects", force: true do |t|
