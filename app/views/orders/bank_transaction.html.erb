@@ -45,9 +45,11 @@
     </tr> 
   </table>
   <div class="offer_show_lead">
-    <div class="offer_show_lead_title">
-      <%= @lead.business_type %> 
-    </div>
+    <% if @lead.business_type.present? %>
+      <div class="offer_show_lead_title">
+        <%= @lead.business_type %> 
+      </div>
+    <% end %>
     <div class="offer_show_lead_body">
       <div class="offer_show_lead_subtitle">
         <%= I18n.t'orders-banktransaction.lead.location' %>: </div><%= @lead.location %>       

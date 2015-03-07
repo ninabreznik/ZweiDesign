@@ -3,9 +3,11 @@
   <a class="back_to_main_page_button" href="/"></a>
   <% if @order.present? %>
     <div class="order_show">
-      <div class="order_show_title">
-        <%= @lead.business_type %> 
-      </div>
+      <% if @lead.business_type.present? %>
+        <div class="order_show_title">
+          <%= @lead.business_type %> 
+        </div>
+      <% end %>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">
