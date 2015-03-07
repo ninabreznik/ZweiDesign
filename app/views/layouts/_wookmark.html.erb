@@ -1,3 +1,7 @@
+<script src="assets/imagesloaded.pkgd.min.js">
+
+</script>
+
 <script type="text/javascript">
   (function ($){
     var handler = $('.lead_box');
@@ -9,19 +13,29 @@
         outerOffset: 10, // Optional, the distance to the containers border
         itemWidth: 400 // Optional, the width of a grid item
     };
-
     handler.wookmark(options);
-    setTimeout(function() {
+    var posts = document.querySelectorAll('.lead_box');
+    imagesLoaded( posts, function() {
         handler.each(function(index,element) {
             var image = element.querySelector("img");
             var newHeight = $(image).height();
             image.setAttribute("height", newHeight);
         });
         handler.wookmark(options);
-    }, 200);
+    });
+    // handler.wookmark(options);
+    // setTimeout(function() {
+    //     handler.each(function(index,element) {
+    //         var image = element.querySelector("img");
+    //         var newHeight = $(image).height();
+    //         image.setAttribute("height", newHeight);
+    //     });
+    //     handler.wookmark(options);
+    // }, 200);
 
   })(jQuery);
 </script>
+
 
 
 
