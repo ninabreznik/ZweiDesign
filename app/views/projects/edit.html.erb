@@ -1,0 +1,27 @@
+
+<div class="body_leads_new">
+<section class="lead_new_photo">
+  <div class="lead_new_explanation">
+    <div class="lead_new_explanation_first">  
+      <i class="fa fa-pencil"></i>  Uredite  projekt.</div>
+  </div>
+  <div class="lead_new">
+    <div class="lead_new_title">
+      Uredite svoj projekt 
+    </div>
+    <%= form_for @project, :html => { :multipart => true, method: :put } do |p| %>
+
+      <div class="lead_new_form_description">
+        <%= p.label "Naslov projekta" %>
+        <%= p.text_field :title %>
+      </div>
+      <div class="lead_new_form_description"> 
+        <%= p.file_field :picture %>
+      </div>
+        <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+      <div class="lead_new_form_submit">
+        <%= p.submit "Uredi" %>
+      </div>  
+    <% end %> 
+  </div>
+</section>

@@ -21,10 +21,16 @@
         <%= @user.service %> <br>
         <div class="lead_subtitle">Telefon:</div>          
         <%= @user.phone %> <br>
-        <div class="lead_subtitle">Spletna stran:</div>          
-        <%= link_to "#{@user.website}", "http://#{@user.website}" %><br>
+        <% if @user.website != nil %>
+          <div class="lead_subtitle">Spletna stran:</div>          
+          <%= link_to "#{@user.website}", "http://#{@user.website}" %><br>
+        <% end %>
         <div class="lead_subtitle">Davčna številka:</div>          
-        <%= @user.tax_id %>
+        <%= @user.tax_id %><br><br>
+        <% if @user == current_user %>
+          <div class="lead_subtitle"></div>          
+          <%= link_to "Uredi profil", edit_user_registration_path %>
+        <% end %>
     </div>
   </div> 
   <% Project.all.where(user_id: @user.id).each do |project| %>

@@ -17,9 +17,10 @@ Rails.application.routes.draw do
     match '/users',                   to: 'users#index',      via: 'get'
 
   resources :projects
-    match '/projects/:id',            to: 'projects#show',    via: 'get'
-    match '/projects',                to: 'projects#index',   via: 'get'
-    match '/projects',                to: 'projects#new',     via: 'get'
+    match '/projects/:id',            to: 'projects#show',     via: 'get'
+    match '/projects',                to: 'projects#index',    via: 'get'
+    match '/projects',                to: 'projects#new',      via: 'get'
+    match '/projects/:id',            to: 'projects#update',   via: 'edit'
 
 
   resources :leads

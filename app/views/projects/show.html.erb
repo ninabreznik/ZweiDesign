@@ -14,10 +14,13 @@
             <div class="lead_show_subtitle">
               <%= link_to "#{@project_email}", user_path(id: User.all.where(email: @project.email).first.id)%>
               </div>
-            <!-- <div class="lead_show_subtitle"></div> 
-            <%= @project_description %> -->
           </div> 
         </div> 
+        <% if @project.email == current_user.email %>
+          <div class="lead_show_buy"> 
+            <%= link_to "Edit", edit_project_url(@project) %>
+          </div>
+        <% end %>
       </div> 
     </div>
   </div>

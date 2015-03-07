@@ -30,9 +30,37 @@ class ProjectsController < ApplicationController
       end
   end 
 
+  def edit
+    @project = Project.find(params[:id])
+    @categories = [
+      ["Kuhinje"],
+      ["Kopalnice"],
+      ["Spalnice"],
+      ["Dnevni prostor"],
+      ["Okolica"],
+      ["Svetila"],
+      ["Dekor"]
+    ]
+  end
 
   def update
       @project = Project.find(params[:id])
+      @user = current_user
+      @categories = [
+      ["Kuhinje"],
+      ["Kopalnice"],
+      ["Spalnice"],
+      ["Dnevni prostor"],
+      ["Okolica"],
+      ["Svetila"],
+      ["Dekor"]
+    ]
+    if @project.update_attributes(project_params)
+      redirect_to user_path(@user)
+    else 
+      redirect_to edit_project_path
+    end
+    @project.save
   end
 
 
@@ -50,12 +78,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def edit
-    @project = Project.find_by_id(params[:id])
-  end
-
-  def update 
-  end
 
   def destroy
      @project = Project.find_by_id(params[:id])
