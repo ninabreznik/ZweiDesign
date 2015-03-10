@@ -1,10 +1,10 @@
-You have a new reply: <%= @subject %>
+Nov odgovor: <%= @subject %>
 ===============================================
 
-You have received a new reply:
+Prejeli ste nov odgovor:
 
 -----------------------------------------------
 <%= @message.body.html_safe? ? @message.body : strip_tags(@message.body) %>
 -----------------------------------------------
 
-Visit <%= root_url %> and go to your inbox for more info.
+ Obiščite <%= link_to "Sporočila", conversations_url %> in si oglejte Prejeta sporočila.

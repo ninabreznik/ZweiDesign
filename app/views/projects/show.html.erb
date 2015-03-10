@@ -16,10 +16,12 @@
               </div>
           </div> 
         </div> 
-        <% if @project.email == current_user.email %>
-          <div class="lead_show_buy"> 
-            <%= link_to "Edit", edit_project_url(@project) %>
-          </div>
+        <% if current_user.present? %>
+          <% if @project.email == current_user.email %>
+            <div class="lead_show_buy"> 
+              <%= link_to "Uredi", edit_project_url(@project) %>
+            </div>
+          <% end %>
         <% end %>
       </div> 
     </div>

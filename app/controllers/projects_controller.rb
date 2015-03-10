@@ -3,10 +3,20 @@ class ProjectsController < ApplicationController
   def new
     @project = Project.new
     @categories = [
-      ["Kuhinje"],
-      ["Kopalnice"],
-      ["Spalnice"],
+      ["Kuhinja"],
+      ["Kopalnica"],
+      ["Spalnica"],
       ["Dnevni prostor"],
+      ["Jedilnica"],
+      ["Otroška soba"],
+      ["Delovni prostor"],
+      ["Prostor za shranjevanje"],
+      ["Vhod in garderoba"],
+      ["Hodnik"],
+      ["Stopnišče"],
+      ["Klet"],
+      ["Garaža in hobi prostor"],
+      ["Hiša in fasade"],
       ["Okolica"],
       ["Svetila"],
       ["Dekor"]
