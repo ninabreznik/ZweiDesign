@@ -11,6 +11,9 @@
     </div>
     <%= form_for @project, :html => { :multipart => true, method: :put } do |p| %>
 
+      <div class="lead_new_form_business_type">
+        <%= p.select :category, @categories, :prompt=>"S katerega področja je vaš projekt?"%> 
+      </div>
       <div class="lead_new_form_description">
         <%= p.label "Naslov projekta" %>
         <%= p.text_field :title %>

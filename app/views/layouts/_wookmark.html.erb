@@ -4,7 +4,8 @@
 
 <script type="text/javascript">
   (function ($){
-    var handler = $('.lead_box');
+    var handler = $('.lead_box'),
+        filters = $('#filters li');
     var options = {
         // Prepare layout options.
         autoResize: true, // This will auto-update the layout when the browser window is resized.
@@ -23,6 +24,26 @@
         });
         handler.wookmark(options);
     });
+
+    var onClickFilter = function(event) {
+          var item = $(event.currentTarget),
+              activeFilters = [];
+
+          if (!item.hasClass('active')) {
+            filters.removeClass('active');
+          }
+          item.toggleClass('active');
+
+          // Filter by the currently selected filter
+          if (item.hasClass('active')) {
+            activeFilters.push(item.data('filter'));
+          }
+
+          handler.wookmarkInstance.filter(activeFilters);
+        }
+
+        // Capture filter click events.
+        filters.click(onClickFilter);
     // handler.wookmark(options);
     // setTimeout(function() {
     //     handler.each(function(index,element) {

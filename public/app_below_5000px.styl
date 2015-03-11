@@ -124,10 +124,39 @@
     .body_leads_index
       body-mixin()
       background-color #eee
+      #filters
+        list-style-type: none;
+        text-align: center;
+        margin: 0 5% 100px 5%;
+      #filters li
+        button(Lead-Orange)
+        font-size: 12px;
+        float: left;
+        padding: 6px 0 4px 0;
+        cursor: pointer;
+        margin: 0 1% 0 1%;
+        width: 15%;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      #filters li.active
+        color red
       .columns
         column-mixin()
         .wookmark
           wookmarkMixin()
+          #tiles 
+            margin 0
+            #tiles li.inactive
+              visibility: hidden;
+              opacity: 0;
+          .lead_box.inactive
+            visibility: hidden;
+            opacity: 0;
           .lead_box
             leadBoxMixin()
             .lead_title

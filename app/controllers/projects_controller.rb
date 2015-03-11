@@ -43,10 +43,20 @@ class ProjectsController < ApplicationController
   def edit
     @project = Project.find(params[:id])
     @categories = [
-      ["Kuhinje"],
-      ["Kopalnice"],
-      ["Spalnice"],
+      ["Kuhinja"],
+      ["Kopalnica"],
+      ["Spalnica"],
       ["Dnevni prostor"],
+      ["Jedilnica"],
+      ["Otroška soba"],
+      ["Delovni prostor"],
+      ["Prostor za shranjevanje"],
+      ["Vhod in garderoba"],
+      ["Hodnik"],
+      ["Stopnišče"],
+      ["Klet"],
+      ["Garaža in hobi prostor"],
+      ["Hiša in fasade"],
       ["Okolica"],
       ["Svetila"],
       ["Dekor"]
@@ -57,10 +67,20 @@ class ProjectsController < ApplicationController
       @project = Project.find(params[:id])
       @user = current_user
       @categories = [
-      ["Kuhinje"],
-      ["Kopalnice"],
-      ["Spalnice"],
+      ["Kuhinja"],
+      ["Kopalnica"],
+      ["Spalnica"],
       ["Dnevni prostor"],
+      ["Jedilnica"],
+      ["Otroška soba"],
+      ["Delovni prostor"],
+      ["Prostor za shranjevanje"],
+      ["Vhod in garderoba"],
+      ["Hodnik"],
+      ["Stopnišče"],
+      ["Klet"],
+      ["Garaža in hobi prostor"],
+      ["Hiša in fasade"],
       ["Okolica"],
       ["Svetila"],
       ["Dekor"]
@@ -77,6 +97,9 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @projects.each do |project|
+      @project = project
+    end
   end
 
   def show

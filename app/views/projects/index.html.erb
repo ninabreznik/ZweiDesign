@@ -1,11 +1,34 @@
+
 <div class="body_leads_index">
 
-<div class="columns">
 
-<ul class="wookmark">
+<div class="columns" id="main" role="main">
+
+<ol id="filters">
+  <li data-filter='Kuhinja'>Kuhinja</li>
+  <li data-filter='Kopalnica'>Kopalnica</li>
+  <li data-filter='Spalnica'>Spalnica</li>
+  <li data-filter='Dnevni prostor'>Dnevni prostor</li>
+  <li data-filter='Jedilnica'>Jedilnica</li>
+  <li data-filter='Otroška soba'>Otroška soba</li>
+  <li data-filter='Delovni prostor'>Delovni prostor</li>
+  <li data-filter='Prostor za shranjevanje'>Prostor za shranjevanje</li>
+  <li data-filter='Vhod in garderoba'>Vhod in garderoba</li>
+  <li data-filter='hodnik'>Hodnik</li>
+  <li data-filter='Stopnišče'>Stopnišče</li>
+  <li data-filter='Klet'>Klet</li>
+  <li data-filter='Garaža in hobi prostor'>Garaža in hobi prostor</li>
+  <li data-filter='Hiša in fasade'>Hiša in fasade</li>
+  <li data-filter='Okolica'>Okolica</li>
+  <li data-filter='Svetila'>Svetila</li>
+  <li data-filter='Dekor'>Dekor</li>
+</ol>
+
+ 
+<ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @projects.each do |project| %>
-  <div class="lead_box">
+  <div class="lead_box" data-filter-class='["<%=project.category%>"]' >
     <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
@@ -14,8 +37,8 @@
         <%= project.email %> <br>
       <div class="lead_subtitle">Opis:</div>         
       <%= project.description %>      <br> -->
-    </div>
-  </div>        
+    </div>      
+  </div>
   <% end %>
 <% end %>
 </ul>
