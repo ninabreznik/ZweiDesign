@@ -5,29 +5,63 @@
 <div class="columns" id="main" role="main">
 
 <ol id="filters">
-  <li data-filter='Kuhinja'>Kuhinja</li>
-  <li data-filter='Kopalnica'>Kopalnica</li>
-  <li data-filter='Spalnica'>Spalnica</li>
-  <li data-filter='Dnevni prostor'>Dnevni prostor</li>
-  <li data-filter='Jedilnica'>Jedilnica</li>
-  <li data-filter='Otroška soba'>Otroška soba</li>
-  <li data-filter='Delovni prostor'>Delovni prostor</li>
-  <li data-filter='Prostor za shranjevanje'>Prostor za shranjevanje</li>
-  <li data-filter='Vhod in garderoba'>Vhod in garderoba</li>
-  <li data-filter='hodnik'>Hodnik</li>
-  <li data-filter='Stopnišče'>Stopnišče</li>
-  <li data-filter='Klet'>Klet</li>
-  <li data-filter='Garaža in hobi prostor'>Garaža in hobi prostor</li>
-  <li data-filter='Hiša in fasade'>Hiša in fasade</li>
-  <li data-filter='Okolica'>Okolica</li>
-  <li data-filter='Svetila'>Svetila</li>
-  <li data-filter='Dekor'>Dekor</li>
+  <li data-filter='Kuhinja'>
+    Kuhinja (<%=@kuhinja_count%>)
+  </li>
+  <li data-filter='Kopalnica'>
+    Kopalnica (<%=@kopalnica_count%>)
+  </li>
+  <li data-filter='Spalnica'>
+    Spalnica (<%=@spalnica_count%>)
+  </li>
+  <li data-filter='Dnevni prostor'>
+    Dnevni prostor (<%=@dnevni_prostor_count%>)
+  </li>
+  <li data-filter='Jedilnica'>
+    Jedilnica (<%=@jedilnica_count %>)
+  </li>
+  <li data-filter='Otroški prostor'>
+    Otroški prostor (<%=@otroski_prostor_count %>)
+  </li>
+  <li data-filter='Delovni prostor'>
+    Delovni prostor (<%=@delovni_prostor_count%>)
+  </li>
+  <li data-filter='Prostor za shranjevanje'>
+    Shranjevanje (<%=@shranjevanje_count %>)
+  </li>
+  <li data-filter='Vhod in garderoba'>
+    Vhod & garderoba (<%=@vhod_in_garderoba_count%>)
+  </li>
+  <li data-filter='hodnik'>
+    Hodnik (<%=@hodnik_count%>)
+  </li>
+  <li data-filter='Stopnišče'>
+    Stopnišče (<%=@stopnisce_count%>)
+  </li>
+  <li data-filter='Klet'>
+    Klet (<%=@klet_count%>)
+  </li>
+  <li data-filter='Garaža in hobi prostor'>
+    Garaža & hobi (<%=@garaza_in_hobi_count%>)
+  </li>
+  <li data-filter='Hiša in fasade'>
+    Hiša & fasade (<%=@hisa_in_fasade_count%>)
+  </li>
+  <li data-filter='Okolica'>
+    Okolica (<%=@okolica_count%>)
+  </li>
+  <li data-filter='Svetila'>
+    Svetila (<%=@svetila_count%>)
+  </li>
+  <li data-filter='Dekor'>
+    Dekor (<%=@dekor_count%>)
+  </li>
 </ol>
 
  
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
-  <% @projects.each do |project| %>
+  <% @sorted_projects.each do |project| %>
   <div class="lead_box" data-filter-class='["<%=project.category%>"]' >
     <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
     <div class="lead_body">

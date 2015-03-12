@@ -1,6 +1,6 @@
 ActiveAdmin.register Project do
 
-permit_params :user_id, :title, :picture_file_name, :picture_content_type, :picture_file_size, :picture_updated_at, :description, :email
+permit_params :user_id, :title, :picture_file_name, :picture_content_type, :picture_file_size, :picture_updated_at, :description, :email, :category
 
 index do
   selectable_column
@@ -30,7 +30,25 @@ form do |f|
   f.input :user_id  
   f.input :email
   f.input :title
-  f.input :category
+  f.input :category, collection: [
+      ["Kuhinja"],
+      ["Kopalnica"],
+      ["Spalnica"],
+      ["Dnevni prostor"],
+      ["Jedilnica"],
+      ["Otroški prostor"],
+      ["Delovni prostor"],
+      ["Prostor za shranjevanje"],
+      ["Vhod in garderoba"],
+      ["Hodnik"],
+      ["Stopnišče"],
+      ["Klet"],
+      ["Garaža in hobi prostor"],
+      ["Hiša in fasade"],
+      ["Okolica"],
+      ["Svetila"],
+      ["Dekor"]
+    ]
   f.input :picture_updated_at
   f.input :picture_file_name
   f.input :picture_content_type

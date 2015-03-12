@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
       ["Spalnica"],
       ["Dnevni prostor"],
       ["Jedilnica"],
-      ["Otroška soba"],
+      ["Otroški prostor"],
       ["Delovni prostor"],
       ["Prostor za shranjevanje"],
       ["Vhod in garderoba"],
@@ -48,7 +48,7 @@ class ProjectsController < ApplicationController
       ["Spalnica"],
       ["Dnevni prostor"],
       ["Jedilnica"],
-      ["Otroška soba"],
+      ["Otroški prostor"],
       ["Delovni prostor"],
       ["Prostor za shranjevanje"],
       ["Vhod in garderoba"],
@@ -72,7 +72,7 @@ class ProjectsController < ApplicationController
       ["Spalnica"],
       ["Dnevni prostor"],
       ["Jedilnica"],
-      ["Otroška soba"],
+      ["Otroški prostor"],
       ["Delovni prostor"],
       ["Prostor za shranjevanje"],
       ["Vhod in garderoba"],
@@ -97,9 +97,28 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @sorted_projects = @projects.sort.reverse
     @projects.each do |project|
       @project = project
     end
+    @kuhinja_count                  = Project.all.where(category: "Kuhinja").count
+    @kopalnica_count                = Project.all.where(category: "Kopalnica").count
+    @spalnica_count                 = Project.all.where(category: "Spalnica").count
+    @dnevni_prostor_count           = Project.all.where(category: "Dnevni prostor").count
+    @jedilnica_count                = Project.all.where(category: "Jedilnica").count
+    @otroski_prostor_count          = Project.all.where(category: "Otroški prostor").count
+    @delovni_prostor_count          = Project.all.where(category: "Delovni prostor").count
+    @shranjevanje_count             = Project.all.where(category: "Prostor za shranjevanje").count
+    @vhod_in_garderoba_count        = Project.all.where(category: "Vhod in garderoba").count
+    @hodnik_count                   = Project.all.where(category: "Hodnik").count
+    @stopnisce_count                = Project.all.where(category: "Stopnišče").count
+    @klet_count                     = Project.all.where(category: "Klet").count
+    @garaza_in_hobi_count           = Project.all.where(category: "Garaža in hobi prostor").count   
+    @hisa_in_fasade_count           = Project.all.where(category: "Hiša in fasade").count
+    @okolica_count                  = Project.all.where(category: "Okolica").count
+    @svetila_count                  = Project.all.where(category: "Svetila").count
+    @dekor_count                    = Project.all.where(category: "Dekor").count
+
   end
 
   def show
