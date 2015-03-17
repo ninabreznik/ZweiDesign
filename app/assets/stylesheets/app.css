@@ -232,7 +232,7 @@ html {
                 LEAD LISTING MIXINS 
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1488 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -4131,6 +4131,7 @@ html {
     padding-bottom: 200px;
     margin-top: 29px;
     padding-bottom: 50px;
+/* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
@@ -4256,6 +4257,58 @@ html {
   body .body_plans .plans_faq_item .plans_faq_item_answer {
     font-weight: italics;
     padding-bottom: 20px;
+  }
+
+/* line 1491 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .project_show_send_message {
+    color: #eee;
+  }
+
+/* line 1493 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .project_show_send_message #conversation_body {
+    margin-left: 15%;
+    margin-right: 5%;
+    padding: 10px;
+    width: 50%;
+  }
+
+/* line 1498 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .project_show_send_message .project_show_send_message_button,
+  body .project_show_send_message .project_show_send_message_button button,
+  body .project_show_send_message .project_show_send_message_button a {
+    font-size: 13px;
+    padding: 10px 22px;
+    border-radius: 3px;
+    background-color: #ffae4d;
+    color: #494949;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+/* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
+  body .project_show_send_message .project_show_send_message_button:hover,
+  body .project_show_send_message .project_show_send_message_button button:hover,
+  body .project_show_send_message .project_show_send_message_button a:hover,
+  body .project_show_send_message .project_show_send_message_button:focus,
+  body .project_show_send_message .project_show_send_message_button button:focus,
+  body .project_show_send_message .project_show_send_message_button a:focus {
+    background-color: #ffa63c;
+    color: #474747;
+  }
+
+/* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
+  body .project_show_send_message .project_show_send_message_button:active,
+  body .project_show_send_message .project_show_send_message_button button:active,
+  body .project_show_send_message .project_show_send_message_button a:active {
+    background-color: #ff9f2c;
   }
 }
 
@@ -20300,7 +20353,7 @@ html {
 /* line 42 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_500px.styl */
   body .top_menu_bar .publish_project {
     position: relative;
-    left: 20.085%;
+    left: 30.9%;
     font-size: 9px !important;
     font-size: 13px;
     padding: 10px 22px;
@@ -20333,7 +20386,7 @@ html {
 
 /* line 48 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_500px.styl */
   body .top_menu_bar .messages {
-    margin-left: -92px;
+    margin-left: -45px;
     font-size: 18px;
     bottom: 2px;
   }
