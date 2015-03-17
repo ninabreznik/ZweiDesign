@@ -232,7 +232,7 @@ html {
                 LEAD LISTING MIXINS 
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1471 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1488 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -669,13 +669,45 @@ html {
   }
 
 /* line 127 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .body_leads_index #mc_embed_signup {
+    width: 50%;
+    margin-left: 28%;
+    padding-bottom: 20px;
+  }
+
+/* line 131 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .body_leads_index #mc_embed_signup #mce-EMAIL,
+  body .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
+    display: inline-block;
+    width: auto;
+  }
+
+/* line 135 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
+    margin-left: 5px !important;
+  }
+
+/* line 137 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .body_leads_index #mc_embed_signup #mce-EMAIL {
+    margin-right: 0px !important;
+    width: 50%;
+  }
+
+/* line 140 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+  body .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
+    background-color: #aaa;
+    font-size: 12px;
+    margin-left: 12%;
+  }
+
+/* line 144 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index #filters {
     list-style-type: none;
     text-align: center;
     margin: 0 0% 120px 5%;
   }
 
-/* line 131 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 148 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index #filters li {
     font-size: 13px;
     padding: 10px 22px;
@@ -717,12 +749,12 @@ html {
     background-color: #d6d6d6;
   }
 
-/* line 147 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 164 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index #filters li.active {
     color: #ffae4d;
   }
 
-/* line 149 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 166 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns {
     position: relative;
     margin-top: 37px;
@@ -730,31 +762,31 @@ html {
     padding-bottom: 1050px;
   }
 
-/* line 151 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 168 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 153 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 170 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark #tiles {
     margin: 0;
   }
 
-/* line 155 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 172 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark #tiles #tiles li.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 158 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 175 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 161 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 178 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
     margin-left: 42px;
     width: 303px;
@@ -766,7 +798,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 163 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 180 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_title {
     background-color: #eee;
     padding: 15px;
@@ -775,7 +807,7 @@ html {
     font-size: 14px;
   }
 
-/* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 186 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_title .fa.fa-star {
     color: #fcd229;
     font-size: 16px;
@@ -783,12 +815,12 @@ html {
     left: 5.15%;
   }
 
-/* line 173 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 190 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_title .fa.fa-star:hover {
     color: #222;
   }
 
-/* line 175 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 192 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_body {
     font-size: 14px;
     padding: 15px;
@@ -799,14 +831,14 @@ html {
     width: 280px;
   }
 
-/* line 183 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 200 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_body .lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 187 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 204 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .leads_index_no_leads_available {
     position: absolute;
     margin-top: 30px;
@@ -830,7 +862,7 @@ html {
     line-height: 150%;
   }
 
-/* line 206 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 223 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show {
     background-color: #eee;
     background-image: backgroundImage;
@@ -856,7 +888,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 209 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 226 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .back_to_main_page_button {
     width: 100%;
     height: 100%;
@@ -865,7 +897,7 @@ html {
     left: 0;
   }
 
-/* line 215 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 232 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show {
     position: relative;
     left: 15.45%;
@@ -882,7 +914,7 @@ html {
     line-break: 1px;
   }
 
-/* line 228 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 245 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_title {
     background-color: #eee;
     padding: 30px;
@@ -892,7 +924,7 @@ html {
     font-size: 40px;
   }
 
-/* line 235 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 252 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_body {
     font-size: 22px;
     padding-left: 25px;
@@ -903,20 +935,20 @@ html {
     line-height: 150%;
   }
 
-/* line 243 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 260 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_long {
     width: 60%;
     padding-left: 140px;
   }
 
-/* line 246 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 263 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_short,
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_long {
     display: inline-block;
     vertical-align: top;
   }
 
-/* line 250 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 267 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item,
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item {
     -webkit-font-smoothing: antialiased;
@@ -925,14 +957,14 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 255 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 272 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item .lead_show_subtitle,
   body .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item .lead_show_subtitle {
     font-weight: bold;
     display: inline-block;
   }
 
-/* line 258 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 275 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_show .lead_show .lead_show_buy input,
   body .body_leads_show .lead_show .lead_show_buy a {
     position: relative;
@@ -970,7 +1002,7 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 266 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 283 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show {
     background-color: #eee;
     background-image: backgroundImage;
@@ -996,7 +1028,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 269 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 286 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .back_to_main_page_button {
     width: 100%;
     height: 100%;
@@ -1005,7 +1037,7 @@ html {
     left: 0;
   }
 
-/* line 275 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 292 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show {
     position: relative;
     left: 15.45%;
@@ -1022,7 +1054,7 @@ html {
     line-break: 1px;
   }
 
-/* line 288 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 305 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_title {
     background-color: #eee;
     padding: 30px;
@@ -1032,7 +1064,7 @@ html {
     font-size: 40px;
   }
 
-/* line 295 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 312 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .lead_show_body {
     font-size: 22px;
     padding-left: 25px;
@@ -1043,7 +1075,7 @@ html {
     line-height: 150%;
   }
 
-/* line 303 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 320 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional {
     padding: 5px;
     width: 100%;
@@ -1054,7 +1086,7 @@ html {
     filter: blur(0.7px);
   }
 
-/* line 308 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 325 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_long,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional {
@@ -1062,7 +1094,7 @@ html {
     vertical-align: top;
   }
 
-/* line 313 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 330 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short .lead_show_item,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_long .lead_show_item,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional .lead_show_item {
@@ -1072,7 +1104,7 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 318 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 335 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short .lead_show_item .lead_show_subtitle,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_long .lead_show_item .lead_show_subtitle,
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional .lead_show_item .lead_show_subtitle {
@@ -1080,7 +1112,7 @@ html {
     display: inline-block;
   }
 
-/* line 321 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 338 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_buy_popup {
     position: relative;
     left: 28.840000000000003%;
@@ -1094,7 +1126,7 @@ html {
     text-align: center;
   }
 
-/* line 331 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 348 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_buy_popup .order_show_buy_popup_item {
     padding: 5px;
     padding-top: 15px;
@@ -1132,13 +1164,13 @@ html {
     background-color: #6bb5bd;
   }
 
-/* line 342 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 359 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .payment_buttons_choose_payment_text {
     text-align: center;
     padding: 50px 10px 30px 0px;
   }
 
-/* line 345 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 362 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_buy_buttons {
     padding: 7px;
     padding-bottom: 40px;
@@ -1146,12 +1178,12 @@ html {
     left: 21.63%;
   }
 
-/* line 349 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 366 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_buy_buttons .order_show_buy {
     display: inline-block;
   }
 
-/* line 351 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 368 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show .order_show_buy_buttons .order_show_buy input,
   body .body_orders_show .order_show .order_show_buy_buttons .order_show_buy a {
     font-size: 13px;
@@ -1185,14 +1217,14 @@ html {
     background-color: #d6d6d6;
   }
 
-/* line 355 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 372 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show_notes {
     margin-top: 5px;
     margin-bottom: 50px;
     font-size: 20px;
   }
 
-/* line 359 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 376 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show_notes .order_show_notes_title {
     padding: 7px;
     margin-top: 40px;
@@ -1202,7 +1234,7 @@ html {
     width: 150px;
   }
 
-/* line 366 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 383 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show_notes #order_notes {
     position: relative;
     -webkit-filter: blur(0.7px);
@@ -1230,12 +1262,12 @@ html {
     border: 2px solid #eee;
   }
 
-/* line 388 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 405 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show_notes #order_notes:hover {
     background-color: #f0f0f0;
   }
 
-/* line 390 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 407 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_show .order_show_notes .order_show_notes_submit input,
   body .body_orders_show .order_show_notes .order_show_notes_submit a {
     position: relative;
@@ -1273,7 +1305,7 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 398 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 415 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction {
     background-color: #eee;
     background-image: backgroundImage;
@@ -1299,7 +1331,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 401 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 418 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer {
     *zoom: 1;
     width: auto;
@@ -1332,7 +1364,7 @@ html {
     clear: both;
   }
 
-/* line 411 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 428 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_title {
     color: #222;
     font-weight: bold;
@@ -1340,7 +1372,7 @@ html {
     padding-bottom: 60px;
   }
 
-/* line 416 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 433 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_company_info {
     color: #222;
     border: 1px solid #e7e7e7;
@@ -1350,18 +1382,18 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 423 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 440 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_company_info td:last-child {
     text-align: left;
   }
 
-/* line 425 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 442 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_company_info td:first-child {
     text-align: left;
     width: 109px;
   }
 
-/* line 428 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 445 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_date {
     color: #222;
     font-size: 13px;
@@ -1369,7 +1401,7 @@ html {
     text-align: left;
   }
 
-/* line 433 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 450 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_sosed_info {
     margin-top: 20px;
     color: #222;
@@ -1379,7 +1411,7 @@ html {
     border-radius: 4px;
   }
 
-/* line 440 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 457 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_sosed_info .offer_sosed_info_price td,
   body .body_bank_transaction .offer .offer_sosed_info font-weight bold {
     padding: 30px 30px 15px 15px;
@@ -1387,14 +1419,14 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 445 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 462 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_sosed_info .offer_sosed_info_item td {
     background-color: #f0f0f0;
     padding: 15px 30px 10px 15px;
     font-size: 12px;
   }
 
-/* line 449 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 466 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_show_lead {
     margin-top: 37px;
     padding-bottom: 20px;
@@ -1413,7 +1445,7 @@ html {
     line-break: 1px;
   }
 
-/* line 463 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 480 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_show_lead .offer_show_lead_title {
     background-color: #eee;
     border-top-left-radius: 4px;
@@ -1425,7 +1457,7 @@ html {
     border-bottom: 1px solid #e7e7e7;
   }
 
-/* line 472 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 489 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body {
     font-size: 16px;
     padding-top: 3px;
@@ -1437,7 +1469,7 @@ html {
     width: 280px;
   }
 
-/* line 481 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 498 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body .offer_show_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
@@ -1445,19 +1477,19 @@ html {
     margin-right: 15px;
   }
 
-/* line 486 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 503 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body .ordersindex-notifications.customer-info {
     color: #d13f19;
   }
 
-/* line 488 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 505 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_bank_transaction .offer .offer_instructions {
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
 
-/* line 493 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 510 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved {
     background-color: #eee;
     background-image: backgroundImage;
@@ -1482,7 +1514,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 495 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 512 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .address_book_reserved_leads {
     opacity: 0.9;
     position: relative;
@@ -1492,7 +1524,7 @@ html {
     font-weight: bold;
   }
 
-/* line 501 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 518 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns {
     position: relative;
     margin-top: 37px;
@@ -1500,14 +1532,14 @@ html {
     padding-bottom: 1050px;
   }
 
-/* line 503 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 520 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 505 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 522 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box {
     margin-left: 42px;
     width: 303px;
@@ -1519,7 +1551,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 507 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 524 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_title {
     opacity: 0.85;
     background-color: #eee;
@@ -1529,7 +1561,7 @@ html {
     font-size: 14px;
   }
 
-/* line 514 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 531 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_body {
     font-size: 14px;
     padding: 15px;
@@ -1540,14 +1572,14 @@ html {
     width: 280px;
   }
 
-/* line 522 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 539 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_body .address_book_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 526 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 543 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_notification {
     font-size: 14px;
     padding: 10px;
@@ -1559,17 +1591,17 @@ html {
     padding-top: 7px;
   }
 
-/* line 535 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 552 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_notification .address_book_lead_notification_explanation {
     font-weight: normal;
   }
 
-/* line 537 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 554 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons {
     margin-top: 20px;
   }
 
-/* line 539 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 556 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_buy_button {
     margin-left: 80px;
     font-size: 13px;
@@ -1599,7 +1631,7 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 542 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 559 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_remove_button input,
   body .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_remove_button a {
     margin: 10px 0px 5px 50px;
@@ -1634,7 +1666,7 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 547 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 564 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_dummy_orders_reserved {
     position: relative;
     -webkit-filter: blur(1.1px);
@@ -1643,7 +1675,7 @@ html {
     filter: blur(1.1px);
   }
 
-/* line 550 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 567 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .reserved_link_to_signup {
     margin-left: 10%;
     background: #000; /* fallback color */
@@ -1663,13 +1695,13 @@ html {
     line-height: 150%;
   }
 
-/* line 567 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 584 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .reserved_link_to_signup .address_book_signup,
   body .reserved_link_to_signup .address_book_signin {
     color: #eee;
   }
 
-/* line 571 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 588 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book {
     background-color: #eee;
     background-image: backgroundImage;
@@ -1694,7 +1726,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 573 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 590 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns {
     position: relative;
     margin-top: 37px;
@@ -1702,14 +1734,14 @@ html {
     padding-bottom: 1050px;
   }
 
-/* line 575 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 592 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 577 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 594 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box {
     margin-left: 42px;
     width: 303px;
@@ -1721,7 +1753,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 579 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 596 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_title {
     opacity: 0.85;
     background-color: #82c0c7;
@@ -1731,7 +1763,7 @@ html {
     font-size: 14px;
   }
 
-/* line 586 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 603 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_body {
     font-size: 14px;
     padding: 15px;
@@ -1742,19 +1774,19 @@ html {
     width: 280px;
   }
 
-/* line 594 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 611 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_body .address_book_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 598 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 615 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes {
     padding: 5px;
   }
 
-/* line 600 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 617 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes #order_notes {
     background-color: #fff;
     position: relative;
@@ -1773,7 +1805,7 @@ html {
     border: 2px solid #82c0c7;
   }
 
-/* line 616 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 633 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes .address_book_lead_notes_button input,
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes .address_book_lead_notes_button a {
     font-size: 13px;
@@ -1810,12 +1842,12 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 622 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 639 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box .address_book_link_to-signup {
     font-size: 12px;
   }
 
-/* line 624 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 641 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .address_book_bought_leads {
     font-size: 20px;
     font-weight: bold;
@@ -1826,7 +1858,7 @@ html {
     margin-left: 450px;
   }
 
-/* line 632 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 649 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_dummy_orders_address_book {
     -webkit-filter: blur(1.1px);
     -moz-filter: blur(1.1px);
@@ -1834,7 +1866,7 @@ html {
     filter: blur(1.1px);
   }
 
-/* line 634 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 651 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .address_book_link_to_signup {
     position: absolute;
     margin-top: 30px;
@@ -1854,13 +1886,13 @@ html {
     line-height: 150%;
   }
 
-/* line 651 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 668 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .address_book_link_to_signup .address_book_signup,
   body .address_book_link_to_signup .address_book_signin {
     color: #eee;
   }
 
-/* line 655 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 672 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile {
     background-color: #eee;
     background-image: backgroundImage;
@@ -1885,7 +1917,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 657 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 674 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns {
     position: relative;
     margin-top: 37px;
@@ -1893,14 +1925,14 @@ html {
     padding-bottom: 1050px;
   }
 
-/* line 659 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 676 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 661 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 678 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box {
     margin-left: 42px;
     width: 303px;
@@ -1912,7 +1944,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 663 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 680 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_title {
     text-align: center;
     opacity: 0.85;
@@ -1922,7 +1954,7 @@ html {
     font-size: 14px;
   }
 
-/* line 670 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 687 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body {
     color: #222;
     padding: 30px 30px 20px 30px;
@@ -1933,14 +1965,14 @@ html {
     width: 280px;
   }
 
-/* line 678 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 695 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_username {
     font-size: 14px;
     padding-bottom: 20px;
     font-weight: bold;
   }
 
-/* line 682 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 699 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_logout,
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_edit {
     padding-top: 30px;
@@ -1974,19 +2006,19 @@ html {
     background-color: #6bb5bd;
   }
 
-/* line 686 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 703 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_amount {
     font-size: 57px;
     padding: 24px;
   }
 
-/* line 689 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 706 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_buttons {
     display: inline-block;
     padding-top: 30px;
   }
 
-/* line 692 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 709 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_buttons .profile_dashboard_body_wallet_button {
     font-size: 13px;
     padding: 10px 22px;
@@ -2015,41 +2047,41 @@ html {
     background-color: #6bb5bd;
   }
 
-/* line 694 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 711 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_bought_leads_amount {
     font-size: 100px;
     padding: 24px;
   }
 
-/* line 697 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 714 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup {
     font-size: 14px;
     font-weight: bold;
   }
 
-/* line 700 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 717 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_signup {
     color: #fff;
     padding-bottom: 7px;
     font-size: 14px;
   }
 
-/* line 704 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 721 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_signup:hover {
     text-decoration: underline;
   }
 
-/* line 706 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 723 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_login {
     font-size: 14px;
   }
 
-/* line 708 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 725 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_login:hover {
     text-decoration: underline;
   }
 
-/* line 710 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 727 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_bought_leads_last {
     font-size: 24px;
     font-weight: bold;
@@ -2057,7 +2089,7 @@ html {
     line-height: 100%;
   }
 
-/* line 715 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 732 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_no_bought_leads,
   body .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_not_signed_in {
     font-size: 14px;
@@ -2066,7 +2098,7 @@ html {
     opacity: 0.3;
   }
 
-/* line 722 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 739 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login {
     background-color: #eee;
     background-image: backgroundImage;
@@ -2094,20 +2126,20 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 727 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 744 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login {
     padding-top: 30px;
     margin-left: 20px;
   }
 
-/* line 730 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 747 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 734 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 751 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_form_email,
   body .body_devise_login .login .login_form_password {
     font-size: 14px;
@@ -2115,7 +2147,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 739 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 756 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_form_email #user_email,
   body .body_devise_login .login .login_form_password #user_email,
   body .body_devise_login .login .login_form_email #user_password,
@@ -2128,13 +2160,13 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 747 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 764 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_form_remember_me {
     font-size: 14px;
     font-weight: bold;
   }
 
-/* line 750 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 767 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_form_submit input,
   body .body_devise_login .login .login_form_submit a {
     position: relative;
@@ -2173,17 +2205,17 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 759 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 776 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_shared_links {
     font-size: 14px;
   }
 
-/* line 761 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 778 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_login .login .login_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 764 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 781 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup {
     background-color: #eee;
     background-image: backgroundImage;
@@ -2211,20 +2243,20 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 769 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 786 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup {
     padding-top: 30px;
     margin-left: 20px;
   }
 
-/* line 772 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 789 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 776 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 793 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_form_email,
   body .body_devise_signup .signup .signup_form_password,
   body .body_devise_signup .signup .signup_form_password_confirmation {
@@ -2233,7 +2265,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 782 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 799 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_form_email #user_email,
   body .body_devise_signup .signup .signup_form_password #user_email,
   body .body_devise_signup .signup .signup_form_password_confirmation #user_email,
@@ -2251,7 +2283,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 791 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 808 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_form_submit input,
   body .body_devise_signup .signup .signup_form_submit a {
     position: relative;
@@ -2291,17 +2323,17 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 801 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 818 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_shared_links {
     font-size: 14px;
   }
 
-/* line 803 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 820 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_signup .signup .signup_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 806 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 823 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new {
     background-color: #eee;
     background-image: backgroundImage;
@@ -2329,27 +2361,27 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 811 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 828 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new {
     padding-top: 30px;
     margin-left: 20px;
   }
 
-/* line 814 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 831 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 818 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 835 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_form_email {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 14px;
   }
 
-/* line 822 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 839 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_form_email #user_email {
     padding: 4px;
     border-radius: 4px;
@@ -2359,7 +2391,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 829 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 846 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_form_submit input,
   body .body_devise_password_new .password_new .password_new_form_submit a {
     margin-top: 10px;
@@ -2395,17 +2427,17 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 835 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 852 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_shared_links {
     font-size: 14px;
   }
 
-/* line 837 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 854 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_password_new .password_new .password_new_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 840 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 857 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit {
     background-color: #eee;
     background-image: backgroundImage;
@@ -2433,21 +2465,21 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 845 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 862 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit {
     padding-top: 30px;
     position: relative;
     left: 12.36%;
   }
 
-/* line 848 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 865 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 852 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 869 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_form_email,
   body .body_devise_users_edit .user_edit .user_edit_form_password,
   body .body_devise_users_edit .user_edit .user_edit_form_password_confirmation,
@@ -2457,7 +2489,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 859 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 876 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_form_email #user_email,
   body .body_devise_users_edit .user_edit .user_edit_form_password #user_email,
   body .body_devise_users_edit .user_edit .user_edit_form_password_confirmation #user_email,
@@ -2522,7 +2554,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 879 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 896 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_form_email #user_bio,
   body .body_devise_users_edit .user_edit .user_edit_form_password #user_bio,
   body .body_devise_users_edit .user_edit .user_edit_form_password_confirmation #user_bio,
@@ -2531,7 +2563,7 @@ html {
     height: 200px;
   }
 
-/* line 882 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 899 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_form_submit input,
   body .body_devise_users_edit .user_edit .user_edit_form_submit a {
     margin-top: 10px;
@@ -2566,21 +2598,21 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 887 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 904 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_cancel_acount,
   body .body_devise_users_edit .user_edit .user_edit_unhappy,
   body .body_devise_users_edit .user_edit .user_edit_back {
     font-size: 14px;
   }
 
-/* line 891 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 908 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_cancel_acount:hover,
   body .body_devise_users_edit .user_edit .user_edit_unhappy:hover,
   body .body_devise_users_edit .user_edit .user_edit_back:hover {
     text-decoration: underline;
   }
 
-/* line 893 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 910 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_devise_users_edit .user_edit .user_edit_button_cancel_account input,
   body .body_devise_users_edit .user_edit .user_edit_button_cancel_account a {
     margin-top: 10px;
@@ -2615,13 +2647,13 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 899 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 916 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new {
     margin-top: 27px;
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 902 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 919 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo {
     background-color: #eee;
     background-image: backgroundImage;
@@ -2648,7 +2680,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 906 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 923 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new {
     *zoom: 1;
     float: left;
@@ -2679,7 +2711,7 @@ html {
     clear: both;
   }
 
-/* line 915 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 932 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_title {
     -webkit-font-smoothing: antialiased;
     color: #eee;
@@ -2692,7 +2724,7 @@ html {
     line-height: 120%;
   }
 
-/* line 925 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 942 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_instructions {
     -webkit-font-smoothing: antialiased;
     padding-left: 20px;
@@ -2704,7 +2736,7 @@ html {
     line-height: 120%;
   }
 
-/* line 934 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 951 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip,
@@ -2721,7 +2753,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 948 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 965 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_business_type,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_business_type,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_business_type,
@@ -2778,7 +2810,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 962 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 979 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_name,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_name,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_name,
@@ -2951,7 +2983,7 @@ html {
     clear: both;
   }
 
-/* line 975 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 992 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_zip,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_zip,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_zip,
@@ -3018,7 +3050,7 @@ html {
     clear: both;
   }
 
-/* line 987 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1004 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_description,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_description,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_description,
@@ -3121,7 +3153,7 @@ html {
     clear: both;
   }
 
-/* line 1000 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1017 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_description input,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_description input,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_description input,
@@ -3143,12 +3175,12 @@ html {
     display: inline-block;
   }
 
-/* line 1003 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1020 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_remember_me {
     font-size: 10px;
   }
 
-/* line 1005 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1022 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit input,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit a {
     position: relative;
@@ -3185,17 +3217,17 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 1011 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1028 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_shared_links {
     font-size: 12px;
   }
 
-/* line 1013 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1030 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new .lead_new_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 1015 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1032 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new_explanation {
     *zoom: 1;
     float: left;
@@ -3227,7 +3259,7 @@ html {
     clear: both;
   }
 
-/* line 1025 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1042 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first,
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second,
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third {
@@ -3235,7 +3267,7 @@ html {
     width: 100%;
   }
 
-/* line 1030 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1047 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first .fa.fa-pencil,
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second .fa.fa-pencil,
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third .fa.fa-pencil,
@@ -3248,14 +3280,14 @@ html {
     font-size: 42px;
   }
 
-/* line 1034 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1051 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_we_help {
     padding: 80px 220px 80px 220px;
     background-color: #fff;
     color: #606060;
   }
 
-/* line 1038 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1055 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_we_help .lead_new_we_help_title {
     font-size: 32px;
     text-transform: uppercase;
@@ -3264,7 +3296,7 @@ html {
     margin-bottom: 50px;
   }
 
-/* line 1044 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1061 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_we_help .lead_new_we_help_categories_title {
     font-size: 20px;
     font-weight: bold;
@@ -3272,7 +3304,7 @@ html {
     margin-bottom: 60px;
   }
 
-/* line 1049 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1066 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_we_help .lead_new_we_help_categories_list {
     text-align: center;
     font-size: 16px;
@@ -3280,7 +3312,7 @@ html {
     left: 3.09%;
   }
 
-/* line 1053 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1070 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_we_help .lead_new_we_help_categories_list .fa.fa-check-square-o {
     padding: 10px 10px 0px 0px;
     font-size: 16px;
@@ -3288,7 +3320,7 @@ html {
     opacity: 0.8;
   }
 
-/* line 1058 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1075 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_testimonials {
     padding: 50px 220px 50px 220px;
     background-color: #82c0c7;
@@ -3296,14 +3328,14 @@ html {
     font-size: 16px;
   }
 
-/* line 1063 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1080 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_testimonials .lead_new_testimonials_text {
     color: #eee;
     text-align: center;
     padding-bottom: 50px;
   }
 
-/* line 1067 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1084 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_testimonials .lead_new_testimonials_text .fa.fa-quote-left,
   body .body_leads_new .lead_new_testimonials .lead_new_testimonials_text .fa.fa-quote-right {
     font-size: 25px;
@@ -3311,7 +3343,7 @@ html {
     padding: 0px 5px 0px 5px;
   }
 
-/* line 1072 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1089 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_company_info {
     padding: 50px 0px 50px 0px;
     background-color: #222;
@@ -3319,7 +3351,7 @@ html {
     font-size: 18px;
   }
 
-/* line 1077 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1094 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_company_info .lead_new_company_info_contact input,
   body .body_leads_new .lead_new_company_info .lead_new_company_info_contact a {
     padding: 7px 0px 0px 0px;
@@ -3328,27 +3360,27 @@ html {
     text-decoration: none;
   }
 
-/* line 1083 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1100 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_company_info .lead_new_company_info_contact input:hover,
   body .body_leads_new .lead_new_company_info .lead_new_company_info_contact a:hover {
     color: #eee;
   }
 
-/* line 1085 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1102 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_company_info .lead_new_company_info_address {
     padding: 7px 0px 0px 0px;
     color: #fff;
     font-size: 14px;
   }
 
-/* line 1089 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1106 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_company_info .lead_new_company_info_name,
   body .body_leads_new .lead_new_company_info .lead_new_company_info_phone {
     font-size: 24px;
     color: #eee;
   }
 
-/* line 1095 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1112 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment {
     background-color: #eee;
     background-image: backgroundImage;
@@ -3374,7 +3406,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1098 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1115 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer {
     *zoom: 1;
     width: auto;
@@ -3407,7 +3439,7 @@ html {
     clear: both;
   }
 
-/* line 1108 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_title {
     *zoom: 1;
     width: auto;
@@ -3436,7 +3468,7 @@ html {
     clear: both;
   }
 
-/* line 1114 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1131 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_promotion {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -3446,7 +3478,7 @@ html {
     padding: 4px;
   }
 
-/* line 1121 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1138 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info {
     color: #222;
     border: 1px solid #e7e7e7;
@@ -3456,18 +3488,18 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 1128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1145 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info td:last-child {
     text-align: left;
   }
 
-/* line 1130 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1147 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info td:first-child {
     text-align: left;
     width: 109px;
   }
 
-/* line 1133 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1150 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_date {
     color: #222;
     font-size: 13px;
@@ -3475,7 +3507,7 @@ html {
     text-align: left;
   }
 
-/* line 1138 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1155 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info {
     margin-top: 20px;
     color: #222;
@@ -3485,7 +3517,7 @@ html {
     border-radius: 4px;
   }
 
-/* line 1145 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1162 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_price td {
     font-weight: bold;
     padding: 15px 30px 15px 30px;
@@ -3494,7 +3526,7 @@ html {
     color: #fff;
   }
 
-/* line 1151 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1168 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_item td {
     font-weight: bold;
     background-color: #eee;
@@ -3502,19 +3534,19 @@ html {
     font-size: 12px;
   }
 
-/* line 1156 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1173 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_item td:last-child {
     padding: 15px 30px 15px 30px;
   }
 
-/* line 1158 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1175 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_instructions {
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
 
-/* line 1163 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1180 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .alert.alert-notice {
     position: relative;
     top: 60px;
@@ -3523,7 +3555,7 @@ html {
     font-size: 14px;
   }
 
-/* line 1170 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1187 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_payment_confirmation {
     background-color: #eee;
     background-image: backgroundImage;
@@ -3550,7 +3582,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1174 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1191 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_payment_confirmation .to_address_book {
     width: 100%;
     height: 100%;
@@ -3559,7 +3591,7 @@ html {
     left: 0;
   }
 
-/* line 1180 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_payment_confirmation .payment_confirmation_wrapper {
     *zoom: 1;
     width: auto;
@@ -3592,7 +3624,7 @@ html {
     clear: both;
   }
 
-/* line 1190 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1207 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_payment_confirmation .payment_confirmation_wrapper .payment_confirmation_title {
     *zoom: 1;
     width: auto;
@@ -3621,7 +3653,7 @@ html {
     clear: both;
   }
 
-/* line 1196 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1213 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_payment_confirmation .payment_confirmation_wrapper .payment_confirmation_text {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -3631,12 +3663,12 @@ html {
     padding: 4px;
   }
 
-/* line 1204 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1221 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1206 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1223 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_welcome {
     margin-top: 29px;
     padding: 70px 60px 100px 60px;
@@ -3646,27 +3678,27 @@ html {
     font-weight: 300;
   }
 
-/* line 1213 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1230 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_welcome .section_welcome_title {
     font-size: 18px;
     color: #eee;
     margin-bottom: 10px;
   }
 
-/* line 1217 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1234 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_welcome .section_welcome_subtitle {
     font-size: 32px;
     letter-spacing: 2px;
     margin-bottom: 30px;
   }
 
-/* line 1221 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1238 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_welcome .section_welcome_text {
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1224 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1241 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_divided {
     color: #fff;
     font-size: 32px;
@@ -3674,7 +3706,7 @@ html {
     line-height: 200%;
   }
 
-/* line 1229 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1246 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_divided .section_divided_left {
     *zoom: 1;
     float: left;
@@ -3700,7 +3732,7 @@ html {
     clear: both;
   }
 
-/* line 1234 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1251 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_divided .section_divided_right {
     *zoom: 1;
     float: left;
@@ -3726,7 +3758,7 @@ html {
     clear: both;
   }
 
-/* line 1239 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1256 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_how_it_works {
     padding: 0px 0px 60px 0px;
     background-color: #fff;
@@ -3735,7 +3767,7 @@ html {
     color: #222;
   }
 
-/* line 1245 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1262 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image {
     background-color: #eee;
     background-image: backgroundImage;
@@ -3762,21 +3794,21 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1249 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1266 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_how_it_works .section_how_it_works_title {
     margin: 60px 60px 60px 30px;
     font-size: 32px;
     color: #eee;
   }
 
-/* line 1253 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1270 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_how_it_works .section_how_it_works_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1257 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1274 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_our_team {
     padding: 0px 0px 60px 0px;
     background-color: #eee;
@@ -3786,26 +3818,26 @@ html {
     text-align: center;
   }
 
-/* line 1264 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1281 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_our_team .fa.fa-heart {
     margin: 60px 60px 20px 30px;
     font-size: 80px;
   }
 
-/* line 1267 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1284 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_our_team .section_our_team_title {
     margin: 20px 60px 60px 30px;
     font-size: 32px;
   }
 
-/* line 1270 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1287 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_our_team .section_our_team_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1274 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1291 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_budget {
     padding: 0px 0px 60px 0px;
     background-color: #606060;
@@ -3815,28 +3847,28 @@ html {
     text-align: center;
   }
 
-/* line 1281 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1298 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_budget .fa.fa-calculator {
     margin: 60px 60px 20px 30px;
     font-size: 80px;
     color: #eee;
   }
 
-/* line 1285 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1302 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_budget .section_budget_title {
     margin: 20px 60px 60px 30px;
     font-size: 32px;
     color: #eee;
   }
 
-/* line 1289 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1306 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_budget .section_budget_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1293 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1310 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_what_customers_want {
     padding: 60px 60px 60px 60px;
     background-color: #222;
@@ -3845,25 +3877,25 @@ html {
     text-align: center;
   }
 
-/* line 1299 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1316 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_what_customers_want .section_what_customers_want_title {
     margin-bottom: 50px;
     font-size: 48px;
   }
 
-/* line 1302 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1319 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_what_customers_want .fa.fa-check-square-o {
     font-size: 30px;
     margin-right: 10px;
   }
 
-/* line 1305 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1322 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_what_customers_want .section_what_customers_want_item {
     margin-bottom: 20px;
     font-size: 18px;
   }
 
-/* line 1308 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1325 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_join_sosed {
     background-color: #eee;
     color: #222;
@@ -3874,7 +3906,7 @@ html {
     line-height: 200%;
   }
 
-/* line 1316 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1333 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_join_sosed .section_why_sosed_image {
     background-color: #eee;
     background-image: backgroundImage;
@@ -3900,7 +3932,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1319 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1336 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_join_sosed .fa.fa-line-chart,
   body .body_info_singlepage .section_join_sosed .fa.fa-paper-plane-o,
   body .body_info_singlepage .section_join_sosed .fa.fa-thumbs-up {
@@ -3912,7 +3944,7 @@ html {
     color: #222;
   }
 
-/* line 1327 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1344 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_join_sosed .section_join_sosed_introduce,
   body .body_info_singlepage .section_join_sosed .section_join_sosed_cooperation,
   body .body_info_singlepage .section_join_sosed .section_join_sosed_success {
@@ -3922,7 +3954,7 @@ html {
     background-color: #eee;
   }
 
-/* line 1334 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1351 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_why_sosed {
     padding: 0px 0px 60px 0px;
     letter-spacing: 1.4px;
@@ -3930,7 +3962,7 @@ html {
     color: #222;
   }
 
-/* line 1339 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1356 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_why_sosed .section_why_sosed_title {
     margin: 60px 60px 60px 30px;
     font-size: 32px;
@@ -3938,41 +3970,41 @@ html {
     font-weight: bold;
   }
 
-/* line 1344 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1361 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_why_sosed .section_why_sosed_text {
     margin: 60px 60px 30px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1348 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1365 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_form {
     letter-spacing: 1.4px;
     font-weight: 300;
     color: #222;
   }
 
-/* line 1352 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1369 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_form #mc_embed_signup {
     background-color: #82c0c7;
     padding: 50px 0px 30px 0px;
   }
 
-/* line 1355 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1372 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_form #mc_embed_signup label {
     font-size: 32px;
     color: #fff;
     text-align: center;
   }
 
-/* line 1359 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1376 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_form #mce-EMAIL {
     position: relative;
     left: 33.989999999999995%;
     width: 400px;
   }
 
-/* line 1362 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1379 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_form #mc-embedded-subscribe {
     position: relative;
     left: 41.2%;
@@ -3980,7 +4012,7 @@ html {
     width: 200px;
   }
 
-/* line 1366 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1383 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_company_info {
     text-align: center;
     background-color: #82c0c7;
@@ -3988,7 +4020,7 @@ html {
     font-size: 14px;
   }
 
-/* line 1371 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1388 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_company_info .section_company_info_name {
     font-size: 18px;
     text-transform: uppercase;
@@ -3996,7 +4028,7 @@ html {
     font-weight: bold;
   }
 
-/* line 1376 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1393 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_company_info .section_company_info_name,
   body .body_info_singlepage .section_company_info .section_company_info_street,
   body .body_info_singlepage .section_company_info .section_company_info_city,
@@ -4006,12 +4038,12 @@ html {
     padding: 7px 0px 0px 0px;
   }
 
-/* line 1383 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1400 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage .section_company_info:last-child {
     padding-bottom: 80px;
   }
 
-/* line 1386 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1403 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_new_lead_confirmation {
     background-color: #eee;
     background-image: backgroundImage;
@@ -4039,7 +4071,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1391 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1408 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_new_lead_confirmation .new_lead_confirmation {
     *zoom: 1;
     width: auto;
@@ -4069,19 +4101,19 @@ html {
     clear: both;
   }
 
-/* line 1398 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1415 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_new_lead_confirmation .new_lead_confirmation .new_lead_confirmation_thank_you {
     font-size: 26px;
     font-weight: bold;
   }
 
-/* line 1401 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1418 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_new_lead_confirmation .new_lead_confirmation .new_lead_confirmation_text {
     font-size: 18px;
     padding-top: 40px;
   }
 
-/* line 1406 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1423 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans {
     background-color: #eee;
     background-image: backgroundImage;
@@ -4108,7 +4140,7 @@ html {
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
   }
 
-/* line 1410 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1427 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .plans_title {
     color: #82c0c7;
     opacity: 0.85;
@@ -4118,7 +4150,7 @@ html {
     padding-bottom: 80px;
   }
 
-/* line 1417 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1434 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .lead_box {
     width: 303px;
     height: 425px;
@@ -4130,7 +4162,7 @@ html {
     text-align: center;
   }
 
-/* line 1426 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1443 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .lead_box .plans_item_text:first-child {
     font-weight: bold;
     color: #222;
@@ -4140,7 +4172,7 @@ html {
     text-align: center;
   }
 
-/* line 1433 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1450 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .lead_box .plans_item_text:nth-child(2) {
     font-weight: bold;
     color: #fff;
@@ -4151,14 +4183,14 @@ html {
     text-align: center;
   }
 
-/* line 1441 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1458 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .lead_box .plans_item_text {
     font-size: 15px;
     padding: 20px 25px 0px 30px;
     text-align: left;
   }
 
-/* line 1445 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1462 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .lead_box .plans_item_buy_button {
     margin-top: 40px;
     position: absolute;
@@ -4192,7 +4224,7 @@ html {
     background-color: #ff9f2c;
   }
 
-/* line 1452 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1469 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .plans_item_note {
     color: #222;
     font-size: 14px;
@@ -4202,7 +4234,7 @@ html {
     width: 60%;
   }
 
-/* line 1458 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1475 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .plans_faq_item {
     margin-top: 40px;
     position: relative;
@@ -4213,14 +4245,14 @@ html {
     line-height: 150%;
   }
 
-/* line 1465 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1482 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .plans_faq_item .plans_faq_item_question {
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 7px;
   }
 
-/* line 1469 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1486 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_plans .plans_faq_item .plans_faq_item_answer {
     font-weight: italics;
     padding-bottom: 20px;
@@ -7923,7 +7955,7 @@ html {
   }
 }
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
+/* line 1362 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
 @media only screen and (max-width: 706px) {
@@ -20426,7 +20458,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20461,7 +20493,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20495,7 +20527,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20513,7 +20545,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -20543,7 +20575,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -20558,13 +20590,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20632,7 +20664,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20681,7 +20713,7 @@ html {
     width: 345px;
     padding-bottom: 10px;
     padding-left: 30px;
-    border-left: 9px solid #eee;
+    border-left: 9px solid #ffae4d;
   }
 
 /* line 195 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20693,7 +20725,7 @@ html {
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -20788,7 +20820,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -20823,7 +20855,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -20857,7 +20889,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -20875,7 +20907,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -20905,7 +20937,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -20920,13 +20952,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -20994,7 +21026,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -21043,7 +21075,7 @@ html {
     width: 345px;
     padding-bottom: 10px;
     padding-left: 30px;
-    border-left: 9px solid #eee;
+    border-left: 9px solid #ffae4d;
   }
 
 /* line 195 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -21055,7 +21087,7 @@ html {
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -21150,7 +21182,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21185,7 +21217,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21219,7 +21251,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21237,7 +21269,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -21267,7 +21299,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -21282,13 +21314,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21356,7 +21388,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21405,7 +21437,7 @@ html {
     width: 345px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 9px solid #eee;
+    border-left: 9px solid #ffae4d;
   }
 
 /* line 195 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21417,7 +21449,7 @@ html {
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -21518,7 +21550,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21553,7 +21585,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21587,7 +21619,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21605,7 +21637,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -21635,7 +21667,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -21650,13 +21682,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21724,7 +21756,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21773,7 +21805,7 @@ html {
     width: 345px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 9px solid #eee;
+    border-left: 9px solid #ffae4d;
   }
 
 /* line 195 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21785,7 +21817,7 @@ html {
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -21886,7 +21918,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -21921,7 +21953,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -21955,7 +21987,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -21973,7 +22005,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -22003,7 +22035,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -22018,13 +22050,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -22092,7 +22124,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -22141,7 +22173,7 @@ html {
     width: 220px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 9px solid #eee;
+    border-left: 9px solid #ffae4d;
   }
 
 /* line 195 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -22153,7 +22185,7 @@ html {
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -22254,7 +22286,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22289,7 +22321,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22323,7 +22355,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22341,7 +22373,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -22371,7 +22403,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -22386,13 +22418,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22460,7 +22492,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22509,8 +22541,8 @@ html {
     width: 220px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 0px solid #eee;
-    border-top: 5px solid #eee;
+    border-left: 0px solid #ffae4d;
+    border-top: 5px solid #ffae4d;
   }
 
 /* line 196 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22523,7 +22555,7 @@ html {
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 201 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -22624,7 +22656,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22659,7 +22691,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22693,7 +22725,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22711,7 +22743,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -22741,7 +22773,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -22756,13 +22788,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22830,7 +22862,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22880,7 +22912,7 @@ html {
     width: 220px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 0px solid #eee;
+    border-left: 0px solid #ffae4d;
   }
 
 /* line 196 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22893,7 +22925,7 @@ html {
 /* line 199 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation a:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation a:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 201 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -22994,7 +23026,7 @@ html {
 
 /* line 41 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_my_pic {
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 43 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23029,7 +23061,7 @@ html {
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
   body .body_messages .conversation_messages .conversation_message_sender_body .conversation_message_sender_body_my_name {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23063,7 +23095,7 @@ html {
     border-radius: 50%;
     margin: 0 15px 0 0;
     float: left !important;
-    background-color: #eee;
+    background-color: #ffae4d;
   }
 
 /* line 85 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23081,7 +23113,7 @@ html {
     color: #606060;
     font-size: 12px;
     border-radius: 0;
-    border: 2px solid #eee;
+    border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
     min-height: 50px;
@@ -23111,7 +23143,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #ffae4d;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -23126,13 +23158,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:hover,
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:focus {
-    background-color: #e2e2e2;
+    background-color: #ffa63c;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_messages .conversation_reply .conversation_reply_message_body_sent_button .btn-primary:active {
-    background-color: #d6d6d6;
+    background-color: #ff9f2c;
   }
 
 /* line 119 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23200,7 +23232,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23251,7 +23283,7 @@ html {
     width: 220px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-left: 0px solid #eee;
+    border-left: 0px solid #ffae4d;
   }
 
 /* line 197 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -23264,7 +23296,7 @@ html {
 /* line 200 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
   .body_conversations .conversations_wrapper .conversations_inbox_list .mailboxer_conversation:hover,
   .body_conversations .conversations_wrapper .conversations_sent_list .mailboxer_conversation:hover {
-    color: #eee;
+    color: #ffae4d;
   }
 
 /* line 202 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
