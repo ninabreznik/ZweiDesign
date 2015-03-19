@@ -10,7 +10,7 @@
       <div class="lead_subtitle">Storitve:</div>          
         <%= @user.business_type %><br>
       <div class="lead_subtitle" ></div>
-        <%= image_tag @user.picture.url(:thumb)%>  <br>
+        <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %>  <br>
       <div class="lead_subtitle">Kontakt:</div>          
         <%= @user.first_name %> <%= @user.surname %><br>
       <div class="lead_subtitle">Lokacija:</div>         
@@ -27,10 +27,6 @@
         <% end %>
         <div class="lead_subtitle">Davčna številka:</div>          
         <%= @user.tax_id %><br><br>
-        <% if @user == current_user %>
-          <div class="lead_subtitle"></div>          
-          <%= link_to "Uredi profil", edit_user_registration_path %>
-        <% end %>
     </div>
   </div> 
   <% Project.all.where(user_id: @user.id).each do |project| %>

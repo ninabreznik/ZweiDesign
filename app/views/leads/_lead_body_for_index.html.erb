@@ -11,10 +11,4 @@
     <%= lead.name %>       <br>
   <div class="lead_subtitle"> Aktualizirano:</div>        
     <%= lead.updated_at.strftime("%d.%m.%Y") %> <br>
-  <div class="lead_subtitle"> Št.zakupov:</div>
-  <% if lead.reverse_orders.where(paid: true).count > 4 %>
-    Kontakt ni več na voljo   
-  <% else %>     
-    <%= lead.reverse_orders.where(paid: true).count %> <br>
-  <% end %>
 </div>

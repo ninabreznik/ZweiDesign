@@ -76,11 +76,9 @@
     <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
-        <%= image_tag project.picture.url(:medium), :width => "250" %> <br>
-     <!--  <div class="lead_subtitle">Avtor:</div>          
-        <%= project.email %> <br>
-      <div class="lead_subtitle">Opis:</div>         
-      <%= project.description %>      <br> -->
+        <%= link_to "#{image_tag project.picture.url(:medium), :width => '250'}".html_safe, project_path(project) %> <br>
+      <div class="lead_subtitle">
+        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %></div>
     </div>      
   </div>
   <% end %>
@@ -90,14 +88,14 @@
 </div>
 
 
-  <script type="text/javascript">
-    var leadboxes = document.querySelectorAll('.lead_box');
-    for(var i = 0; i < leadboxes.length; i++) {
-      (function leadbox (ID) {
-        leadboxes[ID].addEventListener('click', function onClick (event) {
-          var leadpath =leadboxes[ID].querySelector('a').getAttribute('href');
-          window.location.href = leadpath;
-        });
-      })(i);
-    }
-</script>
+//   <script type="text/javascript">
+//     var leadboxes = document.querySelectorAll('.lead_box');
+//     for(var i = 0; i < leadboxes.length; i++) {
+//       (function leadbox (ID) {
+//         leadboxes[ID].addEventListener('click', function onClick (event) {
+//           var leadpath =leadboxes[ID].querySelector('a').getAttribute('href');
+//           window.location.href = leadpath;
+//         });
+//       })(i);
+//     }
+// </script>

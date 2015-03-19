@@ -8,7 +8,9 @@
         <div class="lead_show_items_short">      
           <div class="lead_show_item">             
             <div class="lead_show_subtitle"></div> 
-            <%= image_tag @project.picture.url(:full), :width => "770" %>
+            <%=link_to "#{image_tag @project.picture.url(:full)}".html_safe, user_path(@project.user) %></div>
+            <div class="lead_subtitle">
+              <%=link_to "#{image_tag @project.user.picture.url(:thumb), :width => "25"} #{@project.user.company}".html_safe, user_path(@project.user) %></div><br><br>
           </div>
         <% if current_user.present? %>
           <% if @project.email == current_user.email %>
@@ -20,7 +22,7 @@
               <%= form_for :conversation, url: :conversations do |f| %>
                 <%= f.text_field :recipients, type: "hidden", value: "#{@project.email}" %>
                 <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} se zanima za #{@project.title} "  %>
-                <%= f.text_field  :body, as: :text, placeholder: "Kontaktirajte izvajalca tega projekta" %>
+                <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo avtorju tega projekta" %>
                 <div class="project_show_send_message_button">
                   <%= f.button :Pošlji %>
                 </div>
