@@ -11,6 +11,7 @@ class UserMailer < ActionMailer::Base
     mail(to: @user.email, subject: 'Dobrodošli na Sosed App')
   end
 
+
   # def new_campaign(campaign)
   #   @user = user
   #   #@url  = 'http://example.com/login'

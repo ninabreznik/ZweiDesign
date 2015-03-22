@@ -7,7 +7,7 @@
     </div>
     <div class="index_message" >
       <%= link_to conversation.subject, conversation_path(conversation, anchor: 'after_all_messages'), target: :chat_window %> <br>
-      <%= conversation.last_message.body[0..90] + "..." %> <br>
+      <%= conversation.last_message.body[0..25] + "..." %> 
       <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %><br>
     </div>
   <% end %> 
