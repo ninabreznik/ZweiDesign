@@ -10,16 +10,16 @@ class ProjectsController < ApplicationController
       ["Jedilnica"],
       ["Otroški prostor"],
       ["Delovni prostor"],
-      ["Prostor za shranjevanje"],
-      ["Vhod in garderoba"],
+      ["Utility & shramba"],
+      ["Vhod & garderoba"],
       ["Hodnik"],
       ["Stopnišče"],
       ["Klet"],
-      ["Garaža in hobi prostor"],
-      ["Hiša in fasade"],
+      ["Garaža"],
+      ["Hiša & fasade"],
       ["Okolica"],
       ["Svetila"],
-      ["Dekor"]
+      ["Hobi & dekor"]
     ]
   end
 
@@ -139,11 +139,13 @@ class ProjectsController < ApplicationController
 
   def project_params
     params.require(:project).permit(
-      :title, 
+      :title,
+      :de_title, 
       :user_id,
       :picture,
       :email,
       :description,
+      :de_description,
       :category
     )
   end

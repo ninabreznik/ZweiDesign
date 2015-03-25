@@ -7,6 +7,10 @@
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">             
+            <% if @project.description.present? %>
+              <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
+              <%= @project.description %> <br><br>
+            <% end %>
             <div class="lead_show_subtitle"></div> 
             <%=link_to "#{image_tag @project.picture.url(:full)}".html_safe, user_path(@project.user) %></div>
             <div class="lead_subtitle">

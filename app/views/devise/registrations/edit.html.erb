@@ -5,35 +5,21 @@
   <%= I18n.t'users-edit.edit-title' %>
 </div>
 
-
 <%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
-
-  <div class="user_edit_form_email"><%= f.label :"Uporabniško ime (ne spreminjajte)" %><br />
-  <%= f.email_field :email, autofocus: true %></div><br>
-
-  <div class="user_edit_form_email"><%= f.label :"Podjetje" %><br>
-  <%= f.text_field :company %></div>
-
-  <div class="user_edit_form_email"><%= f.label :"Telefon" %><br>
-  <%= f.text_field :phone %></div>
-
-  <div class="user_edit_form_email"><%= f.label :"Davčna številka" %><br>
-  <%= f.text_field :tax_id %></div>
-
-  <div class="user_edit_form_email"><%= f.label :"Spletna stran" %><br>
-  <%= f.text_field :website %></div>
-
   <div class="user_edit_form_email">
-    <%= f.label :"Kontaktna oseba (ime in priimek)" %><br>
+    <br><%= f.label :"Kontaktna oseba (ime in priimek)" %><br>
     <%= f.text_field :first_name%>
-    <%= f.text_field :surname%></div>
-  
-  <div class="user_edit_form_email"><%= f.label :"Profilna fotka" %><br />
+    <%= f.text_field :surname%></div><br>
+
+  <div class="user_edit_form_email"><%= f.label :"Pripnite profilno fotko" %><br>
     <%= f.file_field :picture %></div><br>
 
-  <div class="user_edit_form_email">
-    <%= f.label :"Področje" %><br>
+  <div class="user_edit_form_email"><%= f.label :"Podjetje" %><br>
+  <%= f.text_field :company %></div><br>
+
+   <div class="user_edit_form_email">
+    <%= f.label :"Področje in seznam storitev" %><br>
     <%= f.select :business_type, [
       ["Arhitekti & Projektanti", "Arhitekti & Projektanti"], 
       ["Izvajalci splošnih gradbenih del", "Izvajalci splošnih gradbenih del"],
@@ -46,25 +32,38 @@
       ["Kamen, tlakovci & beton", "Kamen, tlakovci & beton"], 
       ["Keramika, kamen & marmor", "Keramika, kamen & marmor"]
     ], :prompt=>"Izberite vaše glavno področje"%> 
+    <%= f.text_field :service%>
   </div><br>
 
-  <div class="user_edit_form_email"><%= f.label :"Katere storitve nudite" %><br/>
-  <%= f.text_field :service%></div>
+  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev podjetja" %><br />
+  <%= f.text_area :bio%></div><br>
+
+  <div class="user_edit_form_email"><%= f.label :"Telefon" %><br>
+  <%= f.text_field :phone %></div><br>
+
+  <div class="user_edit_form_email"><%= f.label :"Davčna številka" %><br>
+  <%= f.text_field :tax_id %></div><br>
+
+  <div class="user_edit_form_email"><%= f.label :"Spletna stran" %><br>
+  <%= f.text_field :website %></div><br>
 
   <div class="user_edit_form_email"><%= f.label :"Kraj" %><br />
   <%= f.text_field :city%></div><br>
 
-  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev" %><br />
-  <%= f.text_area :bio%></div><br>
+<div class="user_edit_form_current_password">
+  <%= f.label :"Vaše geslo (nujno za potrditev sprememb)" %> <br>
+  <%= f.password_field :current_password, autocomplete: "off" %></div><br><br><br>
 
-  
+  <div class="user_edit_form_email"><%= f.label :"Če želite predstavitev tudi na nemškem trgu, dodajte še:" %></div><br>
+  <div class="user_edit_form_email"><%= f.label :"Katere storitve nudite (v nemščini)" %><br/>
+  <%= f.text_field :de_service%></div>
+  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev (v nemščini)" %><br />
+  <%= f.text_area :de_bio %></div><br><br><br>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="user_edit_form_current_password"><%= f.label :"Geslo (nujno za potrditev sprememb)" %> <br />
-    <%= f.password_field :current_password, autocomplete: "off" %></div>
 
  ............................................................<br><br>
   <div class="user_edit_form_password">
@@ -72,18 +71,18 @@
     <%= f.password_field :password, autocomplete: "off" %><br><br>
     <%= f.label :"Potrditev novega gesla" %><br>
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
-............................................................<br> 
+............................................................<br> <br><br>
 
   <div class="user_edit_form_submit"><%= f.submit "POTRDITE" %> </div>
-<% end %><br><br><br><br><br>
+<% end %><br>
+
+<div class="user_edit_back"><%= link_to "#{I18n.t'users-edit.back'}", :back %> </div><br><br><br><br><br>
 
 
 <div class="user_edit_unhappy"><%= mail_to 'nina.breznik@sosed.si', 'Niste zadovoljni? Povejte nam, zakaj. Dali bomo vse od sebe, da najdemo rešitev.' %> </div>
   <div class="user_edit_button_cancel_account">
     <%= button_to "#{I18n.t'users-edit.cancel-account-button'}", registration_path(resource_name), data: { confirm: "#{I18n.t'users-edit.sure'}"}, method: :delete %>
   </div>
-
-<div class="user_edit_back"><%= link_to "#{I18n.t'users-edit.back'}", :back %> </div>
 </div>
 
 

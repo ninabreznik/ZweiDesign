@@ -38,16 +38,16 @@ form do |f|
       ["Jedilnica"],
       ["Otroški prostor"],
       ["Delovni prostor"],
-      ["Prostor za shranjevanje"],
-      ["Vhod in garderoba"],
+      ["Utility & shramba"],
+      ["Vhod & garderoba"],
       ["Hodnik"],
       ["Stopnišče"],
       ["Klet"],
-      ["Garaža in hobi prostor"],
-      ["Hiša in fasade"],
+      ["Garaža"],
+      ["Hiša & fasade"],
       ["Okolica"],
       ["Svetila"],
-      ["Dekor"]
+      ["Hobi & dekor"]
     ]
   f.input :picture_updated_at
   f.input :picture_file_name

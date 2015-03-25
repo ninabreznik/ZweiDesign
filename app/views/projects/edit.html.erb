@@ -19,7 +19,22 @@
         <%= p.text_field :title %>
       </div>
       <div class="lead_new_form_description"> 
+        <%= p.label "Opis" %>
+        <%= p.text_area :description %>
+      </div>
+      <div class="lead_new_form_description"> 
         <%= p.file_field :picture %>
+      </div><br>
+      <div class="lead_new_form_description">
+        Če želite predstavitev na nemškem trgu, dodajte še:
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "Naslov projekta (v nemščini)" %>
+        <%= p.text_field :de_title %>
+      </div>
+      <div class="lead_new_form_description"> 
+        <%= p.label "Opis (v nemščini)" %>
+        <%= p.text_area :de_description %>
       </div>
         <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
       <div class="lead_new_form_submit">
