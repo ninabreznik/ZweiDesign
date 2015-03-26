@@ -48,21 +48,21 @@
   <%= f.text_field :website %></div><br>
 
   <div class="user_edit_form_email"><%= f.label :"Kraj" %><br />
-  <%= f.text_field :city%></div><br>
+  <%= f.text_field :city%></div><br><br><br>
 
-<div class="user_edit_form_current_password">
-  <%= f.label :"Vaše geslo (nujno za potrditev sprememb)" %> <br>
-  <%= f.password_field :current_password, autocomplete: "off" %></div><br><br><br>
-
-  <div class="user_edit_form_email"><%= f.label :"Če želite predstavitev tudi na nemškem trgu, dodajte še:" %></div><br>
-  <div class="user_edit_form_email"><%= f.label :"Katere storitve nudite (v nemščini)" %><br/>
+  <div class="user_edit_form_email"><%= f.label :"Če želite predstavitev tudi na tujem trgu, dodajte še:" %></div><br>
+  <div class="user_edit_form_email"><%= f.label :"Katere storitve nudite (v angleščini)" %><br/>
   <%= f.text_field :de_service%></div>
-  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev (v nemščini)" %><br />
+  <div class="user_edit_form_email"><%= f.label :"Bio - kratka predstavitev (v angleščini)" %><br />
   <%= f.text_area :de_bio %></div><br><br><br>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
+
+  <div class="user_edit_form_current_password">
+  <%= f.label :"Vaše geslo (nujno za potrditev sprememb)" %> <br>
+  <%= f.password_field :current_password, autocomplete: "off" %></div><br><br>
 
 
  ............................................................<br><br>

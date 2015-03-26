@@ -26,14 +26,14 @@
         <%= p.file_field :picture %>
       </div><br>
       <div class="lead_new_form_description">
-        Če želite predstavitev tudi na nemškem trgu, dodajte še:
+        Če želite predstavitev tudi na tujem trgu, dodajte še:
       </div>
       <div class="lead_new_form_description">
-        <%= p.label "Naslov projekta (v nemščini)" %>
+        <%= p.label "Naslov projekta (v angleščini)" %>
         <%= p.text_field :de_title %>
       </div>
       <div class="lead_new_form_description"> 
-        <%= p.label "Opis (v nemščini)" %>
+        <%= p.label "Opis (v angleščini)" %>
         <%= p.text_area :de_description %>
       </div>
         <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>

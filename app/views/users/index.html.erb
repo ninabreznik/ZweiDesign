@@ -1,0 +1,80 @@
+
+<div class="body_leads_index">
+
+
+<div class="columns" id="main" role="main">
+<ol id="filters">
+  <li data-filter='Arhitekti & Projektanti'>
+    Arhitekti & Projektanti (<%=@architects_count%>)
+  </li>
+  <li data-filter='Izvajalci splošnih gradbenih del'>
+    Izvajalci splošnih gradbenih del (<%=@constructions_count%>)
+  </li>
+  <li data-filter='Zidarji'>
+    Zidarji (<%=@builders_count%>)
+  </li>
+  <li data-filter='Notranji oblikovalci & Dekoraterji'>
+    Notranji oblikovalci & Dekoraterji (<%=@designers_count%>)
+  </li>
+  <li data-filter='Arhitekti in Projektanti kuhinj & kopalnic'>
+    Arhitekti/Projektanti kuhinj & kopalnic (<%=@kitchen_bathroom_architects_count%>)
+  </li>
+  <li data-filter='Renoviranje kuhinj & kopalnic'>
+    Renoviranje kuhinj & kopalnic (<%= @kitchen_bathroom_renovators_count %>)
+  </li>
+  <li data-filter='Načrtovalci okolice'>
+    Načrtovalci okolice (<%=@landscape_planning_count%>)
+  </li>
+  <li data-filter='Urejanje okolice'>
+    Urejanje okolice (<%=@landscape_maintainance_count  %>)
+  </li>
+  <li data-filter='Kamen, tlakovci & beton'>
+    Kamen, tlakovci & beton (<%=@stone_count%>)
+  </li>
+  <li data-filter='Keramika, kamen & marmor'>
+    Keramika, kamen & marmor (<%=@ceramics_count%>)
+  </li>
+</ol>
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="//sosed.us1.list-manage.com/subscribe/post?u=2228fd24f2a4419c938ef2fdb&amp;id=791cffa2c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Prijavite se na ZweiDesign novice!" required>
+   <input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+ 
+<ul id="tiles" class="wookmark">
+<% if @users.present? %>
+  <% @sorted_users.each do |user| %>
+  <div class="lead_box" data-filter-class='["<%= user.business_type %>"]' >
+    <div class="lead_title"><%= link_to "#{user.company}", user_path(user) %></div>     
+    <div class="lead_body">
+      <div class="lead_subtitle_image" ></div>
+        <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %> <br>
+      <% if user.projects.any? %>
+        <div class="lead_subtitle">
+          Projekti:
+        </div><br>
+        <% user.projects.each do |project| %>
+          <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br>
+        <% end %>
+      <% end %>
+      <% if user.service.present? %>
+        <div class="lead_subtitle"> Storitve:</div>
+          <%= user.service %> 
+      <% end %>
+
+    </div>      
+  </div>
+  <% end %>
+<% end %>
+</ul>
+</div>
+</div>
+
