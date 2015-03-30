@@ -3,13 +3,12 @@
   <% if user_signed_in? %>
     <select id="menu_bar_select" class="select_bar">
     <option value=""><%= current_user.email.split('@').first %></option>
-    <option value="<%= root_path %>">Domov</option>
-    <option value="<%= edit_user_registration_path %>">Uredi profil</option>
-    <option value="<%= leads_path %>">Novi kontakti</option>
-    <option value="<%= address_book_path %>">Imenik kontaktov</option>
-    <option value="<%= info_path %>">Info</option>
     <option value="<%= user_path(current_user)%>">Moj profil</option>
-    <option value="<%= profile_path %>">Nadzorna plošča</option>
+    <option value="<%= edit_user_registration_path %>">Uredi profil</option>
+    <option value="<%= leads_path %>">Stranke iščejo</option>
+    <option value="<%= delim_path %>">Jaz iščem</option>
+    <option value="<%= info_path %>">Več o ZweiDesign</option>
+    <!-- <option value="<%= profile_path %>">Nadzorna plošča</option> -->
     <option value="<%= destroy_user_session_path %>">Odjava</option>
   </select>
   <div class="publish_project"> 
@@ -21,15 +20,19 @@
     <% end %>
   </div>
   <% else %>
-    <div class="not_logged_user">
-    <%= link_to "#{I18n.t'application.top-menu.login'}", new_user_session_path %> | <%= link_to "#{I18n.t'application.top-menu.signup'}", new_user_registration_path %>
-    </div>
+    <select id="menu_bar_select" class="select_bar">
+    <option value="">Prijava/Registracija</option>
+    <option value="<%= new_user_registration_path %>">Registriraj se</option>
+    <option value="<%= delim_path %>">Iščem izvajalca</option>
+    <option value="<%= info_path %>">Več o ZweiDesign</option>
+    <option value="<%= root_path %>">Domov</option>
+  </select>
   <div class="publish_project"> 
     <%= link_to "Objavite svoj projekt", new_project_path %> 
   </div>
   <div class="messages"> 
-    <%= link_to leads_new_path do %>
-      <i class="fa fa-search"></i>
+    <%= link_to info_path do %>
+    <i class="fa fa-search"></i>
     <% end %>
   </div>
   <% end %>
