@@ -22,7 +22,8 @@
   <% else %>
     <select id="menu_bar_select" class="select_bar">
     <option value="">Prijava/Registracija</option>
-    <option value="<%= new_user_registration_path %>">Registriraj se</option>
+    <option value="<%= new_user_session_path %>">Prijava</option>
+    <option value="<%= new_user_registration_path %>">Še niste registrirani?</option>
     <option value="<%= delim_path %>">Iščem izvajalca</option>
     <option value="<%= info_path %>">Več o ZweiDesign</option>
     <option value="<%= root_path %>">Domov</option>
