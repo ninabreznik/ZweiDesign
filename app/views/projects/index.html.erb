@@ -85,7 +85,7 @@
                 html: { method: :delete }) do |l| %>
                 <%= l.button do %>
                   <% if @likes.where(likee_id: project.id).count == nil %>
-                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-heart-o"></i>
                   <% else %>   
                     <i class="fa fa-heart"></i> <%= @likes.where(likee_id: project.id).count %>
                   <% end %>

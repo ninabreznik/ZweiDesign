@@ -232,7 +232,7 @@ html {
                 LEAD LISTING MIXINS 
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1556 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -4445,14 +4445,14 @@ html {
 
 /* line 1534 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .project_show_send_message #conversation_body {
-    width: 90%;
+    width: 95.6%;
     color: #606060;
     font-size: 12px;
     border-radius: 0;
     border: 2px solid #ffae4d;
     padding: 10px 10px 10px 10px;
     margin: 0;
-    min-height: 50px;
+    min-height: 40px;
     line-height: 20px;
     height: auto;
     max-height: 284px;
@@ -4475,8 +4475,7 @@ html {
     text-decoration: none;
     display: inline-block;
     border: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px;
   }
 
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */

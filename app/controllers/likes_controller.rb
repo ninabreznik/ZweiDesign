@@ -9,7 +9,7 @@ class LikesController < ApplicationController
 
   def destroy
     Like.find(params[:id]).destroy
-    redirect_to root_path
+    redirect_to :back
   end
 
 

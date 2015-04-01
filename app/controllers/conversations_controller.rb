@@ -9,7 +9,7 @@ class ConversationsController < ApplicationController
     conversation = current_user.
       send_message(recipients, *conversation_params(:body, :subject)).conversation
 
-    redirect_to conversation_path(conversation)
+    redirect_to conversations_path
   end
 
 #message = current_user.mailbox.inbox.last.receipts_for(a).first.message

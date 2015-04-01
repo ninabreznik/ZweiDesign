@@ -4,41 +4,82 @@
 
 <ul class="wookmark">
 <% if @user.present? %>
-  <div class="lead_box">
-    <div class="lead_title"><%= @user.company %> </div>     
-    <div class="lead_body">
-      <div class="lead_subtitle">Storitve:</div>          
-        <%= @user.business_type %><br>
-      <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %>  <br>
-      <div class="lead_subtitle">Kontakt:</div>          
-        <%= @user.first_name %> <%= @user.surname %><br>
-      <div class="lead_subtitle">Lokacija:</div>         
-        <%= @user.city %><br><br>
-      <div class="lead_subtitle">Bio:</div>         
-        <%= @user.bio %><br><br>
-      <div class="lead_subtitle">Storitve:</div>          
-        <%= @user.service %> <br>
-        <div class="lead_subtitle">Telefon:</div>          
-        <%= @user.phone %> <br>
-        <% if @user.website != nil %>
-          <div class="lead_subtitle">Spletna stran:</div>          
-          <%= link_to "#{@user.website}", "http://#{@user.website}" %><br>
-        <% end %>
-        <div class="lead_subtitle">Davčna številka:</div>          
-        <%= @user.tax_id %><br><br>
-    </div>
-  </div> 
+    <div class="lead_box">
+      <div class="lead_title"><%= @user.company %> </div>     
+      <div class="lead_body">
+        <div class="lead_subtitle">Storitve:</div>          
+          <%= @user.business_type %><br>
+        <div class="lead_subtitle" ></div>
+          <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %>  <br>
+        <div class="lead_subtitle">Kontakt:</div>          
+          <%= @user.first_name %> <%= @user.surname %><br>
+        <div class="lead_subtitle">Lokacija:</div>         
+          <%= @user.city %><br><br>
+        <div class="lead_subtitle">Bio:</div>         
+          <%= @user.bio %><br><br>
+        <div class="lead_subtitle">Storitve:</div>          
+          <%= @user.service %> <br>
+          <div class="lead_subtitle">Telefon:</div>          
+          <%= @user.phone %> <br>
+          <% if @user.website != nil %>
+            <div class="lead_subtitle">Spletna stran:</div>          
+            <%= link_to "#{@user.website}", "http://#{@user.website}" %><br>
+          <% end %>
+          <div class="lead_subtitle">Davčna številka:</div>          
+          <%= @user.tax_id %><br><br>
+          <% if user_signed_in? && current_user != @user %>
+            <div class="lead_subtitle"></div> 
+            <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>  
+              <div class="project_show_send_message">
+                <%= form_for :conversation, url: :conversations do |f| %>
+                  <%= f.text_field :recipients, type: "hidden", value: "#{@user.email}" %>
+                  <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} vam pošilja sporočilo"  %>
+                  <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo temu izvajalcu" %>
+                  <div class="project_show_send_message_button">
+                    <%= f.button :Pošlji %>
+                  </div>
+                <% end %>
+              </div>
+          <% end %>
+      </div>
+    </div> 
   <% Project.all.where(user_id: @user.id).each do |project| %>
     <div class="lead_box">
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
       <div class="lead_body">
         <div class="lead_subtitle"></div>
           <%= image_tag project.picture.url(:medium), :width => "287"  %> <br>
-        <!-- <div class="lead_subtitle">Avtor:</div>          
-          <%= project.email %><br>
-        <div class="lead_subtitle">Opis:</div>         
-          <%= project.description %><br> -->
+        <div class="lead_subtitle"></div>
+        <% if current_user.present? %>
+          <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>
+                  <%= form_for(current_user.likes.build(likee_id: project.id)) do |l| %>
+                    <%= l.hidden_field :likee_id %>       
+                    <%= l.button do %>
+                      <% if @likes.where(likee_id: project.id).count == nil %>
+                        <i class="fa fa-heart-o"></i>
+                      <% else %>
+                        <i class="fa fa-heart-o"></i> <%= @likes.where(likee_id: project.id).count %>
+                      <% end %>
+                    <% end %>
+                  <% end %>  
+          <% else %>
+             <%= form_for(current_user.likes.find_by_likee_id(project.id),
+                html: { method: :delete }) do |l| %>
+                <%= l.button do %>
+                  <% if @likes.where(likee_id: project.id).count == nil %>
+                    <i class="fa fa-heart-o"></i>
+                  <% else %>   
+                    <i class="fa fa-heart"></i> <%= @likes.where(likee_id: project.id).count %>
+                  <% end %>
+                <% end %>
+              <% end %> 
+          <% end %>
+        <% else %>
+          <div class="like_heart">
+            <%= link_to '<i class="fa fa-heart-o"></i>'.html_safe, new_user_session_path %>
+            <%= @likes.where(likee_id: project.id).count %>
+          </div>
+        <% end %> 
       </div>
     </div>        
   <% end %>
@@ -51,14 +92,3 @@
 
 
 
-<script type="text/javascript">
-    var leadboxes = document.querySelectorAll('.lead_box');
-    for(var i = 0; i < leadboxes.length; i++) {
-      (function leadbox (ID) {
-        leadboxes[ID].addEventListener('click', function onClick (event) {
-          var leadpath =leadboxes[ID].querySelector('a').getAttribute('href');
-          window.location.href = leadpath;
-        });
-      })(i);
-    }
-</script>
