@@ -74,13 +74,9 @@
                     <%= l.hidden_field :likee_id %>       
                     <%= l.button do %>
                       <% if @likes.where(likee_id: project.id).count == nil %>
-                        <div class="like_heart">
-                          <i class="fa fa-heart-o"></i>
-                        </div>
+                        <i class="fa fa-heart-o"></i>
                       <% else %>
-                        <div class="like_heart">
-                          <i class="fa fa-heart-o"></i> <%= Like.all.where(likee_id: project.id).count %>
-                        </div>
+                        <i class="fa fa-heart-o"></i> <%= @likes.where(likee_id: project.id).count %>
                       <% end %>
                     <% end %>
                   <% end %>  
@@ -89,13 +85,9 @@
                 html: { method: :delete }) do |l| %>
                 <%= l.button do %>
                   <% if @likes.where(likee_id: project.id).count == nil %>
-                    <div class="like_heart">
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  <% else %>
-                    <div class="like_heart">
-                      <i class="fa fa-heart-o"></i> <%= Like.all.where(likee_id: project.id).count %>
-                    </div>
+                    <i class="fa fa-heart"></i>
+                  <% else %>   
+                    <i class="fa fa-heart"></i> <%= @likes.where(likee_id: project.id).count %>
                   <% end %>
                 <% end %>
               <% end %> 
@@ -103,6 +95,7 @@
         <% else %>
           <div class="like_heart">
             <%= link_to '<i class="fa fa-heart-o"></i>'.html_safe, new_user_session_path %>
+            <%= @likes.where(likee_id: project.id).count %>
           </div>
         <% end %>  
     </div>  
