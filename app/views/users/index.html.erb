@@ -56,19 +56,33 @@
     <div class="lead_title"><%= link_to "#{user.company}", user_path(user) %></div>     
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
-        <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %> <br>
+        <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %> <br><br>
+      <% if user.service.present? %>
+        <div class="lead_subtitle"> Storitve:</div>
+          <%= user.service %> <br><br><br>
+      <% end %>
       <% if user.projects.any? %>
         <div class="lead_subtitle">
           Projekti:
         </div><br>
         <% user.projects.each do |project| %>
-          <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br>
+          <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br><br>
         <% end %>
       <% end %>
-      <% if user.service.present? %>
-        <div class="lead_subtitle"> Storitve:</div>
-          <%= user.service %> 
-      <% end %>
+      <% if user_signed_in? && current_user != user %>
+            <div class="lead_subtitle"></div> 
+              <div class="project_show_send_message">
+                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>  
+                <%= form_for :conversation, url: :conversations do |f| %>
+                  <%= f.text_field :recipients, type: "hidden", value: "#{user.email}" %>
+                  <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} vam pošilja sporočilo"  %>
+                  <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo temu uporabniku" %>
+                  <div class="project_show_send_message_button">
+                    <%= f.button :Pošlji %>
+                  </div>
+                <% end %>
+              </div>
+          <% end %>
     </div>      
   </div>
   <% end %>

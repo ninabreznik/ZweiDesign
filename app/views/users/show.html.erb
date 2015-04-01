@@ -7,12 +7,12 @@
     <div class="lead_box">
       <div class="lead_title"><%= @user.company %> </div>     
       <div class="lead_body">
+        <div class="lead_subtitle" ></div>
+          <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
+        <div class="lead_subtitle">Kontakt:</div>          
+          <%= @user.first_name %> <%= @user.surname %><br><br>
         <div class="lead_subtitle">Storitve:</div>          
           <%= @user.business_type %><br>
-        <div class="lead_subtitle" ></div>
-          <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %>  <br>
-        <div class="lead_subtitle">Kontakt:</div>          
-          <%= @user.first_name %> <%= @user.surname %><br>
         <div class="lead_subtitle">Lokacija:</div>         
           <%= @user.city %><br><br>
         <div class="lead_subtitle">Bio:</div>         
@@ -29,12 +29,12 @@
           <%= @user.tax_id %><br><br>
           <% if user_signed_in? && current_user != @user %>
             <div class="lead_subtitle"></div> 
-            <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>  
               <div class="project_show_send_message">
+                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>  
                 <%= form_for :conversation, url: :conversations do |f| %>
                   <%= f.text_field :recipients, type: "hidden", value: "#{@user.email}" %>
                   <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} vam pošilja sporočilo"  %>
-                  <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo temu izvajalcu" %>
+                  <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo temu uporabniku" %>
                   <div class="project_show_send_message_button">
                     <%= f.button :Pošlji %>
                   </div>
@@ -48,7 +48,7 @@
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
       <div class="lead_body">
         <div class="lead_subtitle"></div>
-          <%= image_tag project.picture.url(:medium), :width => "287"  %> <br>
+          <%= link_to "#{image_tag project.picture.url(:medium), :width => '287'}".html_safe, project_path(project) %> <br>
         <div class="lead_subtitle"></div>
         <% if current_user.present? %>
           <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>

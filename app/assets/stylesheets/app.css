@@ -658,7 +658,7 @@ html {
     color: #222;
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
     padding-bottom: 200px;
-    background-color: #eee;
+    background-color: #f6f6f6;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
@@ -712,7 +712,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #eee;
+    background-color: #f6f6f6;
     color: #494949;
     cursor: pointer;
     font-weight: bold;
@@ -740,13 +740,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_leads_index #filters li:hover,
   body .body_leads_index #filters li:focus {
-    background-color: #e2e2e2;
+    background-color: #eaeaea;
     color: #474747;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   body .body_leads_index #filters li:active {
-    background-color: #d6d6d6;
+    background-color: #ddd;
   }
 
 /* line 163 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -800,7 +800,7 @@ html {
 
 /* line 179 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box .lead_title {
-    background-color: #eee;
+    background-color: #f6f6f6;
     padding: 15px;
     color: #222;
     font-weight: bold;
@@ -964,7 +964,7 @@ html {
     color: #222;
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
     padding-bottom: 200px;
-    background-color: #eee;
+    background-color: #f6f6f6;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
@@ -1170,7 +1170,7 @@ html {
   body .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional {
     padding: 5px;
     width: 100%;
-    background-color: #eee;
+    background-color: #f6f6f6;
     -webkit-filter: blur(0.7px);
     -moz-filter: blur(0.7px);
     -o-filter: blur(0.7px);
@@ -1211,7 +1211,7 @@ html {
     line-height: 150%;
     color: #222;
     border-radius: 4px;
-    background-color: #eee;
+    background-color: #f6f6f6;
     padding: 15px;
     width: 40%;
     text-align: center;
@@ -1350,7 +1350,7 @@ html {
     margin-bottom: 7px;
     margin-top: 7px;
     line-break: 1px;
-    border: 2px solid #eee;
+    border: 2px solid rgba(246,246,246,0.933) e;
   }
 
 /* line 439 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -3503,7 +3503,7 @@ html {
 
 /* line 1117 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new .lead_new_testimonials .lead_new_testimonials_text {
-    color: #eee;
+    color: #f6f6f6;
     text-align: center;
     padding-bottom: 50px;
   }
@@ -3702,7 +3702,7 @@ html {
 /* line 1205 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_item td {
     font-weight: bold;
-    background-color: #eee;
+    background-color: rgba(246,246,246,0.933) e;
     padding: 15px 30px 0px 30px;
     font-size: 12px;
   }
@@ -4336,7 +4336,7 @@ html {
     height: 425px;
     margin-top: 250px;
     padding: 15px;
-    background-color: #eee;
+    background-color: #f6f6f6;
     opacity: 0.85;
     color: #222;
     text-align: center;
@@ -4441,9 +4441,11 @@ html {
 /* line 1531 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .project_show_send_message {
     color: #222;
+    background-color: #f6f6f6;
+    padding: 5%;
   }
 
-/* line 1534 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1535 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .project_show_send_message #conversation_body {
     width: 95.6%;
     color: #606060;
@@ -4458,7 +4460,7 @@ html {
     max-height: 284px;
   }
 
-/* line 1551 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
+/* line 1547 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .project_show_send_message .project_show_send_message_button,
   body .project_show_send_message .project_show_send_message_button button,
   body .project_show_send_message .project_show_send_message_button a {
