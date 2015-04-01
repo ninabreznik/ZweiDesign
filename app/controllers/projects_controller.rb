@@ -98,6 +98,7 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
     @sorted_projects = @projects.sort.reverse
+    @likes = Like.all
     @projects.each do |project|
       @project = project
     end
@@ -118,7 +119,6 @@ class ProjectsController < ApplicationController
     @okolica_count                  = Project.all.where(category: "Okolica").count
     @svetila_count                  = Project.all.where(category: "Svetila").count
     @dekor_count                    = Project.all.where(category: "Dekor").count
-
   end
 
   def show

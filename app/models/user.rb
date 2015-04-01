@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :selected_leads, through: :orders, source: :selected 
   has_many :leads, dependent: :destroy
   has_many :projects, dependent: :destroy
+  has_many :likes, as: :likeable
 
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
@@ -23,6 +24,17 @@ class User < ActiveRecord::Base
 
   def select!(one_lead)
     orders.create!(selected_id: one_lead.id)
+  end
+
+   # #############################################################################
+  # Like // User and Project
+  # #############################################################################
+  def liking?(one_project)
+    self.likes.find_by_likeable_id(one_project.id)
+  end
+
+  def like!(one_project)
+    self.likes.create!(likee_id: one_project.id)
   end
 
   private

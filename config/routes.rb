@@ -46,6 +46,9 @@ Rails.application.routes.draw do
     # match '/orders/:id',       to: 'orders#show',          via: 'get'
     # match '/orders/:id',       to: 'orders#delete',        via: 'delete'
 
+  resources :likes
+    match '/likes/new',       to: 'likes#create',        via: 'post'
+  
 
   # You can have the root of your site routed with "root"
   root 'projects#index'

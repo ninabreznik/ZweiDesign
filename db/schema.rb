@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325174455) do
+ActiveRecord::Schema.define(version: 20150331192720) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -59,6 +59,16 @@ ActiveRecord::Schema.define(version: 20150325174455) do
     t.string   "location"
     t.integer  "user_id"
   end
+
+  create_table "likes", force: true do |t|
+    t.integer  "likee_id"
+    t.integer  "likeable_id"
+    t.string   "likeable_type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "likes", ["likeable_id"], name: "index_likes_on_likeable_id"
 
   create_table "mailboxer_conversation_opt_outs", force: true do |t|
     t.integer "unsubscriber_id"
