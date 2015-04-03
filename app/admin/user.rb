@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
 
-  permit_params :email, :wallet, :password, :password_confirmation, :first_name, :surname, :city, :bio, :city, :business_type, :service, :company, :tax_id, :website, :phone
+  permit_params :email, :wallet, :password, :password_confirmation, :first_name, :surname, :city, :bio, :business_type, :service, :de_service,  :company, :tax_id, :website, :phone
 
   index do
     selectable_column
@@ -11,18 +11,9 @@ ActiveAdmin.register User do
     column :current_sign_in_at
     column :created_at
     column :updated_at
-    column :first_name
-    column :surname
-    column :city
-    column :bio
-    column :wallet
     column :city
     column :business_type
-    column :service
     column :company
-    column :tax_id
-    column :website
-    column :phone
     actions
   end
 

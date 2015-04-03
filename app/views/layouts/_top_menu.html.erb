@@ -6,8 +6,8 @@
         <option value="<%= user_path(current_user)%>">Moj profil</option>
         <option value="<%= edit_user_registration_path %>">Uredi profil</option>
         <option value="<%= leads_path %>">Prosta dela</option>
-        <option value="<%= delim_path %>">Iskanje partnerja</option>
-        <option value="<%= users_path %>">Pregled uporabnikov</option>
+        <option value="<%= delim_path %>">Oddaj delo</option>
+        <option value="<%= users_path %>">Seznam ponudnikov</option>
         <option value="<%= info_path %>">Info o ZweiDesign</option>
         <!-- <option value="<%= profile_path %>">Nadzorna plošča</option> -->
         <option value="<%= destroy_user_session_path %>">Odjava</option>
@@ -25,17 +25,17 @@
         <option value="">Prijava/Registracija</option>
         <option value="<%= new_user_session_path %>">Prijava</option>
         <option value="<%= new_user_registration_path %>">Še niste registrirani?</option>
-        <option value="<%= delim_path %>">Iskanje partnerja</option>
-        <option value="<%= users_path %>">Pregled uporabnikov</option>
+        <option value="<%= leads_path %>">Prosta dela</option>
+        <option value="<%= delim_path %>">Oddaj delo</option>
+        <option value="<%= users_path %>">Seznam ponudnikov</option>
         <option value="<%= info_path %>">Info o ZweiDesign</option>
-        <option value="<%= root_path %>">Domov</option>
       </select>
       <div class="publish_project"> 
         <%= link_to "Objavite svoj projekt", new_project_path %> 
       </div>
       <div class="messages"> 
-        <%= link_to info_path do %>
-        <i class="fa fa-search"></i>
+        <%= link_to new_user_session_path do %>
+        <i class="fa fa-envelope-o"></i>
         <% end %>
       </div>
   <% end %>

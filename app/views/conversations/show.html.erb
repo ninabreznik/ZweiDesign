@@ -24,11 +24,11 @@
     <div class="conversation_message_sender_body">
       <% if message.sender.email == current_user.email %>
         <div class="conversation_message_sender_body_my_name">
-          <%= message.sender.email.split("@")[0] %>
+          <%=link_to "#{message.sender.email.split('@')[0]}", user_url(message.sender), :target => "_blank" %>
         </div>
     <% else %>
       <div class="conversation_message_sender_body_other_name">
-        <%= message.sender.email.split("@")[0] %>
+        <%=link_to "#{message.sender.email.split('@')[0]}", user_url(message.sender), :target => "_blank" %>
       </div>
     <% end %>
       <div class="conversation_message_sender_body_text">

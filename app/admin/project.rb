@@ -9,10 +9,6 @@ index do
   column :email
   column :title
   column :category
-  column :picture_updated_at
-  column :picture_file_name
-  column :picture_content_type
-  column :picture_file_size
   actions
 end
 

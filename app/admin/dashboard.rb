@@ -10,16 +10,16 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-
 
     columns do
       column do
-        panel "Recent Orders (by Users) " do
+        panel "Recent Conversations " do
           ul do
-            Order.where(paid: true).map do |order|
-              li link_to(order.selector.email, admin_order_path(order))
+            User.all.each do |user|
+              li user.email
+              li user.mailbox.conversations.last.created_at
+              li user.mailbox.conversations.last.last_message.body
+              li
             end
           end
         end

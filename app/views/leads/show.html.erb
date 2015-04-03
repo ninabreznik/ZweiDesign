@@ -31,27 +31,22 @@
           </div> 
         </div>  
     <% if user_signed_in? %> 
-      <% if @lead.reverse_orders.where(selector_id: current_user.id).present? %>
-        <% if @lead.reverse_orders.where(selector_id: current_user.id).first.paid == true %>
-        <% else %>
-        <div class="lead_show_buy">
-              <%= render 'payment_confirmation_link' %>
-        </div>
-        <% end %>
-      <% else %>
-        <div class="lead_show_buy">
-          <%- # PLEASE REFACTOR ME! NO DB QUERY OR BUILD STATEMENT IN VIEWS! %>
-          <%= form_for(current_user.orders.build(selected_id: @lead.id)) do |o| %>
-            <%= o.hidden_field :selected_id %>       
-            <%= o.submit "#{I18n.t'leadsshow-links.follow'}" %>
+        <div class="project_show_send_message">
+          <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
+          <%= form_for :conversation, url: :conversations do |f| %>
+            <%= f.text_field :recipients, type: "hidden", value: "#{@lead.email}" %>
+            <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} se zanima za #{@lead.description[10]} "  %>
+            <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo avtorju tega projekta" %>
+            <div class="project_show_send_message_button">
+              <%= f.button :Pošlji %>
+            </div>
           <% end %>
         </div>
-      </div>
-      <% end %> 
     <% else%>
-      <div class="lead_show_buy">
-        <%= link_to "#{I18n.t'leadsshow-links.follow'}", new_user_registration_path %>
-      </div>      
+      <div class="project_show_send_message">
+        <i class='fa fa-envelope-o'></i>
+        <%= link_to "Kontaktirajte uporabnika", new_user_session_path %>
+      </div>     
     <% end %>
     </div>
 <% else %>
