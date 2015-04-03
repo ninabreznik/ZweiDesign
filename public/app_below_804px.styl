@@ -85,13 +85,15 @@
         color Lead-Orange    
     /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
     .body_leads_index
-      body-mixin(backgroundImage: url(/images/interior1.png))
+      body-mixin()
+      background-color #F6F6F6 
       #filters
         list-style-type: none;
         text-align: center;
         margin: 0 0% 120px 5%;
       #filters li
-        button(#F6F6F6       font-size: 11px;
+        button(#F6F6F6)       
+        font-size: 10px;
         float: left;
         padding: 6px 0 4px 0;
         cursor: pointer;
@@ -112,7 +114,8 @@
             leadBoxMixin()
             .lead_title
               opacity 0.85
-              background-color #F6F6F6            padding 15px
+              background-color #F6F6F6            
+              padding 15px
               color Offer-Font-Color
               font-weight bold
               font-size 14px
@@ -125,6 +128,7 @@
             .lead_body
               font-size 14px
               padding 15px
+              padding-bottom 0px
               padding-left 0px
               -webkit-font-smoothing: antialiased
               -moz-osx-font-smoothing: grayscale
@@ -165,19 +169,26 @@
         left 0
       .lead_show
         shift 0.03
+        top 40px
+        background: #FEFEFE;
+        border-radius 6px
+        border: 2px solid #FAFAFA;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        opacity: 0.9;
+        border-radius 6px
         opacity 0.9
         margin 29px 0px 0px 0px
-        left 80px
-        width 70%
+        left 20px
+        width 95%
         max-width 803px
-        min-width 600px
+        min-width 660px
         -webkit-column-break-inside: avoid
         -moz-column-break-inside: avoid
         column-break-inside: avoid
         background-color white
         line-break 1px  
         .lead_show_title
-          background-color Lead-Orange
+          background-color #F6F6F6
           padding 20px
           font-weight bold
           text-align center
@@ -185,7 +196,6 @@
           font-size 35px
         .lead_show_body
           font-size 22px
-          padding-left 10px
           -webkit-font-smoothing: antialiased
           -moz-osx-font-smoothing: grayscale
           color Offer-Font-Color
@@ -198,22 +208,23 @@
             display inline-block
             vertical-align top
             .lead_show_item img
-              width 500px
+              width 630px
             .lead_show_item
               -webkit-font-smoothing: antialiased
               margin-top 40px
               line-height 150%
               padding-bottom 20px
+              margin-right 5px
               .lead_show_subtitle
                 font-weight bold
                 display inline-block
         .lead_show_buy input,
         .lead_show_buy a 
           shift 0.34
-          margin 50px 0 40px 0px
+          margin 0px 0 40px 0px
           button(color = Lead-Orange-dark)
           background-color Lead-Orange
-          font-size 22px
+          font-size 18px
     /* :::::::::::: ORDERS/show => buy lead :::::::::::: */
     .body_orders_show
       body-mixin(backgroundImage: url(/images/interior3.png))
@@ -258,7 +269,8 @@
           .lead_show_items_short_additional
             padding 5px
             width 95%
-            background-color #F6F6F6          blur-mixin(intensity = 0.7px)
+            background-color #F6F6F6          
+            blur-mixin(intensity = 0.7px)
           .lead_show_items_short,
           .lead_show_items_long,
           .lead_show_items_short_additional
@@ -278,7 +290,8 @@
           line-height 130%
           color black
           border-radius 4px
-          background-color #F6F6F6        padding 15px
+          background-color #F6F6F6        
+          padding 15px
           width 40%
           text-align center
           .order_show_buy_popup_item
@@ -852,7 +865,7 @@
       .lead_new_photo  
         body-mixin(backgroundImage: url(/images/interior1.png))
         padding-top 20px
-        padding-bottom 950px
+        padding-bottom 550px
         .lead_new
           span(1.3/3)  
           background-color black
@@ -978,13 +991,13 @@
         background-color white
         color #606060
         .lead_new_we_help_title
-          font-size 32px
+          font-size 26px
           text-transform: uppercase
           text-align center
           color Lead-Orange
           margin-bottom 50px
         .lead_new_we_help_categories_title
-          font-size 20px
+          font-size 16px
           font-weight bold
           text-align center
           margin-bottom 60px
@@ -994,7 +1007,7 @@
           shift 0.03
           .fa.fa-check-square-o
             padding 10px 10px 0px 0px
-            font-size 28px
+            font-size 20px
             color #606060
             opacity 0.8
       .lead_new_company_info
@@ -1351,7 +1364,8 @@
         height 425px
         margin-top 250px
         padding 15px
-        background-color #F6F6F6      opacity 0.85
+        background-color #F6F6F6      
+        opacity 0.85
         color black
         text-align center 
         .plans_item_text:first-child
@@ -1406,11 +1420,12 @@
       color black
       background-color #F6F6F6
       padding 5%
+      border-radius: 6px
       #conversation_body
         margin-left 0
         margin-right 5%
         padding 10px 
-        width 70%
+        width 100%
       .project_show_send_message_button,
       .project_show_send_message_button button,
       .project_show_send_message_button a

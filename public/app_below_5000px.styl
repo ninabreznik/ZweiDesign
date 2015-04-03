@@ -122,7 +122,8 @@
     /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
     .body_leads_index
       body-mixin()
-      background-color #F6F6F6    #mc_embed_signup
+      background-color #F6F6F6    
+      #mc_embed_signup
         width 50%
         margin-left 28%
         padding-bottom 20px
@@ -144,8 +145,8 @@
         text-align: center;
         margin: 0 0% 120px 5%;
       #filters li
-        button(#F6F6F6       // text-align left
-        font-size: 12px;
+        button(#F6F6F6)       
+        font-size: 10px;
         float: left;
         padding: 6px 0 4px 0;
         cursor: pointer;
@@ -175,7 +176,8 @@
           .lead_box
             leadBoxMixin()
             .lead_title
-              background-color #F6F6F6            padding 15px
+              background-color #F6F6F6            
+              padding 15px
               color Offer-Font-Color
               font-weight bold
               font-size 14px
@@ -188,6 +190,7 @@
             .lead_body
               font-size 14px
               padding 15px
+              padding-bottom 0px
               padding-left 0px
               -webkit-font-smoothing: antialiased
               -moz-osx-font-smoothing: grayscale
@@ -215,19 +218,19 @@
               .new_like button,
               .edit_like a,
               .new_like a
-                font-size 12px
+                font-size 10px
                 margin-left 120px
                 decoration none
                 border 0px
                 background-color white
                 .fa.fa-heart
                   color Lead-Orange
-                  font-size 14px
+                  font-size 12px
                   &:hover
                     color black
                 .fa.fa-heart-o
                   color black
-                  font-size 14px
+                  font-size 12px
                   &:hover
                     color Lead-Orange
       .leads_index_no_leads_available
@@ -251,17 +254,22 @@
     /* :::::::::::: LEADS/show => individual lead :::::::::::: */
     .body_leads_show
       body-mixin()
-      background-color #F6F6F6    .back_to_main_page_button
+      background-color #F6F6F6    
+      .back_to_main_page_button
         width 100%
         height 100%
         position absolute
         top 0 
         left 0
       .lead_show
-        shift 0.15
-        margin-right 7px
-        margin 37px 0px 0px 0px
-        padding 30px
+        background: #FEFEFE;
+        border-radius 6px
+        border: 2px solid #FAFAFA;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        opacity: 0.9;
+        border-radius 6px
+        margin 37px 7px 0px 20px
+        padding 15px
         width 70%
         max-width 1290px
         min-width 800px
@@ -270,8 +278,9 @@
         column-break-inside: avoid
         background-color white
         line-break 1px  
+        top 100px
         .lead_show_title
-          background-color Lead-Orange
+          background-color #F6F6F6
           padding 30px
           font-weight bold
           text-align center
@@ -279,7 +288,6 @@
           font-size 40px
         .lead_show_body
           font-size 22px
-          padding-left 25px
           padding-top 40px
           -webkit-font-smoothing: antialiased
           -moz-osx-font-smoothing: grayscale
@@ -305,7 +313,7 @@
         .lead_show_buy input,
         .lead_show_buy a 
           shift 0.4
-          margin 40px 0 40px 0px
+          margin 0px 0 40px 0px
           button(color = Lead-Orange-dark)
           background-color Lead-Orange
           font-size 22px
@@ -350,7 +358,8 @@
           .lead_show_items_short_additional
             padding 5px
             width 100%
-            background-color #F6F6F6          blur-mixin(intensity = 0.7px)
+            background-color #F6F6F6          
+            blur-mixin(intensity = 0.7px)
           .lead_show_items_short,
           .lead_show_items_long,
           .lead_show_items_short_additional
@@ -370,7 +379,8 @@
           line-height 150%
           color black
           border-radius 4px
-          background-color #F6F6F6        padding 15px
+          background-color #F6F6F6        
+          padding 15px
           width 40%
           text-align center
           .order_show_buy_popup_item
@@ -1109,7 +1119,8 @@
         text-align left
         font-size 16px
         .lead_new_testimonials_text
-          color #F6F6F6        text-align center
+          color #F6F6F6        
+          text-align center
           padding-bottom 50px
           .fa.fa-quote-left,
           .fa.fa-quote-right
@@ -1469,7 +1480,8 @@
         height 425px
         margin-top 250px
         padding 15px
-        background-color #F6F6F6      opacity 0.85
+        background-color #F6F6F6      
+        opacity 0.85
         color black
         text-align center 
         .plans_item_text:first-child
@@ -1523,12 +1535,12 @@
     .project_show_send_message
       color black
       background-color #F6F6F6
+      border-radius: 6px
       padding 5%
       #conversation_body
-        width 95.6%
+        width 100%
         color #606060
         font-size 12px
-        border-radius: 0;
         border 2px solid Lead-Orange-dark
         padding: 10px 10px 10px 10px
         margin: 0;

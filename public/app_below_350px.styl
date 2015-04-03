@@ -92,7 +92,8 @@
             leadBoxMixin()
             .lead_title
               opacity 0.85
-              background-color #F6F6F6            padding 15px
+              background-color #F6F6F6            
+              padding 15px
               color Offer-Font-Color
               font-weight bold
               font-size 14px
@@ -105,6 +106,7 @@
             .lead_body
               font-size 14px
               padding 15px
+              padding-bottom 0px
               padding-left 0px
               -webkit-font-smoothing: antialiased
               -moz-osx-font-smoothing: grayscale
@@ -145,10 +147,15 @@
         left 0
       .lead_show
         opacity 0.9
+        top 20px
+        background: #FEFEFE;
+        border-radius 6px
+        border: 2px solid #FAFAFA;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        opacity: 0.9;
         margin 29px 0px 0px 0px
-        left 30px
-        width 85%
-        max-width 350px
+        left 1px
+        width 98%
         min-width 300px
         -webkit-column-break-inside: avoid
         -moz-column-break-inside: avoid
@@ -156,7 +163,7 @@
         background-color white
         line-break 1px  
         .lead_show_title
-          background-color Lead-Orange
+          background-color #F6F6F6
           padding 18px
           margin-bottom 10px
           font-weight bold
@@ -179,7 +186,7 @@
             display inline-block
             vertical-align top
             .lead_show_item img
-              width 210px
+              width 300px
             .lead_show_item
               -webkit-font-smoothing: antialiased
               margin-top 10px
@@ -191,7 +198,7 @@
         .lead_show_buy input,
         .lead_show_buy a 
           center(120px)
-          margin 20px 0 40px 0px
+          margin 0px 0 40px 0px
           button(color = Lead-Orange-dark)
           background-color Lead-Orange
           font-size 12px
@@ -237,7 +244,8 @@
           .lead_show_items_short_additional
             padding 5px
             width 100%
-            background-color #F6F6F6          blur-mixin(intensity = 0.7px)
+            background-color #F6F6F6          
+            blur-mixin(intensity = 0.7px)
           .lead_show_items_short,
           .lead_show_items_long,
           .lead_show_items_short_additional
@@ -257,7 +265,8 @@
           line-height 130%
           color black
           border-radius 4px
-          background-color #F6F6F6        padding 15px
+          background-color #F6F6F6        
+          padding 15px
           width 70%
           text-align center
           .order_show_buy_popup_item

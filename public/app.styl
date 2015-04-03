@@ -48,7 +48,7 @@ App-Font-Family = 'Helvetica','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic 
 
 body-mixin() 
   top_menu_bar()
-  background-color #eee
+  background-color #F6F6F6
   background-image  backgroundImage  
   background-repeat: no-repeat;
   background-position: center top;
@@ -59,7 +59,7 @@ body-mixin()
   font-size 12px
   color Offer-Font-Color
   font-family App-Font-Family
-  padding-bottom 200px
+  padding-bottom 80px
   a  
     text-decoration none
     color Offer-Font-Color
@@ -95,8 +95,9 @@ blur-mixin(intensity = 1.6px)
 column-mixin(defaultTop = 37px)
   position: relative;
   margin-top: defaultTop
+  margin-bottom 200px
   padding-top 40px
-  padding-bottom 1050px
+  padding-bottom 20px
   
 wookmarkMixin(defautPadding = 0px)
   list-style-type: none;
@@ -109,6 +110,7 @@ leadBoxMixin(defaultMarginLeft = 42px)
   padding: 6px;
   display none
   background: #FEFEFE;
+  border-radius 6px
   border: 2px solid #FAFAFA;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
   opacity: 0.9;
@@ -117,6 +119,7 @@ mobileLeadBoxMixin(defaultMarginLeft = 40px)
   margin-left defaultMarginLeft
   padding: 5px;
   display none
+  border-radius 6px
   background: #FEFEFE;
   border: 2px solid #FAFAFA;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
