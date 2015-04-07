@@ -1019,3 +1019,16 @@ en:
       subject_reply: "Mailboxer new reply: %{subject}"
     notification_mailer:
       subject: "Mailboxer new notification: %{subject}"
+
+# ############################################################################################
+# ACTIVERECORD
+# ############################################################################################
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              invalid: "Geslo ni pravilno."
+      messages:
+        not_saved: "Spremembe niso bile shranjene."

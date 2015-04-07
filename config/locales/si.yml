@@ -235,7 +235,7 @@ si:
 # ############################################################################################
  
   staticpages-info:
-    thanks: "Hvala, da uporabljate Sosed.biz aplikacijo" 
+    thanks: "Hvala, da uporabljate ZweiDesign.co aplikacijo" 
     email: "E-naslov"
     email_text: "info@sosed.si" 
 
@@ -1003,7 +1003,20 @@ si:
 
   mailboxer:
     message_mailer:
-      subject_new: "Novo Sosed.biz sporočilo: %{subject}"
+      subject_new: "Novo ZweiDesign.co sporočilo: %{subject}"
       subject_reply: "Nov odgovor: %{subject}"
     notification_mailer:
-      subject: "Novo Sosed.biz sporočilo: %{subject}"
+      subject: "Novo ZweiDesign.co sporočilo: %{subject}"
+
+# ############################################################################################
+# ACTIVERECORD
+# ############################################################################################
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              invalid: "Geslo ni pravilno."
+      messages:
+        not_saved: "Spremembe niso bile shranjene."

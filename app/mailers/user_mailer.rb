@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "ZweiDesign@zweidesign.co"
+  default from: "no-reply@zweidesign.co"
  
   def welcome_email(user, pass=nil)
     @user = user
@@ -8,14 +8,24 @@ class UserMailer < ActionMailer::Base
     @sosed_signin_url = 'http://zweidesign.co/users/sign_in'
 
     #@url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Dobrodošli na Sosed App')
+    mail(to: @user.email, subject: 'Dobrodošli na ZweiDesign')
   end
 
 
-  # def new_campaign(campaign)
-  #   @user = user
-  #   #@url  = 'http://example.com/login'
-  #   mail(to: @user.email, subject: 'New campaign')
-  # end
+  def self.send_new_lead(lead)
+    @lead = lead
+    lead_business_type = lead.business_type
+    @right_users = User.all.where(business_type: lead_business_type) 
+    if @right_users.count > 0 
+      @right_users.each do |right_user|
+        new_lead(right_user, lead).deliver
+      end
+    end
+  end
+
+  def new_lead(right_user, lead)
+    @lead_description = lead.description
+    mail(to: right_user.email, subject: 'Na Zweidesign imamo novo ponudbo za delo z vašega področja')
+  end
 
 end

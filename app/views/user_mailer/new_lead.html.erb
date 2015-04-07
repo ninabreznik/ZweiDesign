@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Pozdravljeni! </h1>
+    <p>
+      Na <%= root_url %> je prispelo novo povpraševanje.<br>
+    </p>
+    <p>
+      Opis:<br>
+      <%= @lead_description %>
+    </p>
+    <p>
+      Povpraševanje najdete na <%= link_to "tej povezavi", leads_url %>.
+      
+      <br><br>Lep dan še naprej in veliko uspeha.
+    </p>
+      <br>
+    <p>Nina Breznik, <%= root_url %></p>
+  </body>
+</html>

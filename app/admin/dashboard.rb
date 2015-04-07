@@ -15,7 +15,7 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Recent Conversations " do
           ul do
-            User.all.each do |user|
+            ActiveAdmin.register User.all.each do |user|
               li user.email
               li user.mailbox.conversations.last.created_at
               li user.mailbox.conversations.last.last_message.body

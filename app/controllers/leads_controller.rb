@@ -101,6 +101,9 @@ class LeadsController < ApplicationController
     if @lead.save
       auto_create_user!(@lead)
       session[:lead_step] = session[:lead_params] = nil
+      lead_user = @lead.email
+      lead = @lead
+      UserMailer.send_new_lead(lead)
       redirect_to new_lead_confirmation_url
     else 
       redirect_to leads_new_url
