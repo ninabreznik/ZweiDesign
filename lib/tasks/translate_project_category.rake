@@ -1,4 +1,4 @@
-namespace :leads do
+namespace :projects do
   desc "Translate project.category from slovene to english"
   task :translate_project_category => :environment do
     Project.tap{|projects| puts "Found #{projects.size} projects to work on"}.each do |project|
