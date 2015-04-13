@@ -45,7 +45,7 @@ namespace :projects do
         project.update(category: "House & Fasades")
 
       elsif project.category == "Hiša in fasade"
-        project.update(category: "House & Fasades")
+        project.update(category: "House & Facades")
 
       elsif project.category == "Okolica"
         project.update(category: "Surroundings")
@@ -58,6 +58,10 @@ namespace :projects do
 
       elsif project.category == "Dekor"
         project.update(category: "Art & Decor")
+      end
+
+    elsif project.category == "House & Fasades"
+        project.update(category: "House & Facades")
       end
       
     end
