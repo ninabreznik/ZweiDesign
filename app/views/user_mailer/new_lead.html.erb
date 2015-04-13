@@ -4,20 +4,23 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Pozdravljeni! </h1>
+    <h1><%=I18n.t'new-lead.title'%></h1>
     <p>
-      Na <%= root_url %> je prispelo novo povpraševanje.<br>
+      <%=I18n.t'new-lead.paragraph-1'%> <%= root_url %>.<br>
     </p>
     <p>
-      Opis:<br>
+      <%=I18n.t'new-lead.description'%><br>
       <%= @lead_description %>
     </p>
     <p>
-      Povpraševanje najdete na <%= link_to "tej povezavi", leads_url %>.
-      
-      <br><br>Lep dan še naprej in veliko uspeha.
+      <%=I18n.t'new-lead.paragraph-2'%> <%= link_to "#{I18n.t'new-lead.this-link'}", leads_url %> 
+      <br>
+      <br>
+      <%=I18n.t'new-lead.greeting'%>
     </p>
       <br>
-    <p>Nina Breznik, <%= root_url %></p>
+    <p><%=I18n.t'new-lead.nina'%>
+      <br>
+      <%= root_url %></p>
   </body>
 </html>

@@ -3,42 +3,60 @@
 <section class="lead_new_photo">
   <div class="lead_new_explanation">
     <div class="lead_new_explanation_first">  
-      <i class="fa fa-pencil"></i>         Izberite naslov.      </div>
+      <i class="fa fa-pencil"></i> <%=I18n.t'project-new.exaplanation-1'%></div>
     <div class="lead_new_explanation_second"> 
-      <i class="fa fa-files-o"></i>        Dodajte fotko.      </div>
+      <i class="fa fa-files-o"></i> <%=I18n.t'project-new.exaplanation-2'%></div>
     <div class="lead_new_explanation_third">  
-      <i class="fa fa-check-square-o"></i> Opišite projekt.  </div>
+      <i class="fa fa-check-square-o"></i> <%=I18n.t'project-new.exaplanation-3'%></div>
   </div>
   <div class="lead_new">
     <div class="lead_new_title">
-      Objavite svoj projekt 
+      <%=I18n.t'project-new.title'%>
     </div>
     <div class="lead_new_instructions">
-      Predstavite svoj kreativni projekt. Potrebujete le naslov projekta in kakovostno fotografijo.
-      <% if current_user.present? %>
-      <% else %>
-        <br><br>Za objavo morate biti prijavljeni.
-      <% end %>
+      <%=I18n.t'project-new.instructions'%>
     </div>
     <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
       <div class="lead_new_form_business_type">
-        <%= p.select :category, @categories, :prompt=>"S katerega področja je vaš projekt?"%> 
-      </div>
-      <div class="lead_new_form_description">
-        <%= p.label "Naslov projekta" %>
-        <%= p.text_field :title %>
-      </div>
+        <%= p.select :category, [
+      ["#{I18n.t'project-index.data-filter-1'}", "#{I18n.t'project-index.data-filter-1'}"], 
+      ["#{I18n.t'project-index.data-filter-2'}", "#{I18n.t'project-index.data-filter-2'}"], 
+      ["#{I18n.t'project-index.data-filter-3'}", "#{I18n.t'project-index.data-filter-3'}"], 
+      ["#{I18n.t'project-index.data-filter-4'}", "#{I18n.t'project-index.data-filter-4'}"], 
+      ["#{I18n.t'project-index.data-filter-5'}", "#{I18n.t'project-index.data-filter-5'}"], 
+      ["#{I18n.t'project-index.data-filter-6'}", "#{I18n.t'project-index.data-filter-6'}"], 
+      ["#{I18n.t'project-index.data-filter-7'}", "#{I18n.t'project-index.data-filter-7'}"], 
+      ["#{I18n.t'project-index.data-filter-8'}", "#{I18n.t'project-index.data-filter-8'}"], 
+      ["#{I18n.t'project-index.data-filter-9'}", "#{I18n.t'project-index.data-filter-9'}"], 
+      ["#{I18n.t'project-index.data-filter-10'}", "#{I18n.t'project-index.data-filter-10'}"], 
+      ["#{I18n.t'project-index.data-filter-11'}", "#{I18n.t'project-index.data-filter-11'}"], 
+      ["#{I18n.t'project-index.data-filter-12'}", "#{I18n.t'project-index.data-filter-12'}"], 
+      ["#{I18n.t'project-index.data-filter-13'}", "#{I18n.t'project-index.data-filter-13'}"], 
+      ["#{I18n.t'project-index.data-filter-14'}", "#{I18n.t'project-index.data-filter-14'}"], 
+      ["#{I18n.t'project-index.data-filter-15'}", "#{I18n.t'project-index.data-filter-15'}"], 
+      ["#{I18n.t'project-index.data-filter-16'}", "#{I18n.t'project-index.data-filter-16'}"], 
+      ["#{I18n.t'project-index.data-filter-17'}", "#{I18n.t'project-index.data-filter-17'}"]
+    ], :prompt=>"#{I18n.t'project-new.form.business-type-prompt'}"%> 
+      </div><br>
       <div class="lead_new_form_description"> 
         <%= p.file_field :picture %>
+      </div><br>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.title'}" %>
+        <%= p.text_field :title %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.description'}" %>
+        <%= p.text_area :description %>
       </div>
       <% if user_signed_in? %>
         <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
       <div class="lead_new_form_submit">
-        <%= p.submit "Objavi" %>
+        <%= p.submit "#{I18n.t'project-new.form.submit'}" %>
       </div>  
       <% else %>
         <div class="lead_new_form_submit"> 
-          <%= link_to "Objavi", new_user_registration_path %>
+          <%= link_to "#{I18n.t'project-new.form.submit'}", new_user_registration_path %>
         </div>
       <% end %>
     <% end %> 
@@ -46,22 +64,29 @@
 </section>
 <section class="lead_new_we_help">
   <div class="lead_new_we_help_title">
-    Na ZweiDesign lahko predstavite svoje projekte. 
+    <%=I18n.t'project-new.help.title'%>
   </div>
   <div class="lead_new_we_help_categories_title">
-    Imate za sabo projekte, na katere ste še posebej ponosni? Sedaj jih lahko predstavite strankam. Izpolnite zgornji obrazec in predstavite svoj projekt. Potrebujete le naslov, kratek opis in eno fotografijo.
+    <%=I18n.t'project-new.help.text'%>
   </div>
   <div class="lead_new_we_help_categories_list">
-    <i class="fa fa-check-square-o"> Gradbeniki</i>  
-    <i class="fa fa-check-square-o"> Arhitekti</i> 
-    <i class="fa fa-check-square-o"> Notranji oblikovalci</i> 
-    <i class="fa fa-check-square-o"> Projektanti</i> 
-    <i class="fa fa-check-square-o"> Dekoraterji</i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-1'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-2'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-3'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-4'%></i>  
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-5'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-6'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-7'%></i>
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-8'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-9'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'project-new.field-10'%></i>  
   </div>
 </section> 
 <section class="lead_new_company_info">
-  <div class="lead_new_company_info_name">ZWEI DESIGN</div>
-  <div class="lead_new_company_info_contact">Moj sosed d.o.o.</div>
-  <div class="lead_new_company_info_contact"><%= mail_to "info@sosed.si", "info@sosed.si" %></div><br><br>
-  <a href="https://www.facebook.com/ZweiDesign" target="_blank" style="color:#606060;" title="Poiščite nas na Facebooku"><i class="fa fa-facebook-square fa-2x"></i></a>
-</section> 
+<br><br>
+    <div class="section_company_info_street"><%=I18n.t'staticpages-info.company.name'%></div>
+    <div class="section_company_info_tax_number"><%=I18n.t'staticpages-info.company.tax-id'%></div>
+    <div class="section_company_info_bank_account"><%=I18n.t'staticpages-info.company.bank-account'%></div>
+    <div class="section_company_info_contact"><%=I18n.t'staticpages-info.company.email'%></div>
+    <a href="https://www.facebook.com/ZweiDesign" target="_blank" style="color:#606060;" title="#{I18n.t'staticpages-info.facebook'}"><i class="fa fa-facebook-square fa-2x"></i></a>
+  </section>

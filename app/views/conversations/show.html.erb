@@ -48,10 +48,10 @@
     </div>
     <div class="conversation_reply_message_body">
     <%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
-      <%= f.text_area :body, :placeholder => "Napišite novo sporočilo" %>
+      <%= f.text_area :body, :placeholder => "#{I18n.t'mailboxer.conversations-index.new-message'}" %>
     </div>
     <div class="conversation_reply_message_body_sent_button">
-      <%= f.button :Pošlji, class: 'btn-primary' %>
+      <%= f.button :"#{I18n.t'mailboxer.conversations-index.submit'}", class: 'btn-primary' %>
     </div>
 <% end %>
 </div>

@@ -1,26 +1,26 @@
 <div class="body_info_singlepage">
   <section class="section_welcome">
-    <div class="section_welcome_title">Dobrodošli na ZweiDesign.co</div><br><br>
-    <div class="section_welcome_subtitle">IŠČETE INSPIRACIJO, DELO ALI POSLOVNE PARTNERJE?</div>
+    <div class="section_welcome_title"><%=I18n.t'staticpages-info.title'%></div><br><br>
+    <div class="section_welcome_subtitle"><%=I18n.t'staticpages-info.subtitle'%></div>
     <div class="section_welcome_text"> 
-      ZweiDesign je platforma za prenove, gradnjo in oblikovanje, ki povezuje strokovnjake z različnih področij. Oglejte si projekte talentiranih obrtnikov in podjetij s področja arhitekture, notranjega oblikovanja, dekoriranja, gradbenih del in sodobne tehnologije. <br><br>
-      Registrirajte se in brezplačno predstavite svoje projekte ter dejavnost.<br><br><br>
+      <%=I18n.t'staticpages-info.welcome-text-1'%> <br><br>
+      <%=I18n.t'staticpages-info.welcome-text-2'%><br><br><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb4U6tqlMyY" frameborder="0" allowfullscreen></iframe> </div>
   </section>
 
   <section class="section_our_team">
     <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "Fotografije projektov", root_path %></div>
+    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-1'}", root_path %></div>
   </section>
 
  <section class="section_our_team">
     <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "Številni strokovnjaki", new_lead_path %></div>
+    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-2'}", new_lead_path %></div>
   </section>
 
    <section class="section_our_team">
     <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "Produkti", root_path %></div>
+    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-3'}", root_path %></div>
   </section>
 
   <section class="section_form">
@@ -34,10 +34,10 @@
     <div id="mc_embed_signup">
     <form action="//sosed.us4.list-manage.com/subscribe/post?u=e833ef94f0704d1475029ac8e&amp;id=5387f2bff4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-      <label for="mce-EMAIL">Prijavite se na ZweiDesign e-magazin!</label>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="elektronski naslov" required>
+      <label for="mce-EMAIL"><%=I18n.t'staticpages-info.mailchimp.title'%></label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<%=I18n.t'staticpages-info.mailchimp.placeholder'%>" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div class="clear"><input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="clear"><input type="submit" value="<%=I18n.t'staticpages-info.mailchimp.submit'%>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
     </form>
     </div>
@@ -45,9 +45,10 @@
   </section>
   <section class="section_company_info">
 <br><br>
-    <div class="section_company_info_street">Moj sosed d.o.o.</div>
-    <div class="section_company_info_tax_number">Davčna številka: 49595105</div>
-    <div class="section_company_info_bank_account">TRR: SI56 0410 2000 2065 311</div>
-    <div class="section_company_info_contact">Kontakt: info@sosed.si</div>
+    <div class="section_company_info_street"><%=I18n.t'staticpages-info.company.name'%></div>
+    <div class="section_company_info_tax_number"><%=I18n.t'staticpages-info.company.tax-id'%></div>
+    <div class="section_company_info_bank_account"><%=I18n.t'staticpages-info.company.bank-account'%></div>
+    <div class="section_company_info_contact"><%=I18n.t'staticpages-info.company.email'%></div>
+    <a href="https://www.facebook.com/ZweiDesign" target="_blank" style="color:#606060;" title="#{I18n.t'staticpages-info.facebook'}"><i class="fa fa-facebook-square fa-2x"></i></a>
   </section>
 </div>

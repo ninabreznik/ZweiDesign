@@ -37,13 +37,65 @@ si:
 
 #Edit
   users-edit: #   "#{I18n.t'users-login.remember-me'}"
-    
     edit-fields:
+      name: "Ime"
+      surname: "Priimek"
+      add-pic-label: "Pripnite profilno fotko"
+      company: "Podjetje"
+      field: "Področje"
+      field-1: "Arhitekti & Projektanti"
+      field-2: "Izvajalci splošnih gradbenih del"
+      field-3: "Zidarji"
+      field-4: "Notranji oblikovalci & Dekoraterji"
+      field-5: "Arhitekti in Projektanti kuhinj & kopalnic"
+      field-6: "Renoviranje kuhinj & kopalnic"
+      field-7: "Načrtovalci okolice"
+      field-8: "Urejanje okolice"
+      field-9: "Kamen, tlakovci & beton"
+      field-10: "Keramika, kamen & marmor"
+      field-prompt: "Izberite vaše glavno področje"
+      services: "Seznam storitev"
+      bio: "Bio - kratka predstavitev podjetja"
+      phone: "Telefon"
+      id: "Davčna številka"
+      webpage: "Spletna stran"
+      city: "Kraj"
+      country: "Država"
+      country-1: "Avstrija"
+      country-2: "Belgija"
+      country-3: "Bolgarija"
+      country-4: "Hrvaška"
+      country-5: "Ciper"
+      country-6: "Češka"
+      country-7: "Danska"
+      country-8: "Estonija"
+      country-9: "Finska"
+      country-10: "Francija"
+      country-11: "Nemčija"
+      country-12: "Grčija"
+      country-13: "Madžarska"
+      country-14: "Irska"
+      country-15: "Italija"
+      country-16: "Latvija"
+      country-17: "Litva"
+      country-18: "Luksemburg"
+      country-19: "Malta"
+      country-20: "Nizozemska"
+      country-21: "Poljska"
+      country-22: "Portugalska"
+      country-23: "Romunija"
+      country-24: "Slovaška"
+      country-25: "Slovenija"
+      country-26: "Španija"
+      country-27: "Švedska"
+      country-28: "Združeno kraljestvo"
+      country-29: "Država izven EU"
+      country-prompt: "Izberite državo"
       email: "Elektronski naslov"
-      password: "Geslo"
-      password-confirmation: "Potrditev gesla"
-      current-password: "Trenutno geslo"
-  
+      current-password: "Vaše geslo (nujno za potrditev sprememb) "
+      new-password: "Novo geslo - pustite prazno, če ne želite spreminjati "
+      password-confirmation: "Potrditev novega gesla"
+      confirm: "Potrdite"
     edit-title: "Uredi profil"
     update-button: "Uredi"
     password-tip: "pustite prazno, če ne želite spreminjati"
@@ -58,12 +110,18 @@ si:
 #Links
   users-links:
     login: "Prijava"
-    signup: "Registriraj se"
+    login-shared: "Ste že registrirani? Prijavite se!"
+    signup: "Registrirajte se!"
+    signup-shared: "Še niste uporabnik? Registrirajte se!"
     forgot-password: "Ste pozabili geslo?"
     send-password-instructions: "Pošljite mi navodila"
     confirmation-instructions: "Niste prejeli potrditvenih navodil?"
     unlock-instructions: "Niste prejeli navodil za odklep"
     sign-in-with: "Prijava z"
+
+# ############################################################################################
+# DEVISE
+# ############################################################################################
 
   devise:
     sessions: 
@@ -81,10 +139,40 @@ si:
       invalid_token: 'Neveljavna avtentikacija.'  
       timeout: 'Vaša seja je potekla, za nadaljevanje se je potrebno ponovno vpisati.'  
       inactive: 'Vaš uporabniški račun še ni bil aktiviran.'  
+    mailer:
+      reset-password-instructions: 
+        title: "Pozdravljeni"
+        paragraph-1: "Nekdo je poslal zahtevo za spremembo gesla. Če želite spremeniti geslo, kliknite na povezavo spodaj."
+        change-password: "Spremeni geslo"
+        paragraph-2: "Če ne želite spremeniti gesla, prezrite to sporočilo."
+        paragraph-3: "Če ne boste kliknili na zgornjo povezavo in vnesli novega gesla, bo vaše geslo ostalo nespremenjeno."
+    passwords:
+      title: "Spremenite geslo"
+      new-password: "Novo geslo"
+      submit: "Spremenite geslo"
 
+# ############################################################################################
+# USER MAILER
+# ############################################################################################
 
-
-
+  welcome-message:
+    h1: "Dobrodošli na"
+    paragraph-1: "Uspešno ste se registrirali z uporabniškim imenom:"
+    temporary-pass-1: "Vaše začasno geslo je:"
+    temporary-pass-2: "Predlagamo vam, da ga ob naslednji prijavi v aplikacijo zamenjate!"
+    paragraph-2: "Za prijavo v aplikacijo kliknite na"
+    this-link: "to povezavo"
+    thanks-for-joining: "Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo! "
+    have-a-nice-day: "Lep dan še naprej."
+    nina: "Nina Breznik,"
+  new-lead:
+    title: "Pozdravljeni!"
+    paragraph-1: "Novo delo je prispelo za vas na"
+    description: "Opis:"
+    paragraph-2: "Podrobnosti glede dela najdete na"
+    this-link: "tej povezavi"
+    greeting: "Lep dan še naprej in veliko uspeha."
+    nina: "Nina Breznik,"
 
 # ############################################################################################
 # Page 1 - LEADS/INDEX (root page)
@@ -118,6 +206,9 @@ si:
     time: "Kdaj"
     description: "Opis"
     name: "Ime"
+    send-message:
+      placeholder: "Pošlji sporočilo avtorju projekta"
+      submit: "Pošlji"
 
 #Price
     price: "Cena: 10 €"
@@ -235,50 +326,25 @@ si:
 # ############################################################################################
  
   staticpages-info:
-    thanks: "Hvala, da uporabljate ZweiDesign.co aplikacijo" 
-    email: "E-naslov"
-    email_text: "info@sosed.si" 
+    title: "Dobrodošli na ZweiDesign.co"
+    subtitle: "IŠČETE INSPIRACIJO, DELO ALI POSLOVNE PARTNERJE?"
+    welcome-text-1: "ZweiDesign je platforma za prenove, gradnjo in oblikovanje, ki povezuje strokovnjake z različnih področij. Oglejte si projekte talentiranih obrtnikov in podjetij s področja arhitekture, notranjega oblikovanja, dekoriranja, gradbenih del in sodobne tehnologije."
+    welcome-text-2: "Registrirajte se in brezplačno predstavite svoje projekte ter dejavnost."
+    heart-section-1: "Fotografije projektov"
+    heart-section-2: "Številni strokovnjaki"
+    heart-section-3: "Sodelovanje"
+    mailchimp: 
+      title: "Prijavite se na ZweiDesign e-magazin!"
+      placeholder: "Elektronski naslov"
+      submit: "Prijava"
+    company:
+      name: "Moj sosed d.o.o."
+      tax-id: "Davčna številka: 49595105"
+      bank-account: "TRR: SI56 0410 2000 2065 311"
+      email: "Kontakt: ninabreznik@gmail.com"
+      facebook: "Poiščite nas na Facebooku"
 
-  #COMPANY INFO
-    company_info: "Podatki o podjetju" 
-    company: "Podjetje"
-    mojsosed: "Moj sosed d.o.o." 
-    address: "Naslov"
-    sosed_address: "Radehova 39"
-    city: "Kraj"
-    sosed_city: "2230 Lenart"
-
-  #PAYMENT
-    payment_purpose: "Namen plačila"
-    payment_purpose_text: "Plačilo kontakta"
-    account: "TRR"
-    sosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
-    price: "Cena"
-    price_amount: "10 €"
-
-  #FAQ
-    faq: "Pogosta vprašanja"
-    faq-q1: "Kako pridobivate kontakte?"
-    faq-a1: "Pri Sosedu smo strokovnjaki za marketing in do kontaktov prihajamo na veliko načinov. V pomoč so nam predvsem sodobne tehnologije, tako da kot glavno orodje uporabljamo splet, pa tudi zunanje oglaševanje, mrežo naših stalnih strank, partnerske mreže in druge medije."
-
-    faq-q2: "V kakšni obliki mi posredujete kontakte strank?"
-    faq-a2: "Povpraševanja in kontakte strank vam posredujemo takoj po prejemu plačila (pri bančnem nakazilu je to do 48ur, pri drugih oblikah plačila pa v roku nekaj minut).ko jih prejmemo. Kontakt najdete v Imeniku kontaktov. Pogledamo skladnost z vašimi željamo glede regije in vam posredujemo povpraševanje stranke v roku 24h od prejema. Na vaš elektronski naslov vam torej pošljemo telefonsko številko, e-naslov ter opis naročila stranke."
-
-    faq-q3: "Kakšno pogodbo moram podpisati? "
-    faq-a3: "Za sodelovanje ni potrebno podpisati nobene pogodbe. Enostavno se odločite za zakup željenega kontakta, mi pa vam po opravljenem plačilu posredujemo kontaktne podatke o stranki ter pošljemo račun za opravljeno plačilo."
-
-    faq-q4: "Koliko izvajalcev lahko kupi isti kontakt?"
-    faq-a4: "Vsak kontakt lahko zakupi največ 5 različnih izvajalcev. Stranke namreč vedno primerjajo ponudbe različnih izvajalcev, zato jih pri nas povežemo z do 5 izvajalci ter tako povečamo možnost, da stranka ne išče drugje, ampak izbere enega izmed naših izvajalcev."
-
-    faq-q5: "Ali nudite garancijo za vaše kontakte?"
-    faq-a5: "Da. V podjetju Moj sosed nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
-
-    faq-q6: "Zakaj je naročilo konkretnih povpraševanj boljše kot oglas na katerem od spletnih portalov, v časopisu ali na radiju?"
-    faq-a6: "Oglas ali predstavitev na spletnem portalu vam ne zagotavlja povpraševanja, Sosed kontakti pa so konkretna povpraševanja strank, ki zdaj iščejo izvajalca vaših storitev. Takšen način pridobivanja novih strank je veliko bolj učinkovit, enostavno pa je tudi izmeriti rezultate."
-
-    faq-q7: "Zakaj je boljše sodelovanje z vami kot pa oglaševanje na Googla? "
-    faq-a7: "Pri nas smo osredotočeni predvsem na pridobivanje povpraševanj preko Google Adwords. To pomeni, da pridobivamo stranke, ki iščejo ponudnike storitev in vam njihova povpraševanja preprosto objavljamo na naši aplikaciji, kjer lahko izberete 1, 2 ali 10 kontaktov kadarkoli želite. Če se odločite za oglaševanje preko Googla v lastni režiji, morate imeti osebo, ki bo vzpostavila sistem za oglaševanje, nato pa redno skrbela za optimizacijo oglasov, ključnih besed in vstopnih strani. Tudi če na vaš oglas klikne nekdo, ki ni potencialna stranka, morate ta klik Googlu vseeno plačati. Pri nas pa lahko kontakte zakupite takrat, ko jih potrebujete."
-
+    
 # ############################################################################################
 # Page 7 - ORDERS/BANK_TRANSACTION (info)
 # ############################################################################################
@@ -345,20 +411,24 @@ si:
 # ############################################################################################
 
   lead-new:
+    explanation-1: "Pošljite povpraševanje"
+    explanation-2: "Primerjajte ponudbe"
+    explanation-3: "Izberite preverjenega izvajalca"
     title:  "Iščete izvajalca?"
     instructions: "Pošljite opis projekta in povezali vas bom s talentiranimi in izkušenimi izvajalci, ki so na voljo za sodelovanje."
     form:
       business-types:
-        architecture: "Arhitekti"
-        fasades: "Fasaderstvo"
-        building_house: "Gradnja"
-        mechanical_instalations: "Strojne instalacije"
-        electrical_instalations: "Električne instalacije"
-        roofing: "Strehe"
-        renovations: "Prenova"
-        painting: "Slikopleskarstvo"
-        masonry: "Zidarstvo"
-        other: "Drugo"
+        field: "Katerega izvajalca iščete?"
+        field-1: "Arhitekti & Projektanti"
+        field-2: "Izvajalci splošnih gradbenih del"
+        field-3: "Zidarji"
+        field-4: "Notranji oblikovalci & Dekoraterji"
+        field-5: "Arhitekti in Projektanti kuhinj & kopalnic"
+        field-6: "Renoviranje kuhinj & kopalnic"
+        field-7: "Načrtovalci okolice"
+        field-8: "Urejanje okolice"
+        field-9: "Kamen, tlakovci & beton"
+        field-10: "Keramika, kamen & marmor"
       form-time:
         asap: "Takoj"
         fourteendays: "V naslednjih 14 dneh"
@@ -370,12 +440,15 @@ si:
       prompt-time: "Kdaj bi želeli pričeti s projektom? *"
       business_type: "Dejavnost *"
       time: "Termin *"
-      zip: "Poštna številka *"
+      zip: "Poštna številka"
+      country: "Country"
       description: "Opis *"
       name: "Ime "
       email: "E-naslov *"
       phone: "Telefon *"
-      submit: "Pošlji"
+    back: "Nazaj"
+    next: "Naprej"
+    submit: "Pošlji"
 
 
 # ############################################################################################
@@ -998,6 +1071,109 @@ si:
       long: "%d/%m/%Y %H:%M"
 
 # ############################################################################################
+# PROJECTS/SHOW 
+# ############################################################################################
+
+  project-show:
+    edit: "Edit your project"
+    send-message: "Pošljite sporočilo avtorju tega projekta"
+    get-in-touch: "Kontaktirajte avtorja projekta"
+    message-subject: "se zanima za"
+    submit: "Pošlji"
+
+# ############################################################################################
+# PROJECTS/INDEX 
+# ############################################################################################
+
+  project-index:
+    data-filter-1: "Kuhinja"
+    data-filter-2: "Kopalnica"
+    data-filter-3: "Spalnica"
+    data-filter-4: "Dnevni prostor"
+    data-filter-5: "Jedilnica"
+    data-filter-6: "Otroški prostor"
+    data-filter-7: "Delovni prostor"
+    data-filter-8: "Utility & shramba"
+    data-filter-9: "Vhod & garderoba "
+    data-filter-10: "Hodnik"
+    data-filter-11: "Stopnišče"
+    data-filter-12: "Klet"
+    data-filter-13: "Garaža & hobi"
+    data-filter-14: "Hiša & fasade"
+    data-filter-15: "Okolica"
+    data-filter-16: "Svetila"
+    data-filter-17: "Art & dekor"
+
+# ############################################################################################
+# PROJECTS/NEW 
+# ############################################################################################
+
+  project-new:
+    exaplanation-1: "Izberite fotko."
+    exaplanation-2: "Dodajte naslov."
+    exaplanation-3: "Opišite projekt."
+    title: "Objavite svoj projekt "
+    instructions: "Predstavite svoj kreativni projekt. Potrebujete le naslov projekta in kakovostno fotografijo."
+    instructions-additional: "Za objavo morate biti prijavljeni."
+    form: 
+      business-type-prompt: "S katerega področja je vaš projekt?"
+      title: "Naslov projekta"
+      description: "Opis"
+      submit: "Objavi"
+    help:
+      title: "Na ZweiDesign lahko predstavite svoje projekte. "
+      text: "Imate za sabo projekte, na katere ste še posebej ponosni? Sedaj jih lahko predstavite strankam. Izpolnite zgornji obrazec in predstavite svoj projekt. Potrebujete le naslov, kratek opis in eno fotografijo."
+
+
+# ############################################################################################
+# PROJECTS/EDIT 
+# ############################################################################################
+
+  project-edit:
+    title: "Edit your project"
+    form:
+      submit: "Potrdi spremembe"
+   
+
+
+# ############################################################################################
+# USERS/SHOW
+# ############################################################################################
+
+  user-show:
+    country: "Država"
+    city: "Kraj"
+    business_type: "Dejavnost"
+    name: "Kontaktna oseba"
+    bio: "Bio"
+    services: "Storitve"
+    phone: "Telefon"
+    link: "Spletna stran"
+    tax-id: "ID za DDV"
+    send-message:
+      placeholder: "Napiši sporočilo temu izvajalcu"
+      submit: "Pošlji"
+    edit-profile: "Uredi svoj profil"
+    contact-provider: "Pošlji sporočilo izvajalcu"
+
+# ############################################################################################
+# TOP MENU
+# ############################################################################################
+
+  top-menu:
+    my-profile: "Moj profil"
+    edit-profile: "Uredi profil"
+    available-jobs: "Prosta dela"
+    post-a-job: "Oddaj delo"
+    providers-list: "Seznam ponudnikov"
+    info: "Info o ZweiDesign"
+    sign-out: "Odjava"
+    publish-project: "Objavite svoj projekt"
+    sign-in: "Prijava"
+    sign-up: "Še niste registrirani? Prijavite se"
+    signin-signup: "Prijava/Registracija"
+
+# ############################################################################################
 # MAILBOXER
 # ############################################################################################
 
@@ -1007,6 +1183,10 @@ si:
       subject_reply: "Nov odgovor: %{subject}"
     notification_mailer:
       subject: "Novo ZweiDesign.co sporočilo: %{subject}"
+    conversations-index:
+      title: "Pogovori"
+      new-message: "Napišite novo sporočilo"
+      submit: "Pošlji"
 
 # ############################################################################################
 # ACTIVERECORD

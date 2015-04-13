@@ -102,23 +102,23 @@ class ProjectsController < ApplicationController
     @projects.each do |project|
       @project = project
     end
-    @kuhinja_count                  = Project.all.where(category: "Kuhinja").count
-    @kopalnica_count                = Project.all.where(category: "Kopalnica").count
-    @spalnica_count                 = Project.all.where(category: "Spalnica").count
-    @dnevni_prostor_count           = Project.all.where(category: "Dnevni prostor").count
-    @jedilnica_count                = Project.all.where(category: "Jedilnica").count
-    @otroski_prostor_count          = Project.all.where(category: "Otroški prostor").count
-    @delovni_prostor_count          = Project.all.where(category: "Delovni prostor").count
-    @shranjevanje_count             = Project.all.where(category: "Prostor za shranjevanje").count
-    @vhod_in_garderoba_count        = Project.all.where(category: "Vhod in garderoba").count
-    @hodnik_count                   = Project.all.where(category: "Hodnik").count
-    @stopnisce_count                = Project.all.where(category: "Stopnišče").count
-    @klet_count                     = Project.all.where(category: "Klet").count
-    @garaza_in_hobi_count           = Project.all.where(category: "Garaža in hobi prostor").count   
-    @hisa_in_fasade_count           = Project.all.where(category: "Hiša in fasade").count
-    @okolica_count                  = Project.all.where(category: "Okolica").count
-    @svetila_count                  = Project.all.where(category: "Svetila").count
-    @dekor_count                    = Project.all.where(category: "Dekor").count
+    @filter_1_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-1'}").count
+    @filter_2_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-2'}").count
+    @filter_3_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-3'}").count
+    @filter_4_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-4'}").count
+    @filter_5_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-5'}").count
+    @filter_6_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-6'}").count
+    @filter_7_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-7'}").count
+    @filter_8_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-8'}").count
+    @filter_9_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-9'}").count
+    @filter_10_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-10'}").count
+    @filter_11_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-11'}").count
+    @filter_12_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-12'}").count
+    @filter_13_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-13'}").count   
+    @filter_14_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-14'}").count
+    @filter_15_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-15'}").count
+    @filter_16_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-16'}").count
+    @filter_17_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-17'}").count
   end
 
   def show
@@ -168,7 +168,11 @@ class ProjectsController < ApplicationController
         user.projects << project
         UserMailer.welcome_email(user, pass).deliver
         beta = user
-        User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili. Za vsa vprašanja pa smo vam vedno na voljo na nina.breznik@sosed.si.", "Kako pošiljate in sprejemate sporočila")
+        if user.country == "Slovenia"
+          User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili.", "Kako pošiljate in sprejemate sporočila.")
+        else 
+          User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Just wanted to tell you, that each time someone will send you a message, we will notify you via your email. We encourage you to get in touch with other providers and get to know them. You can send a message throught user's projects or their profile pages.", "ZweiDesign Messages.")
+        end
       end
     end
     project.save

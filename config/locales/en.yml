@@ -37,13 +37,65 @@ en:
 
 #Edit
   users-edit: #   "#{I18n.t'users-login.remember-me'}"
-    
     edit-fields:
+      name: "First name"
+      surname: "Last name"
+      add-pic-label: "Add a photo"
+      company: "Company"
+      field: "Field"
+      field-1: "Architects & Building Designers"
+      field-2: "General Home Builders"
+      field-3: "Masonry"
+      field-4: "Interior Designers & Decorators"
+      field-5: "Kitchen and Bathroom Designers & Fitters"
+      field-6: "Kitchen and Bathroom Renovators"
+      field-7: "Landscape Architects & Garden Designers"
+      field-8: "Landscape Contractors"
+      field-9: "Stone, Paving & Concrete"
+      field-10: "Cheramics, Stone & Marble"
+      field-prompt: "Choose your main field"
+      services: "Services"
+      bio: "Bio - short description"
+      phone: "Phone"
+      id: "Tax Id"
+      webpage: "Webpage"
+      city: "City"
+      country: "Country"
+      country-1: "Austria"
+      country-2: "Belgium"
+      country-3: "Bolgaria"
+      country-4: "Croatia"
+      country-5: "Cyprus"
+      country-6: "Czech Republic"
+      country-7: "Denmark"
+      country-8: "Estonia"
+      country-9: "Finland"
+      country-10: "France"
+      country-11: "Germany"
+      country-12: "Greece"
+      country-13: "Hungary"
+      country-14: "Ireland"
+      country-15: "Italy"
+      country-16: "Latvia"
+      country-17: "Lithuania"
+      country-18: "Luxemburg"
+      country-19: "Malta"
+      country-20: "Netherlands"
+      country-21: "Poland"
+      country-22: "Portugal"
+      country-23: "Romania"
+      country-24: "Slovakia"
+      country-25: "Slovenia"
+      country-26: "Spain"
+      country-27: "Sweden"
+      country-28: "United Kingdom"
+      country-29: "Non EU country"
+      country-prompt: "Choose your country"
       email: "Email"
-      password: "Password"
-      password-confirmation: "Password confirmation"
-      current.password: "Current password"
-  
+      current-password: "Your password (necessary for confirming changes)"
+      new-password: "New password (leave empty if you don't want to change)"
+      password-confirmation: "New password confirmation"
+      confirm: "Confirm"
     edit-title: "Edit profile"
     update-button: "Update"
     password-tip: "leave blank if you don't want to change it"
@@ -54,6 +106,10 @@ en:
     unhappy: "Unhappy?"
     sure: "Are you sure?"
     back: "Back"
+
+# ############################################################################################
+# DEVISE
+# ############################################################################################
 
   devise:
     sessions: 
@@ -71,21 +127,52 @@ en:
       invalid_token: 'Invalid authentication token.'  
       timeout: 'Your session expired, please sign in again to continue.'  
       inactive: 'Your account was not activated yet.'  
-
-
-#<%= I18n.t'users-links.login' %> 
-#"#{I18n.t'users-links.login'}"
+    mailer:
+      reset-password-instructions: 
+        title: "Hello"
+        paragraph-1: "Someone has requested a link to change your password. You can do this through the link below."
+        change-password: "Change my password"
+        paragraph-2: "If you didn't request this, please ignore this email."
+        paragraph-3: "Your password won't change until you access the link above and create a new one."
+    passwords:
+      title: "Change your password"
+      new-password: "New password"
+      submit: "Change my password"
 #Links
   users-links:
     login: "Log in"
+    signin-shared: "Already have an account? Sign in"
     signup: "Sign up"
+    signup-shared: "Not registered yet? Sign up"
     forgot-password: "Forgot your password?"
+    send-password-instructions: "Send me instructions"
     confirmation-instructions: "Didn't receive confirmation instructions?"
     unlock-instructions: "Didn't receive unlock instructions?"
     sign-in-with: "Sign in with"
 
 
+# ############################################################################################
+# USER MAILER
+# ############################################################################################
 
+  welcome-message:
+    h1: "Welcome to"
+    paragraph-1: "You successfully registered with username:"
+    temporary-pass-1: "Your temporary password is:"
+    temporary-pass-2: "We suggest you to change it with your next login!"
+    paragraph-2: "To login into the app"
+    this-link: "click here"
+    thanks-for-joining: "Thanks for joining our community. If you have any questions or suggestions, I am always here for you."
+    have-a-nice-day: "Inspire & be inspired."
+    nina: "Nina Breznik,"
+  new-lead:
+    title: "Hello!"
+    paragraph-1: "There's a new job offer for you on"
+    description: "Description:"
+    paragraph-2: "You can read more about this job offer"
+    this-link: "on this link"
+    greeting: "Have an awesome day and lots of succces."
+    nina: "Nina Breznik,"
 
 
 
@@ -95,7 +182,8 @@ en:
 
 # Lead body
   leadsindex-lead:
-    location: "Region" 
+    title: 
+    location: "Country" 
     zip: "Zip"
     time: "When?"
     description: "Description"
@@ -116,11 +204,14 @@ en:
 
 # Lead body
   leadsshow-lead:
-    location: "Region"
+    location: "Country"
     zip: "Zip"
     time: "When?"
     description: "Description"
     name: "Name"
+    send-message:
+      placeholder: "Write a message to this project owner"
+      submit: "Send"
 
 #Price
     price: "Price: 10 €"
@@ -131,13 +222,15 @@ en:
 
 
 
+
+
 # ############################################################################################
 # Page 3 - ORDERS/SHOW
 # ############################################################################################
 
 # Lead body
   ordersshow-lead:
-    location: "Region" 
+    location: "Country" 
     zip: "Zip"
     time: "When?"
     description: "Description"
@@ -166,7 +259,7 @@ en:
 # Notification
   ordersshow-notification:
     lead-not-available: "Currently there is no available leads."
-    successfully-paid-order: "Your payment was succesfully processed."
+    successfully-paid-order: "Your payment was successfully processed."
 
 
 # ############################################################################################
@@ -206,10 +299,10 @@ en:
 
 # Lead body
   ordersindex-lead:
-    location: "Region"
+    location: "Country"
     zip: "Zip"
-    time: "When?"
-    description: "Description"
+    time: "When"
+    description: "Project description"
     name: "Name"
     phone: "Phone"
     email: "E-mail"
@@ -241,54 +334,25 @@ en:
 # ############################################################################################
 
 
-## NOT RIGHT!!!
-
   staticpages-info:
-    thanks: "Thank you for using Sosed.biz app"
-    email: "Email"
-    email_text: "info@sosed.si" 
-
-  #COMPANY INFO
-    company_info: "Company info" 
-    company: "Company"
-    mojsosed: "Moj sosed d.o.o." 
-    address: "Address"
-    sosed_address: "Radehova 39"
-    city: "City"
-    sosed_city: "2230 Lenart"
-
-  #PAYMENT
-    payment_purpose: "Payment purpose"
-    payment_purpose_text: "Lead payment"
-    account: "Account number"
-    sosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
-    price: "Price"
-    price_amount: "10 €"
-
-  #FAQ
-    faq: "FAQ"
-    faq-q1: "Kako pridobivate kontakte?"
-    faq-a1: "Pri Sosedu smo strokovnjaki za marketing in do kontaktov prihajamo na veliko načinov. V pomoč so nam predvsem sodobne tehnologije, tako da kot glavno orodje uporabljamo splet, pa tudi zunanje oglaševanje, mrežo naših stalnih strank, partnerske mreže in druge medije."
-
-    faq-q2: "V kakšni obliki mi posredujete kontakte strank?"
-    faq-a2: "Povpraševanja in kontakte strank vam posredujemo takoj po prejemu plačila (pri bančnem nakazilu je to do 48ur, pri drugih oblikah plačila pa v roku nekaj minut).ko jih prejmemo. Kontakt najdete v Imeniku strank. Pogledamo skladnost z vašimi željamo glede regije in vam posredujemo povpraševanje stranke v roku 24h od prejema. Na vaš elektronski naslov vam torej pošljemo telefonsko številko, e-naslov ter opis naročila stranke."
-
-
-    faq-q3: "Kakšno pogodbo moram podpisati? "
-    faq-a3: "Za sodelovanje ni potrebno podpisati nobene pogodbe. Enostavno se odločite za zakup željenega kontakta, mi pa vam po opravljenem plačilu posredujemo kontaktne podatke o stranki ter pošljemo račun za opravljeno plačilo."
-
-    faq-q4: "Koliko izvajalcev lahko kupi isti kontakt?"
-    faq-a4: "Vsak kontakt lahko zakupi največ 5 različnih izvajalcev. Stranke namreč vedno primerjajo ponudbe različnih izvajalcev, zato jih pri nas povežemo z do 5 izvajalci ter tako povečamo možnost, da stranka ne išče drugje, ampak izbere enega izmed naših izvajalcev."
-
-
-    faq-q5: "Ali nudite garancijo za vaše kontakte?"
-    faq-a5: "Da. V podjetju Moj sosed nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
-
-    faq-q6: "Zakaj je naročilo konkretnih povpraševanj boljše kot oglas na katerem od spletnih portalov, v časopisu ali na radiju?"
-    faq-a6: "Oglas ali predstavitev na spletnem portalu vam ne zagotavlja povpraševanja, Sosed kontakti pa so konkretna povpraševanja strank, ki zdaj iščejo izvajalca vaših storitev. Takšen način pridobivanja novih strank je veliko bolj učinkovit, enostavno pa je tudi izmeriti rezultate."
-
-    faq-q7: "Zakaj je boljše sodelovanje z vami kot pa oglaševanje na Googla? "
-    faq-a7: "Pri nas smo osredotočeni predvsem na pridobivanje povpraševanj preko Google Adwords. To pomeni, da pridobivamo stranke, ki iščejo ponudnike storitev in vam njihova povpraševanja preprosto objavljamo na naši aplikaciji, kjer lahko izberete 1, 2 ali 10 kontaktov kadarkoli želite. Če se odločite za oglaševanje preko Googla v lastni režiji, morate imeti osebo, ki bo vzpostavila sistem za oglaševanje, nato pa redno skrbela za optimizacijo oglasov, ključnih besed in vstopnih strani. Tudi če na vaš oglas klikne nekdo, ki ni potencialna stranka, morate ta klik Googlu vseeno plačati. Pri nas pa lahko kontakte zakupite takrat, ko jih potrebujete."
+    title: "Welcome to ZweiDesign.co"
+    subtitle: "LOOKING FOR INSPIRATION, WORK OR PROVIDERS FOR YOUR PROJECT?"
+    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields. Check out projects from our members and join the community of achitects, interior designers, decorators, construction workers and smart home designers."
+    welcome-text-2: "SignUp and list your projects for free."
+    heart-section-1: "Projects photos"
+    heart-section-2: "Talented experts"
+    heart-section-3: "Collaboration"
+    mailchimp: 
+      title: "Subscribe to ZweiDesign e-magazine!"
+      placeholder: "Type your e-mail address"
+      submit: "Subscribe"
+    company:
+      name: "Moj sosed d.o.o."
+      tax-id: "Tax ID: SI49595105"
+      bank-account: "Bank account: SI56 0410 2000 2065 311"
+      email: "Contact: ninabreznik@gmail.com"
+      facebook: "Find us on Facebook"
+ 
 
 # ############################################################################################
 # Page 7 - ORDERS/BANK_TRANSACTION (info)
@@ -314,7 +378,7 @@ en:
     offer_mojsosed_city: "2230 Lenart"
     offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
     lead:
-      location: "Region" 
+      location: "Country" 
       zip: "Zip"
       time: "When?"
       description: "Description"
@@ -357,20 +421,24 @@ en:
 # ############################################################################################
 
   lead-new:
-    title:  "Book a service"
-    instructions: "Send a free inquiry and up to 5 chosen providers will contact you with their special offers."
+    explanation-1: "Tell us which provider you need"
+    explanation-2: "Receive offers"
+    explanation-3: "Choose the best"
+    title:  "Find a provider for your project"
+    instructions: "Send a free inquiry and we will find available providers for you."
     form:
       business-types:
-        architecture: "Arhitekti"
-        fasades: "Fasaderstvo"
-        building_house: "Gradnja"
-        mechanical_instalations: "Strojne instalacije"
-        electrical_instalations: "Električne instalacije"
-        roofing: "Krovstvo"
-        renovations: "Prenova"
-        painting: "Slikopleskarstvo"
-        masonry: "Zidarstvo"
-        other: "Drugo"
+        field: "Which provider are you looking for?"
+        field-1: "Architects & Building Designers"
+        field-2: "General Home Builders"
+        field-3: "Masonry"
+        field-4: "Interior Designers & Decorators"
+        field-5: "Kitchen and Bathroom Designers & Fitters"
+        field-6: "Kitchen and Bathroom Renovators"
+        field-7: "Landscape Architects & Garden Designers"
+        field-8: "Landscape Contractors"
+        field-9: "Stone, Paving & Concrete"
+        field-10: "Cheramics, Stone & Marble"
       form-time:
         asap: "As soon as possible"
         fourteendays: "In the next 14 days"
@@ -382,13 +450,28 @@ en:
       prompt-time: "When would you need a service?"
       business_type: "Business type"
       time: "Time"
-      zip: "Zip"
+      zip: "Zip code"
+      country: "In which country"
       description: "Description"
       name: "Name"
       email: "Email"
       phone: "Phone"
       submit: "Send"
-
+    back: "Back"
+    next: "Next"
+    submit: "Send"
+    paragraph-1: "Make your projects come true."
+    paragraph-2: "Search for and connect with talented providers from all over Europe."
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
 
 # ############################################################################################
 # Page 11 - ACTIVE ADMIN
@@ -1010,15 +1093,142 @@ en:
       long: "%d/%m/%Y %H:%M"
 
 # ############################################################################################
+# PROJECTS/SHOW 
+# ############################################################################################
+
+  project-show:
+    edit: "Edit your project"
+    send-message: "Send message to the author"
+    get-in-touch: "Send message"
+    message-subject: "is interested in"
+    submit: "Send"
+    data-filter-6: "Children area"
+    data-filter-7: "Working area"
+    data-filter-8: "Utility & Storage"
+    data-filter-9: "Entrance & Checkroom "
+    data-filter-10: "Corridor"
+    data-filter-11: "Stairs"
+    data-filter-12: "Basement"
+    data-filter-13: "Garage & Hobby"
+    data-filter-14: "House & Fasades"
+    data-filter-15: "Surroundings"
+    data-filter-16: "Lights"
+    data-filter-17: "Art & Decor"
+
+# ############################################################################################
+# PROJECTS/INDEX 
+# ############################################################################################
+
+  project-index:
+    data-filter-1: "Kitchen"
+    data-filter-2: "Bathroom"
+    data-filter-3: "Sleeping room"
+    data-filter-4: "Living area"
+    data-filter-5: "Dining room"
+    data-filter-6: "Children area"
+    data-filter-7: "Working area"
+    data-filter-8: "Utility & Storage"
+    data-filter-9: "Entrance & Checkroom "
+    data-filter-10: "Corridor"
+    data-filter-11: "Stairs"
+    data-filter-12: "Basement"
+    data-filter-13: "Garage & Hobby"
+    data-filter-14: "House & Fasades"
+    data-filter-15: "Surroundings"
+    data-filter-16: "Lights"
+    data-filter-17: "Art & Decor"
+
+# ############################################################################################
+# PROJECTS/NEW 
+# ############################################################################################
+
+  project-new:
+    exaplanation-1: "Attach photo"
+    exaplanation-2: "Choose title"
+    exaplanation-3: "Describe project"
+    title: "List your project "
+    instructions: "Introduce your project. All you need is a high quality photo, title and a short description."
+    instructions-additional: "First you need to sign-in."
+    form: 
+      business-type-prompt: "What is your project about?"
+      title: "Project title"
+      description: "Description"
+      submit: "Publish"
+    help:
+      title: "On Zwei Design you can list your company's projects for free."
+      text: "Do you have a portfolio of successful projects? List them on ZweiDesign and let customers & partners find you."
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
+# ############################################################################################
+# PROJECTS/EDIT 
+# ############################################################################################
+
+  project-edit:
+    title: "Edit your project"
+    form:
+      submit: "Confirm changes"
+
+# ############################################################################################
+# USERS/SHOW
+# ############################################################################################
+
+  user-show:
+    country: "Country"
+    city: "City"
+    business_type: "Business field"
+    name: "Contact name"
+    bio: "Bio"
+    services: "Services"
+    phone: "Phone"
+    link: "Web page"
+    tax-id: "Tax id"
+    send-message:
+      placeholder: "Send message to this provider"
+      submit: "Send"
+    edit-profile: "Edit your profile"
+    contact-provider: "Send message to this provider"
+
+# ############################################################################################
+# TOP MENU
+# ############################################################################################
+
+  top-menu:
+    my-profile: "My profile"
+    edit-profile: "Edit profile"
+    available-jobs: "Jobs"
+    post-a-job: "Post a job"
+    providers-list: "List of Providers"
+    info: "About ZweiDesign"
+    sign-out: "Sign out"
+    publish-project: "List your project"
+    sign-in: "Sign in"
+    sign-up: "Not registered yet? Sign up"
+    signin-signup: "Sign in/Sign up"
+
+
+
+# ############################################################################################
 # MAILBOXER
 # ############################################################################################
 
   mailboxer:
     message_mailer:
-      subject_new: "Mailboxer new message: %{subject}"
-      subject_reply: "Mailboxer new reply: %{subject}"
+      subject_new: "ZweiDesign new message: %{subject}"
+      subject_reply: "ZweiDesign new reply: %{subject}"
     notification_mailer:
-      subject: "Mailboxer new notification: %{subject}"
+      subject: "ZweiDesign new notification: %{subject}"
+    conversations-index:
+      title: "Conversations"
+      new-message: "Send new message"
+      submit: "Send"
 
 # ############################################################################################
 # ACTIVERECORD
@@ -1032,3 +1242,6 @@ en:
               invalid: "Geslo ni pravilno."
       messages:
         not_saved: "Spremembe niso bile shranjene."
+
+
+      

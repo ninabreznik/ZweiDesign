@@ -87,7 +87,11 @@ class OrdersController < ApplicationController
   end
 
   def create_conversation(beta, order)
-   current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "#{order.selected.email.split("@")[0]} in #{current_user.email.split("@")[0]}")
+    if user.country == "Slovenia"
+      current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Všeč mi je vaš projekt")
+    else
+      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", "I like your project")      
+    end
   end
  
 end

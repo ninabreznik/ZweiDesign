@@ -2,7 +2,7 @@
   <!-- <div class="conversations_title"><i class="fa fa-envelope"></i></div> -->
   <div class="conversations_wrapper">
 
-    <div class="conversations_inbox_title">Sporočila</div>
+    <div class="conversations_inbox_title"><%= I18n.t'mailboxer.conversations-index.title' %></div>
     <div class="conversations_inbox_list">
       <%= render collection: mailbox.conversations, partial: 'conversation' %>
     </div>  

@@ -35,10 +35,10 @@
           <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
           <%= form_for :conversation, url: :conversations do |f| %>
             <%= f.text_field :recipients, type: "hidden", value: "#{@lead.email}" %>
-            <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} se zanima za vaš projekt"  %>
-            <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo avtorju tega projekta" %>
+            <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} is interested in your project"  %>
+            <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'leadsshow-lead.send-message.placeholder'}" %>
             <div class="project_show_send_message_button">
-              <%= f.button :Pošlji %>
+              <%= f.button :"#{I18n.t'leadsshow-lead.send-message.submit'}" %>
             </div>
           <% end %>
         </div>

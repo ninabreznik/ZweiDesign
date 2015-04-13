@@ -1,15 +1,16 @@
-Pozdravljeni!
+<%=I18n.t'new-lead.title'%>
 ===============================================
  
-Na <%= root_url %> je prispelo novo povpraševanje.
+<%=I18n.t'new-lead.paragraph-1'%> <%= root_url %>.
 
-Opis:
+<%=I18n.t'new-lead.description'%>
 <%= @lead_description %>
 
 
-Povpraševanje najdete na <%= link_to "tej povezavi", leads_url %>.
+<%=I18n.t'new-lead.paragraph-2'%> <%= link_to "#{I18n.t'new-lead.this-link'}", leads_url %>.
 
 
-Lep dan še naprej in veliko uspeha.
+<%=I18n.t'new-lead.greeting'%>
 
-Nina Breznik, <%= root_url %>
+<%=I18n.t'new-lead.nina'%>,
+<%= root_url %>

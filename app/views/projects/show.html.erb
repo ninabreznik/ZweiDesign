@@ -20,17 +20,17 @@
         <% if current_user.present? %>
           <% if @project.email == current_user.email %>
             <div class="project_show_send_message">
-              <%= link_to "Uredi svoj projekt", edit_project_url(@project) %>
+              <%= link_to "#{I18n.t'project-show.edit'}", edit_project_url(@project) %>
             </div>
           <% else %>
             <div class="project_show_send_message">
               <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
               <%= form_for :conversation, url: :conversations do |f| %>
                 <%= f.text_field :recipients, type: "hidden", value: "#{@project.email}" %>
-                <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} se zanima za #{@project.title} "  %>
-                <%= f.text_area  :body, as: :text, placeholder: "Pošljite sporočilo avtorju tega projekta" %>
+                <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} #{I18n.t'project-show.message-subject'} #{@project.title} "  %>
+                <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'project-show.send-message'}" %>
                 <div class="project_show_send_message_button">
-                  <%= f.button :Pošlji %>
+                  <%= f.button :"#{I18n.t'project-show.submit'}" %>
                 </div>
               <% end %>
             </div>
@@ -38,7 +38,7 @@
         <% else %>
           <div class="project_show_send_message">
             <i class='fa fa-envelope-o'></i>
-            <%= link_to "Kontaktirajte uporabnika", new_user_registration_path %>
+            <%= link_to "#{I18n.t'project-show.get-in-touch'}", new_user_registration_path %>
           </div>
         <% end %>
         </div> 

@@ -4,26 +4,25 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Dobrodošli na <%= root_url %>, </h1>
+    <h1><%=I18n.t'welcome-message.h1'%> <%= root_url %>, </h1>
     <p>
-      Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.<br>
+      <%=I18n.t'welcome-message.paragraph-1'%> <%= @user.email %>.<br>
     </p>
     <%- if @pass %>
       <p>
-        Vaše začasno geslo je: <%= @pass %>
+        <%=I18n.t'welcome-message.temporary-pass-1'%> <%= @pass %>
       </p>
       <p>
-        Predlagamo vam, da ga ob naslednji prijavi v aplikacijo zamenjate!
+        <%=I18n.t'welcome-message.temporary-pass-2'%>
       </p>
     <%- end %>
     <p>
-      Za prijavo v aplikacijo kliknite na <%= link_to "to povezavo", root_url %>.
+      <%=I18n.t'welcome-message.paragraph-2'%> <%= link_to "#{I18n.t'welcome-message.this-link'}", root_url %>.
     </p>
     <p>
-      Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo! 
-      <br><br>Lep dan še naprej.
+      <%=I18n.t'welcome-message.thanks-for-joining'%>
+      <br><br><br><%=I18n.t'welcome-message.have-a-nice-day'%>
     </p>
-      <br>
-    <p>Nina Breznik, <%= root_url %></p>
+    <p><%=I18n.t'welcome-message.nina'%> <%= root_url %></p>
   </body>
 </html>

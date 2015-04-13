@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
     @sosed_signin_url = 'http://zweidesign.co/users/sign_in'
 
     #@url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Dobrodošli na ZweiDesign')
+    mail(to: @user.email, subject: 'Welcome to ZweiDesign')
   end
 
 
@@ -25,7 +25,7 @@ class UserMailer < ActionMailer::Base
 
   def new_lead(right_user, lead)
     @lead_description = lead.description
-    mail(to: right_user.email, subject: 'Na Zweidesign imamo novo ponudbo za delo z vašega področja')
+    mail(to: right_user.email, subject: 'We have a new job opportunity for you')
   end
 
 end

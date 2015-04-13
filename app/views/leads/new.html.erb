@@ -2,11 +2,11 @@
 <section class="lead_new_photo">
   <div class="lead_new_explanation">
     <div class="lead_new_explanation_first">  
-      <i class="fa fa-pencil"></i>         Pošljite povpraševanje       </div>
+      <i class="fa fa-pencil"></i>  <%= I18n.t'lead-new.explanation-1'%></div>
     <div class="lead_new_explanation_second"> 
-      <i class="fa fa-files-o"></i>        Primerjajte ponudbe           </div>
+      <i class="fa fa-files-o"></i>  <%= I18n.t'lead-new.explanation-2'%></div>
     <div class="lead_new_explanation_third">  
-      <i class="fa fa-check-square-o"></i> Izberite preverjenega izvajalca  </div>
+      <i class="fa fa-check-square-o"></i>  <%= I18n.t'lead-new.explanation-3'%></div>
   </div>
   <div class="lead_new">
     <div class="lead_new_title">
@@ -19,32 +19,38 @@
     <%= form_for (@lead) do |l| %>
       <%= render "#{@lead.current_step}_step", :l => l %>
       <div class="lead_new_form_submit">
-        <%= l.submit "Nazaj", :name => "back_button" unless @lead.first_step? %>
-        <%= l.submit "Naprej" unless @lead.last_step? %>
-        <%= l.submit "Pošlji" if @lead.last_step? %>
+        <%= l.submit "#{I18n.t'lead-new.back'}", :name => "back_button" unless @lead.first_step? %>
+        <%= l.submit "#{I18n.t'lead-new.next'}" unless @lead.last_step? %>
+        <%= l.submit "#{I18n.t'lead-new.submit'}" if @lead.last_step? %>
       </div>
     <% end %>
   </div>
 </section>
 <section class="lead_new_we_help">
   <div class="lead_new_we_help_title">
-    Pomagamo vam najti talentirane izvajalce, ki jih zanima sodelovanje z vami.
+    <%= I18n.t'lead-new.paragraph-1' %>
   </div>
   <div class="lead_new_we_help_categories_title">
-    Več sto strank je že uspešno našlo izvajalce v skupaj preko 10 kategorijah.
+    <%= I18n.t'lead-new.paragraph-2' %>
   </div>
   <div class="lead_new_we_help_categories_list">
-    <i class="fa fa-check-square-o"> Kuhinje</i> 
-    <i class="fa fa-check-square-o"> Kopalnice</i> 
-    <i class="fa fa-check-square-o"> Spalnice</i> 
-    <i class="fa fa-check-square-o"> Dnevni prostor</i>  
-    <i class="fa fa-check-square-o"> Okolica</i> 
-    <i class="fa fa-check-square-o"> Svetila</i> 
-    <i class="fa fa-check-square-o"> Dekor</i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-1'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-2'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-3'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-4'%></i>  
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-5'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-6'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-7'%></i>
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-8'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-9'%></i> 
+    <i class="fa fa-check-square-o"> <%= I18n.t'lead-new.field-10'%></i>  
   </div>
 </section> 
 <section class="lead_new_company_info">
-  <div class="lead_new_company_info_name">ZWEI DESIGN</div>
-  <div class="lead_new_company_info_contact">Moj sosed d.o.o.</div>
-  <div class="lead_new_company_info_contact"><%= mail_to "info@sosed.si", "info@sosed.si" %></div>
-</section> 
+<br><br>
+    <div class="lead_new_company_info_contact"><%=I18n.t'staticpages-info.company.name'%></div>
+    <div class="lead_new_company_info_contact"><%=I18n.t'staticpages-info.company.tax-id'%></div>
+    <div class="lead_new_company_info_contact"><%=I18n.t'staticpages-info.company.bank-account'%></div>
+    <div class="lead_new_company_info_contact"><%=I18n.t'staticpages-info.company.email'%></div>
+    <a href="https://www.facebook.com/ZweiDesign" target="_blank" style="color:#606060;" title="#{I18n.t'staticpages-info.facebook'}"><i class="fa fa-facebook-square fa-2x"></i></a>
+  </section>

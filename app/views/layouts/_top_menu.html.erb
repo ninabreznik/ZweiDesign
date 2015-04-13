@@ -3,17 +3,17 @@
   <% if user_signed_in? %>
       <select id="menu_bar_select" class="select_bar">
         <option value=""><%= current_user.email.split('@').first %></option>
-        <option value="<%= user_path(current_user)%>">Moj profil</option>
-        <option value="<%= edit_user_registration_path %>">Uredi profil</option>
-        <option value="<%= leads_path %>">Prosta dela</option>
-        <option value="<%= delim_path %>">Oddaj delo</option>
-        <option value="<%= users_path %>">Seznam ponudnikov</option>
-        <option value="<%= info_path %>">Info o ZweiDesign</option>
+        <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
+        <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option>
+        <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
+        <option value="<%= delim_path %>"><%=I18n.t'top-menu.post-a-job'%></option>
+        <option value="<%= users_path %>"><%=I18n.t'top-menu.providers-list'%></option>
+        <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
         <!-- <option value="<%= profile_path %>">Nadzorna plošča</option> -->
-        <option value="<%= destroy_user_session_path %>">Odjava</option>
+        <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
       </select>
       <div class="publish_project"> 
-        <%= link_to "Objavite svoj projekt", new_project_path %> 
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %> 
       </div>
       <div class="messages"> 
         <%= link_to messages_path do %>
@@ -22,16 +22,16 @@
       </div>
   <% else %>
       <select id="menu_bar_select" class="select_bar">
-        <option value="">Prijava/Registracija</option>
-        <option value="<%= new_user_session_path %>">Prijava</option>
-        <option value="<%= new_user_registration_path %>">Še niste registrirani?</option>
-        <option value="<%= leads_path %>">Prosta dela</option>
-        <option value="<%= delim_path %>">Oddaj delo</option>
-        <option value="<%= users_path %>">Seznam ponudnikov</option>
-        <option value="<%= info_path %>">Info o ZweiDesign</option>
+        <option value=""><%=I18n.t'top-menu.signin-signup'%></option>
+        <option value="<%= new_user_session_path %>"><%=I18n.t'top-menu.sign-in'%></option>
+        <option value="<%= new_user_registration_path %>"><%=I18n.t'top-menu.sign-up'%></option>
+        <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
+        <option value="<%= delim_path %>"><%=I18n.t'top-menu.post-a-job'%></option>
+        <option value="<%= users_path %>"><%=I18n.t'top-menu.providers-list'%></option>
+        <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
       </select>
       <div class="publish_project"> 
-        <%= link_to "Objavite svoj projekt", new_project_path %> 
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %> 
       </div>
       <div class="messages"> 
         <%= link_to new_user_session_path do %>
