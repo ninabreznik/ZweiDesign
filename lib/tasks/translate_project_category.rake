@@ -58,9 +58,8 @@ namespace :projects do
 
       elsif project.category == "Dekor"
         project.update(category: "Art & Decor")
-      end
 
-    elsif project.category == "House & Fasades"
+      elsif project.category == "House & Fasades"
         project.update(category: "House & Facades")
       end
       
