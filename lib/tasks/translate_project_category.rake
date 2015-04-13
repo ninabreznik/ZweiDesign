@@ -1,7 +1,7 @@
 namespace :projects do
   desc "Translate project.category from slovene to english"
   task :translate_project_category => :environment do
-    Project.tap{|projects| puts "Found #{projects.size} projects to work on"}.each do |project|
+    Project.all.tap{|projects| puts "Found #{projects.size} projects to work on"}.each do |project|
       if project.category == "Kuhinja"
         project.category = "Kitchen"
       elsif project.category == "Kopalnica"
