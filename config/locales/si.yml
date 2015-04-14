@@ -1169,6 +1169,7 @@ si:
     info: "Info o ZweiDesign"
     sign-out: "Odjava"
     publish-project: "Objavite svoj projekt"
+    find-provider: "Poiščite izvajalca"
     sign-in: "Prijava"
     sign-up: "Še niste registrirani? Prijavite se"
     signin-signup: "Prijava/Registracija"
