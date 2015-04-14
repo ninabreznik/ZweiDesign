@@ -5,69 +5,70 @@
     padding 0px
     .top_menu_bar
       position fixed
-      top 3px
+      top 0
       z-index 999
       width 100%
       background-color Menu-Top-Color
       blur-mixin(intensity =  0px)
       background: rgb(0, 0, 0); /* fallback color */
       background: rgba(255, 255, 255, 0.8);
-      border-bottom 0.5px solid #ccc
-      padding-top 0px
+      border-bottom 1px solid #ccc
+      padding-top 3px
       font-family App-Font-Family
-      .logged_user, 
-      .not_logged_user
-        shift 0.18
-        padding-bottom 2px
+      .publish_project,
+      .find-provider,
+      .messages
+        padding-bottom 3px
         font-size 11px
         -webkit-font-smoothing: antialiased
         font-weight bold
         display inline-block
-        &:hover
-          opacity 0.7
-        a
-          text-decoration none
-          color Menu-Top-Button-Color
-      .publish_project,
-      .messages
-        padding-bottom 1px
-        -webkit-font-smoothing: antialiased
-        font-weight bold
-        display inline-block
-        &:hover
-          opacity 0.7
-        a
-          text-decoration none
-          color Menu-Top-Button-Color
       .publish_project
-        shift 0.19
-        font-size 9px !important
+        shift 0.33
         button(Lead-Orange-dark)
+        padding 8px 5px 8px 5px
         bottom 6px
-        margin-left 1px
-        padding-left 10px
-        padding-right 10px 
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
+          font-size 11px
+      .find_provider
+        shift 0.33
+        button(black)
+        padding 8px 5px 8px 5px
+        bottom 6px
+        margin-left 4px
+        margin-bottom: 10px;
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color white
+          font-size 11px
       .messages
-        margin-left -76px
-        font-size 18px
+        shift(-1/2.7)
+        display: inline-block;
+        font-size 22px
         bottom 2px
       .logo
         top 4px
         shift(0.09)
-        height 29px
+        height 37px
         display inline-block
         &:hover
           opacity 0.7
       .select_bar
-        shift(0.1)
+        shift(0.17)
         display: inline-block;
-        width: 140px;
-        height: 20px;
-        padding: 3px 6px;
-        margin-bottom: 9px;
+        width: 200px;
+        height: 30px;
+        padding: 3px 3px;
+        margin-bottom: 20px;
         font-size: 11px;
         line-height: 20px;
-        color: black
+        color: #606060;
         vertical-align: middle;
         border: 0px
       .info
