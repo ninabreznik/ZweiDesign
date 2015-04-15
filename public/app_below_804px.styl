@@ -108,8 +108,10 @@
         border-radius: 3px;
       .columns
         column-mixin()
+        padding-top 0px
         .wookmark
           wookmarkMixin()
+          top 100px
           .lead_box
             leadBoxMixin()
             .lead_title
@@ -910,6 +912,7 @@
             margin-bottom 14px
             #lead_business_type,    
             #lead_time,
+            #lead_location,
             #lead_property_type,
             #lead_material_supply
               color Offer-Font-Color
@@ -984,6 +987,10 @@
           .lead_new_explanation_third
             padding-bottom 30px
             width 100%
+            a 
+              color Lead-Orange
+              &:hover
+                opacity 0.8
             .fa.fa-pencil,
             .fa.fa-files-o,
             .fa.fa-check-square-o

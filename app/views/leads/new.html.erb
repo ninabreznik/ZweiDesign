@@ -1,12 +1,12 @@
 <div class="body_leads_new">
 <section class="lead_new_photo">
   <div class="lead_new_explanation">
-    <div class="lead_new_explanation_first">  
-      <i class="fa fa-pencil"></i>  <%= I18n.t'lead-new.explanation-1'%></div>
-    <div class="lead_new_explanation_second"> 
-      <i class="fa fa-files-o"></i>  <%= I18n.t'lead-new.explanation-2'%></div>
-    <div class="lead_new_explanation_third">  
-      <i class="fa fa-check-square-o"></i>  <%= I18n.t'lead-new.explanation-3'%></div>
+    <div class="lead_new_explanation_title">
+    <%= I18n.t'lead-new.explanation-1'%>
+    </div>
+    <div class="lead_new_explanation_browse_providers">
+      <%= link_to "#{I18n.t'lead-new.explanation-3'}", users_path %>
+    </div>
   </div>
   <div class="lead_new">
     <div class="lead_new_title">

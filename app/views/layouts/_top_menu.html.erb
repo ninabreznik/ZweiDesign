@@ -6,16 +6,14 @@
         <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
         <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option>
         <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
-        <option value="<%= users_path %>"><%=I18n.t'top-menu.providers-list'%></option>
         <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
-        <!-- <option value="<%= profile_path %>">Nadzorna plošča</option> -->
         <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
       </select>
-      <div class="publish_project"> 
-        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %> 
-      </div>
       <div class="find_provider"> 
         <%= link_to "#{I18n.t'top-menu.find-provider'}", delim_path %> 
+      </div>
+      <div class="publish_project"> 
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %> 
       </div>
       <div class="messages"> 
         <%= link_to messages_path do %>
@@ -28,7 +26,6 @@
         <option value="<%= new_user_session_path %>"><%=I18n.t'top-menu.sign-in'%></option>
         <option value="<%= new_user_registration_path %>"><%=I18n.t'top-menu.sign-up'%></option>
         <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
-        <option value="<%= users_path %>"><%=I18n.t'top-menu.providers-list'%></option>
         <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
       </select>
       <div class="find_provider"> 
