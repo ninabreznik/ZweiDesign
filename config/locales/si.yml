@@ -1191,16 +1191,16 @@ si:
   # ############################################################################################
   
   users-index:
-    field-1: "Architects & Building Designers"
-    field-2: "General Home Builders"
-    field-3: "Masonry"
-    field-4: "Interior Designers & Decorators"
-    field-5: "Kitchen and Bathroom Designers & Fitters"
-    field-6: "Kitchen and Bathroom Renovators"
-    field-7: "Landscape Architects & Garden Designers"
-    field-8: "Landscape Contractors"
-    field-9: "Stone, Paving & Concrete"
-    field-10: "Cheramics, Stone & Marble"
+    field-1: "Arhitekti & Projektanti"
+    field-2: "Izvajalci splošnih gradbenih del"
+    field-3: "Zidarji"
+    field-4: "Notranji oblikovalci & Dekoraterji"
+    field-5: "Arhitekti in Projektanti kuhinj & kopalnic"
+    field-6: "Renoviranje kuhinj & kopalnic"
+    field-7: "Načrtovalci okolice"
+    field-8: "Urejanje okolice"
+    field-9: "Kamen, tlakovci & beton"
+    field-10: "Keramika, kamen & marmor"
 
 # ############################################################################################
 # TOP MENU
