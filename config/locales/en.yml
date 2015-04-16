@@ -350,7 +350,7 @@ en:
       name: "Moj sosed d.o.o."
       tax-id: "Tax ID: SI49595105"
       bank-account: "Bank account: SI56 0410 2000 2065 311"
-      email: "Contact: ninabreznik@gmail.com"
+      email: "Contact: nina.breznik@sosed.si"
       facebook: "Find us on Facebook"
  
 
@@ -421,9 +421,9 @@ en:
 # ############################################################################################
 
   lead-new:
-    explanation-1: "BROWSE providers"
+    explanation-1: "BROWSE through the list of providers"
     explanation-2: "Receive offers"
-    explanation-3: "Get started"
+    explanation-3: "Start browsing"
     title:  "OR"
     instructions: "LET US FIND the provider for your project"
     form:
@@ -1152,21 +1152,21 @@ en:
   project-index:
     data-filter-1: "Kitchen"
     data-filter-2: "Bathroom"
-    data-filter-3: "Sleeping room"
-    data-filter-4: "Living area"
-    data-filter-5: "Dining room"
-    data-filter-6: "Children area"
-    data-filter-7: "Working area"
-    data-filter-8: "Utility & Storage"
-    data-filter-9: "Entrance & Checkroom"
+    data-filter-3: "Sleeping"
+    data-filter-4: "Living"
+    data-filter-5: "Dining"
+    data-filter-6: "Children"
+    data-filter-7: "Working"
+    data-filter-8: "Utility"
+    data-filter-9: "Entrance"
     data-filter-10: "Corridor"
     data-filter-11: "Stairs"
     data-filter-12: "Basement"
-    data-filter-13: "Garage & Hobby"
-    data-filter-14: "House & Facades"
+    data-filter-13: "Garage"
+    data-filter-14: "House"
     data-filter-15: "Surroundings"
     data-filter-16: "Lights"
-    data-filter-17: "Art & Decor"
+    data-filter-17: "Decor"
 
 # ############################################################################################
 # PROJECTS/NEW 
@@ -1225,6 +1225,21 @@ en:
       submit: "Send"
     edit-profile: "Edit your profile"
     contact-provider: "Send message to this provider"
+
+  # ############################################################################################
+  # USERS/INDEX
+  # ############################################################################################
+  users-index:
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
 
 # ############################################################################################
 # TOP MENU

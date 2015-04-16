@@ -13,16 +13,16 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     @sorted_users = @users.sort.reverse
-    @architects_count                      = User.all.where(business_type: "Arhitekti & Projektanti").count
-    @constructions_count                   = User.all.where(business_type: "Izvajalci splošnih gradbenih del").count
-    @builders_count                        = User.all.where(business_type: "Zidarji").count
-    @designers_count                       = User.all.where(business_type: "Notranji oblikovalci & Dekoraterji").count
-    @kitchen_bathroom_architects_count     = User.all.where(business_type: "Arhitekti in Projektanti kuhinj & kopalnic").count
-    @kitchen_bathroom_renovators_count     = User.all.where(business_type: "Renoviranje kuhinj & kopalnic").count
-    @landscape_planning_count              = User.all.where(business_type: "Načrtovalci okolice").count
-    @landscape_maintainance_count          = User.all.where(business_type: "Urejanje okolice").count
-    @stone_count                           = User.all.where(business_type: "Kamen, tlakovci & beton").count
-    @ceramics_count                        = User.all.where(business_type: "Keramika, kamen & marmor").count
+    @architects_count                      = User.all.where(business_type: "#{I18n.t'users-index.field-1'}").count
+    @constructions_count                   = User.all.where(business_type: "#{I18n.t'users-index.field-2'}").count
+    @builders_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-3'}").count
+    @designers_count                       = User.all.where(business_type: "#{I18n.t'users-index.field-4'}").count
+    @kitchen_bathroom_architects_count     = User.all.where(business_type: "#{I18n.t'users-index.field-5'}").count
+    @kitchen_bathroom_renovators_count     = User.all.where(business_type: "#{I18n.t'users-index.field-6'}").count
+    @landscape_planning_count              = User.all.where(business_type: "#{I18n.t'users-index.field-7'}").count
+    @landscape_maintainance_count          = User.all.where(business_type: "#{I18n.t'users-index.field-8'}").count
+    @stone_count                           = User.all.where(business_type: "#{I18n.t'users-index.field-9'}").count
+    @ceramics_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-10'}").count
   end
 
   def destroy

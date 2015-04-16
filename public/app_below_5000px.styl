@@ -140,15 +140,16 @@
       #filters
         list-style-type: none;
         text-align: center;
-        margin: 0 0% 120px 5%;
-      #filters li
-        button(#F6F6F6)       
-        font-size: 10px;
-        float: left;
-        padding: 6px 0 4px 0;
+        margin: 0 6% 0px 0%;
+        position relative
+        z-index 3
+      #filters li     
         cursor: pointer;
-        margin: 0 1% 0 1%;
-        width: 20%;
+        margin: 0 0.5% 6px 0.5%;
+        button(#F6F6F6)
+        color #606060
+        font-size 11px
+        border 3px solid white
         -webkit-transition: all 0.15s ease-out;
         -moz-transition: all 0.15s ease-out;
         -o-transition: all 0.15s ease-out;
@@ -157,7 +158,9 @@
         -moz-border-radius: 3px;
         border-radius: 3px;
       #filters li.active
-        color Lead-Orange-dark
+        button(Lead-Orange)
+        border 3px solid white
+        border-radius: 3px;
       .columns
         column-mixin()
         .wookmark
@@ -953,20 +956,28 @@
           button(color = Lead-Orange-dark)
     /* :::::::::::: LEADS/NEW (new lead - for end customers (B2C))  :::::::::::: */
     .body_leads_new
-      margin-top 27px
+      margin-top 36px
       font-family App-Font-Family
       .lead_new_photo  
-        body-mixin(backgroundImage: url(/images/interior1.png))
+        body-mixin()
+        background-image  url(/images/interior1.png) 
+        background-image  backgroundImage  
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
         padding-top 20px
         padding-bottom 750px
         .lead_new
-          span(1/3.5)  
-          background-color black
-          shift(0.13)
+          span(1/3)  
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          shift(0.23)
           padding-bottom 14px
           margin-top 30px
           margin-bottom 40px
-          margin-left 100px  
+          margin-left 100px 
           .lead_new_title
             -webkit-font-smoothing: antialiased
             text-align center 
@@ -1078,12 +1089,13 @@
         .lead_new_explanation
           span(0.8/3)      
           margin-top 60px
-          shift 0.07
+          shift 0.1
           padding 20px
           font-size 29px
           font-weight bold
           color white
-          background-color black
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
           .lead_new_explanation_title
             -webkit-font-smoothing: antialiased
             color white
@@ -1100,7 +1112,7 @@
             shift(1/3.2)
             button(Lead-Orange)
             a
-              color white
+              color #606060
           .lead_new_explanation_first,
           .lead_new_explanation_second,
           .lead_new_explanation_third
@@ -1153,10 +1165,15 @@
             color white
             padding 0px 5px 0px 5px
       .lead_new_company_info
-        padding 50px 0px 50px 0px
+        padding 20px 0px 20px 0px
         background-color black
+        color white
         text-align center
         font-size 18px
+        font-weight: 700
+        -webkit-font-smoothing: antialiased
+        line-height: 1.9;
+        text-rendering: optimizelegibility
         .lead_new_company_info_contact input,
         .lead_new_company_info_contact a
           padding 7px 0px 0px 0px
@@ -1507,7 +1524,7 @@
         padding 15px
         background-color #F6F6F6      
         opacity 0.85
-        color black
+        color #606060
         text-align center 
         .plans_item_text:first-child
           font-weight bold
@@ -1604,19 +1621,18 @@
       #filters
         list-style-type: none;
         text-align: center;
-        margin: 0 0% 150px 5%;
+        margin: 0 6% 0px 0%;
+        padding-top 50px
         position relative
         z-index 3
         top 50px
-      #filters li
-        button(#F6F6F6)       
-        font-size: 11px;
-        opacity 0.85
-        float: left;
-        padding: 6px 0 4px 0;
+      #filters li     
         cursor: pointer;
-        margin: 0 1% 0 1%;
-        width: 20%;
+        margin: 0 0.5% 6px 0.5%;
+        button(#F6F6F6)
+        color #606060
+        font-size 11px
+        border 3px solid white
         -webkit-transition: all 0.15s ease-out;
         -moz-transition: all 0.15s ease-out;
         -o-transition: all 0.15s ease-out;
@@ -1625,7 +1641,9 @@
         -moz-border-radius: 3px;
         border-radius: 3px;
       #filters li.active
-        color Lead-Orange-dark
+        button(Lead-Orange)
+        border 3px solid white
+        border-radius: 3px;
       .columns
         column-mixin()
         padding-top 0px
@@ -1641,6 +1659,8 @@
             left 0
             z-index 1
             opacity 0.8
+            width 100% !important
+            height auto
           .index_welcome_message_title
             z-index 2
             position: relative;
@@ -1670,10 +1690,26 @@
         .index_container
           z-index 2
           position: relative;
-          top 110px
+          top 85px
           padding 50px
           background-color #F6F6F6
-          margin-bottom 30px
+          .index_container_title
+            text-align center
+            margin-top 15px
+            color #606060
+            margin-bottom: 6.25px 
+            font-size 32px
+            font-weight: 700
+            -webkit-font-smoothing: antialiased
+            line-height: 1.1;
+            text-rendering: optimizelegibility
+          .index_container_subtitle
+            font-size: 16px
+            margin-top: 0
+            margin-bottom: 15px
+            text-align: center
+            line-height: 1.43;
+            color: #606060
         .wookmark
           wookmarkMixin()
           top 100px
