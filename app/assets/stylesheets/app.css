@@ -4736,7 +4736,7 @@ html {
     color: #606060;
     font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
     padding-bottom: 80px;
-    padding-bottom: 300%;
+    padding-bottom: 1000px;
     position: relative;
     top: -145px;
   }
@@ -4785,10 +4785,10 @@ html {
     list-style-type: none;
     text-align: center;
     margin: 0 6% 0px 0%;
-    padding-top: 0%;
+    padding-top: 50px;
     position: relative;
     z-index: 3;
-    top: 3%;
+    top: 50px;
   }
 
 /* line 1629 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4876,8 +4876,8 @@ html {
 /* line 1650 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_project_index .columns .index_welcome_message {
     position: relative;
-    padding-top: 15%;
-    padding-bottom: 23%;
+    padding-top: 195px;
+    padding-bottom: 195px;
     text-align: center;
     text-shadow: 1px 1px #606060;
     overflow: hidden;
@@ -4886,7 +4886,7 @@ html {
 /* line 1657 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_project_index .columns .index_welcome_message .video {
     position: absolute;
-    top: -17%;
+    top: 0;
     left: 0;
     z-index: 1;
     opacity: 0.8;
@@ -4930,8 +4930,8 @@ html {
   body .body_project_index .columns .index_container {
     z-index: 2;
     position: relative;
-    top: -15%;
-    padding: 3%;
+    top: 85px;
+    padding: 50px;
     background-color: #f6f6f6;
   }
 
@@ -4963,7 +4963,7 @@ html {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
-    top: 15%;
+    top: 100px;
   }
 
 /* line 1717 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
