@@ -139,7 +139,6 @@ class LeadsController < ApplicationController
   end
 
   def auto_create_user!(lead)
-    @messages_url = link_to "My messages", conversations_path
     if user_signed_in?
       lead.user_id = current_user.id
     else

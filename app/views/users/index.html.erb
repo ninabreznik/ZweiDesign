@@ -1,54 +1,38 @@
 
 <div class="body_leads_index">
-
-
 <div class="columns" id="main" role="main">
 <ol id="filters">
-  <li data-filter='Arhitekti & Projektanti'>
-    Arhitekti & Projektanti (<%=@architects_count%>)
+  <li data-filter='Architects & Building Designers'>
+    <%= I18n.t'users-index.field-1'%> (<%=@architects_count%>)
   </li>
-  <li data-filter='Izvajalci splošnih gradbenih del'>
-    Izvajalci splošnih gradbenih del (<%=@constructions_count%>)
+  <li data-filter="General Home Builders">
+    <%= I18n.t'users-index.field-2'%> (<%=@constructions_count%>)
   </li>
-  <li data-filter='Zidarji'>
-    Zidarji (<%=@builders_count%>)
+  <li data-filter="Masonry">
+    <%= I18n.t'users-index.field-3'%> (<%=@builders_count%>)
   </li>
-  <li data-filter='Notranji oblikovalci & Dekoraterji'>
-    Notranji oblikovalci & Dekoraterji (<%=@designers_count%>)
+  <li data-filter="Interior Designers & Decorators">
+    <%= I18n.t'users-index.field-4'%> (<%=@designers_count%>)
   </li>
-  <li data-filter='Arhitekti in Projektanti kuhinj & kopalnic'>
-    Arhitekti/Projektanti kuhinj & kopalnic (<%=@kitchen_bathroom_architects_count%>)
+  <li data-filter="Kitchen and Bathroom Designers & Fitters">
+    <%= I18n.t'users-index.field-5'%> (<%=@kitchen_bathroom_architects_count%>)
   </li>
-  <li data-filter='Renoviranje kuhinj & kopalnic'>
-    Renoviranje kuhinj & kopalnic (<%= @kitchen_bathroom_renovators_count %>)
+  <li data-filter="Kitchen and Bathroom Renovators">
+    <%= I18n.t'users-index.field-6'%> (<%= @kitchen_bathroom_renovators_count %>)
   </li>
-  <li data-filter='Načrtovalci okolice'>
-    Načrtovalci okolice (<%=@landscape_planning_count%>)
+  <li data-filter="Landscape Architects & Garden Designers">
+    <%= I18n.t'users-index.field-7'%> (<%=@landscape_planning_count%>)
   </li>
-  <li data-filter='Urejanje okolice'>
-    Urejanje okolice (<%=@landscape_maintainance_count  %>)
+  <li data-filter="Landscape Contractors">
+    <%= I18n.t'users-index.field-8'%> (<%=@landscape_maintainance_count  %>)
   </li>
-  <li data-filter='Kamen, tlakovci & beton'>
-    Kamen, tlakovci & beton (<%=@stone_count%>)
+  <li data-filter="Stone, Paving & Concrete">
+    <%= I18n.t'users-index.field-9'%> (<%=@stone_count%>)
   </li>
-  <li data-filter='Keramika, kamen & marmor'>
-    Keramika, kamen & marmor (<%=@ceramics_count%>)
+  <li data-filter="Cheramics, Stone & Marble">
+    <%= I18n.t'users-index.field-10'%> (<%=@ceramics_count%>)
   </li>
-</ol>
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<div id="mc_embed_signup">
-<form action="//sosed.us1.list-manage.com/subscribe/post?u=2228fd24f2a4419c938ef2fdb&amp;id=791cffa2c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<div id="mc_embed_signup_scroll">
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Prijavite se na ZweiDesign novice!" required>
-   <input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="button">
-</div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-
- 
+</ol> 
 <ul id="tiles" class="wookmark">
 <% if @users.present? %>
   <% @sorted_users.each do |user| %>
@@ -57,13 +41,17 @@
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
         <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %> <br><br>
+      <% if user.country.present? %>
+        <div class="lead_subtitle"> Country:</div>
+          <%= user.country %> <br><br>
+      <% end %>
       <% if user.service.present? %>
-        <div class="lead_subtitle"> Storitve:</div>
+        <div class="lead_subtitle"> Services:</div>
           <%= user.service %> <br><br><br>
       <% end %>
       <% if user.projects.any? %>
         <div class="lead_subtitle">
-          Projekti:
+          Projects:
         </div><br>
         <% user.projects.each do |project| %>
           <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br><br>

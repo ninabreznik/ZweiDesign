@@ -85,7 +85,7 @@
     .body_leads_index
       body-mixin(backgroundImage: url(/images/interior1.png))
       .columns
-        column-mixin(margin-top = 18px)
+        column-mixin(margin-top = 58px)
         .wookmark
           wookmarkMixin()
           .lead_box
@@ -434,7 +434,7 @@
         font-size 20px
         font-weight bold
       .columns
-        column-mixin(defaultTop: 18px)
+        column-mixin(defaultTop: 58px)
         .wookmark
           wookmarkMixin()
           .lead_box
@@ -509,7 +509,7 @@
     .body_orders_address_book
       body-mixin(backgroundImage: url(/images/interior6.png))
       .columns
-        column-mixin(defaultTop: 18px)
+        column-mixin(defaultTop: 58px)
         .wookmark
           wookmarkMixin()
           .lead_box
@@ -594,7 +594,7 @@
     .body_profile
       body-mixin(backgroundImage: url(/images/interior6.png))
       .columns
-        column-mixin(defaultTop: 18px)
+        column-mixin(defaultTop: 58px)
         .wookmark
           wookmarkMixin()
           .lead_box
@@ -660,7 +660,7 @@
     /* :::::::::::: DEVISE/LOGIN (sessions/new)  :::::::::::: */
     .body_devise_login
       body-mixin(backgroundImage: url(/images/cream_pixels.png))
-      margin-top 29px
+      margin-top 59px
       padding-top 20px
       padding-bottom 1050px
       .login
@@ -702,7 +702,7 @@
     /* :::::::::::: DEVISE/SIGNUP (registrations/new) :::::::::::: */
     .body_devise_signup
       body-mixin(backgroundImage: url(/images/cream_pixels.png))
-      margin-top 29px
+      margin-top 59px
       padding-top 20px
       padding-bottom 1050px
       .signup
@@ -744,7 +744,7 @@
     /* :::::::::::: DEVISE/PASSWORD/NEW (passwords/new) :::::::::::: */
     .body_devise_password_new
       body-mixin(backgroundImage: url(/images/cream_pixels.png))
-      margin-top 29px
+      margin-top 59px
       padding-top 20px
       padding-bottom 1050px
       .password_new
@@ -778,7 +778,7 @@
     /* :::::::::::: DEVISE/USERS/EDIT (registrations/new) :::::::::::: */
     .body_devise_users_edit
       body-mixin(backgroundImage: url(/images/cream_pixels.png))
-      margin-top 29px
+      margin-top 59px
       padding-top 20px
       padding-bottom 1050px
       .user_edit
@@ -839,7 +839,13 @@
       margin-top 17px
       font-family App-Font-Family
       .lead_new_photo  
-        body-mixin(backgroundImage: url(/images/interior5.png))
+        bbackground-image  url(/images/interior1.png) 
+        background-image  backgroundImage  
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
         padding-top 20px
         padding-bottom 50px
         .lead_new

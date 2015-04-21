@@ -87,29 +87,12 @@
     .body_leads_index
       body-mixin()
       background-color #F6F6F6 
-      #filters
-        list-style-type: none;
-        text-align: center;
-        margin: 0 0% 120px 5%;
-      #filters li
-        button(#F6F6F6)       
-        font-size: 10px;
-        float: left;
-        padding: 6px 0 4px 0;
-        cursor: pointer;
-        margin: 0 1% 0 1%;
-        width: 20%;
-        -webkit-transition: all 0.15s ease-out;
-        -moz-transition: all 0.15s ease-out;
-        -o-transition: all 0.15s ease-out;
-        transition: all 0.15s ease-out;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
       .columns
         column-mixin()
+        padding-top 0px
         .wookmark
           wookmarkMixin()
+          top 100px
           .lead_box
             leadBoxMixin()
             .lead_title
@@ -863,7 +846,13 @@
       margin-top 25px
       font-family App-Font-Family
       .lead_new_photo  
-        body-mixin(backgroundImage: url(/images/interior1.png))
+        background-image  url(/images/interior1.png) 
+        background-image  backgroundImage  
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
         padding-top 20px
         padding-bottom 550px
         .lead_new
@@ -910,6 +899,7 @@
             margin-bottom 14px
             #lead_business_type,    
             #lead_time,
+            #lead_location,
             #lead_property_type,
             #lead_material_supply
               color Offer-Font-Color
@@ -984,6 +974,10 @@
           .lead_new_explanation_third
             padding-bottom 30px
             width 100%
+            a 
+              color Lead-Orange
+              &:hover
+                opacity 0.8
             .fa.fa-pencil,
             .fa.fa-files-o,
             .fa.fa-check-square-o
@@ -1415,9 +1409,8 @@
           padding-bottom 7px
         .plans_faq_item_answer
           font-weight italics
-          padding-bottom 20px
-  
-      /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
+          padding-bottom 20px 
+    /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
     .project_show_send_message
       color black
       background-color #F6F6F6
@@ -1434,3 +1427,27 @@
         button(color = Lead-Orange-dark)
         padding-top 7px
         padding-bottom 7px
+
+    /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
+    .project_show_send_message
+      color black
+      background-color #F6F6F6
+      border-radius: 6px
+      padding 5%
+      #conversation_body
+        width 100%
+        color #606060
+        font-size 12px
+        border 2px solid Lead-Orange-dark
+        padding: 10px 10px 10px 10px
+        margin: 0;
+        min-height: 40px;
+        line-height: 20px;
+        height auto
+        max-height: 284px
+      .project_show_send_message_button,
+      .project_show_send_message_button button,
+      .project_show_send_message_button a
+        button(color = Lead-Orange-dark)
+        padding 7px
+    

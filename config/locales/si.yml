@@ -411,9 +411,9 @@ si:
 # ############################################################################################
 
   lead-new:
-    explanation-1: "Pošljite povpraševanje"
+    explanation-1: "Brskajte med izvajalci"
     explanation-2: "Primerjajte ponudbe"
-    explanation-3: "Izberite preverjenega izvajalca"
+    explanation-3: "Začnite"
     title:  "Iščete izvajalca?"
     instructions: "Pošljite opis projekta in povezali vas bom s talentiranimi in izkušenimi izvajalci, ki so na voljo za sodelovanje."
     form:
@@ -429,6 +429,37 @@ si:
         field-8: "Urejanje okolice"
         field-9: "Kamen, tlakovci & beton"
         field-10: "Keramika, kamen & marmor"
+      country: "Država"
+      country-1: "Avstrija"
+      country-2: "Belgija"
+      country-3: "Bolgarija"
+      country-4: "Hrvaška"
+      country-5: "Ciper"
+      country-6: "Češka"
+      country-7: "Danska"
+      country-8: "Estonija"
+      country-9: "Finska"
+      country-10: "Francija"
+      country-11: "Nemčija"
+      country-12: "Grčija"
+      country-13: "Madžarska"
+      country-14: "Irska"
+      country-15: "Italija"
+      country-16: "Latvija"
+      country-17: "Litva"
+      country-18: "Luksemburg"
+      country-19: "Malta"
+      country-20: "Nizozemska"
+      country-21: "Poljska"
+      country-22: "Portugalska"
+      country-23: "Romunija"
+      country-24: "Slovaška"
+      country-25: "Slovenija"
+      country-26: "Španija"
+      country-27: "Švedska"
+      country-28: "Združeno kraljestvo"
+      country-29: "Država izven EU"
+      country-prompt: "From which country"
       form-time:
         asap: "Takoj"
         fourteendays: "V naslednjih 14 dneh"
@@ -441,7 +472,6 @@ si:
       business_type: "Dejavnost *"
       time: "Termin *"
       zip: "Poštna številka"
-      country: "Country"
       description: "Opis *"
       name: "Ime "
       email: "E-naslov *"
@@ -1156,6 +1186,22 @@ si:
     edit-profile: "Uredi svoj profil"
     contact-provider: "Pošlji sporočilo izvajalcu"
 
+  # ############################################################################################
+  # USERS/INDEX
+  # ############################################################################################
+  
+  users-index:
+    field-1: "Arhitekti & Projektanti"
+    field-2: "Izvajalci splošnih gradbenih del"
+    field-3: "Zidarji"
+    field-4: "Notranji oblikovalci & Dekoraterji"
+    field-5: "Arhitekti in Projektanti kuhinj & kopalnic"
+    field-6: "Renoviranje kuhinj & kopalnic"
+    field-7: "Načrtovalci okolice"
+    field-8: "Urejanje okolice"
+    field-9: "Kamen, tlakovci & beton"
+    field-10: "Keramika, kamen & marmor"
+
 # ############################################################################################
 # TOP MENU
 # ############################################################################################
@@ -1169,6 +1215,7 @@ si:
     info: "Info o ZweiDesign"
     sign-out: "Odjava"
     publish-project: "Objavite svoj projekt"
+    find-provider: "Poiščite izvajalca"
     sign-in: "Prijava"
     sign-up: "Še niste registrirani? Prijavite se"
     signin-signup: "Prijava/Registracija"

@@ -102,7 +102,8 @@
         text-align: center;
         margin: 0 0% 160px 5%;
       #filters li
-        button(#F6F6F6)       
+        button(#F6F6F6)
+        opacity 0.9       
         font-size: 10px;
         float: left;
         padding: 6px 0 4px 0;
@@ -117,9 +118,10 @@
         -moz-border-radius: 3px;
         border-radius: 3px;
       .columns
-        column-mixin(margin-top = 25px)
+        column-mixin()
         .wookmark
           wookmarkMixin()
+          top 100px
           .lead_box
             leadBoxMixin()
             .lead_title
@@ -894,7 +896,13 @@
       margin-top 23px
       font-family App-Font-Family
       .lead_new_photo  
-        body-mixin(backgroundImage: url(/images/interior1.png))
+        background-image  url(/images/interior1.png) 
+        background-image  backgroundImage  
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
         padding-top 20px
         padding-bottom 550px
         .lead_new
@@ -940,6 +948,7 @@
             margin-bottom 14px
             #lead_business_type,    
             #lead_time,
+            #lead_location,
             #lead_property_type,
             #lead_material_supply
               color Offer-Font-Color
@@ -1015,6 +1024,10 @@
             padding-bottom 30px
             margin-left 20px
             width 100%
+            a 
+              color Lead-Orange
+              &:hover
+                opacity 0.8
             .fa.fa-pencil,
             .fa.fa-files-o,
             .fa.fa-check-square-o
@@ -1444,8 +1457,7 @@
         .plans_faq_item_answer
           font-weight italics
           padding-bottom 20px
-  
-      /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
+    /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
     .project_show_send_message
       color black
       background-color #F6F6F6
@@ -1462,4 +1474,5 @@
         button(color = Lead-Orange-dark)
         margin-top 5px
         padding-top 4px
-        padding-bottom 4px 
+        padding-bottom 4px     
+    
