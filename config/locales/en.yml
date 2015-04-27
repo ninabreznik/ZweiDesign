@@ -469,7 +469,7 @@ en:
       country-27: "Sweden"
       country-28: "United Kingdom"
       country-29: "Non EU country"
-      country-prompt: "From which country"
+      country-prompt: "In which country"
       form-time:
         asap: "As soon as possible"
         fourteendays: "In the next 14 days"
