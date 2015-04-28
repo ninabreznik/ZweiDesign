@@ -28,4 +28,9 @@ class UserMailer < ActionMailer::Base
     mail(to: right_user.email, subject: 'We have a new job opportunity for you')
   end
 
+  def project_like(user, project)
+    @project = project
+    mail(to: user.email, subject: "Somebody liked your project")
+  end
+
 end
