@@ -2848,7 +2848,7 @@ html {
     background: #000; /* fallback color */
     background: rgba(0,0,0,0.7);
     position: relative;
-    left: 23.69%;
+    left: 15.45%;
     padding-bottom: 14px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -2981,7 +2981,7 @@ html {
     border-radius: 4px;
     margin-top: 4px;
     height: 40px;
-    width: 80%;
+    width: 100% !important;
     border: 1px solid #e8e8e8;
   }
 
@@ -3051,7 +3051,7 @@ html {
     margin-left: 0px;
     font-size: 12px;
     height: 40px;
-    width: 80%;
+    width: 100% !important;
     border: 1px solid #e8e8e8;
   }
 
@@ -3252,7 +3252,7 @@ html {
     margin-left: 0px;
     font-size: 12px;
     height: 40px;
-    width: 80%;
+    width: 100% !important;
     border: 1px solid #e8e8e8;
   }
 
@@ -3373,7 +3373,7 @@ html {
     margin-left: 0px;
     font-size: 12px;
     height: 80px;
-    width: 80%;
+    width: 100% !important;
     border: 1px solid #e8e8e8;
   }
 
@@ -3509,7 +3509,7 @@ html {
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit input,
   body .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit a {
     position: relative;
-    left: 58.709999999999994%;
+    left: 40.17%;
     color: #fff;
     font-size: 13px;
     padding: 10px 22px;
@@ -3602,7 +3602,7 @@ html {
   body .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_browse_providers {
     margin-top: 10px;
     position: relative;
-    left: 32.1875%;
+    left: 25.75%;
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;

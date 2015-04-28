@@ -20,7 +20,6 @@ class Lead < ActiveRecord::Base
   validates :description, presence: true
   validates :location, presence: true
   validates :email, presence: true, format: {with: /.+@.+\..+/i} 
-  validates :phone, presence: true
   # validates :name, presence: true
 
 

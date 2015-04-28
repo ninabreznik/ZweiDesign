@@ -13,12 +13,14 @@
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div> 
             <%= @lead.location %>
           </div> 
-          <div class="lead_show_item">          
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.zip' %>:</div> 
-            <%= @lead.zip %> 
-          </div> 
+          <% if @lead.zip.present? %>         
+            <div class="lead_show_item"> 
+                <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.zip' %>:</div> 
+                <%= @lead.zip %> 
+            </div> 
+          <% end %>
           <div class="lead_show_item">             
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %>:</div> 
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %></div> 
             <%= @lead.time %>
           </div>
           <div class="lead_show_item">          

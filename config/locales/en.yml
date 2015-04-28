@@ -421,11 +421,11 @@ en:
 # ############################################################################################
 
   lead-new:
-    explanation-1: "BROWSE through the list of providers"
+    explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
     title:  "OR"
-    instructions: "LET US FIND the provider for your project"
+    instructions: "LET US FIND the right provider for you"
     form:
       business-types:
         field: "Which provider are you looking for?"

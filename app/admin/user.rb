@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
 
-  permit_params :email, :wallet, :password, :password_confirmation, :first_name, :surname, :city, :bio, :business_type, :service, :de_service,  :company, :tax_id, :website, :phone
+  permit_params :email, :wallet, :password, :password_confirmation, :first_name, :surname, :city, :country, :bio, :business_type, :service, :de_service,  :company, :tax_id, :website, :phone
 
   index do
     selectable_column
@@ -14,6 +14,7 @@ ActiveAdmin.register User do
     column :city
     column :business_type
     column :company
+    column :country
     actions
   end
 
@@ -24,6 +25,7 @@ ActiveAdmin.register User do
     filter :bio
     filter :wallet
     filter :city
+    filter :country
     filter :business_type
     filter :service
     filter :company
@@ -45,18 +47,17 @@ ActiveAdmin.register User do
       f.input :city
       f.input :bio
       f.input :wallet
-      f.input :city
       f.input :business_type, collection: [
-      ["Arhitekti & Projektanti", "Arhitekti & Projektanti"], 
-      ["Izvajalci splošnih gradbenih del", "Izvajalci splošnih gradbenih del"],
-      ["Zidarji", "Zidarji"], 
-      ["Notranji oblikovalci & Dekoraterji", "Notranji oblikovalci & Dekoraterji"], 
-      ["Arhitekti in Projektanti kuhinj & kopalnic", "Arhitekti in Projektanti kuhinj & kopalnic"], 
-      ["Renoviranje kuhinj & kopalnic", "Renoviranje kuhinj & kopalnic"], 
-      ["Načrtovalci okolice", "Načrtovalci okolice"], 
-      ["Urejanje okolice", "Urejanje okolice"], 
-      ["Kamen, tlakovci & beton", "Kamen, tlakovci & beton"], 
-      ["Keramika, kamen & marmor", "Keramika, kamen & marmor"]
+      ["#{I18n.t'lead-new.form.business-types.field-1'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-2'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-3'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-4'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-5'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-6'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-8'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-9'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-10'}"]
     ]
       f.input :service
       f.input :company

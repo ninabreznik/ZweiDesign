@@ -19,18 +19,17 @@ class LeadsController < ApplicationController
     session[:lead_params] ||= {}
     @lead = Lead.new(session[:lead_params])
     @lead.current_step = session[:lead_step]
-
      @business_types = [
-      ["Arhitekti & Projektanti"], 
-      ["Izvajalci splošnih gradbenih del"],
-      ["Zidarji"], 
-      ["Notranji oblikovalci & Dekoraterji"], 
-      ["Arhitekti in Projektanti kuhinj & kopalnic"], 
-      ["Renoviranje kuhinj & kopalnic"], 
-      ["Načrtovalci okolice"], 
-      ["Urejanje okolice"], 
-      ["Kamen, tlakovci & beton"], 
-      ["Keramika, kamen & marmor"]
+      ["#{I18n.t'lead-new.form.business-types.field-1'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-2'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-3'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-4'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-5'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-6'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-8'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-9'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-10'}"]
     ]
 
     @time = [
@@ -40,39 +39,23 @@ class LeadsController < ApplicationController
       ["#{I18n.t'lead-new.form.form-time.consulting'}"],
       ["#{I18n.t'lead-new.form.form-time.informative'}"] 
     ]
-
-    @property_types = [
-      ["Hiša"],
-      ["Večstanovanjski objekt"],
-      ["Pisarna"],
-      ["Poslovni prostor"],
-      ["Drugo"]
-    ]
-
-    @material_supply = [
-      ["Da, sami bomo priskrbeli material."],
-      ["Da, vendar bi potrebovali pomoč."],
-      ["Ne, potrebovali bomo tudi material."]
-    ]
-
-    # render 'new', layout: 'adwords_layout'
   end
 
   def share
     session[:lead_params] ||= {}
     @lead = Lead.new(session[:lead_params])
     @lead.current_step = session[:lead_step]
-
      @business_types = [
-      ["#{I18n.t'lead-new.form.business-types.architecture'}", "#{I18n.t'lead-new.form.business-types.architecture'}"], 
-      ["#{I18n.t'lead-new.form.business-types.fasades'}", "#{I18n.t'lead-new.form.business-types.fasades'}"], 
-      ["#{I18n.t'lead-new.form.business-types.building_house'}", "#{I18n.t'lead-new.form.business-types.building_house'}"],
-      ["#{I18n.t'lead-new.form.business-types.mechanical_instalations'}", "#{I18n.t'lead-new.form.business-types.mechanical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.electrical_instalations'}", "#{I18n.t'lead-new.form.business-types.electrical_instalations'}"],
-      ["#{I18n.t'lead-new.form.business-types.roofing'}", "#{I18n.t'lead-new.form.business-types.roofing'}"], 
-      ["#{I18n.t'lead-new.form.business-types.renovations'}", "#{I18n.t'lead-new.form.business-types.renovations'}"], 
-      ["#{I18n.t'lead-new.form.business-types.painting'}", "#{I18n.t'lead-new.form.business-types.painting'}"],
-      ["#{I18n.t'lead-new.form.business-types.masonry'}", "#{I18n.t'lead-new.form.business-types.masonry'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-1'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-2'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-3'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-4'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-5'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-6'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-8'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-9'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-10'}"]
     ]
 
     @time = [
@@ -104,7 +87,7 @@ class LeadsController < ApplicationController
       lead_user = @lead.email
       lead = @lead
       UserMailer.send_new_lead(lead)
-      redirect_to new_lead_confirmation_url
+      redirect_to leads_url
     else 
       redirect_to leads_new_url
     end
