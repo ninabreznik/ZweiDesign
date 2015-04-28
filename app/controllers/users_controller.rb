@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   def check_if_user_company_present(users)
     @edited_users = []
     users.each do |user|
-      if user.company == nil
+      if user.company == nil || user.company == ""
       else
         @edited_users << user
       end
