@@ -115,11 +115,11 @@
       fa.fa-arrow-circle-up
       &:hover
         opacity 0.8
-        color Lead-Orange      
-    /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
-    .body_leads_index
+        color Lead-Orange   
+    /* :::::::::::: USERS/INDEX => homepage :::::::::::: */
+    .body_users_index
       body-mixin()
-      background-color #F6F6F6    
+      background-color #F6F6F6 
       #mc_embed_signup
         width 50%
         margin-left 28%
@@ -159,6 +159,7 @@
         border-radius: 3px;
       #filters li.active
         button(Lead-Orange)
+        font-size 11px
         border 3px solid white
         border-radius: 3px;
       .columns
@@ -177,6 +178,151 @@
             leadBoxMixin()
             .lead_title
               background-color #F6F6F6            
+              padding 15px
+              color Offer-Font-Color
+              font-weight bold
+              font-size 14px
+              .fa.fa-star
+                color #fcd229
+                font-size 16px
+                shift 0.05
+                &:hover
+                  color Offer-Font-Color
+            .lead_body
+              font-size 14px
+              padding 15px
+              padding-bottom 0px
+              padding-left 0px
+              -webkit-font-smoothing: antialiased
+              -moz-osx-font-smoothing: grayscale
+              color Offer-Font-Color
+              line-height 150%
+              width 300px
+              .lead_subtitle
+                font-weight bold
+                -webkit-font-smoothing: antialiased
+                padding-top 7px
+              .lead_subtitle_image
+                padding-left 0px
+                padding-right 0px
+              .like_heart
+                margin-left 245px
+                font-size 12px
+              .like_heart a
+                &:hover
+                  color Lead-Orange
+              .new_like,
+              .edit_like,
+              .new_like input,
+              .edit_like input,
+              .edit_like button,
+              .new_like button,
+              .edit_like a,
+              .new_like a
+                font-size 10px
+                margin-left 120px
+                decoration none
+                border 0px
+                background-color white
+                .fa.fa-heart
+                  color Lead-Orange
+                  font-size 12px
+                  &:hover
+                    color black
+                .fa.fa-heart-o
+                  color black
+                  font-size 12px
+                  &:hover
+                    color Lead-Orange
+      .leads_index_no_leads_available
+        position: absolute
+        margin-top 30px
+        margin-left 210px
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        position fixed
+        blur-mixin(intensity = 0px)
+        padding: 50px;
+        top: 200px;  
+        font-size 28px
+        font-weight bold
+        -webkit-font-smoothing: antialiased
+        max-width 1000px
+        min-width 400px
+        color: white; 
+        letter-spacing: -1px;  
+        line-height 150%   
+    /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
+    .body_leads_index
+      body-mixin()
+      background-image  url(/images/interior1.png) 
+      background-image  backgroundImage  
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      -webkit-background-size: cover;
+      background-attachment: fixed
+      margin-top 35px
+      padding-top 20px
+      padding-bottom 750px  
+      #mc_embed_signup
+        width 50%
+        margin-left 28%
+        padding-bottom 20px
+        #mce-EMAIL,
+        #mc-embedded-subscribe
+          display inline-block
+          width auto
+        #mc-embedded-subscribe
+          margin-left 5px !important
+        #mce-EMAIL
+          margin-right 0px !important
+          width 50%
+        #mc-embedded-subscribe
+          background-color #aaa
+          font-size 12px
+          margin-left 12%
+      #filters
+        list-style-type: none;
+        text-align: center;
+        margin: 0 6% 0px 0%;
+        position relative
+        z-index 3
+      #filters li     
+        cursor: pointer;
+        margin: 0 0.5% 6px 0.5%;
+        button(#F6F6F6)
+        color #606060
+        font-size 11px
+        border 3px solid white
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      #filters li.active
+        button(Lead-Orange)
+        font-size 11px
+        border 3px solid white
+        border-radius: 3px;
+      .columns
+        column-mixin()
+        .wookmark
+          wookmarkMixin()
+          #tiles 
+            margin 0
+            #tiles li.inactive
+              visibility: hidden;
+              opacity: 0;
+          .lead_box.inactive
+            visibility: hidden;
+            opacity: 0;
+          .lead_box
+            leadBoxMixin()
+            .lead_title
+              background-color Lead-Orange            
               padding 15px
               color Offer-Font-Color
               font-weight bold
@@ -1068,7 +1214,7 @@
               margin-top 2px
               margin-left 0px
               font-size 12px
-              height 80px
+              height 150px
               width 100% !important
               border 1px solid #E8E8E8
             #lead_description input,
@@ -1578,7 +1724,7 @@
       color black
       background-color #F6F6F6
       border-radius: 6pxbutton(color = Lead-Orange-dark)
-        padding 3px
+      padding 3px
       #conversation_body
         width 100%
         color #606060
@@ -1594,7 +1740,7 @@
       .project_show_send_message_button button,
       .project_show_send_message_button a
         button(color = Lead-Orange-dark)
-        padding 4px
+        padding 7px
     /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
     .body_project_index
       body-mixin()
@@ -1642,6 +1788,7 @@
         border-radius: 3px;
       #filters li.active
         button(Lead-Orange)
+        font-size 11px
         border 3px solid white
         border-radius: 3px;
       .columns
@@ -1655,13 +1802,15 @@
           text-shadow 1px 1px #606060
           overflow hidden
           .video
+            z-index 1
+            opacity 0.8
             position absolute
             top 0
             left 0
-            z-index 1
-            opacity 0.8
-            width 100% !important
-            height auto
+            min-width: 100% 
+            min-height: 100% 
+            width: auto; 
+            height: auto;
           .index_welcome_message_title
             z-index 2
             position: relative;
