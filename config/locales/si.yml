@@ -182,6 +182,7 @@ si:
   leadsindex-lead:
     location: "Regija" 
     zip: "Pošta"
+    link: "Spletna stran"
     time: "Kdaj"
     description: "Opis"
     name: "Ime"
@@ -203,6 +204,7 @@ si:
   leadsshow-lead:
     location: "Regija" 
     zip: "Pošta"
+    link: "Spletna stran"
     time: "Kdaj"
     description: "Opis"
     name: "Ime"
@@ -472,6 +474,7 @@ si:
       business_type: "Dejavnost *"
       time: "Termin *"
       zip: "Poštna številka"
+      link: "Povezava do spletne strani"
       description: "Opis *"
       name: "Ime "
       email: "E-naslov *"
@@ -1209,7 +1212,8 @@ si:
   top-menu:
     my-profile: "Moj profil"
     edit-profile: "Uredi profil"
-    available-jobs: "Prosta dela"
+    available-jobs: "NOVI PROJEKTI"
+    professionals: "Profili uporabnikov"
     post-a-job: "Oddaj delo"
     providers-list: "Seznam ponudnikov"
     info: "Info o ZweiDesign"

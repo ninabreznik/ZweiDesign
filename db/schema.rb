@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408200549) do
+ActiveRecord::Schema.define(version: 20150520193705) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20150408200549) do
     t.string   "time"
     t.string   "location"
     t.integer  "user_id"
+    t.string   "link"
   end
 
   create_table "likes", force: true do |t|

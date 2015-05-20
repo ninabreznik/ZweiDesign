@@ -9,6 +9,14 @@
       <% end %>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
+          <div class="lead_show_item">          
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
+            <%= @lead.description %> 
+          </div>
+          <div class="lead_show_item">             
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %></div> 
+            <%= @lead.time %>
+          </div>
           <div class="lead_show_item">
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div> 
             <%= @lead.location %>
@@ -19,18 +27,13 @@
                 <%= @lead.zip %> 
             </div> 
           <% end %>
-          <div class="lead_show_item">             
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %></div> 
-            <%= @lead.time %>
-          </div>
-          <div class="lead_show_item">          
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
-            <%= @lead.description %> 
-          </div>
-          <div class="lead_show_item">    
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.name' %>:</div> 
-            <%= @lead.name %> 
-          </div> 
+          <% if @lead.link.present? %>         
+            <div class="lead_show_item"> 
+                <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.link' %>:</div> 
+                <%= link_to "#{@lead.link}", "http://#{@lead.link.split('http://').last}" %>
+            </div> 
+          <% end %>
+          <br>
         </div>  
     <% if user_signed_in? %> 
         <div class="project_show_send_message">

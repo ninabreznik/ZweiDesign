@@ -107,6 +107,7 @@ class LeadsController < ApplicationController
       :email, 
       :description, 
       :zip, 
+      :link,
       :phone, 
       :business_type, 
       :time, 

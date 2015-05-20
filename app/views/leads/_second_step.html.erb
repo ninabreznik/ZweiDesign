@@ -37,6 +37,10 @@
   <%= l.text_field :zip %>
 </div>
 
+<div class="lead_new_form_zip">
+  <%= l.label :"#{I18n.t'lead-new.form.link'}" %>
+  <%= l.text_field :link %>
+</div>
 <% if user_signed_in? %>
   <div class="lead_new_form_name">
     <%= l.label :"#{I18n.t'lead-new.form.name'}"  %>

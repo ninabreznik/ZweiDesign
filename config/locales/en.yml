@@ -185,6 +185,7 @@ en:
     title: 
     location: "Country" 
     zip: "Zip"
+    link: "Website"
     time: "When?"
     description: "Description"
     name: "Name"
@@ -206,11 +207,12 @@ en:
   leadsshow-lead:
     location: "Country"
     zip: "Zip"
+    link: "Website"
     time: "When?"
     description: "Description"
     name: "Name"
     send-message:
-      placeholder: "Write a message to this project owner"
+      placeholder: "Contact project owner"
       submit: "Send"
 
 #Price
@@ -268,7 +270,7 @@ en:
 
 # Links
   staticpagesprofile-links:
-    edit-profile: "Edit profile"
+    edit-profile: "Edit my profile"
     logout: "Logout"
     logged-as: "Logged in as"
     sign-in: "Sign in"
@@ -338,8 +340,8 @@ en:
     title: "Welcome to ZweiDesign.co"
     subtitle: "LOOKING FOR INSPIRATION, WORK OR PROVIDERS FOR YOUR PROJECT?"
     welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields. Check out projects from our members and join the community of achitects, interior designers, decorators, construction workers and smart home designers."
-    welcome-text-2: "SignUp and list your projects for free."
-    heart-section-1: "Projects photos"
+    welcome-text-2: "SignUp, list your done project or start a new one for free."
+    heart-section-1: "New projects"
     heart-section-2: "Talented experts"
     heart-section-3: "Collaboration"
     mailchimp: 
@@ -424,11 +426,11 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "Save Time & Money"
-    instructions: "LET US FIND Available Providers for Your Project."
+    title:  "Start new project"
+    instructions: "Have idea and concept for your new project? Need inspiration, feedback, investors, partners, professionals? Make it work! "
     form:
       business-types:
-        field: "Which provider do you need?"
+        field: "Who do you need to make it work?"
         field-1: "Architects & Building Designers"
         field-2: "General Home Builders"
         field-3: "Masonry"
@@ -475,15 +477,16 @@ en:
         fourteendays: "In the next 14 days"
         onetothreemonths: "In 1-3 months"
         flexible: "Flexible"
-        consulting: "Need consulting (many hours)"
+        consulting: "Need consulting/brainstorming"
         informative: "Interested in informative price"
       prompt-business-type: "Who are you looking for?"
       prompt-time: "When?"
       business_type: "Business type"
       time: "Time"
       zip: "Zip code"
+      link: "Webpage"
       description: "Describe the project"
-      name: "Name"
+      name: "Your name"
       email: "Email"
       phone: "Phone"
       submit: "Send"
@@ -1173,11 +1176,11 @@ en:
 # ############################################################################################
 
   project-new:
-    exaplanation-1: "Attach photo"
-    exaplanation-2: "Choose title"
-    exaplanation-3: "Describe project"
-    title: "PUBLISH YOUR PROJECT"
-    instructions: "Introduce a Project Which Best Represents Your Company."
+    exaplanation-1: "Done project?"
+    exaplanation-2: "Publish it"
+    exaplanation-3: "Show your work"
+    title: "Publish done project"
+    instructions: "Did you succesfully finish a project? Share it with the world."
     instructions-additional: "First you need to sign-in."
     form: 
       business-type-prompt: "What is your project about?"
@@ -1249,13 +1252,14 @@ en:
   top-menu:
     my-profile: "My profile"
     edit-profile: "Edit profile"
-    available-jobs: "Available Jobs"
+    available-jobs: "DISCOVER NEW PROJECTS"
+    professionals: "Browse profiles"
     post-a-job: "Post a job"
     providers-list: "List of Providers"
     info: "About ZweiDesign"
     sign-out: "Sign out"
-    publish-project: "Publish your project"
-    find-provider: "Find providers"
+    publish-project: "Publish done project"
+    find-provider: "Start a project"
     sign-in: "Sign in"
     sign-up: "Not registered yet? Sign up"
     signin-signup: "Sign in/Sign up"
