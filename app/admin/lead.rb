@@ -4,7 +4,7 @@ ActiveAdmin.register Lead do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :business_type, :zip, :location, :description, :time, :name, :email, :phone
+  permit_params :business_type, :zip, :location, :description, :time, :name, :email, :phone, :title
   #
   index do
     selectable_column
@@ -12,6 +12,7 @@ ActiveAdmin.register Lead do
       column :business_type  
       column :zip
       column :location
+      column :title
       column :description
       column :time
       column :name
@@ -25,6 +26,7 @@ ActiveAdmin.register Lead do
   filter :location
   filter :description
   filter :time
+  filter :title
   filter :name
   filter :email
   filter :phone
@@ -79,6 +81,7 @@ ActiveAdmin.register Lead do
     ]
       f.input :description
       f.input :time
+      f.input :title
       f.input :name
       f.input :email
       f.input :phone
