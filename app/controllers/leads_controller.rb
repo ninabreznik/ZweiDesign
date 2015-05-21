@@ -20,6 +20,7 @@ class LeadsController < ApplicationController
     @lead = Lead.new(session[:lead_params])
     @lead.current_step = session[:lead_step]
      @business_types = [
+      ["#{I18n.t'lead-new.form.business-types.field-11'}"],
       ["#{I18n.t'lead-new.form.business-types.field-1'}"],
       ["#{I18n.t'lead-new.form.business-types.field-2'}"],
       ["#{I18n.t'lead-new.form.business-types.field-3'}"],
@@ -105,15 +106,15 @@ class LeadsController < ApplicationController
     params.require(:lead).permit(
       :name, 
       :email, 
+      :title,
       :description, 
       :zip, 
       :link,
       :phone, 
       :business_type, 
+      :picture,
       :time, 
       :location,
-      :material_supply,
-      :property_type,
       :selector_id,
       :selected_id,
       :payer_id,

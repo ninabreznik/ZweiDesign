@@ -1,17 +1,21 @@
 <div class="lead_body">
-  <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.description' %>:</div>  
-    <%= lead.description %><br>
+  <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.business_type' %>:</div>  
+    <%= lead.business_type %><br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.time' %></div>         
-    <%= lead.time %>       <br><br>
+    <%= lead.time %>       <br>
+  <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.description' %>:</div>  
+    <%= lead.description %><br><br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.location' %>:</div>     
     <%= lead.location %>   <br>
-  <% if lead.zip.present? %>
+  <% if lead.zip.present? && lead.zip != 0 %>
     <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.zip' %>:</div>          
-      <%= lead.zip %>        <br><br>
+      <%= lead.zip %>        <br>
   <% end %>
   <% if lead.user.present? %>
+    <br>
     <div class="project_show_send_message">
       <%=link_to "#{image_tag lead.user.picture.url(:thumb), :width => "20"} #{lead.user.company}".html_safe, user_path(lead.user) %><br><br>
     </div>
   <% end %>
 </div>
+

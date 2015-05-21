@@ -5,7 +5,7 @@
         <% @sorted_leads.each do |lead| %>
           <div class="lead_box">
             <div class ="lead_title">
-              <%= link_to "#{lead.business_type}", lead_path(lead) %> 
+              <%= link_to "#{lead.title}", lead_path(lead) %> 
             </div>
             <%= render 'lead_body_for_index', :lead => lead %>
           </div>

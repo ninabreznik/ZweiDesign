@@ -4,9 +4,9 @@
     <div class="lead_new_explanation_first">  
       <i class="fa fa-pencil"></i>         Start new project       </div>
     <div class="lead_new_explanation_second"> 
-      <i class="fa fa-files-o"></i>        Collaborate           </div>
-    <div class="lead_new_explanation_third">  
       <i class="fa fa-check-square-o"></i> Get visibility  </div>
+    <div class="lead_new_explanation_third">  
+      <i class="fa fa-files-o"></i>        Collaborate           </div>
   </div>
   <div class="lead_new">
     <div class="lead_new_title">
@@ -16,7 +16,7 @@
       <%= I18n.t'lead-new.instructions' %>
     </div>
 
-    <%= form_for (@lead) do |l| %>
+    <%= form_for @lead, :url => leads_path, :html => { :multipart => true } do |l| %>
       <%= render "#{@lead.current_step}_step", :l => l %>
       <div class="lead_new_form_submit">
         <%= l.submit "#{I18n.t'lead-new.back'}", :name => "back_button" unless @lead.first_step? %>

@@ -182,7 +182,7 @@ en:
 
 # Lead body
   leadsindex-lead:
-    title: 
+    business_type: "Expert needed"
     location: "Country" 
     zip: "Zip"
     link: "Website"
@@ -205,6 +205,7 @@ en:
 
 # Lead body
   leadsshow-lead:
+    business_type: "Expert needed"
     location: "Country"
     zip: "Zip"
     link: "Website"
@@ -426,11 +427,11 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "Start new project"
+    title:  "Start new renovation project"
     instructions: "Have idea and concept for your new project? Need inspiration, feedback, investors, partners, professionals? Make it work! "
     form:
       business-types:
-        field: "Who do you need to make it work?"
+        field: "Who do you need to make your project work?"
         field-1: "Architects & Building Designers"
         field-2: "General Home Builders"
         field-3: "Masonry"
@@ -441,6 +442,7 @@ en:
         field-8: "Landscape Contractors"
         field-9: "Stone, Paving & Concrete"
         field-10: "Cheramics, Stone & Marble"
+        field-11: "Many different professionals"
       country: "Country"
       country-1: "Austria"
       country-2: "Belgium"
@@ -485,7 +487,8 @@ en:
       time: "Time"
       zip: "Zip code"
       link: "Webpage"
-      description: "Describe the project"
+      title: "Project title"
+      description: "Description"
       name: "Your name"
       email: "Email"
       phone: "Phone"
@@ -1244,6 +1247,7 @@ en:
     field-8: "Landscape Contractors"
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
+    field-11: "Other"
 
 # ############################################################################################
 # TOP MENU

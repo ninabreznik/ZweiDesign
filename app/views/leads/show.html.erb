@@ -4,19 +4,24 @@
     <div class="lead_show">
       <% if @lead.business_type.present? %>
         <div class="lead_show_title">
-          <%= @lead.business_type %> 
+          <%=link_to "#{@lead.title}", user_path(@lead.user) %> 
         </div>
       <% end %>
       <div class="lead_show_body">
         <div class="lead_show_items_short">      
           <div class="lead_show_item">          
-            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
-            <%= @lead.description %> 
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.business_type' %>:</div> 
+            <%= @lead.business_type %> 
           </div>
           <div class="lead_show_item">             
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %></div> 
             <%= @lead.time %>
           </div>
+          <div class="lead_show_item">          
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div> 
+            <%= @lead.description %> 
+          </div>
+          <br>
           <div class="lead_show_item">
             <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div> 
             <%= @lead.location %>

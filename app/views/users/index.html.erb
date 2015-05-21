@@ -32,6 +32,9 @@
   <li data-filter="Cheramics, Stone & Marble">
     <%= I18n.t'users-index.field-10'%> (<%=@ceramics_count%>)
   </li>
+  <li data-filter="Other">
+    <%= I18n.t'users-index.field-11'%> (<%=@other_count%>)
+  </li>
 </ol> 
 <ul id="tiles" class="wookmark">
 <% if @users.present? %>

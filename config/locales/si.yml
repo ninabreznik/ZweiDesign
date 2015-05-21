@@ -180,6 +180,7 @@ si:
 
 # Lead body
   leadsindex-lead:
+    business_type: "Kdo se išče"
     location: "Regija" 
     zip: "Pošta"
     link: "Spletna stran"
@@ -202,6 +203,7 @@ si:
 
 # Lead body
   leadsshow-lead:
+    business_type: "Kdo se išče"
     location: "Regija" 
     zip: "Pošta"
     link: "Spletna stran"
@@ -431,6 +433,7 @@ si:
         field-8: "Urejanje okolice"
         field-9: "Kamen, tlakovci & beton"
         field-10: "Keramika, kamen & marmor"
+        field-11: "Drugo"
       country: "Država"
       country-1: "Avstrija"
       country-2: "Belgija"
@@ -474,7 +477,8 @@ si:
       business_type: "Dejavnost *"
       time: "Termin *"
       zip: "Poštna številka"
-      link: "Povezava do spletne strani"
+      link: "Spletna stran"
+      title: "Naslov"
       description: "Opis *"
       name: "Ime "
       email: "E-naslov *"
@@ -1204,6 +1208,7 @@ si:
     field-8: "Urejanje okolice"
     field-9: "Kamen, tlakovci & beton"
     field-10: "Keramika, kamen & marmor"
+    field-11: "Drugo"
 
 # ############################################################################################
 # TOP MENU
