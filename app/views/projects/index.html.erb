@@ -78,7 +78,7 @@
 <% if @projects.present? %>
   <% @sorted_projects.each do |project| %>
   <div class="lead_box" data-filter-class='["<%=project.category%>"]' >
-    <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>     
+    <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
         <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br>
