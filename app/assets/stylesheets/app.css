@@ -280,7 +280,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -428,7 +428,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 1.4px;
   }
 
@@ -659,7 +659,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-color: #f6f6f6;
   }
@@ -668,7 +668,7 @@ html {
   body .body_users_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 123 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -996,7 +996,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-image: url("/images/interior1.png");
     background-image: backgroundImage;
@@ -1016,7 +1016,7 @@ html {
   body .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 268 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1344,7 +1344,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-color: #f6f6f6;
   }
@@ -1353,7 +1353,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 404 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1493,7 +1493,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 600px;
   }
@@ -1502,7 +1502,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 470 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1795,7 +1795,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -1804,7 +1804,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 602 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1979,7 +1979,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -1987,7 +1987,7 @@ html {
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 696 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2193,7 +2193,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -2201,7 +2201,7 @@ html {
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 774 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2386,7 +2386,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -2394,7 +2394,7 @@ html {
   body .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 858 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2594,7 +2594,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -2605,7 +2605,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 928 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2711,7 +2711,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -2722,7 +2722,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 970 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2829,7 +2829,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -2840,7 +2840,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1012 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2933,7 +2933,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -2944,7 +2944,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1046 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -3148,7 +3148,7 @@ html {
 /* line 1104 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_new {
     margin-top: 36px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1107 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -3165,7 +3165,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-image: url("/images/interior1.png");
     background-image: backgroundImage;
@@ -3184,7 +3184,7 @@ html {
   body .body_leads_new .lead_new_photo a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1118 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4180,7 +4180,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -4189,7 +4189,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1345 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4355,7 +4355,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 1500px;
@@ -4365,7 +4365,7 @@ html {
   body .body_payment_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1421 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4451,7 +4451,7 @@ html {
 
 /* line 1451 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_info_singlepage {
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1453 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4567,7 +4567,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 700px;
@@ -4577,7 +4577,7 @@ html {
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1496 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4720,7 +4720,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 300px;
   }
@@ -4729,7 +4729,7 @@ html {
   body .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1574 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4849,7 +4849,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 26px;
     padding-top: 200px;
@@ -4860,7 +4860,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1641 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4919,7 +4919,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 50px;
@@ -4929,7 +4929,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1660 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5127,7 +5127,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 1000px;
     position: relative;
@@ -5138,7 +5138,7 @@ html {
   body .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1751 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5595,7 +5595,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 2px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 20 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -5660,7 +5660,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 1.4px;
   }
 
@@ -5891,7 +5891,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-color: #f6f6f6;
   }
@@ -5900,7 +5900,7 @@ html {
   body .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 90 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6015,7 +6015,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -6024,7 +6024,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 147 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6167,7 +6167,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -6176,7 +6176,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 215 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6474,7 +6474,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -6483,7 +6483,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 348 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6658,7 +6658,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -6666,7 +6666,7 @@ html {
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 442 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6871,7 +6871,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -6879,7 +6879,7 @@ html {
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 519 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7064,7 +7064,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -7072,7 +7072,7 @@ html {
   body .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 603 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7272,7 +7272,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -7283,7 +7283,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 673 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7389,7 +7389,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -7400,7 +7400,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 715 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7507,7 +7507,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -7518,7 +7518,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 757 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7611,7 +7611,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-top: 20px;
@@ -7622,7 +7622,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 791 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7809,7 +7809,7 @@ html {
 /* line 845 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_leads_new {
     margin-top: 25px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 848 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8528,7 +8528,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -8537,7 +8537,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1029 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8691,7 +8691,7 @@ html {
 
 /* line 1101 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_info_singlepage {
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1103 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8708,7 +8708,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 600px;
@@ -8718,7 +8718,7 @@ html {
   body .body_info_singlepage .section_picture a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1107 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9000,7 +9000,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 500px;
@@ -9010,7 +9010,7 @@ html {
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1186 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9154,7 +9154,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 400px;
   }
@@ -9163,7 +9163,7 @@ html {
   body .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1265 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9284,7 +9284,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 26px;
     padding-top: 200px;
@@ -9295,7 +9295,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1333 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9354,7 +9354,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 50px;
@@ -9364,7 +9364,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1352 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9652,7 +9652,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 2px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 20 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -9717,7 +9717,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 1.4px;
   }
 
@@ -9969,7 +9969,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-color: #f6f6f6;
   }
@@ -9978,7 +9978,7 @@ html {
   body .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 100 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10142,7 +10142,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -10151,7 +10151,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 176 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10295,7 +10295,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -10304,7 +10304,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 245 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10605,7 +10605,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
   }
@@ -10614,7 +10614,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 381 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10789,7 +10789,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -10797,7 +10797,7 @@ html {
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 475 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11002,7 +11002,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -11010,7 +11010,7 @@ html {
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 552 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11195,7 +11195,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -11203,7 +11203,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 636 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11266,7 +11266,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -11274,7 +11274,7 @@ html {
   body .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 653 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11474,7 +11474,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
     padding-top: 20px;
@@ -11485,7 +11485,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 723 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11591,7 +11591,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
     padding-top: 20px;
@@ -11602,7 +11602,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 765 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11709,7 +11709,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
     padding-top: 20px;
@@ -11720,7 +11720,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 807 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11813,7 +11813,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
     padding-top: 20px;
@@ -11824,7 +11824,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 841 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12011,7 +12011,7 @@ html {
 /* line 895 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_leads_new {
     margin-top: 23px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 898 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12729,7 +12729,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
   }
@@ -12738,7 +12738,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1079 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12892,7 +12892,7 @@ html {
 
 /* line 1151 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_info_singlepage {
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1153 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12909,7 +12909,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 25px;
     padding-bottom: 600px;
@@ -12919,7 +12919,7 @@ html {
   body .body_info_singlepage .section_picture a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1157 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -13139,7 +13139,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 400px;
@@ -13149,7 +13149,7 @@ html {
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1234 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -13292,7 +13292,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 400px;
   }
@@ -13301,7 +13301,7 @@ html {
   body .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1312 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -13422,7 +13422,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 26px;
     padding-top: 200px;
@@ -13434,7 +13434,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1380 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -13493,7 +13493,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 50px;
@@ -13503,7 +13503,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1399 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -13680,7 +13680,7 @@ html {
   }
 }
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
+/* line 1451 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
 @media only screen and (max-width: 550px) {
@@ -13729,7 +13729,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 2px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 20 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -13792,7 +13792,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 1.4px;
   }
 
@@ -14049,7 +14049,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     background-color: #f6f6f6;
   }
@@ -14058,7 +14058,7 @@ html {
   body .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 101 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14221,7 +14221,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -14230,7 +14230,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 176 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14370,7 +14370,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -14379,7 +14379,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 242 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14679,7 +14679,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -14688,7 +14688,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 377 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14863,7 +14863,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -14871,7 +14871,7 @@ html {
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 471 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15069,7 +15069,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -15077,7 +15077,7 @@ html {
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 548 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15251,7 +15251,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -15259,7 +15259,7 @@ html {
   body .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 633 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15459,7 +15459,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -15470,7 +15470,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 703 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15576,7 +15576,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -15587,7 +15587,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 745 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15694,7 +15694,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -15705,7 +15705,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 787 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15798,7 +15798,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -15809,7 +15809,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 821 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15996,7 +15996,7 @@ html {
 /* line 875 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_leads_new {
     margin-top: 23px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 878 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16714,7 +16714,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -16723,7 +16723,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1060 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16877,7 +16877,7 @@ html {
 
 /* line 1132 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_info_singlepage {
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1134 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16893,7 +16893,7 @@ html {
     margin: 0px;
     font-size: 8px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-top: 25px;
     padding-bottom: 400px;
   }
@@ -16902,7 +16902,7 @@ html {
   body .body_info_singlepage .section_picture a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1138 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -17144,7 +17144,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 600px;
@@ -17154,7 +17154,7 @@ html {
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1217 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -17417,7 +17417,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 16px;
     padding-top: 200px;
@@ -17428,7 +17428,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1370 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -17487,7 +17487,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 50px;
@@ -17498,7 +17498,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1389 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -17679,7 +17679,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 2px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 20 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17741,7 +17741,7 @@ html {
     bottom: 0px;
     z-index: 999;
     width: 100%;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 53 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17980,7 +17980,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -17988,7 +17988,7 @@ html {
   body .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 87 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18101,7 +18101,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -18110,7 +18110,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 142 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18273,7 +18273,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     padding-bottom: 100px;
   }
@@ -18282,7 +18282,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 209 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18594,7 +18594,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -18603,7 +18603,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 337 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18796,14 +18796,14 @@ html {
     margin: 0px;
     font-size: 8px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 80 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 430 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19011,7 +19011,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -19019,7 +19019,7 @@ html {
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 511 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19193,7 +19193,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
   }
 
@@ -19201,7 +19201,7 @@ html {
   body .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 596 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19400,7 +19400,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -19411,7 +19411,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 666 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19517,7 +19517,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -19528,7 +19528,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 708 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19635,7 +19635,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -19646,7 +19646,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 750 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19739,7 +19739,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 59px;
     padding-top: 20px;
@@ -19750,7 +19750,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 784 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19937,7 +19937,7 @@ html {
 /* line 838 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
   body .body_leads_new {
     margin-top: 17px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 841 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20524,7 +20524,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
   }
@@ -20533,7 +20533,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1019 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20687,7 +20687,7 @@ html {
 
 /* line 1091 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
   body .body_info_singlepage {
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1093 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20703,7 +20703,7 @@ html {
     margin: 0px;
     font-size: 8px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-top: 18px;
     padding-bottom: 400px;
   }
@@ -20712,7 +20712,7 @@ html {
   body .body_info_singlepage .section_picture a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1097 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20954,7 +20954,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 29px;
     padding-bottom: 600px;
@@ -20964,7 +20964,7 @@ html {
   body .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1176 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -21225,7 +21225,7 @@ html {
     margin: 0px;
     font-size: 12px;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     padding-bottom: 80px;
     margin-top: 16px;
     padding-top: 200px;
@@ -21237,7 +21237,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 1327 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -21362,7 +21362,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_5000px.styl */
@@ -21546,7 +21546,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_1100px.styl */
@@ -21730,7 +21730,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_1000px.styl */
@@ -21917,7 +21917,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_900px.styl */
@@ -22108,7 +22108,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_800px.styl */
@@ -22297,7 +22297,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_720px.styl */
@@ -22486,7 +22486,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_650px.styl */
@@ -22676,7 +22676,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_500px.styl */
@@ -22858,7 +22858,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -22866,7 +22866,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -23057,7 +23057,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23065,7 +23065,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -23221,7 +23221,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -23229,7 +23229,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -23420,7 +23420,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23428,7 +23428,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -23584,7 +23584,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -23592,7 +23592,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -23783,7 +23783,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23791,7 +23791,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -23953,7 +23953,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -23961,7 +23961,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -24152,7 +24152,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24160,7 +24160,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -24322,7 +24322,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -24330,7 +24330,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -24521,7 +24521,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24529,7 +24529,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -24691,7 +24691,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -24699,7 +24699,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -24890,7 +24890,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24898,7 +24898,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -25062,7 +25062,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -25070,7 +25070,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -25261,7 +25261,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -25269,7 +25269,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -25433,7 +25433,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
   }
 
@@ -25441,7 +25441,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -25632,7 +25632,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -25640,7 +25640,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+    font-family: "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
