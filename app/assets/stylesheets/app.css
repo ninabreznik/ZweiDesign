@@ -232,7 +232,7 @@ html {
                 LEAD LISTING MIXINS 
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1958 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -820,8 +820,8 @@ html {
 
 /* line 177 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_users_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -863,7 +863,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
     line-height: 150%;
-    width: 300px;
+    width: 400px;
   }
 
 /* line 201 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -907,7 +907,7 @@ html {
   body .body_users_index .columns .wookmark .lead_box .lead_body .edit_like a,
   body .body_users_index .columns .wookmark .lead_box .lead_body .new_like a {
     font-size: 10px;
-    margin-left: 120px;
+    margin-left: 175px;
     decoration: none;
     border: 0px;
     background-color: #fff;
@@ -1173,8 +1173,8 @@ html {
 
 /* line 324 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -2029,8 +2029,8 @@ html {
 
 /* line 710 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -2233,8 +2233,8 @@ html {
 
 /* line 782 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -2426,8 +2426,8 @@ html {
 
 /* line 866 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_profile .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -5392,8 +5392,8 @@ html {
 
 /* line 1879 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   body .body_project_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -5436,7 +5436,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
     line-height: 150%;
-    width: 300px;
+    width: 400px;
   }
 
 /* line 1904 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5479,7 +5479,7 @@ html {
   body .body_project_index .columns .wookmark .lead_box .lead_body .edit_like a,
   body .body_project_index .columns .wookmark .lead_box .lead_body .new_like a {
     font-size: 10px;
-    margin-left: 120px;
+    margin-left: 175px;
     decoration: none;
     border: 0px;
     background-color: #fff;
@@ -5939,8 +5939,8 @@ html {
 
 /* line 96 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -6713,8 +6713,8 @@ html {
 
 /* line 452 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -6916,8 +6916,8 @@ html {
 
 /* line 523 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -7109,8 +7109,8 @@ html {
 
 /* line 607 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_profile .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -10066,8 +10066,8 @@ html {
 
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -10844,8 +10844,8 @@ html {
 
 /* line 485 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -11047,8 +11047,8 @@ html {
 
 /* line 556 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_orders_address_book .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -11311,8 +11311,8 @@ html {
 
 /* line 657 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_profile .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -14145,8 +14145,8 @@ html {
 
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -14911,8 +14911,8 @@ html {
 
 /* line 481 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_orders_reserved .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -15296,8 +15296,8 @@ html {
 
 /* line 637 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_profile .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
@@ -18025,8 +18025,8 @@ html {
 
 /* line 91 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
   body .body_leads_index .columns .wookmark .lead_box {
-    margin-left: 42px;
-    width: 303px;
+    margin-left: 0px;
+    width: 400px;
     padding: 6px;
     display: none;
     background: #fefefe;
