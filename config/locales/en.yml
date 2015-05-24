@@ -350,10 +350,10 @@ en:
       placeholder: "Type your e-mail address"
       submit: "Subscribe"
     company:
-      name: "Moj sosed d.o.o."
+      name: "ZweiDesign / Moj sosed d.o.o."
       tax-id: "Tax ID: SI49595105"
       bank-account: "Bank account: SI56 0410 2000 2065 311"
-      email: "Contact: nina.breznik@sosed.si"
+      email: "contact@zweidesign.co"
       facebook: "Find us on Facebook"
  
 
@@ -427,8 +427,8 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "Start new renovation project"
-    instructions: "Have idea and concept for your new project? Need inspiration, feedback, investors, partners, professionals? Make it work! "
+    title:  "Start New Renovation Project"
+    instructions: "Have an idea for your new project? Need inspiration, feedback or concepts from talented professionals? Make it work! "
     form:
       business-types:
         field: "Who do you need to make your project work?"
@@ -1182,7 +1182,7 @@ en:
     exaplanation-1: "Done project?"
     exaplanation-2: "Publish it"
     exaplanation-3: "Show your work"
-    title: "Publish done project"
+    title: "Publish Done Project"
     instructions: "Did you succesfully finish a project? Share it with the world."
     instructions-additional: "First you need to sign-in."
     form: 

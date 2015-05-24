@@ -4,7 +4,7 @@ Mailboxer.setup do |config|
   config.uses_emails = true
 
   #Configures the default from for emails sent for Messages and Notifications
-  config.default_from = "no-reply@zweidesign.co"
+  config.default_from = "contact@zweidesign.co"
 
   # config.notification_mailer = CustomNotificationMailer
   # config.message_mailer = CustomMessageMailer
