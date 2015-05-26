@@ -213,7 +213,7 @@ en:
     description: "Description"
     name: "Name"
     send-message:
-      placeholder: "Contact project owner"
+      placeholder: "Contact me"
       submit: "Send"
 
 #Price
@@ -1134,8 +1134,8 @@ en:
 
   project-show:
     edit: "Edit your project"
-    send-message: "Send message to the author"
-    get-in-touch: "Send message"
+    send-message: "Contact me"
+    get-in-touch: "Contact me"
     message-subject: "is interested in"
     submit: "Send"
     data-filter-6: "Children area"
@@ -1182,7 +1182,7 @@ en:
     exaplanation-1: "Done project?"
     exaplanation-2: "Publish it"
     exaplanation-3: "Show your work"
-    title: "Publish Done Project"
+    title: "Publish Done Work"
     instructions: "Did you succesfully finish a project? Share it with the world."
     instructions-additional: "First you need to sign-in."
     form: 
@@ -1227,10 +1227,10 @@ en:
     link: "Web page"
     tax-id: "Tax id"
     send-message:
-      placeholder: "Send message to this provider"
+      placeholder: "Contact me"
       submit: "Send"
     edit-profile: "Edit your profile"
-    contact-provider: "Send message to this provider"
+    contact-provider: "Contact me"
 
   # ############################################################################################
   # USERS/INDEX
@@ -1262,8 +1262,8 @@ en:
     providers-list: "List of Providers"
     info: "About ZweiDesign"
     sign-out: "Sign out"
-    publish-project: "Publish done project"
-    find-provider: "Start a project"
+    publish-project: "Publish done work"
+    find-provider: "Start new project"
     sign-in: "Sign in"
     sign-up: "Not registered yet? Sign up"
     signin-signup: "Sign in/Sign up"
