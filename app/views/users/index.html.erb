@@ -5,12 +5,6 @@
   <li data-filter='Architects & Building Designers'>
     <%= I18n.t'users-index.field-1'%> (<%=@architects_count%>)
   </li>
-  <li data-filter="General Home Builders">
-    <%= I18n.t'users-index.field-2'%> (<%=@constructions_count%>)
-  </li>
-  <li data-filter="Masonry">
-    <%= I18n.t'users-index.field-3'%> (<%=@builders_count%>)
-  </li>
   <li data-filter="Interior Designers & Decorators">
     <%= I18n.t'users-index.field-4'%> (<%=@designers_count%>)
   </li>
@@ -26,6 +20,12 @@
   <li data-filter="Landscape Contractors">
     <%= I18n.t'users-index.field-8'%> (<%=@landscape_maintainance_count  %>)
   </li>
+  <li data-filter="General Home Builders">
+    <%= I18n.t'users-index.field-2'%> (<%=@constructions_count%>)
+  </li>
+  <li data-filter="Masonry">
+    <%= I18n.t'users-index.field-3'%> (<%=@builders_count%>)
+  </li>
   <li data-filter="Stone, Paving & Concrete">
     <%= I18n.t'users-index.field-9'%> (<%=@stone_count%>)
   </li>
@@ -35,17 +35,17 @@
   <li data-filter="Other">
     <%= I18n.t'users-index.field-11'%> (<%=@other_count%>)
   </li>
-</ol> 
+</ol>
 <ul id="tiles" class="wookmark">
 <% if @users.present? %>
   <% @sorted_users.each do |user| %>
   <div class="lead_box" data-filter-class='["<%= user.business_type %>"]' >
-    <div class="lead_title"><%= link_to "#{user.company}", user_path(user) %></div>     
+    <div class="lead_title"><%= link_to "#{user.company}", user_path(user) %></div>
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
         <%= link_to "#{image_tag user.picture.url(:large), :width => '385'}".html_safe, user_path(user) %> <br><br>
       <% if user.business_type.present? %>
-        <div class="lead_subtitle">Type:</div> 
+        <div class="lead_subtitle">Type:</div>
          <%= user.business_type %><br><br>
       <% end %>
       <% if user.country.present? %>
@@ -62,9 +62,9 @@
         <% end %>
       <% end %>
       <% if user_signed_in? && current_user != user %>
-            <div class="lead_subtitle"></div> 
+            <div class="lead_subtitle"></div>
               <div class="project_show_send_message">
-                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>  
+                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
                 <%= form_for :conversation, url: :conversations do |f| %>
                   <%= f.text_field :recipients, type: "hidden", value: "#{user.email}" %>
                   <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} vam pošilja sporočilo"  %>
@@ -75,11 +75,10 @@
                 <% end %>
               </div>
           <% end %>
-    </div>      
+    </div>
   </div>
   <% end %>
 <% end %>
 </ul>
 </div>
 </div>
-
