@@ -1,12 +1,12 @@
 en:
 
 # ############################################################################################
-# Page 0 - APPLICATION 
+# Page 0 - APPLICATION
 # ############################################################################################
 
 #Login and Logout
   application:
-    top-menu:  
+    top-menu:
       login: "Login"
       signup: "Sign up"
     bottom-menu:
@@ -21,7 +21,7 @@ en:
 # ############################################################################################
 
 #Signup
-  users-signup: 
+  users-signup:
     signup: "Sign up"
     email: "Email"
     password: "Password"
@@ -112,23 +112,23 @@ en:
 # ############################################################################################
 
   devise:
-    sessions: 
+    sessions:
       user:
         signed_in: "Succesfully signed in."
         signed_out: "Successfuly signed out."
     registrations:
       user:
         signed_up: "Succesfully signed up."
-    failure:  
-      unauthenticated: 'You need to sign in or sign up before continuing.'  
-      unconfirmed: 'You have to confirm your account before continuing.'  
-      locked: 'Your account is locked.'  
-      invalid: 'OH NOES! ERROR IN TEH EMAIL!'  
-      invalid_token: 'Invalid authentication token.'  
-      timeout: 'Your session expired, please sign in again to continue.'  
-      inactive: 'Your account was not activated yet.'  
+    failure:
+      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'OH NOES! ERROR IN TEH EMAIL!'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
     mailer:
-      reset-password-instructions: 
+      reset-password-instructions:
         title: "Hello"
         paragraph-1: "Someone has requested a link to change your password. You can do this through the link below."
         change-password: "Change my password"
@@ -183,7 +183,7 @@ en:
 # Lead body
   leadsindex-lead:
     business_type: "Expert needed"
-    location: "Country" 
+    location: "Country"
     zip: "Zip"
     link: "Website"
     time: "When?"
@@ -200,7 +200,7 @@ en:
 
 
 # ############################################################################################
-# Page 2 - LEADS/SHOW 
+# Page 2 - LEADS/SHOW
 # ############################################################################################
 
 # Lead body
@@ -220,7 +220,7 @@ en:
     price: "Price: 10 €"
 
 # Links
-  leadsshow-links: 
+  leadsshow-links:
     buy: "Buy"
 
 
@@ -233,7 +233,7 @@ en:
 
 # Lead body
   ordersshow-lead:
-    location: "Country" 
+    location: "Country"
     zip: "Zip"
     time: "When?"
     description: "Description"
@@ -254,8 +254,8 @@ en:
 # Payment buttons
   ordersshow-payment-buttons:
     choose-payment-text: "Choose type of payment"
-    paypal-checkout: "Paypal" 
-    wallet: "Wallet" 
+    paypal-checkout: "Paypal"
+    wallet: "Wallet"
     bank-transfer: "Bank transfer"
 
 
@@ -319,7 +319,7 @@ en:
     signed_in_but_no_orders: "Here you will find all the leads, for which you didn't finish payment yet."
     signed_in_but_no_orders: "Here you will find all the your bought leads - address book of your customers."
 # Buttons
-  ordersindex-buttons: 
+  ordersindex-buttons:
     buy: "Buy"
     remove-from-reserved: "Remove from reserved"
     save: "Save"
@@ -340,12 +340,12 @@ en:
   staticpages-info:
     title: "Welcome to ZweiDesign.co"
     subtitle: "LOOKING FOR INSPIRATION, WORK OR PROVIDERS FOR YOUR PROJECT?"
-    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields. Check out projects from our members and join the community of achitects, interior designers, decorators, construction workers and smart home designers."
-    welcome-text-2: "SignUp, list your done project or start a new one for free."
+    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields with companies and home owners. Check out our members work and join the community of architects, interior designers, decorators, construction workers and tech designers. Sign up and publish your done work."
+    welcome-text-2: "Starting new project? Need inspiration, feedback or concepts from talented professionals? Make it work!"
     heart-section-1: "New projects"
     heart-section-2: "Talented experts"
     heart-section-3: "Collaboration"
-    mailchimp: 
+    mailchimp:
       title: "Subscribe to ZweiDesign e-magazine!"
       placeholder: "Type your e-mail address"
       submit: "Subscribe"
@@ -355,7 +355,7 @@ en:
       bank-account: "Bank account: SI56 0410 2000 2065 311"
       email: "contact@zweidesign.co"
       facebook: "Find us on Facebook"
- 
+
 
 # ############################################################################################
 # Page 7 - ORDERS/BANK_TRANSACTION (info)
@@ -372,7 +372,7 @@ en:
     offer_account: "Account number"
     offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
     offer_company: "Company"
-    offer_company_mojsosed: "Moj sosed d.o.o." 
+    offer_company_mojsosed: "Moj sosed d.o.o."
     offer_tax_id: "TAX ID"
     offer_tax_id_mojsosed: "49595105"
     offer_address: "Address"
@@ -381,7 +381,7 @@ en:
     offer_mojsosed_city: "2230 Lenart"
     offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
     lead:
-      location: "Country" 
+      location: "Country"
       zip: "Zip"
       time: "When?"
       description: "Description"
@@ -409,7 +409,7 @@ en:
     offer_account: "Account number"
     offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
     offer_company: "Company"
-    offer_company_mojsosed: "Moj sosed d.o.o." 
+    offer_company_mojsosed: "Moj sosed d.o.o."
     offer_tax_id: "TAX ID"
     offer_tax_id_mojsosed: "49595105"
     offer_address: "Address"
@@ -1129,7 +1129,7 @@ en:
       long: "%d/%m/%Y %H:%M"
 
 # ############################################################################################
-# PROJECTS/SHOW 
+# PROJECTS/SHOW
 # ############################################################################################
 
   project-show:
@@ -1152,7 +1152,7 @@ en:
     data-filter-17: "Art & Decor"
 
 # ############################################################################################
-# PROJECTS/INDEX 
+# PROJECTS/INDEX
 # ############################################################################################
 
   project-index:
@@ -1175,7 +1175,7 @@ en:
     data-filter-17: "Art & Decor"
 
 # ############################################################################################
-# PROJECTS/NEW 
+# PROJECTS/NEW
 # ############################################################################################
 
   project-new:
@@ -1185,7 +1185,7 @@ en:
     title: "Publish Done Work"
     instructions: "Did you succesfully finish a project? Share it with the world."
     instructions-additional: "First you need to sign-in."
-    form: 
+    form:
       business-type-prompt: "What is your project about?"
       title: "Project title"
       description: "Description"
@@ -1204,7 +1204,7 @@ en:
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
 # ############################################################################################
-# PROJECTS/EDIT 
+# PROJECTS/EDIT
 # ############################################################################################
 
   project-edit:
@@ -1235,7 +1235,7 @@ en:
   # ############################################################################################
   # USERS/INDEX
   # ############################################################################################
-  
+
   users-index:
     field-1: "Architects & Building Designers"
     field-2: "General Home Builders"
@@ -1297,6 +1297,3 @@ en:
               invalid: "Geslo ni pravilno."
       messages:
         not_saved: "Spremembe niso bile shranjene."
-
-
-      
