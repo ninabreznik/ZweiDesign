@@ -340,11 +340,11 @@ en:
   staticpages-info:
     title: "Welcome to ZweiDesign.co"
     subtitle: "LOOKING FOR INSPIRATION, WORK OR PROVIDERS FOR YOUR PROJECT?"
-    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields with companies and home owners. Check out our members work and join the community of architects, interior designers, decorators, construction workers and tech designers. Sign up and publish your done work."
-    welcome-text-2: "Starting new project? Need inspiration, feedback or concepts from talented professionals? Make it work!"
-    heart-section-1: "New projects"
+    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields with everyone who wants to renovate his office, bar, shop or any other amazing space. Check out our members finished projects and join the community of architects, interior designers, decorators, construction workers and tech designers. Sign up and publish your successfully finished projects."
+    welcome-text-2: "Are you renovating your start-up / co-working office or other interesting space?  Need inspiration, feedback or concepts from talented professionals? Make it work!"
+    heart-section-1: "New renovation projects"
     heart-section-2: "Talented experts"
-    heart-section-3: "Collaboration"
+    heart-section-3: "Make it work"
     mailchimp:
       title: "Subscribe to ZweiDesign e-magazine!"
       placeholder: "Type your e-mail address"
@@ -427,8 +427,8 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "Start New Renovation Project"
-    instructions: "Have an idea for your new project? Need inspiration, feedback or concepts from talented professionals? Make it work! "
+    title:  "START NEW RENOVATION"
+    instructions: "Are you renovating your start-up / co-working office or other interesting space? Need inspiration, feedback or concepts from talented professionals? Make it work! "
     form:
       business-types:
         field: "Who do you need to make your project work?"
@@ -1179,11 +1179,11 @@ en:
 # ############################################################################################
 
   project-new:
-    exaplanation-1: "Done project?"
+    exaplanation-1: "Finished project?"
     exaplanation-2: "Publish it"
-    exaplanation-3: "Show your work"
-    title: "Publish Done Work"
-    instructions: "Did you succesfully finish a project? Share it with the world."
+    exaplanation-3: "Get new work"
+    title: "PUBLISH YOUR PROJECT"
+    instructions: "Do you have a succesfully finished project? Publish it on ZweiDesign and let customers & partners find you."
     instructions-additional: "First you need to sign-in."
     form:
       business-type-prompt: "What is your project about?"
@@ -1256,14 +1256,14 @@ en:
   top-menu:
     my-profile: "My profile"
     edit-profile: "Edit profile"
-    available-jobs: "DISCOVER NEW PROJECTS"
+    available-jobs: "RENOVATION JOBS"
     professionals: "Browse profiles"
     post-a-job: "Post a job"
     providers-list: "List of Providers"
-    info: "About ZweiDesign"
+    info: "Info"
     sign-out: "Sign out"
-    publish-project: "Publish done work"
-    find-provider: "Start new project"
+    publish-project: "Are you a professional?"
+    find-provider: "START NEW RENOVATION"
     sign-in: "Sign in"
     sign-up: "Not registered yet? Sign up"
     signin-signup: "Sign in/Sign up"
