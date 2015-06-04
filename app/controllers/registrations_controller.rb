@@ -15,6 +15,11 @@ def create
   end
 end
 
+def after_sign_up_path_for(resource)
+      new_project_path(resource)
+end
+
+
 def sign_up_params
   devise_parameter_sanitizer.sanitize(:sign_up)
 end

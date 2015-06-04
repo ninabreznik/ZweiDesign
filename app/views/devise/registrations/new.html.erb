@@ -1,7 +1,7 @@
 <div class="body_devise_signup">
   <div class="signup">
 <div class="signup_title">
-  <%= I18n.t'users-signup.signup' %> 
+  <%= I18n.t'users-signup.signup' %><br> 
 </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -16,7 +16,7 @@
   <div class="signup_form_password_confirmation"><%= f.label :"#{I18n.t'users-signup.password-confirmation'}" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
-  <div class="signup_form_submit"><%= f.submit "#{I18n.t'users-signup.signup'}" %></div>
+  <div class="signup_form_submit"><%= f.submit "#{I18n.t'users-signup.signup_button'}" %></div>
 <% end %><br><br>
 <div class="signup_shared_links">
 

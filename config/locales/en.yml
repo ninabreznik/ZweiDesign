@@ -22,7 +22,8 @@ en:
 
 #Signup
   users-signup:
-    signup: "Sign up"
+    signup: "Create your profile for free"
+    signup_button: "Sign Up"
     email: "Email"
     password: "Password"
     minimal-char: "characters minimum"

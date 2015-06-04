@@ -23,6 +23,7 @@ si:
 #Signup
   users-signup: 
     signup: "Registriraj se"
+    signup_button: "Registriraj se"
     email: "Elektronski naslov"
     password: "Geslo"
     minimal-char: "znakov ali več"
