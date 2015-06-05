@@ -5,19 +5,21 @@
 <ul class="wookmark">
 <% if @user.present? %>
     <div class="lead_box">
-      <!-- <div class="lead_title"><%= @user.company %> </div>      -->
+      <% if @user.company.present? %>
+        <div class="lead_title"><%= @user.company %> </div> 
+      <% end %> 
       <div class="lead_body">
         <div class="lead_subtitle" ></div>
           <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
 
         <% if @user.country.present? %>
           <div class="lead_subtitle"><%=I18n.t'user-show.country'%>:</div>
-            <%= @user.country %><br>
+            <i class="fa fa-map-marker"></i> <%= @user.country %><br>
         <% end %>
 
         <% if @user.city.present? %>
           <div class="lead_subtitle"><%=I18n.t'user-show.city'%>:</div>
-            <%= @user.city %><br><br>
+            <i class="fa fa-map-marker"></i> <%= @user.city %><br><br>
         <% end %>
 
         <% if @user.business_type.present? %>
@@ -27,7 +29,12 @@
 
         <% if @user.service.present? %>
           <div class="lead_subtitle"><%=I18n.t'user-show.services'%>:</div>
-            <%= @user.service %> <br><br>
+            <%= @user.service %> <br>
+        <% end %>
+
+        <% if @user.hourly_rate.present? %>
+          <div class="lead_subtitle"><%=I18n.t'user-show.hourly-rate'%>:</div>
+            <%= @user.hourly_rate %>€/h <br><br>
         <% end %>
 
         <% if @user.bio.present? %>

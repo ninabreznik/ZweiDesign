@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521020503) do
+ActiveRecord::Schema.define(version: 20150605213813) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -202,6 +202,7 @@ ActiveRecord::Schema.define(version: 20150521020503) do
     t.string   "de_bio"
     t.string   "de_service"
     t.string   "country"
+    t.integer  "hourly_rate"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

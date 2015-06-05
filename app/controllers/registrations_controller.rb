@@ -33,6 +33,29 @@ private
   # def sign_up_params
   #   params.require(:user).permit(:name, :surname, :city, :bio, :avatar, :email, :password, :password_confirmation)
   # end
+
+  def sign_up_params
+    params.require(:user).permit(
+      :first_name, 
+      :surname, 
+      :business_type,
+      :service,
+      :de_service,
+      :company,
+      :tax_id,
+      :website,
+      :phone,
+      :city, 
+      :hourly_rate,
+      :bio, 
+      :de_bio,
+      :picture, 
+      :email, 
+      :country,
+      :password, 
+      :password_confirmation, 
+      :current_password)
+  end
  
   def account_update_params
     params.require(:user).permit(
@@ -46,6 +69,7 @@ private
       :website,
       :phone,
       :city, 
+      :hourly_rate,
       :bio, 
       :de_bio,
       :picture, 
