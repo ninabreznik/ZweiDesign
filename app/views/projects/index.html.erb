@@ -22,72 +22,35 @@
 </div>
 <ol id="filters">
 
-   <li data-filter='Working area'>
-    <%=I18n.t'project-index.data-filter-7'%> (<%=@filter_7_count%>)
+  <li data-filter='Architects & Building Designers'>
+    <%= I18n.t'users-index.field-1'%> 
   </li>
-
-  <li data-filter='Lights'>
-   <%=I18n.t'project-index.data-filter-16'%> (<%=@filter_16_count%>)
- </li>
-
- <li data-filter='Kitchen'>
- <%=I18n.t'project-index.data-filter-1'%> (<%=@filter_1_count%>)
- </li>
-
- <li data-filter='Dining room'>
-  <%=I18n.t'project-index.data-filter-5'%> (<%=@filter_5_count %>)
-</li>
-
-  <li data-filter='Living area'>
-   <%=I18n.t'project-index.data-filter-4'%> (<%=@filter_4_count%>)
- </li>
-
- <li data-filter='Bathroom'>
-   <%=I18n.t'project-index.data-filter-2'%> (<%=@filter_2_count%>)
- </li>
-
-  <li data-filter='Art & Decor'>
-   <%=I18n.t'project-index.data-filter-17'%> (<%=@filter_17_count%>)
- </li>
-
- <li data-filter='Corridor'>
-  <%=I18n.t'project-index.data-filter-10'%> (<%=@filter_10_count%>)
-</li>
-
- <li data-filter='Entrance & Checkroom'>
-  <%=I18n.t'project-index.data-filter-9'%> (<%=@filter_9_count%>)
-</li>
-
- <li data-filter='Stairs'>
-  <%=I18n.t'project-index.data-filter-11'%> (<%=@filter_11_count%>)
-</li>
-
-   <li data-filter='Utility & Storage'>
-    <%=I18n.t'project-index.data-filter-8'%> (<%=@filter_8_count %>)
+  <li data-filter="Interior Designers & Decorators">
+    <%= I18n.t'users-index.field-4'%> 
   </li>
-
-   <li data-filter='Basement'>
-    <%=I18n.t'project-index.data-filter-12'%> (<%=@filter_12_count%>)
+  <li data-filter="Kitchen and Bathroom Designers & Fitters">
+    <%= I18n.t'users-index.field-5'%> 
   </li>
-
-   <li data-filter='Garage & Hobby'>
-    <%=I18n.t'project-index.data-filter-13'%> (<%=@filter_13_count%>)
+  <li data-filter="Kitchen and Bathroom Renovators">
+    <%= I18n.t'users-index.field-6'%> 
   </li>
-
-  <li data-filter='Surroundings'>
-   <%=I18n.t'project-index.data-filter-15'%> (<%=@filter_15_count%>)
- </li>
-
-   <li data-filter='Sleeping room'>
-    <%=I18n.t'project-index.data-filter-3'%> (<%=@filter_3_count%>)
+  <li data-filter="Landscape Architects & Garden Designers">
+    <%= I18n.t'users-index.field-7'%> 
   </li>
-
-   <li data-filter='Children area'>
-    <%=I18n.t'project-index.data-filter-6'%> (<%=@filter_6_count %>)
+  <li data-filter="Landscape Contractors">
+    <%= I18n.t'users-index.field-8'%> 
   </li>
-
-   <li data-filter='House & Facades'>
-    <%=I18n.t'project-index.data-filter-14'%> (<%=@filter_14_count%>)
+  <li data-filter="General Home Builders">
+    <%= I18n.t'users-index.field-2'%>
+  </li>
+  <li data-filter="Masonry">
+    <%= I18n.t'users-index.field-3'%> 
+  </li>
+  <li data-filter="Stone, Paving & Concrete">
+    <%= I18n.t'users-index.field-9'%> 
+  </li>
+  <li data-filter="Cheramics, Stone & Marble">
+    <%= I18n.t'users-index.field-10'%> 
   </li>
 
 </ol>
@@ -95,7 +58,7 @@
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @sorted_projects.each do |project| %>
-  <div class="lead_box" data-filter-class='["<%=project.category%>"]' >
+  <div class="lead_box" data-filter-class='["<%=project.user.business_type%>"]' >
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>

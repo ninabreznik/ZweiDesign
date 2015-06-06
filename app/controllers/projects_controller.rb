@@ -102,23 +102,9 @@ class ProjectsController < ApplicationController
     @projects.each do |project|
       @project = project
     end
-    @filter_1_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-1'}").count
-    @filter_2_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-2'}").count
-    @filter_3_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-3'}").count
-    @filter_4_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-4'}").count
-    @filter_5_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-5'}").count
-    @filter_6_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-6'}").count
-    @filter_7_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-7'}").count
-    @filter_8_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-8'}").count
-    @filter_9_count   = Project.all.where(category: "#{I18n.t'project-index.data-filter-9'}").count
-    @filter_10_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-10'}").count
-    @filter_11_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-11'}").count
-    @filter_12_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-12'}").count
-    @filter_13_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-13'}").count   
-    @filter_14_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-14'}").count
-    @filter_15_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-15'}").count
-    @filter_16_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-16'}").count
-    @filter_17_count  = Project.all.where(category: "#{I18n.t'project-index.data-filter-17'}").count
+    @newest     = @projects.sort_by {|p| p.created_at}
+    @popular    = Project.all.where("project.user.projects.count > ?", 5)
+    # @featured   = Project.all.where(category: "#{I18n.t'project-index.data-filter-3'}").count
   end
 
   def show
