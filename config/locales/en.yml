@@ -346,12 +346,13 @@ en:
 
   staticpages-info:
     title: "Welcome to ZweiDesign.co"
-    subtitle: "LOOKING FOR INSPIRATION, WORK OR PROVIDERS FOR YOUR PROJECT?"
-    welcome-text-1: "ZweiDesign is a platform for renovations, construction and design. It connects talented experts from multiple fields with everyone who wants to renovate his office, bar, shop or any other amazing space. Check out our members finished projects and join the community of architects, interior designers, decorators, construction workers and tech designers. Sign up and publish your successfully finished projects."
-    welcome-text-2: "Are you renovating your start-up / co-working office or other interesting space?  Need inspiration, feedback or concepts from talented professionals? Make it work!"
-    heart-section-1: "New renovation projects"
-    heart-section-2: "Talented experts"
-    heart-section-3: "Make it work"
+    subtitle: "Earn more & work less"
+    welcome-text-1: "Create a portfolio and get more clients."
+    welcome-text-2: "ZweiDesign is a professional marketplace for people who like what they do and are good at it. Sign Up for free (available only until end of June!) and publish your successfully finished projects."
+    welcome-text-3: "Looking for Architect, Interior Designer or Construction Expert? Click FIND & HIRE and let us know what you need."
+    heart-section-1: "No provisions"
+    heart-section-2: "Selected professionals"
+    heart-section-3: "Open communication"
     mailchimp:
       title: "Subscribe to ZweiDesign e-magazine!"
       placeholder: "Type your e-mail address"
@@ -434,8 +435,8 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "START NEW RENOVATION"
-    instructions: "Are you renovating your start-up / co-working office or other interesting space? Need inspiration, feedback or concepts from talented professionals? Make it work! "
+    title:  "FIND & HIRE THE BEST"
+    instructions: "Hand picked Architects, Interior Designers and Contruction Experts. No provisions. Open communication with experts. Search, find, and hire today!"
     form:
       business-types:
         field: "Who do you need to make your project work?"
@@ -493,8 +494,8 @@ en:
       business_type: "Business type"
       time: "Time"
       zip: "Zip code"
-      link: "Webpage"
-      title: "Project title"
+      link: "Links"
+      title: "What do you need?"
       description: "Description"
       name: "Your name"
       email: "Email"
@@ -1188,9 +1189,9 @@ en:
   project-new:
     exaplanation-1: "Finished project?"
     exaplanation-2: "Publish it"
-    exaplanation-3: "Get new work"
+    exaplanation-3: "Get hired"
     title: "PUBLISH YOUR PROJECT"
-    instructions: "Do you have a succesfully finished project? Publish it on ZweiDesign and let customers & partners find you."
+    instructions: "Do you have a succesfully finished project? Publish it and let clients & partners find you."
     instructions-additional: "First you need to sign-in."
     form:
       business-type-prompt: "What is your project about?"
@@ -1262,19 +1263,20 @@ en:
 # ############################################################################################
 
   top-menu:
-    my-profile: "My profile"
-    edit-profile: "Edit profile"
-    available-jobs: "RENOVATION JOBS"
+    my-profile: "MY PROFILE"
+    edit-profile: "EDIT PROFILE"
+    available-jobs: "ENQUIRIES"
     professionals: "Browse profiles"
-    post-a-job: "Post a job"
-    providers-list: "List of Providers"
-    info: "Info"
-    sign-out: "Sign out"
-    publish-project: "Are you a professional?"
-    find-provider: "START NEW RENOVATION"
-    sign-in: "Sign in"
-    sign-up: "Not registered yet? Sign up"
-    signin-signup: "Sign in/Sign up"
+    post-a-job: "FIND & HIRE"
+    providers-list: "PROVIDERS"
+    messages: "MESSAGES"
+    info: "INFO"
+    sign-out: "SIGN OUT"
+    publish-project: "PUBLISH PROJECT"
+    find-provider: "FIND & HIRE"
+    sign-in: "LOG IN"
+    sign-up: "SIGN UP"
+    signin-signup: "LOG IN/SIGN UP"
 
 
 

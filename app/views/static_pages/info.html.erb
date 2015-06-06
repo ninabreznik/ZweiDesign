@@ -4,8 +4,11 @@
     <div class="section_welcome_subtitle"><%=I18n.t'staticpages-info.subtitle'%></div>
     <div class="section_welcome_text">
       <%=I18n.t'staticpages-info.welcome-text-1'%> <br><br>
-      <%=I18n.t'staticpages-info.welcome-text-2'%><br><br><br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LJopRWR_Fy8" frameborder="0" allowfullscreen></iframe> </div>
+      <%=I18n.t'staticpages-info.welcome-text-2'%>
+     <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/LJopRWR_Fy8" frameborder="0" allowfullscreen></iframe> --> </div><br>
+    <div class="section_welcome_text">
+      <%=I18n.t'staticpages-info.welcome-text-3'%>
+    </div>
   </section>
 
   <section class="section_our_team">
@@ -21,6 +24,9 @@
    <section class="section_our_team">
     <i class="fa fa-heart"></i>
     <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-3'}", root_path %></div>
+  </section>
+  <section class="section_welcome">
+    <div class="section_welcome_subtitle">Are your ready to get more and better clients? <%= link_to "Create your Profile", new_user_registration_path %></div>
   </section>
 
   <section class="section_form">
