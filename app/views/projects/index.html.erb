@@ -1,4 +1,3 @@
-
 <div class="body_project_index">
 <div class="columns" id="main" role="main">
 <div class="index_welcome_message">
@@ -9,7 +8,7 @@
     Find right professionals for your new renovation project
   </div>
   <video class="video" autoplay loop muted="muted" >
-    <source src="/videos/zd-movie.mp4" type="video/mp4">
+    <source src="/videos/zd-movie.mp4" type="video/mp4", codecs="avc1.42E01E, mp4a.40.2">
   </video>
 </div>
 <div class="index_container">
@@ -62,7 +61,7 @@
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag project.picture.url(:large), :width => '385'}".html_safe, project_path(project) %> <br><br>
+        <%= link_to "#{image_tag project.picture.url(:large), :width => '335'}".html_safe, project_path(project) %> <br><br>
       <div class="lead_subtitle"></div>
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
       <div class="lead_subtitle"></div><br>

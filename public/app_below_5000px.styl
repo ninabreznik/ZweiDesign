@@ -3,79 +3,6 @@
   body
     margin 0px
     padding 0px
-    .top_menu_bar
-      position fixed
-      top 0
-      z-index 999
-      width 100%
-      background-color Menu-Top-Color
-      blur-mixin(intensity =  0px)
-      background: rgb(0, 0, 0); /* fallback color */
-      background: rgba(255, 255, 255, 0.8);
-      border-bottom 1px solid #ccc
-      padding-top 3px
-      font-family App-Font-Family
-      .logged_user,
-      .not_logged_user
-        shift 0.07
-        padding-bottom 2px
-        font-size 13px
-        -webkit-font-smoothing: antialiased
-        font-weight bold
-        display inline-block
-        &:hover
-          opacity 0.7
-        a
-          text-decoration none
-          color Menu-Top-Button-Color
-      .publish_project,
-      .messages
-        padding-bottom 2px
-        font-size 13px
-        -webkit-font-smoothing: antialiased
-        font-weight bold
-        display inline-block
-        &:hover
-          opacity 0.7
-        a
-          text-decoration none
-          color Menu-Top-Button-Color
-      .publish_project
-        shift 0.6
-        button(Lead-Orange-dark)
-        bottom 4px
-        margin-left 4px
-      .messages
-        shift 0.43
-        font-size 22px
-      .logo
-        top 4px
-        shift(0.05)
-        height 37px
-        display inline-block
-        &:hover
-          opacity 0.7
-      .select_bar
-        shift(0.55)
-        display: inline-block;
-        width: 150px;
-        height: 20px;
-        padding: 3px 6px;
-        margin-bottom: 10px;
-        font-size: 12px;
-        line-height: 20px;
-        color: #606060;
-        vertical-align: middle;
-        border: 0px
-      .info
-        padding-bottom 2px
-        shift(0.63)
-        font-size 21px
-        display inline-block
-        .fa.fa-info-circle
-          color Offer-Font-Color
-          &:hover
-            color Lead-Orange
     .bottom_menu_bar
       background-color Menu-Bottom-Color
       position fixed
@@ -197,7 +124,7 @@
               -moz-osx-font-smoothing: grayscale
               color Offer-Font-Color
               line-height 150%
-              width 400px
+              width 350px
               a:hover
                 opacity 0.7
               .lead_subtitle
@@ -208,7 +135,7 @@
                 padding-left 0px
                 padding-right 0px
               .like_heart
-                margin-left 360px
+                margin-left 310px
                 font-size 12px
               .like_heart a
                 &:hover
@@ -222,7 +149,7 @@
               .edit_like a,
               .new_like a
                 font-size 10px
-                margin-left 175px
+                margin-left 150px
                 decoration none
                 border 0px
                 background-color white
@@ -344,7 +271,7 @@
               -moz-osx-font-smoothing: grayscale
               color Offer-Font-Color
               line-height 150%
-              width 300px
+              width 350px
               .lead_subtitle
                 font-weight bold
                 -webkit-font-smoothing: antialiased
@@ -1756,26 +1683,9 @@
         padding 7px
     /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
     .body_project_index
-      body-mixin()
       position relative
       top -145px
-      #mc_embed_signup
-        width 50%
-        margin-left 28%
-        padding-bottom 20px
-        #mce-EMAIL,
-        #mc-embedded-subscribe
-          display inline-block
-          width auto
-        #mc-embedded-subscribe
-          margin-left 5px !important
-        #mce-EMAIL
-          margin-right 0px !important
-          width 50%
-        #mc-embedded-subscribe
-          background-color #aaa
-          font-size 12px
-          margin-left 12%
+      background-color #F6F6F6
       #filters
         list-style-type: none;
         text-align: center;
@@ -1817,12 +1727,12 @@
             z-index 1
             opacity 0.8
             position absolute
-            top 0
+            top 0px
             left 0
-            min-width: 100%
-            min-height: 100%
-            width: auto;
-            height: auto;
+            min-width 100%
+            min-height 100%
+            width auto
+            height auto
           .index_welcome_message_title
             z-index 2
             position: relative;
@@ -1911,7 +1821,7 @@
               -moz-osx-font-smoothing: grayscale
               color Offer-Font-Color
               line-height 150%
-              width 400px
+              width 350px
               a:hover
                 opacity 0.7
               .lead_subtitle
@@ -1921,7 +1831,7 @@
                 padding-left 0px
                 padding-right 0px
               .like_heart
-                margin-left 360px
+                margin-left 310px
                 font-size 12px
               .like_heart a
                 &:hover
@@ -1935,7 +1845,7 @@
               .edit_like a,
               .new_like a
                 font-size 10px
-                margin-left 175px
+                margin-left 150px
                 decoration none
                 border 0px
                 background-color white
