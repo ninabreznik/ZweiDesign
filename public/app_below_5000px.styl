@@ -892,16 +892,31 @@
             text-decoration underline
     /* :::::::::::: DEVISE/SIGNUP (registrations/new) :::::::::::: */
     .body_devise_signup
-      body-mixin(backgroundImage: url(/images/interior1.png))
-      margin-top 29px
+      body-mixin()
+      background-image  url(/images/interior1.png) 
+      background-image  backgroundImage  
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      -webkit-background-size: cover;
+      background-attachment: fixed
+      margin-top 35px
       padding-top 20px
-      padding-bottom 1050px
+      padding-bottom 500px
       .signup
+        width 40%
+        padding 20px
+        background-color black
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        color white
         padding-top 30px
         margin-left 70px
         .signup_title
-          font-size 28px
-          font-weight bold
+          padding-left 10%
+          font-size 24px
+          color Lead-Orange
+          text-transform uppercase
           margin-bottom 20px
         .signup_form_email,
         .signup_form_first_name,
@@ -909,8 +924,8 @@
         .signup_form_company,
         .signup_form_password,
         .signup_form_password_confirmation
+          padding-left 10%
           font-size 14px
-          font-weight bold
           margin-bottom 14px
           #user_email,
           #user_first_name,
@@ -928,16 +943,16 @@
             border 1px solid #E8E8E8
         .signup_form_submit input
         .signup_form_submit a
-          position relative
-          padding 4px
-          padding-left 20px
-          padding-right 20px
+          margin-left 20%
           margin-top 10px
           margin-bottom 10px
           button(color = Lead-Orange-dark)
           background-color Lead-Orange
         .signup_shared_links
+          padding-left 10%
           font-size 14px
+        .signup_shared_links a 
+          color white
           &:hover
             text-decoration underline
     /* :::::::::::: DEVISE/PASSWORD/NEW (passwords/new) :::::::::::: */

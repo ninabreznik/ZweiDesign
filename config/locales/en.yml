@@ -127,7 +127,7 @@ en:
       user:
         signed_up: "Succesfully signed up."
     failure:
-      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unauthenticated: 'You need to log in or sign up before continuing.'
       unconfirmed: 'You have to confirm your account before continuing.'
       locked: 'Your account is locked.'
       invalid: 'OH NOES! ERROR IN TEH EMAIL!'
@@ -148,7 +148,7 @@ en:
 #Links
   users-links:
     login: "Log in"
-    signin-shared: "Already have an account? Sign in"
+    signin-shared: "Already have an account? Log in"
     signup: "Sign up"
     signup-shared: "Not registered yet? Sign up"
     forgot-password: "Forgot your password?"
@@ -436,7 +436,7 @@ en:
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
     title:  "FIND & HIRE THE BEST"
-    instructions: "Hand picked Architects, Interior Designers and Contruction Experts. No provisions. Open communication with experts. Search, find, and hire today!"
+    instructions: "Hand picked Architects, Interior Designers and Construction Experts. No provisions. Open communication with experts. Search, find, and hire today!"
     form:
       business-types:
         field: "Who do you need to make your project work?"
