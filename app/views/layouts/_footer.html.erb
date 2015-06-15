@@ -1,0 +1,56 @@
+<footer>
+  <div class="footer_container">
+    <div class="footer_main_row">   
+      <div class="footer_column_1">
+          <%= image_tag 'sosed.biz.png'%>
+          <br><br>
+          ZweiDesign is a professional marketplace for people who like what they do and are good at it.
+      </div>
+      <div class="footer_column_2">
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Company</li>
+            <br>
+            <li><%= link_to "About", info_path %></li>
+            <li><%= link_to "Contact", "mailto:contact@zweidesign.co"%></li>
+          </ul>
+        </div>
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Service</li>
+            <br>
+            <li><%= link_to "How it works", info_path %></li>
+            <li><%= link_to "Pricing and Signup", info_path %></li>
+          </ul>
+        </div>
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Links</li>
+            <br>
+            <li><%= link_to "Terms", info_path %></li>
+            <li><%= link_to "Privacy", info_path %></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_column_1">
+        <ul>
+          <li>Contact us today</li>
+          <li><%= link_to "contact@zweidesign.co", "mailto:contact@zweidesign.co"%></li>
+          <br>
+          <li>Or find us on Facebook</li>
+          <li><a href="https://www.facebook.com/ZweiDesign">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_social_row">
+      <ul>
+        <li><a href="https://www.facebook.com/ZweiDesign"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/zweidesignapp"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.pinterest.com/zweidesign"><i class="fa fa-pinterest"></i></a></li>
+        <br>
+        <br>
+        <li class="copyright">&copy; <%= Time.now.year %> Vision Baker Ltd</li>
+      </ul>
+    </div>
+  </div>
+</footer>
