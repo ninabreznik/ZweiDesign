@@ -1,71 +1,25 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=470845606357523";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="body_devise_signup">
-  <div class="signup">
-<div class="signup_title">
-  <%= I18n.t'users-signup.signup' %><br> 
-</div>
+<div class="signup">
+  <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false">Signup with Facebook</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="signup_title">
+    <%= I18n.t'users-signup.signup' %><br>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-
-  <div class="signup_form_first_name"><%= f.label :"#{I18n.t'users-signup.first-name'}" %><br />
-  <%= f.text_field :first_name, autofocus: true %></div>
-
-  <div class="signup_form_surname"><%= f.label :"#{I18n.t'users-signup.last-name'}" %><br />
-  <%= f.text_field :surname, autofocus: true %></div>
-
-  <div class="signup_form_company"><%= f.label :"#{I18n.t'users-signup.company'}" %><br />
-  <%= f.text_field :company, autofocus: true %></div>
-
-  <div class="signup_form_email">
-    <%= f.label :"#{I18n.t'users-signup.field'}" %><br>
-    <%= f.select :business_type, [
-      ["#{I18n.t'users-edit.edit-fields.field-1'}", "#{I18n.t'users-edit.edit-fields.field-1'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-2'}", "#{I18n.t'users-edit.edit-fields.field-2'}"],
-      ["#{I18n.t'users-edit.edit-fields.field-3'}", "#{I18n.t'users-edit.edit-fields.field-3'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-4'}", "#{I18n.t'users-edit.edit-fields.field-4'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-5'}", "#{I18n.t'users-edit.edit-fields.field-5'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-6'}", "#{I18n.t'users-edit.edit-fields.field-6'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-7'}", "#{I18n.t'users-edit.edit-fields.field-7'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-8'}", "#{I18n.t'users-edit.edit-fields.field-8'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-9'}", "#{I18n.t'users-edit.edit-fields.field-9'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-10'}", "#{I18n.t'users-edit.edit-fields.field-10'}"]
-    ], :prompt=>"#{I18n.t'users-edit.edit-fields.field-prompt'}"%> 
-  </div>
-
-  <div class="signup_form_email">
-    <%= f.label :"#{I18n.t'users-signup.country'}" %><br>
-    <%= f.select :country, [
-      ["#{I18n.t'users-edit.edit-fields.country-1'}"], 
-      ["#{I18n.t'users-edit.edit-fields.country-2'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-3'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-4'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-5'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-6'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-7'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-8'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-9'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-10'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-11'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-12'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-13'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-14'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-15'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-16'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-17'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-18'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-19'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-20'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-21'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-22'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-23'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-24'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-25'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-26'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-27'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-28'}"],
-      ["#{I18n.t'users-edit.edit-fields.country-29'}"],
-    ], :prompt=>"#{I18n.t'users-edit.edit-fields.country-prompt'}"%> 
-  </div><br><br>
 
   <div class="signup_form_email"><%= f.label :"#{I18n.t'users-signup.email'}" %><br />
   <%= f.email_field :email, autofocus: true %></div>

@@ -1,23 +1,38 @@
-<div class="body_devise_login">
-  <div class="login">
-<div class="login_title">
-<%= I18n.t'users-login.login' %> 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=470845606357523";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="body_devise_signup">
+  <div class="signup">
+
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false">Login with Facebook</div>
+<br>
+<br>
+<br>
+<br>
+<div class="signup_title">
+<%= I18n.t'users-login.login' %>
 </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="login_form_email"><%= f.label :"#{I18n.t'users-login.email'}" %><br />
+  <div class="signup_form_email"><%= f.label :"#{I18n.t'users-login.email'}" %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
-  <div class="login_form_password"><%= f.label :"#{I18n.t'users-login.password'}" %><br />
+  <div class="signup_form_password"><%= f.label :"#{I18n.t'users-login.password'}" %><br />
     <%= f.password_field :password, autocomplete: "off" %></div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="login_form_remember_me"><%= f.check_box :remember_me %> <%= f.label :"#{I18n.t'users-login.remember-me'}" %></div>
+    <div class="signup_form_password"><%= f.check_box :remember_me %> <%= f.label :"#{I18n.t'users-login.remember-me'}" %></div>
   <% end -%>
 
-  <div class="login_form_submit"><%= f.submit "#{I18n.t'users-login.login'}" %></div>
+  <div class="signup_form_submit"><%= f.submit "#{I18n.t'users-login.login'}" %></div>
 <% end %>
-<div class="login_shared_links"><br><br>
+<div class="signup_shared_links"><br><br>
   <%= render "devise/shared/links" %>
 </div>
 </div>

@@ -6,8 +6,8 @@
 <% if @user.present? %>
     <div class="lead_box">
       <% if @user.company.present? %>
-        <div class="lead_title"><%= @user.company %> </div> 
-      <% end %> 
+        <div class="lead_title"><%= @user.company %> </div>
+      <% end %>
       <div class="lead_body">
         <div class="lead_subtitle" ></div>
           <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
@@ -67,7 +67,7 @@
                 <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
                 <%= form_for :conversation, url: :conversations do |f| %>
                   <%= f.text_field :recipients, type: "hidden", value: "#{@user.email}" %>
-                  <%= f.text_field  :subject, type: "hidden", value: "#{current_user.email} vam pošilja sporočilo"  %>
+                  <%= f.text_field  :subject, type: "hidden" %>
                   <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'user-show.send-message.placeholder'}" %>
                   <div class="project_show_send_message_button">
                     <%= f.button :"#{I18n.t'user-show.send-message.submit'}" %>

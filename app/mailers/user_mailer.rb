@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
-  default from: "contact@zweidesign.co"
- 
+  default from: "ZweiDesign <contact@zweidesign.co>"
+  layout 'mailer'
   def welcome_email(user, pass=nil)
     @user = user
     @pass = pass
@@ -8,15 +8,15 @@ class UserMailer < ActionMailer::Base
     @sosed_signin_url = 'http://zweidesign.co/users/sign_in'
 
     #@url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Welcome to ZweiDesign')
+    mail(to: @user.email, subject: 'Start getting clients on ZweiDesign')
   end
 
 
   def self.send_new_lead(lead)
     @lead = lead
     lead_business_type = lead.business_type
-    @right_users = User.all.where(business_type: lead_business_type) 
-    if @right_users.count > 0 
+    @right_users = User.all.where(business_type: lead_business_type)
+    if @right_users.count > 0
       @right_users.each do |right_user|
         new_lead(right_user, lead).deliver
       end

@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  
+
   def new
     @project = Project.new
     @categories = [
@@ -35,10 +35,10 @@ class ProjectsController < ApplicationController
         #   }
         # end
       redirect_to user_path(@user)
-      else 
+      else
       redirect_to new_project_path
       end
-  end 
+  end
 
   def edit
     @project = Project.find(params[:id])
@@ -87,7 +87,7 @@ class ProjectsController < ApplicationController
     ]
     if @project.update_attributes(project_params)
       redirect_to user_path(@user)
-    else 
+    else
       redirect_to edit_project_path
     end
     @project.save
@@ -110,7 +110,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find_by_id(params[:id])
     if @project.present?
-      @project_title = @project.title 
+      @project_title = @project.title
       @project_description = @project.description
       @project_email = @project.email
     end
@@ -126,7 +126,7 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(
       :title,
-      :de_title, 
+      :de_title,
       :user_id,
       :picture,
       :email,
@@ -146,19 +146,15 @@ class ProjectsController < ApplicationController
       else
         pass = SecureRandom.hex[0..7]
         user = User.create!(
-                 email: project.email, 
-                 password: pass, 
+                 email: project.email,
+                 password: pass,
                  password_confirmation: pass
                )
         project.user_id = user.id
         user.projects << project
         UserMailer.welcome_email(user, pass).deliver
         beta = user
-        if user.country == "Slovenia"
-          User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili.", "Kako pošiljate in sprejemate sporočila.")
-        else 
-          User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Just wanted to tell you, that each time someone will send you a message, we will notify you via your email. We encourage you to get in touch with other providers and get to know them. You can send a message throught user's projects or their profile pages.", "ZweiDesign Messages.")
-        end
+        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work. Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")  
       end
     end
     project.save

@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-  </head>
-  <body>
-    <h1>Novo sporočilo: <%= @subject %></h1>
+
+    <h3>New message</h3>
     <p>
-      Prejeli ste novo sporočilo:
+      You have received a new message:
     </p>
     <blockquote>
       <p>
@@ -14,7 +9,5 @@
       </p>
     </blockquote>
     <p>
-      Obiščite <%= link_to "Sporočila", conversations_url %> in si oglejte Prejeta sporočila.
+      Click <%= link_to "Sporočila", conversations_url %> to see your messages.
     </p>
-  </body>
-</html>

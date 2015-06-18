@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
   protect_from_forgery :except => [:create]
   # before_action :authenticate_user!
-  
+
   def index
     @orders = Order.all
     @order = Order.find_by_id(params[:id])
@@ -88,10 +88,10 @@ class OrdersController < ApplicationController
 
   def create_conversation(beta, order)
     if user.country == "Slovenia"
-      current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", "Všeč mi je vaš projekt")
+      current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", ":)")
     else
-      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", "I like your project")      
+      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", ":)")      
     end
   end
- 
+
 end

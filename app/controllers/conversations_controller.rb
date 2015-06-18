@@ -17,7 +17,7 @@ class ConversationsController < ApplicationController
 #conversation_receipts = conversation.receipts_for(current_user)
 
   def show
-    @conversation_subject = conversation.subject 
+    @conversation_subject = conversation.subject
     @current_user_nick = current_user.email[0]
     render 'show', layout: 'chat_layout'
   end

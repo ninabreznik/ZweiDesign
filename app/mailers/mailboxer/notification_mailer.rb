@@ -12,6 +12,6 @@ class Mailboxer::NotificationMailer < Mailboxer::BaseMailer
     set_subject(notification)
     mail :to => receiver.send(Mailboxer.email_method, notification),
          :subject => t('mailboxer.notification_mailer.subject', :subject => @subject),
-         :template_name => 'new_notification_email'
+         :template_name => 'new_message_email.html.erb'
   end
 end

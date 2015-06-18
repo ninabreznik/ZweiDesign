@@ -10,9 +10,11 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'contact@zweidesign.co'
+  config.mailer_sender = 'ZweiDesign <contact@zweidesign.co>'
 
-config.secret_key = '-- secret key --'
+  config.secret_key = '-- secret key --'
+
+  config.omniauth :facebook, "375705302633371", "2902b77c7365cf9ed3f6f9bf5a168903"
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 

@@ -4,14 +4,10 @@ class RegistrationsController < Devise::RegistrationsController
 def create
   super()
   user = User.last
-  if user.created_at > Time.now - 3.seconds   
-    beta = user
-    if user.country == "Slovenia"
-      User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili.", "Kako pošiljate in sprejemate sporočila.")
-    else 
-      User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Just wanted to tell you, that each time someone will send you a message, we will notify you via your email. We encourage you to get in touch with other providers and get to know them. You can send a message throught user's projects or their profile pages.", "ZweiDesign Messages.")
-    end
+  if user.created_at > Time.now - 3.seconds
     UserMailer.welcome_email(user, pass=nil).deliver
+    beta = user
+    User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work. Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
   end
 end
 
@@ -25,19 +21,19 @@ def sign_up_params
 end
 
 def account_update_params
-  devise_parameter_sanitizer.sanitize(:account_update) 
+  devise_parameter_sanitizer.sanitize(:account_update)
 end
 
 private
- 
+
   # def sign_up_params
   #   params.require(:user).permit(:name, :surname, :city, :bio, :avatar, :email, :password, :password_confirmation)
   # end
 
   def sign_up_params
     params.require(:user).permit(
-      :first_name, 
-      :surname, 
+      :first_name,
+      :surname,
       :business_type,
       :service,
       :de_service,
@@ -45,22 +41,22 @@ private
       :tax_id,
       :website,
       :phone,
-      :city, 
+      :city,
       :hourly_rate,
-      :bio, 
+      :bio,
       :de_bio,
-      :picture, 
-      :email, 
+      :picture,
+      :email,
       :country,
-      :password, 
-      :password_confirmation, 
+      :password,
+      :password_confirmation,
       :current_password)
   end
- 
+
   def account_update_params
     params.require(:user).permit(
-      :first_name, 
-      :surname, 
+      :first_name,
+      :surname,
       :business_type,
       :service,
       :de_service,
@@ -68,15 +64,15 @@ private
       :tax_id,
       :website,
       :phone,
-      :city, 
+      :city,
       :hourly_rate,
-      :bio, 
+      :bio,
       :de_bio,
-      :picture, 
-      :email, 
+      :picture,
+      :email,
       :country,
-      :password, 
-      :password_confirmation, 
+      :password,
+      :password_confirmation,
       :current_password)
   end
 

@@ -15,7 +15,7 @@
     <br><%= f.label :"#{I18n.t'users-edit.edit-fields.surname'}" %><br>
     <%= f.text_field :surname%></div><br>
 
-    
+
   <div class="user_edit_form_email"><%= f.label :"#{I18n.t'users-edit.edit-fields.add-pic-label'}" %><br>
     <%= f.file_field :picture %></div><br>
 
@@ -25,17 +25,17 @@
    <div class="user_edit_form_email">
     <%= f.label :"#{I18n.t'users-edit.edit-fields.field'}" %><br>
     <%= f.select :business_type, [
-      ["#{I18n.t'users-edit.edit-fields.field-1'}", "#{I18n.t'users-edit.edit-fields.field-1'}"], 
+      ["#{I18n.t'users-edit.edit-fields.field-1'}", "#{I18n.t'users-edit.edit-fields.field-1'}"],
       ["#{I18n.t'users-edit.edit-fields.field-2'}", "#{I18n.t'users-edit.edit-fields.field-2'}"],
-      ["#{I18n.t'users-edit.edit-fields.field-3'}", "#{I18n.t'users-edit.edit-fields.field-3'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-4'}", "#{I18n.t'users-edit.edit-fields.field-4'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-5'}", "#{I18n.t'users-edit.edit-fields.field-5'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-6'}", "#{I18n.t'users-edit.edit-fields.field-6'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-7'}", "#{I18n.t'users-edit.edit-fields.field-7'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-8'}", "#{I18n.t'users-edit.edit-fields.field-8'}"], 
-      ["#{I18n.t'users-edit.edit-fields.field-9'}", "#{I18n.t'users-edit.edit-fields.field-9'}"], 
+      ["#{I18n.t'users-edit.edit-fields.field-3'}", "#{I18n.t'users-edit.edit-fields.field-3'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-4'}", "#{I18n.t'users-edit.edit-fields.field-4'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-5'}", "#{I18n.t'users-edit.edit-fields.field-5'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-6'}", "#{I18n.t'users-edit.edit-fields.field-6'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-7'}", "#{I18n.t'users-edit.edit-fields.field-7'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-8'}", "#{I18n.t'users-edit.edit-fields.field-8'}"],
+      ["#{I18n.t'users-edit.edit-fields.field-9'}", "#{I18n.t'users-edit.edit-fields.field-9'}"],
       ["#{I18n.t'users-edit.edit-fields.field-10'}", "#{I18n.t'users-edit.edit-fields.field-10'}"]
-    ], :prompt=>"#{I18n.t'users-edit.edit-fields.field-prompt'}"%> 
+    ], :prompt=>"#{I18n.t'users-edit.edit-fields.field-prompt'}"%>
   </div><br>
 
     <div class="user_edit_form_email">
@@ -64,7 +64,7 @@
   <div class="user_edit_form_email">
     <%= f.label :"#{I18n.t'users-edit.edit-fields.country'}" %><br>
     <%= f.select :country, [
-      ["#{I18n.t'users-edit.edit-fields.country-1'}"], 
+      ["#{I18n.t'users-edit.edit-fields.country-1'}"],
       ["#{I18n.t'users-edit.edit-fields.country-2'}"],
       ["#{I18n.t'users-edit.edit-fields.country-3'}"],
       ["#{I18n.t'users-edit.edit-fields.country-4'}"],
@@ -93,7 +93,7 @@
       ["#{I18n.t'users-edit.edit-fields.country-27'}"],
       ["#{I18n.t'users-edit.edit-fields.country-28'}"],
       ["#{I18n.t'users-edit.edit-fields.country-29'}"],
-    ], :prompt=>"#{I18n.t'users-edit.edit-fields.country-prompt'}"%> 
+    ], :prompt=>"#{I18n.t'users-edit.edit-fields.country-prompt'}"%>
   </div><br><br>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -118,7 +118,7 @@
 
 <div class="user_edit_back"><%= link_to "#{I18n.t'users-edit.back'}", :back %> </div><br><br><br><br><br>
 
-<!-- 
+<!--
 <div class="user_edit_unhappy"><%= mail_to 'nina.breznik@sosed.si', 'Niste zadovoljni? Povejte nam, zakaj. Dali bomo vse od sebe, da najdemo rešitev.' %> </div>
   <div class="user_edit_button_cancel_account">
     <%= button_to "#{I18n.t'users-edit.cancel-account-button'}", registration_path(resource_name), data: { confirm: "#{I18n.t'users-edit.sure'}"}, method: :delete %>

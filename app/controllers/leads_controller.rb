@@ -1,5 +1,5 @@
 class LeadsController < ApplicationController
-  
+
   def index
     @leads = Lead.all
     @lead = Lead.find_by_id(params[:id])
@@ -27,18 +27,18 @@ class LeadsController < ApplicationController
       ["#{I18n.t'lead-new.form.business-types.field-4'}"],
       ["#{I18n.t'lead-new.form.business-types.field-5'}"],
       ["#{I18n.t'lead-new.form.business-types.field-6'}"],
-      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"],
       ["#{I18n.t'lead-new.form.business-types.field-8'}"],
       ["#{I18n.t'lead-new.form.business-types.field-9'}"],
       ["#{I18n.t'lead-new.form.business-types.field-10'}"]
     ]
 
     @time = [
-      ["#{I18n.t'lead-new.form.form-time.fourteendays'}"], 
-      ["#{I18n.t'lead-new.form.form-time.onetothreemonths'}"], 
+      ["#{I18n.t'lead-new.form.form-time.fourteendays'}"],
+      ["#{I18n.t'lead-new.form.form-time.onetothreemonths'}"],
       ["#{I18n.t'lead-new.form.form-time.flexible'}"],
       ["#{I18n.t'lead-new.form.form-time.consulting'}"],
-      ["#{I18n.t'lead-new.form.form-time.informative'}"] 
+      ["#{I18n.t'lead-new.form.form-time.informative'}"]
     ]
   end
 
@@ -53,18 +53,18 @@ class LeadsController < ApplicationController
       ["#{I18n.t'lead-new.form.business-types.field-4'}"],
       ["#{I18n.t'lead-new.form.business-types.field-5'}"],
       ["#{I18n.t'lead-new.form.business-types.field-6'}"],
-      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"],
       ["#{I18n.t'lead-new.form.business-types.field-8'}"],
       ["#{I18n.t'lead-new.form.business-types.field-9'}"],
       ["#{I18n.t'lead-new.form.business-types.field-10'}"]
     ]
 
     @time = [
-      ["#{I18n.t'lead-new.form.form-time.fourteendays'}"], 
-      ["#{I18n.t'lead-new.form.form-time.onetothreemonths'}"], 
+      ["#{I18n.t'lead-new.form.form-time.fourteendays'}"],
+      ["#{I18n.t'lead-new.form.form-time.onetothreemonths'}"],
       ["#{I18n.t'lead-new.form.form-time.flexible'}"],
       ["#{I18n.t'lead-new.form.form-time.consulting'}"],
-      ["#{I18n.t'lead-new.form.form-time.informative'}"] 
+      ["#{I18n.t'lead-new.form.form-time.informative'}"]
     ]
 
     # render 'share', layout: 'adwords_layout'
@@ -77,7 +77,7 @@ class LeadsController < ApplicationController
     if params[:back_button]
       @lead.previous_step
     elsif @lead.last_step?
-        @lead.save 
+        @lead.save
     else
       @lead.next_step
     end
@@ -89,31 +89,36 @@ class LeadsController < ApplicationController
       lead = @lead
       UserMailer.send_new_lead(lead)
       redirect_to leads_url
-    else 
+    else
       redirect_to leads_new_url
     end
-  end 
+  end
 
 
   def update
       @lead = Lead.find(params[:id])
   end
 
+  def destroy
+     @lead = Lead.find_by_id(params[:id])
+  end
+
+
 
   private
 
   def lead_params
     params.require(:lead).permit(
-      :name, 
-      :email, 
+      :name,
+      :email,
       :title,
-      :description, 
-      :zip, 
+      :description,
+      :zip,
       :link,
-      :phone, 
-      :business_type, 
+      :phone,
+      :business_type,
       :picture,
-      :time, 
+      :time,
       :location,
       :selector_id,
       :selected_id,
@@ -133,19 +138,15 @@ class LeadsController < ApplicationController
       else
         pass = SecureRandom.hex[0..7]
         user = User.create!(
-                 email: lead.email, 
-                 password: pass, 
+                 email: lead.email,
+                 password: pass,
                  password_confirmation: pass
                )
         lead.user_id = user.id
         user.leads << lead
         UserMailer.welcome_email(user, pass).deliver
         beta = user
-        if user.country == "Slovenia"
-          User.find_by_id(1).send_message(beta, "Pozdravljeni, vsakič ko se bo nekdo zanimal za vaš projekt oz. sodelovanje z vami, vas bomo obvestili. Vsa prejeta in poslana sporočila najdete med Vašimi sporočili.", "ZweiDesign sporočila.")
-        else 
-          User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Just wanted to tell you, that each time someone will send you a message, we will notify you via your email. We encourage you to get in touch with other providers and get to know them. You can send a message throught user's projects or their profile pages.", "ZweiDesign Messages.")
-        end
+        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work. Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
       end
     end
     lead.save

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users, :controllers => { registrations: 'registrations' }
+  devise_for :users, :controllers => { registrations: 'registrations', omniauth_callbacks: 'users/omniauth_callbacks' }
 
     resources :conversations, only: [:index, :show, :new, :create] do
       member do
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       end
     end
 
-  resources :users 
+  resources :users
     # match '/users/:id/edit',          to: 'users#edit',       via: 'edit'
     match '/users/:id',               to: 'users#show',       via: 'get'
     match '/users',                   to: 'users#index',      via: 'get'
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
   resources :paypal_notifications, only: [:create]
     match '/paypal_notification',       to: 'paypal_notifications#create',        via: 'post'
-  
+
   resources :orders
     get '/address_book' => 'orders#address_book'
     get '/messages' => 'conversations#index'
@@ -39,7 +39,7 @@ Rails.application.routes.draw do
 
   resources :likes
     match '/likes/new',       to: 'likes#create',        via: 'post'
-  
+
 
   # You can have the root of your site routed with "root"
   root 'projects#index'
@@ -72,9 +72,9 @@ Rails.application.routes.draw do
   # match '/signup',       to: 'users#new',            via: 'get'
   # match '/signin',       to: 'sessions#new',         via: 'get'
   # match '/signout',      to: 'sessions#destroy',     via: 'delete'
-  #match '/orders',       to: 'orders#create',        via: 'post' 
+  #match '/orders',       to: 'orders#create',        via: 'post'
 
- 
+
 
 
   # Example of regular route:

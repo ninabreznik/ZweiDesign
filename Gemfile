@@ -8,7 +8,7 @@ gem 'sqlite3', '1.3.9'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-gem 'turbolinks'
+# gem 'turbolinks'
 
 gem 'rmagick', '2.13.2'
 
@@ -37,6 +37,7 @@ gem "font-awesome-rails"
 
 #DEVISE
 gem 'devise'
+gem 'omniauth-facebook'
 
 #ACTIVE ADMIN
 gem 'activeadmin', github: 'gregbell/active_admin'

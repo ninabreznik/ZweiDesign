@@ -5,41 +5,31 @@
         <option value=""><%= current_user.email.split('@').first %></option>
         <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
         <!-- <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option> -->
-        <option value="<%= messages_path %>"><%=I18n.t'top-menu.messages'%></option>
+        <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option>
         <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
         <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
         <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
       </select>
-      <div class="find_provider"> 
-        <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %> 
+      <div class="find_provider">
+        <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
       </div>
-      <div class="publish_project"> 
-        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %> 
+      <div class="publish_project">
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %>
       </div>
-      <div class="messages"> 
-        <%= link_to edit_user_registration_path do %>
-          <i class="fa fa-cog"></i>
+      <div class="messages">
+        <%= link_to messages_path do %>
+          <i class="fa fa-envelope"></i>
         <% end %>
       </div>
   <% else %>
-      <select id="menu_bar_select" class="select_bar">
-        <option value=""><%=I18n.t'top-menu.signin-signup'%></option>
-        <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
-        <!-- <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option> -->
-        <option value="<%= new_user_session_path %>"><%=I18n.t'top-menu.sign-in'%></option>
-        <option value="<%= new_user_registration_path %>"><%=I18n.t'top-menu.sign-up'%></option>
-<!--         <option value="<%= users_path %>"><%=I18n.t'top-menu.professionals'%></option> -->
-      </select>
-      <div class="find_provider"> 
-        <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %> 
+      <div class="menu_bar_login">
+        <%= link_to "Log In", new_user_session_path %>
       </div>
-      <div class="publish_project"> 
-        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_user_registration_path %> 
+      <div class="find_provider">
+        <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
       </div>
-      <div class="messages"> 
-        <%= link_to info_path do %>
-          <i class="fa fa-info-circle"></i>
-        <% end %>
+      <div class="publish_project">
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_user_registration_path %>
       </div>
   <% end %>
 
@@ -48,8 +38,8 @@
     document.getElementById("menu_bar_select").onchange = function() {
         if (this.selectedIndex!==0) {
             window.location.href = this.value;
-        }        
+        }
     };
   </script>
-  
+
 </div>

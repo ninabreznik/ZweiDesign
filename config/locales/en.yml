@@ -22,7 +22,7 @@ en:
 
 #Signup
   users-signup:
-    signup: "Create your profile for free"
+    signup: "Sign Up - it's free!"
     signup_button: "Sign Up"
     email: "Email"
     first-name: "First name"
@@ -163,13 +163,13 @@ en:
 # ############################################################################################
 
   welcome-message:
-    h1: "Welcome to"
+    h1: "Welcome to ZweiDesign"
     paragraph-1: "You successfully registered with username:"
     temporary-pass-1: "Your temporary password is:"
     temporary-pass-2: "We suggest you to change it with your next login!"
     paragraph-2: "To login into the app"
     this-link: "click here"
-    thanks-for-joining: "Thanks for joining our community. If you have any questions or suggestions, I am always here for you."
+    thanks-for-joining: "Thanks for joining our community. If you need help getting started or have any questions, you can always contact me."
     have-a-nice-day: "Inspire & be inspired."
     nina: "Nina Breznik,"
   new-lead:
@@ -1286,8 +1286,8 @@ en:
 
   mailboxer:
     message_mailer:
-      subject_new: "ZweiDesign new message: %{subject}"
-      subject_reply: "ZweiDesign new reply: %{subject}"
+      subject_new: "ZweiDesign new message %{subject}"
+      subject_reply: "ZweiDesign new reply %{subject}"
     notification_mailer:
       subject: "ZweiDesign new notification: %{subject}"
     conversations-index:
@@ -1304,6 +1304,6 @@ en:
         user:
           attributes:
             current_password:
-              invalid: "Geslo ni pravilno."
+              invalid: "is not correct"
       messages:
-        not_saved: "Spremembe niso bile shranjene."
+        not_saved: "Changes have not been saved."
