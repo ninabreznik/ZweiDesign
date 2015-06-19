@@ -16,6 +16,12 @@ class StaticPagesController < ApplicationController
   def info
   end
 
+  def terms
+  end
+
+  def privacy
+  end
+
   def profile
   end
 

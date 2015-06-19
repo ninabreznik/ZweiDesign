@@ -61,6 +61,9 @@ Rails.application.routes.draw do
 
   get '/about' => 'static_pages#about'
   get '/info' => 'static_pages#info'
+  get '/terms' => 'static_pages#terms'
+  get '/privacy' => 'static_pages#privacy'
+  get '/contact' => 'static_pages#contact'
   get '/payment_type' => 'static_pages#payment'
   get '/profile' => 'static_pages#profile'
   get '/new_lead_confirmation' => 'static_pages#new_lead_confirmation'
