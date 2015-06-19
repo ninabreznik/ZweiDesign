@@ -11,7 +11,7 @@ Rails.application.configure do
     enable_starttls_auto: true  }
     
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { :host => 'http://sosed.biz' }
+  config.action_mailer.default_url_options = { :host => 'http://zweidesign.co' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true

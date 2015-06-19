@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   validates :picture_file_name, length: { maximum: 150 }
 
 
+
    # #############################################################################
   # Order between User and Lead
   # #############################################################################
@@ -57,10 +58,6 @@ class User < ActiveRecord::Base
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
       user.first_name = auth.info.name   # assuming the user model has a name
-      picture_from_url(auth.info.image)
-      user.picture = auth.info.image # assuming the user model has an image
-      UserMailer.welcome_email(user, user.password).deliver
-      User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work. Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
     end
   end
 
@@ -71,10 +68,5 @@ class User < ActiveRecord::Base
       end
     end
   end
-
-  def picture_from_url(url)
-    self.picture = URI.parse(url)
-  end
-
 
 end

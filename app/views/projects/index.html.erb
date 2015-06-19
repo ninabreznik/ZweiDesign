@@ -13,43 +13,43 @@
 </div>
 <div class="index_container">
   <div class="index_container_title">
-    Browse succesfully finished projects
+    Browse succesfully finished projects 
   </div>
   <div class="index_container_subtitle">
-    Renovating your home, office or other interesting space? Need inspiration, feedback or concepts from talented professionals? Start new renovation and let us find the right professionals for you!
+    Renovating your home, office or other interesting space? Need inspiration, feedback or concepts from talented professionals? Start new renovation and let us find the right professionals for you! 
   </div>
 </div>
 <ol id="filters">
 
   <li data-filter='Architects & Building Designers'>
-    <%= I18n.t'users-index.field-1'%>
+    <%= I18n.t'users-index.field-1'%> 
   </li>
   <li data-filter="Interior Designers & Decorators">
-    <%= I18n.t'users-index.field-4'%>
+    <%= I18n.t'users-index.field-4'%> 
   </li>
   <li data-filter="Kitchen and Bathroom Designers & Fitters">
-    <%= I18n.t'users-index.field-5'%>
+    <%= I18n.t'users-index.field-5'%> 
   </li>
   <li data-filter="Kitchen and Bathroom Renovators">
-    <%= I18n.t'users-index.field-6'%>
+    <%= I18n.t'users-index.field-6'%> 
   </li>
   <li data-filter="Landscape Architects & Garden Designers">
-    <%= I18n.t'users-index.field-7'%>
+    <%= I18n.t'users-index.field-7'%> 
   </li>
   <li data-filter="Landscape Contractors">
-    <%= I18n.t'users-index.field-8'%>
+    <%= I18n.t'users-index.field-8'%> 
   </li>
   <li data-filter="General Home Builders">
     <%= I18n.t'users-index.field-2'%>
   </li>
   <li data-filter="Masonry">
-    <%= I18n.t'users-index.field-3'%>
+    <%= I18n.t'users-index.field-3'%> 
   </li>
   <li data-filter="Stone, Paving & Concrete">
-    <%= I18n.t'users-index.field-9'%>
+    <%= I18n.t'users-index.field-9'%> 
   </li>
   <li data-filter="Cheramics, Stone & Marble">
-    <%= I18n.t'users-index.field-10'%>
+    <%= I18n.t'users-index.field-10'%> 
   </li>
 
 </ol>
@@ -66,9 +66,9 @@
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
       <div class="lead_subtitle"></div><br>
         <% if project.user.business_type.present? %>
-          <%= project.user.business_type %>
+          <%= project.user.business_type %> 
         <% end %><br>
-        <% if project.user.country.present? %>
+        <% if project.user.country.present? %> 
           <i class="fa fa-map-marker"></i>
           <%= project.user.country %>
         <% end %>
@@ -104,7 +104,7 @@
           </div>
         <% end %>
     </div>
-  <!-- </div> -->
+  </div>
   <% end %>
 <% end %>
 </ul>
