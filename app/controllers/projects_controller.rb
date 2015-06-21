@@ -98,7 +98,9 @@ class ProjectsController < ApplicationController
   def index
     @projects = []
     User.all.each do |user|
-      @projects << user.projects.first
+      if user.projects.any?
+        @projects << user.projects.first
+      end
     end  
     @sorted_projects = @projects.sort.reverse
     @likes = Like.all
