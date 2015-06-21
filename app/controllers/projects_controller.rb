@@ -96,7 +96,10 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all
+    @projects = []
+    User.all.each do |user|
+      @projects << user.projects.first
+    end  
     @sorted_projects = @projects.sort.reverse
     @likes = Like.all
     @projects.each do |project|
