@@ -57,6 +57,11 @@ class User < ActiveRecord::Base
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]   # assuming the user model has a name
+      user.save
+      pass = user.password
+      if user.created_at > Time.now - 3.seconds
+        UserMailer.welcome_email(user, pass).deliver
+      end
     end
   end
 
