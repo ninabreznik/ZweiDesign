@@ -4,10 +4,7 @@
       <select id="menu_bar_select" class="select_bar">
         <option value=""><%= current_user.email.split('@').first %></option>
         <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
-        <!-- <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option> -->
-        <option value="<%= edit_user_registration_path %>"><%=I18n.t'top-menu.edit-profile'%></option>
         <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
-        <option value="<%= info_path %>"><%=I18n.t'top-menu.info'%></option>
         <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
       </select>
       <div class="find_provider">
@@ -29,7 +26,7 @@
         <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
       </div>
       <div class="publish_project">
-        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_user_registration_path %>
+        <%= link_to "SIGN UP", new_user_registration_path %>
       </div>
   <% end %>
 

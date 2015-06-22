@@ -53,20 +53,21 @@ class User < ActiveRecord::Base
     email
   end
 
+  def self.search_by_id(search)
+    where('users.id LIKE ?', "%#{search}%")
+  end
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]   # assuming the user model has a name
       user.save
       pass = user.password
-      @beta = user
-      @new_user = user
-      if user.created_at > Time.now - 3.seconds
+      beta = user
+      if user.created_at > Time.now - 15.seconds
         UserMailer.welcome_email(user, pass).deliver
+        user.send_message(beta, "Congrats on creating your account. Don't forget to set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). If you have questions, please send an email to contact@zweidesign.co", ":)")
       end
-    end
-    if @new_user.created_at > Time.now - 30.seconds
-      User.find_by_id(1).send_message(@beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
     end
   end
 
