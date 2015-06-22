@@ -59,11 +59,14 @@ class User < ActiveRecord::Base
       user.password = Devise.friendly_token[0,20]   # assuming the user model has a name
       user.save
       pass = user.password
-      if user.created_at > Time.now - 30.seconds
+      @beta = user
+      @new_user = user
+      if user.created_at > Time.now - 3.seconds
         UserMailer.welcome_email(user, pass).deliver
-        beta = user
-        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
       end
+    end
+    if @new_user.created_at > Time.now - 30.seconds
+      User.find_by_id(1).send_message(@beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
     end
   end
 
