@@ -103,7 +103,7 @@ class ProjectsController < ApplicationController
     i=0
     while projects_old < @projects.count
       projects_old = @projects.count
-      User.all.each do |user|
+      User.all.sort.reverse.each do |user|
         if user.projects[i]
           @projects << user.projects[i]
         end
