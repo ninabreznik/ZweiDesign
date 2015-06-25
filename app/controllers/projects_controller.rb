@@ -96,19 +96,14 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = []
-    User.all.each do |user|
-      if user.projects.any?
-        @projects << user.projects.first
-      end
-    end  
+    @projects = Project.all
     @sorted_projects = @projects.sort.reverse
     @likes = Like.all
     @projects.each do |project|
       @project = project
     end
-    @newest     = @projects.sort_by {|p| p.created_at}
-    @popular    = Project.all.where("project.user.projects.count > ?", 5)
+    # @newest     = @projects.sort_by {|p| p.created_at}
+    # @popular    = Project.all.where("project.user.projects.count > ?", 5)
     # @featured   = Project.all.where(category: "#{I18n.t'project-index.data-filter-3'}").count
   end
 
@@ -159,7 +154,7 @@ class ProjectsController < ApplicationController
         user.projects << project
         UserMailer.welcome_email(user, pass).deliver
         beta = user
-        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")  
+        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
       end
     end
     project.save
