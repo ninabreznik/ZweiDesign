@@ -97,14 +97,20 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
-    @sorted_projects = @projects.sort.reverse
     @likes = Like.all
-    @projects.each do |project|
-      @project = project
+    @projects = []
+    projects_old = -1
+    i=0
+    while projects_old < @projects.count
+      projects_old = @projects.count
+      User.all.each do |user|
+        if user.projects[i]
+          @projects << user.projects[i]
+        end
+      end
+      i+=1
     end
-    # @newest     = @projects.sort_by {|p| p.created_at}
-    # @popular    = Project.all.where("project.user.projects.count > ?", 5)
-    # @featured   = Project.all.where(category: "#{I18n.t'project-index.data-filter-3'}").count
+    @sorted_projects = @projects.sort.reverse
   end
 
   def show
