@@ -110,7 +110,6 @@ class ProjectsController < ApplicationController
       end
       i+=1
     end
-    @sorted_projects = @projects.sort.reverse
   end
 
   def show
