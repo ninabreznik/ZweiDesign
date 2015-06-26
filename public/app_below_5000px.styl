@@ -1401,37 +1401,52 @@
     font-family App-Font-Family
     .section_welcome
       margin-top 36px
-      padding 70px 60px 100px 60px
+      padding 5% 10% 5% 10%
       background-color white
       color black
-      letter-spacing 1.4px
-      font-weight: 300
+      line-height: 1.8em;
+      letter-spacing: 1px;
       .section_welcome_title
         font-size 18px
-        color Lead-Orange
+        button(black)
+        color white
         margin-bottom 10px
+        font-weight: 700
       .section_welcome_subtitle
-        font-size 32px
+        font-size 22px
         letter-spacing 2px
         margin-bottom 30px
+        text-align justify
+        font-weight: 500
+      .section_welcome_subtitle a
+        text-decoration none
+        color #606060
+        &:hover
+          color Lead-Orange
       .section_welcome_text
         font-size 18px
         line-height: 1.5em
+        text-align justify
     .section_divided
-      color white
-      font-size 32px
-      letter-spacing 1.4px
-      line-height 200%
-      .section_divided_left
-        span(1/2)
-        width 50%
+      font-size 18px
+      text-align center
+      .section_divided_part a
+        text-decoration none
+        button(black)
+        color Lead-Orange
+        &:hover
+          color white
+      .section_divided_part
+        width 33.3%
+        float left
         padding 50px
         background-color Lead-Orange
-      .section_divided_right
-        span(1/2)
-        width 50%
-        padding 50px
-        background-color #82c0c7
+        border 10px solid white
+        .section_divided_part_title
+          button(black)
+          color white
+        .section_divided_part_subtitle
+          color black
     .section_how_it_works
       padding 0px 0px 60px 0px
       background-color white
@@ -1439,13 +1454,15 @@
       font-weight: 300
       color black
       .section_how_it_works_image
-        body-mixin(backgroundImage: url(/images/interior5.png))
-        margin-top 29px
-        padding-bottom 700px
+        body-mixin()
+        background-image  url(/images/interior1.png)
+        padding-bottom 200px
       .section_how_it_works_title
-        margin 60px 60px 60px 30px
+        margin 5% 5% 5% 35%
         font-size 32px
-        color Lead-Orange
+        color black
+        text-align left
+        font-weight 700
       .section_how_it_works_text
         margin 60px 60px 60px 30px
         font-size 18px
@@ -1464,6 +1481,7 @@
       .section_our_team_title
         margin 20px 60px 60px 30px
         font-size 32px
+        font-weight 700
       .section_our_team_title a
         margin 20px 60px 60px 30px
         font-size 32px

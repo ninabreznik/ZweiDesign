@@ -22,6 +22,9 @@ class StaticPagesController < ApplicationController
   def privacy
   end
 
+  def pricing
+  end
+
   def profile
   end
 
