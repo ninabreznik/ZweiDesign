@@ -23,8 +23,9 @@ class ConversationsController < ApplicationController
   end
 
   def index
-    @first_message = current_user.mailbox.conversations.count > 1
-    @last_received_conversation = current_user.mailbox.inbox.last.receipts_for(current_user).first.message
+    @no_message = current_user.mailbox.conversations.count < 1
+    render 'index', layout: 'conversations_layout'
+    # @last_received_conversation = current_user.mailbox.inbox.last.receipts_for(current_user).first.message
   end
 
 

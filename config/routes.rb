@@ -30,10 +30,10 @@ Rails.application.routes.draw do
     match '/paypal_notification',       to: 'paypal_notifications#create',        via: 'post'
 
   resources :orders
-    get '/address_book' => 'orders#address_book'
     get '/messages' => 'conversations#index'
-    get '/bank_transaction' => 'orders#bank_transaction'
-    get '/wallet_payment_from_lead' => 'orders#wallet_payment_from_lead'
+    # get '/bank_transaction' => 'orders#bank_transaction'
+    # get '/wallet_payment_from_lead' => 'orders#wallet_payment_from_lead'
+    # get '/address_book' => 'orders#address_book'
     # match '/orders/:id',       to: 'orders#show',          via: 'get'
     # match '/orders/:id',       to: 'orders#delete',        via: 'delete'
 
@@ -51,13 +51,6 @@ Rails.application.routes.draw do
   get 'leads/new'
   get 'leads/edit'
 
-  get '/wallet_payment_type' => 'static_pages#wallet_payment_type'
-  get '/wallet_payment' => 'static_pages#wallet_payment'
-
-  get '/plans' => 'static_pages#plans'
-  get '/plans_1' => 'static_pages#plans_1'
-  get '/plans_2' => 'static_pages#plans_2'
-  get '/plans_3' => 'static_pages#plans_3'
 
   get '/about' => 'static_pages#about'
   get '/info' => 'static_pages#info'
@@ -65,11 +58,10 @@ Rails.application.routes.draw do
   get '/pricing' => 'static_pages#pricing'
   get '/privacy' => 'static_pages#privacy'
   get '/contact' => 'static_pages#contact'
-  get '/payment_type' => 'static_pages#payment'
-  get '/profile' => 'static_pages#profile'
-  get '/new_lead_confirmation' => 'static_pages#new_lead_confirmation'
-  get '/payment_confirmation' => 'static_pages#payment_confirmation'
-  get '/first_message' => 'static_pages#first_message'
+  get '/dashboard' => 'static_pages#dashboard'
+  get '/no_message' => 'static_pages#no_message'
+  # get '/payment_type' => 'static_pages#payment'
+  # get '/payment_confirmation' => 'static_pages#payment_confirmation'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -79,6 +71,13 @@ Rails.application.routes.draw do
   #match '/orders',       to: 'orders#create',        via: 'post'
 
 
+  # get '/wallet_payment_type' => 'static_pages#wallet_payment_type'
+  # get '/wallet_payment' => 'static_pages#wallet_payment'
+
+  # get '/plans' => 'static_pages#plans'
+  # get '/plans_1' => 'static_pages#plans_1'
+  # get '/plans_2' => 'static_pages#plans_2'
+  # get '/plans_3' => 'static_pages#plans_3'
 
 
   # Example of regular route:
