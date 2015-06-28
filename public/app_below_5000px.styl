@@ -371,7 +371,7 @@
           display inline-block
           vertical-align top
           .lead_show_item img
-            width 770px
+            width 100%
           .lead_show_item
             -webkit-font-smoothing: antialiased
             margin-top 20px
@@ -779,7 +779,7 @@
       color Lead-Orange
   /* :::::::::::: PROFILE :::::::::::: */
   .body_profile
-    body-mixin(backgroundImage: url(/images/interior6.png))
+    body-mixin()
     .columns
       column-mixin()
       .wookmark
@@ -795,7 +795,7 @@
             font-size 14px
           .profile_dashboard_body
             color Offer-Font-Color
-            padding 30px 30px 20px 30px
+            padding 30px 0px 20px 0px
             -webkit-font-smoothing: antialiased
             -moz-osx-font-smoothing: grayscale
             line-height 150%
@@ -805,10 +805,13 @@
               font-size 14px
               padding-bottom 20px
               font-weight bold
+            .profile_dashboard_image
+              padding-left 0px
             .profile_dashboard_body_logout,
             .profile_dashboard_body_edit
               padding-top 30px
               button(color = #82c0c7)
+              margin-bottom 7px
             .profile_dashboard_body_wallet_amount
               font-size 57px
               padding 24px
@@ -844,6 +847,10 @@
               padding-bottom 20px
               font-weight bold
               opacity 0.3
+            .profile_dashboard_body_not_signed_in a
+              color black
+              &:hover
+                text-decoration underline
   /* :::::::::::: DEVISE/LOGIN (sessions/new)  :::::::::::: */
   .body_devise_login
     body-mixin(backgroundImage: url(/images/interior1.png))
