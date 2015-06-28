@@ -1141,7 +1141,7 @@ en:
 # ############################################################################################
 
   project-show:
-    edit: "Edit your project"
+    edit: "Edit my project"
     send-message: "Contact me"
     get-in-touch: "Contact me"
     message-subject: "is interested in"
@@ -1238,7 +1238,7 @@ en:
     send-message:
       placeholder: "Contact me"
       submit: "Send"
-    edit-profile: "Edit your profile"
+    edit-profile: "Edit my profile"
     contact-provider: "Contact me"
 
   # ############################################################################################
