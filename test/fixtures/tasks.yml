@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  measures: MyString
+  location: MyString
+  unit: MyString
+  amount: 1
+  price_per_unit: 1
+  total_price: 1
+
+two:
+  description: MyString
+  measures: MyString
+  location: MyString
+  unit: MyString
+  amount: 1
+  price_per_unit: 1
+  total_price: 1

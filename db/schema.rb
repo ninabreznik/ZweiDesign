@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617203758) do
+ActiveRecord::Schema.define(version: 20150630210844) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20150617203758) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.integer  "total_price"
   end
 
   create_table "likes", force: true do |t|
@@ -169,6 +170,29 @@ ActiveRecord::Schema.define(version: 20150617203758) do
     t.string   "category"
     t.string   "de_title"
     t.string   "de_description"
+  end
+
+  create_table "services", force: true do |t|
+    t.string   "title"
+    t.integer  "subtotal_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "serviceable_id"
+    t.string   "serviceable_type"
+  end
+
+  create_table "tasks", force: true do |t|
+    t.string   "description"
+    t.string   "measures"
+    t.string   "location"
+    t.string   "unit"
+    t.integer  "amount"
+    t.integer  "price_per_unit"
+    t.integer  "total_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "taskable_type"
+    t.integer  "taskable_id"
   end
 
   create_table "users", force: true do |t|

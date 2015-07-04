@@ -34,7 +34,7 @@ class ProjectsController < ApplicationController
         #     @project.pictures.create(image: image)
         #   }
         # end
-      redirect_to user_path(@user)
+      redirect_to project_path(@project)
       else
       redirect_to new_project_path
       end

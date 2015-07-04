@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  get 'tasks/new'
+
+  get 'tasks/create'
+
+  get 'tasks/index'
+
+  get 'tasks/show'
+
+  get 'tasks/update'
+
+  get 'tasks/destroy'
+
+  get 'services/new'
+
+  get 'services/create'
+
+  get 'services/index'
+
+  get 'services/show'
+
+  get 'services/update'
+
+  get 'services/destroy'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users, :controllers => { registrations: 'registrations', omniauth_callbacks: 'users/omniauth_callbacks' }

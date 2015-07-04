@@ -10,6 +10,10 @@ class LeadsController < ApplicationController
   def show
     @lead = Lead.find_by_id(params[:id])
     @leads = Lead.all
+    @service = Service.new
+    @task = Task.new
+    @task = Task.new(task_params)
+    @service = Service.new(service_params)
     # @reserved_leads = @lead.reverse_orders.where(selector_id: current_user.id)
 
     #@order = @lead.reverse_orders.where(selector_id: current_user.id)
@@ -87,8 +91,8 @@ class LeadsController < ApplicationController
       session[:lead_step] = session[:lead_params] = nil
       lead_user = @lead.email
       lead = @lead
-      UserMailer.send_new_lead(lead)
-      redirect_to leads_url
+      # UserMailer.send_new_lead(lead)
+      redirect_to lead_path(@lead)
     else
       redirect_to leads_new_url
     end
