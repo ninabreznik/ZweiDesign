@@ -10,12 +10,10 @@ class LeadsController < ApplicationController
   def show
     @lead = Lead.find_by_id(params[:id])
     @leads = Lead.all
-    @service = Service.new
-    @task = Task.new
-    @task = Task.new(task_params)
-    @service = Service.new(service_params)
+    @lead_user_id = @lead.user.id
+    @new_services = @lead.services
+    @services = Service.all.where(serviceable_id: @lead.id).sort.reverse
     # @reserved_leads = @lead.reverse_orders.where(selector_id: current_user.id)
-
     #@order = @lead.reverse_orders.where(selector_id: current_user.id)
   end
 

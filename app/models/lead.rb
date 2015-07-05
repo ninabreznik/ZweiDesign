@@ -9,7 +9,7 @@ class Lead < ActiveRecord::Base
                                    class_name: "Order",
                                    dependent: :destroy
   has_many :selectors, through: :reverse_orders, source: :selector
-  has_many :services, as: :serviceable
+  has_many :services, as: :serviceable, dependent: :destroy
   belongs_to :user
 
   has_attached_file :picture, :styles => { :full => "1400x1400>", :large => "500x500>", :medium => "250x250>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"

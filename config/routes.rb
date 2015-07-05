@@ -50,6 +50,9 @@ Rails.application.routes.draw do
   resources :leads
     match '/find_professional',                   to: 'leads#new',      via: 'get'
 
+  resources :services
+  resources :tasks
+
   resources :paypal_notifications, only: [:create]
     match '/paypal_notification',       to: 'paypal_notifications#create',        via: 'post'
 

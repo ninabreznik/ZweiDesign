@@ -1,7 +1,15 @@
-<div class="lead_new_form_description">
+<% if user_signed_in? %>
+  <%= l.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+<% else %>
+  <div class="lead_new_form_email">
+    <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
+    <%= l.text_field :email %>
+  </div>
+<% end %>
+<!-- <div class="lead_new_form_description">
   <%= l.label :"Attach a photo" %><br>
   <%= l.file_field :picture %><br><br>
-</div>
+</div> -->
 <!-- <div class="lead_new_form_zip">
   <%= l.label :"#{I18n.t'lead-new.form.zip'}" %>
   <%= l.text_field :zip %>
@@ -11,11 +19,3 @@
   <%= l.label :"#{I18n.t'lead-new.form.link'}" %>
   <%= l.text_field :link %>
 </div> -->
-<% if user_signed_in? %>
-  <%= l.text_field :email, type: "hidden", value: "#{current_user.email}" %>
-<% else %>
-  <div class="lead_new_form_email">
-    <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
-    <%= l.text_field :email %>
-  </div>
-<% end %>

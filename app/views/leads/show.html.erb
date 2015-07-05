@@ -7,37 +7,51 @@
         </div>
       <% end %>
       <div class="lead_show_body">
-        <div class="lead_show_items_short">
-          <div class="lead_show_item">
-            <div class="lead_show_subtitle"></div>
-            <%=link_to "#{image_tag @lead.picture.url(:full)}".html_safe, user_path(@lead.user) %><br>
+        <% if @lead.picture.exists? %>
+          <div class="lead_show_items_short">
+            <div class="lead_show_item">
+              <div class="lead_show_subtitle"></div>
+              <%=link_to "#{image_tag @lead.picture.url(:full)}".html_safe, user_path(@lead.user) %><br>
+            </div>
           </div>
-        </div>
+        <% end %>
+        <% if current_user.present? %>
+          <% if @lead_user_id == current_user.id %>
+            <div class="lead_new_form_zip">
+            <%= form_for (@new_services.build(serviceable_id: @lead.id)) do |s| %>
+              <div class="lead_new_form_zip">
+                <%= s.hidden_field :serviceable_id %>
+                <%= s.label :"Add new service" %>
+                <%= s.text_field :title %>
+                <%= s.submit "Add" %>
+              </div>
+              <div class="lead_new_form_zip">
+              </div>
+            <% end %>
+            <br>
+            <br>
+              <% @services.each do |service| %>
+                <%= service.title %> <%= link_to "//edit", edit_service_path %> <br>
+                <% Task.all.where(taskable_id: service.id).each do |task| %>
+                  <%= task.description %> <%= link_to "//edit", edit_task_path %> <br>
+                <% end %>
+                  <%= form_for (service.tasks.build(taskable_id: service.id)) do |s| %>
+                    <div class="lead_new_form_zip">
+                      <%= s.hidden_field :taskable_id %>
+                      <%= s.label :"ADD TASK" %>
+                      <%= s.text_area :description %>
+                      <%= s.submit "Add" %>
+                    </div>
+                    <div class="lead_new_form_zip">
+                    </div>
+                  <% end %>
+                  <br>
+              <% end %>
+            </div>
+          <% end %>
+        <% end %>
     </div>
   <% else %>
     This lead isn't available.
   <% end %>
-  <div class="lead_new">
-    <%= form_for @service, :url => services_path, :html => { :multipart => true } do |l| %>
-      <div class="lead_new_form_zip">
-        <%= l.label :"Service name" %>
-        <%= l.text_field :title %>
-      </div>
-      <div class="lead_new_form_submit">
-        <%= l.submit "Save" %>
-      </div>
-    <% end %>
-  </div>
-  <div class="lead_new">
-    <%= form_for @task, :url => tasks_path, :html => { :multipart => true } do |l| %>
-      <div class="lead_new_form_zip">
-        <%= l.label :"Task" %>
-        <%= l.text_field :description %>
-      </div>
-      <div class="lead_new_form_submit">
-        <%= l.submit "Add" %>
-      </div>
-    <% end %>
-  </div>
-
 </div>

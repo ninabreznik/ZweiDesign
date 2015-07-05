@@ -4,19 +4,21 @@ class TasksController < ApplicationController
   end
 
   def create
+    @service = Service.find_by_id(params[:task][:taskable_id])
     @task = Task.new(task_params)
-    @user = current_user
     if @task.save
-      auto_create_user!(@lead)
-      session[:lead_step] = session[:lead_params] = nil
-      lead_user = @lead.email
-      lead = @lead
-      # UserMailer.send_new_lead(lead)
-      redirect_to lead_path(@lead)
+      redirect_to :back
     else
-      redirect_to leads_new_url
+      redirect_to :back
     end
   end
+
+  def edit
+  end
+
+  def update
+  end
+
 
   def index
   end
@@ -34,6 +36,8 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(
+      :taskable_id,
+      :taskable_type,
       :description,
       :measures,
       :location,

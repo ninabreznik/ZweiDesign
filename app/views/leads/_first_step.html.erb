@@ -1,10 +1,11 @@
 <div class="lead_new_form_zip">
-  <%= l.label :"Project title" %>
+  <%= l.label :"New project title" %>
   <%= l.text_field :title %>
 </div>
 
 
 <div class="lead_new_form_zip">
+  <%= l.label :"Select location" %>
   <%= l.select :location, [
       ["#{I18n.t'lead-new.form.country-1'}", "#{I18n.t'lead-new.form.country-1'}"],
       ["#{I18n.t'lead-new.form.country-2'}", "#{I18n.t'lead-new.form.country-2'}"],

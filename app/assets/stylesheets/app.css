@@ -233,7 +233,7 @@ html {
                 LEAD LISTING MIXINS 
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1965 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -1188,7 +1188,7 @@ html {
     border: 2px solid #fafafa;
     box-shadow: 0 1px 2px rgba(34,25,25,0.4);
     opacity: 0.9;
-    margin: 37px 7px 80px 20px;
+    margin: 10% 5% 25% 5%;
     padding: 4.5%;
     max-width: 1290px;
     min-width: 800px;
