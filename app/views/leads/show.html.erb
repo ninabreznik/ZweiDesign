@@ -21,9 +21,8 @@
             <%= form_for (@new_services.build(serviceable_id: @lead.id)) do |s| %>
               <div class="lead_new_form_zip">
                 <%= s.hidden_field :serviceable_id %>
-                <%= s.label :"Add new service" %>
                 <%= s.text_field :title %>
-                <%= s.submit "Add" %>
+                <%= s.submit "Add new service" %>
               </div>
               <div class="lead_new_form_zip">
               </div>
@@ -31,16 +30,17 @@
             <br>
             <br>
               <% @services.each do |service| %>
-                <%= service.title %> <%= link_to "//edit", edit_service_path %> <br>
+                ::::: <%= link_to "#{service.title}", edit_service_path %>::::: <br>
                 <% Task.all.where(taskable_id: service.id).each do |task| %>
-                  <%= task.description %> <%= link_to "//edit", edit_task_path %> <br>
+                <ul>
+                  <li><%= link_to "#{task.description}", edit_task_path %> </li>
+                </ul>
                 <% end %>
-                  <%= form_for (service.tasks.build(taskable_id: service.id)) do |s| %>
+                  <%= form_for (service.tasks.build(taskable_id: service.id))  do |s| %>
                     <div class="lead_new_form_zip">
                       <%= s.hidden_field :taskable_id %>
-                      <%= s.label :"ADD TASK" %>
                       <%= s.text_area :description %>
-                      <%= s.submit "Add" %>
+                      <%= s.submit "Add new task" %>
                     </div>
                     <div class="lead_new_form_zip">
                     </div>
