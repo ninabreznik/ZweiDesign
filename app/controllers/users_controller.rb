@@ -13,7 +13,10 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     check_if_user_company_present(@users)
-    @sorted_users = @edited_users.sort.reverse
+    @users.each do |user|
+      @user = user
+    end
+    @sorted_users = @users.sort_by{|updated| @user.updated_at}.reverse
     @architects_count                      = User.all.where(business_type: "#{I18n.t'users-index.field-1'}").count
     @constructions_count                   = User.all.where(business_type: "#{I18n.t'users-index.field-2'}").count
     @builders_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-3'}").count
@@ -38,7 +41,7 @@ class UsersController < ApplicationController
       else
         @edited_users << user
       end
-    end  
+    end
   end
 
   # def correct_user

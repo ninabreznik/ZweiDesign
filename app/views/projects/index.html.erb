@@ -66,7 +66,7 @@
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
       <div class="lead_subtitle"></div><br>
         <% if project.user.business_type.present? %>
-          <%= project.user.business_type %>
+          <%= link_to "#{project.user.business_type}", users_path %>
         <% end %><br>
         <% if project.user.country.present? %>
           <i class="fa fa-map-marker"></i>

@@ -100,19 +100,6 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="user_edit_form_current_password">
-  <%= f.label :"#{I18n.t'users-edit.edit-fields.current-password'}" %> <br>
-  <%= f.password_field :current_password, autocomplete: "off" %></div><br><br>
-
-
- ............................................................<br><br>
-  <div class="user_edit_form_password">
-    <%= f.label :"#{I18n.t'users-edit.edit-fields.new-password'}" %> <br>
-    <%= f.password_field :password, autocomplete: "off" %><br><br>
-    <%= f.label :"#{I18n.t'users-edit.edit-fields.password-confirmation'}" %><br>
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
-............................................................<br> <br><br>
-
   <div class="user_edit_form_submit"><%= f.submit "#{I18n.t'users-edit.edit-fields.confirm'}" %> </div>
 <% end %><br>
 

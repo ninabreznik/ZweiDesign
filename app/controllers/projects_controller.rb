@@ -34,7 +34,7 @@ class ProjectsController < ApplicationController
         #     @project.pictures.create(image: image)
         #   }
         # end
-      redirect_to user_path(@user)
+      redirect_to project_path(@project)
       else
       redirect_to new_project_path
       end
@@ -97,13 +97,18 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @users = User.all
+    @users.each do |user|
+      @user = user
+    end
+    @sorted_users = @users.sort_by{|updated| @user.updated_at}
     @likes = Like.all
     @projects = []
     projects_old = -1
     i=0
     while projects_old < @projects.count
       projects_old = @projects.count
-      User.all.sort.reverse.each do |user|
+      @sorted_users.reverse.each do |user|
         if user.projects[i]
           @projects << user.projects[i]
         end
