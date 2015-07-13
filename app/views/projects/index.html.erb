@@ -12,11 +12,17 @@
   </video>
 </div>
 <div class="index_container">
-  <div class="index_container_title">
-    <%= link_to "Join  us", new_user_registration_path %>
-  </div>
+  <% if user_signed_in? %>
+    <div class="index_container_title">
+      <%= link_to "Browse projects", new_user_registration_path %>
+    </div>
+  <% else %>
+    <div class="index_container_title">
+      <%= link_to "Join  us", new_user_registration_path %>
+    </div>
+  <% end %>
   <div class="index_container_subtitle">
-  Get inspired. Find new business opportunities. Share experiences with other wizards. 
+  Get inspired. Find new business opportunities. Share experiences with other wizards.
   </div>
 </div>
 <ol id="filters">
