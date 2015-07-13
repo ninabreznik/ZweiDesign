@@ -55,7 +55,7 @@ Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
   get '/info' => 'static_pages#info'
   get '/terms' => 'static_pages#terms'
-  get '/pricing' => 'static_pages#pricing'
+  get '/membership' => 'static_pages#membership'
   get '/privacy' => 'static_pages#privacy'
   get '/contact' => 'static_pages#contact'
   get '/dashboard' => 'static_pages#dashboard'

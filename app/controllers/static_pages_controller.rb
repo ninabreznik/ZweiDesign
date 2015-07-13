@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
   def privacy
   end
 
-  def pricing
+  def membership
   end
 
   def dashboard

@@ -5,7 +5,7 @@
     Make it work
   </div>
   <div class="index_welcome_message_subtitle">
-    Find right professionals for your home or office
+    Welcome to the Community of Architects, Interior Designers and Construction Professionals
   </div>
   <video class="video" autoplay loop muted="muted" >
     <source src="/videos/zd-movie.mp4" type="video/mp4", codecs="avc1.42E01E, mp4a.40.2">
@@ -13,10 +13,10 @@
 </div>
 <div class="index_container">
   <div class="index_container_title">
-    Browse succesfully finished projects
+    <%= link_to "Join  us", new_user_registration_path %>
   </div>
   <div class="index_container_subtitle">
-    Renovating your home, office or other interesting space? Need inspiration, feedback or concepts from talented professionals? Start new renovation and let us find the right professionals for you!
+  Get inspired. Find new business opportunities. Share experiences with your professional community.
   </div>
 </div>
 <ol id="filters">
@@ -61,7 +61,7 @@
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag project.picture.url(:medium), :width => '287'}".html_safe, project_path(project) %> <br><br>
+        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br><br>
       <div class="lead_subtitle"></div>
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
       <div class="lead_subtitle"></div><br>
