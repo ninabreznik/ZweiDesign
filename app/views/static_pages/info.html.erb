@@ -18,17 +18,9 @@
   </section>
   <section class="section_our_team">
     <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-1'}", root_path %></div>
-  </section>
-
- <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-2'}", new_lead_path %></div>
-  </section>
-
-   <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-3'}", root_path %></div>
+    <div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-1'}", new_user_registration_path %></div>
+    <br><div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-3'}", root_path %></div>
+    <br><div class="section_our_team_title"><%= link_to "#{I18n.t'staticpages-info.heart-section-2'}", new_lead_path %></div>
   </section>
   <section class="section_welcome">
     <div class="section_welcome_subtitle">Are your ready to become more visible and to spread your professional network? <%= link_to "Create your Profile & upload portfolio", new_user_registration_path %></div>
