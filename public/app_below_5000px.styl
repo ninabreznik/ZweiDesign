@@ -43,7 +43,7 @@
   /* :::::::::::: USERS/INDEX => homepage :::::::::::: */
   .body_users_index
     body-mixin()
-    background-color #F6F6F6
+    padding-bottom 1500px
     #mc_embed_signup
       width 50%
       margin-left 28%
@@ -128,6 +128,8 @@
               font-weight bold
               -webkit-font-smoothing: antialiased
               padding-top 7px
+            .lead_subtitle_button
+              button(#eee)
             .lead_subtitle_image
               padding-left 0px
               padding-right 0px
@@ -1764,8 +1766,10 @@
     .project_show_send_message_button,
     .project_show_send_message_button button,
     .project_show_send_message_button a
-      button(color = Lead-Orange-dark)
-      padding 7px
+      button(color = Lead-Orange)
+      padding 4px
+      text-transform uppercase
+      font-size 11px
   /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
   .body_project_index
     body-mixin()
@@ -1914,7 +1918,9 @@
             a
               text-decoration none
               color #606060
-              text-transform uppercase
+              font-weight bold
+            .lead_subtitle_button
+              button(#eee)
             .lead_subtitle_image
               padding-left 0px
               padding-right 0px

@@ -67,17 +67,7 @@
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br><br>
-      <div class="lead_subtitle"></div>
-        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
-      <div class="lead_subtitle"></div><br>
-        <% if project.user.business_type.present? %>
-          <%= link_to "#{project.user.business_type}", users_path %>
-        <% end %><br>
-        <% if project.user.country.present? %>
-          <i class="fa fa-map-marker"></i>
-          <%= project.user.country %>
-        <% end %>
+        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br>
       <div class="lead_subtitle"></div>
         <% if current_user.present? %>
           <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>
@@ -109,6 +99,16 @@
             <%= @likes.where(likee_id: project.id).count %>
           </div>
         <% end %>
+      <br>
+      <div class="lead_subtitle"></div>
+        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
+        <br>
+          <% if project.user.business_type.present? %>
+            <div class="lead_subtitle_button">
+              <%= link_to "#{project.user.business_type}", users_path %>
+            </div>
+          <% end %>
+          <br>
     </div>
   </div>
   <% end %>
