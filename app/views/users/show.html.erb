@@ -12,14 +12,8 @@
         <div class="lead_subtitle" ></div>
           <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
 
-        <% if @user.country.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.country'%>:</div>
-            <i class="fa fa-map-marker"></i> <%= @user.country %><br>
-        <% end %>
-
-        <% if @user.city.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.city'%>:</div>
-            <i class="fa fa-map-marker"></i> <%= @user.city %><br><br>
+        <% if @user.country.present? && @user.city.present? %>
+          <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= @user.city %>, <%= @user.country %></div>
         <% end %>
 
         <% if @user.business_type.present? %>

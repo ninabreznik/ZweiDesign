@@ -101,7 +101,7 @@
         <% end %>
       <br>
       <div class="lead_subtitle"></div>
-        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "20"} #{project.user.company}".html_safe, user_path(project.user) %>
+        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.company}".html_safe, user_path(project.user) %>
         <br>
           <% if project.user.business_type.present? %>
             <div class="lead_subtitle_button">
