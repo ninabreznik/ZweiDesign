@@ -96,7 +96,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all
+    @projects = Project.all.sort.reverse
     @users = User.all
     @users.each do |user|
       @user = user
