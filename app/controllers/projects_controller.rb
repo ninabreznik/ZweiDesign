@@ -103,18 +103,18 @@ class ProjectsController < ApplicationController
     end
     @sorted_users = @users.sort_by{|updated| @user.updated_at}
     @likes = Like.all
-    @projects = []
-    projects_old = -1
-    i=0
-    while projects_old < @projects.count
-      projects_old = @projects.count
-      @sorted_users.reverse.each do |user|
-        if user.projects[i]
-          @projects << user.projects[i]
-        end
-      end
-      i+=1
-    end
+    # @projects = []
+    # projects_old = -1
+    # i=0
+    # while projects_old < @projects.count
+    #   projects_old = @projects.count
+    #   @sorted_users.reverse.each do |user|
+    #     if user.projects[i]
+    #       @projects << user.projects[i]
+    #     end
+    #   end
+    #   i+=1
+    # end
   end
 
   def show
