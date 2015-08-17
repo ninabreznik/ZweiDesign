@@ -8,4 +8,6 @@ class Project < ActiveRecord::Base
   validates_attachment_size :picture, less_than: 3.megabytes
   validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp"]
   validates :picture_file_name, length: { maximum: 150 }
+
+
 end
