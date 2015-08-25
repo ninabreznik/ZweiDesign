@@ -18,55 +18,55 @@
     <tr class="offer_sosed_info_price">
       <td><%= I18n.t'orders-banktransaction.offer_price' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_price_amount' %></td>
-    </tr>  
-    <tr class="offer_sosed_info_item"> 
+    </tr>
+    <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_purpose' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_purpose_text' %> <%= @lead.id %></td>
     </tr>
     <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_account' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_mojsosed_account' %></td>
-    </tr> 
+    </tr>
     <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_company' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_company_mojsosed' %></td>
-    </tr> 
+    </tr>
     <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_tax_id' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_tax_id_mojsosed' %></td>
-    </tr> 
+    </tr>
     <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_address' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_mojsosed_address' %></td>
-    </tr> 
+    </tr>
     <tr class="offer_sosed_info_item">
       <td><%= I18n.t'orders-banktransaction.offer_city' %>:</td>
       <td><%= I18n.t'orders-banktransaction.offer_mojsosed_city' %></td>
-    </tr> 
+    </tr>
   </table>
   <div class="offer_show_lead">
     <% if @lead.business_type.present? %>
       <div class="offer_show_lead_title">
-        <%= @lead.business_type %> 
+        <%= @lead.business_type %>
       </div>
     <% end %>
     <div class="offer_show_lead_body">
       <div class="offer_show_lead_subtitle">
-        <%= I18n.t'orders-banktransaction.lead.location' %>: </div><%= @lead.location %>       
+        <%= I18n.t'orders-banktransaction.lead.location' %>: </div><%= @lead.location %>
       <div class="offer_show_lead_subtitle">
-        <%= I18n.t'orders-banktransaction.lead.zip' %>:</div><%= @lead.zip %>            
+        <%= I18n.t'orders-banktransaction.lead.zip' %>:</div><%= @lead.zip %>
       <div class="offer_show_lead_subtitle">
         <%= I18n.t'orders-banktransaction.lead.time' %>:</div> <%= @lead.time %>
-      <div class="offer_show_lead_subtitle">          
+      <div class="offer_show_lead_subtitle">
         <%= I18n.t'orders-banktransaction.lead.description' %>:</div> <%= @lead.description %>
-      <div class="offer_show_lead_subtitle">   
-        <%= I18n.t'orders-banktransaction.lead.name' %>:</div> <%= @lead.name %>          
+      <div class="offer_show_lead_subtitle">
+        <%= I18n.t'orders-banktransaction.lead.name' %>:</div> <%= @lead.name %>
     </div>
   </div>
   <div class="offer_instructions">
     <%= I18n.t'orders-banktransaction.offer_instructions' %>
-    <a href="http://sosed.biz/wallet_payment">(Kliknite za več informacij)</a>
-  </div> 
+    After your payment is processed, you will find lead in the <%= link_to "ADDRESS BOOK", address_book_path %> (with other bought leads).
+  </div>
 <% end %>
 </div>
 </div>

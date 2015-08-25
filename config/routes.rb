@@ -31,11 +31,11 @@ Rails.application.routes.draw do
 
   resources :orders
     get '/messages' => 'conversations#index'
-    # get '/bank_transaction' => 'orders#bank_transaction'
-    # get '/wallet_payment_from_lead' => 'orders#wallet_payment_from_lead'
-    # get '/address_book' => 'orders#address_book'
-    # match '/orders/:id',       to: 'orders#show',          via: 'get'
-    # match '/orders/:id',       to: 'orders#delete',        via: 'delete'
+    get '/bank_transaction' => 'orders#bank_transaction'
+    get '/wallet_payment_from_lead' => 'orders#wallet_payment_from_lead'
+    get '/address_book' => 'orders#address_book'
+    match '/orders/:id',       to: 'orders#show',          via: 'get'
+    match '/orders/:id',       to: 'orders#delete',        via: 'delete'
 
   resources :likes
     match '/likes/new',       to: 'likes#create',        via: 'post'
@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'projects#index'
 
-  #post 'paypal_confirm'  => 'orders#paypal_payment_notification'  #'paypal_confirm' is a callback I provide to Paypal and it triggers 'orders#paypal_confirm'
+  post 'paypal_confirm'  => 'orders#paypal_payment_notification'  #'paypal_confirm' is a callback I provide to Paypal and it triggers 'orders#paypal_confirm'
 
   get 'leads/index'
   get 'leads/show'
@@ -60,8 +60,8 @@ Rails.application.routes.draw do
   get '/contact' => 'static_pages#contact'
   get '/dashboard' => 'static_pages#dashboard'
   get '/no_message' => 'static_pages#no_message'
-  # get '/payment_type' => 'static_pages#payment'
-  # get '/payment_confirmation' => 'static_pages#payment_confirmation'
+  get '/payment_type' => 'static_pages#payment'
+  get '/payment_confirmation' => 'static_pages#payment_confirmation'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -71,8 +71,8 @@ Rails.application.routes.draw do
   #match '/orders',       to: 'orders#create',        via: 'post'
 
 
-  # get '/wallet_payment_type' => 'static_pages#wallet_payment_type'
-  # get '/wallet_payment' => 'static_pages#wallet_payment'
+  get '/wallet_payment_type' => 'static_pages#wallet_payment_type'
+  get '/wallet_payment' => 'static_pages#wallet_payment'
 
   # get '/plans' => 'static_pages#plans'
   # get '/plans_1' => 'static_pages#plans_1'

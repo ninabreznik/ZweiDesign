@@ -15,7 +15,7 @@ class OrdersController < ApplicationController
   def create
     @lead = Lead.find_by_id(params[:order][:selected_id])
     current_user.select!(@lead)
-    # @price = 10
+    @price = 10
     @user = current_user
     redirect_to order_path(id: @lead.reverse_orders.where(selector_id: current_user.id).first.id)
   end
@@ -25,15 +25,20 @@ class OrdersController < ApplicationController
     @lead = @order.selected
   end
 
-
   def edit
     @order = Order.find(params[:id])
-    @order.update_attributes(:paid => true)
-    @beta = User.find_by_id(@order.selected.user_id)
-    create_conversation(@beta, @order)
-    redirect_to conversations_path
+    if current_user.wallet >= 10
+      @order.update_attributes(:paid => true)
+      # @beta = User.find_by_id(@order.selected.user_id)
+      # create_conversation(@beta)
+      @price = 10
+      new_wallet_status = current_user.wallet - @price
+      current_user.update_attributes(:wallet => new_wallet_status)
+    else
+     # @order.paypal_payment_notification
+    end
+    redirect_to payment_confirmation_path
   end
-
 
   def destroy
     Order.find(params[:id]).destroy
@@ -86,12 +91,8 @@ class OrdersController < ApplicationController
     )
   end
 
-  def create_conversation(beta, order)
-    if user.country == "Slovenia"
-      current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", ":)")
-    else
-      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", ":)")      
-    end
-  end
+  # def create_conversation(beta)
+  #  current_user.send_message(beta, "Pozdrav, zanima me vaš projekt. Kako vam lahko pomagam?", "Vaš projekt na Sosed.biz")
+  # end
 
 end

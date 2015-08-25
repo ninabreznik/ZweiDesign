@@ -3,9 +3,8 @@
   <% if user_signed_in? %>
       <select id="menu_bar_select" class="select_bar">
         <option value=""><%= current_user.email.split('@').first %></option>
-        <option value="<%= dashboard_path %>"><%=I18n.t'top-menu.dashboard'%></option>
-        <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
-        <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
+        <option value="<%= dashboard_path %>">MY DASHBOARD</option>
+        <option value="<%= leads_path %>">NEW LEADS</option>
         <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
       </select>
       <div class="find_provider">

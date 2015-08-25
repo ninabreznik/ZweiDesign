@@ -12,7 +12,7 @@ def create
 end
 
 def after_sign_up_path_for(resource)
-  new_project_path(resource)
+  edit_user_registration_path(resource)
 end
 
 

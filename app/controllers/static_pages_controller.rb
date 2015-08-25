@@ -26,6 +26,8 @@ class StaticPagesController < ApplicationController
       @joined = current_user.created_at.strftime("20%y")
       @login_count = current_user.sign_in_count
       @updated_at = current_user.created_at.strftime("%d/%m")
+      @new_projects = Project.all.where("created_at > ?", current_user.last_sign_in_at).count
+      @new_users = User.all.where("created_at > ?", current_user.last_sign_in_at).count
       if current_user.projects.any?
         @last_project = current_user.projects.last
         @published_projects = current_user.projects.count

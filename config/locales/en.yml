@@ -157,6 +157,31 @@ en:
     unlock-instructions: "Didn't receive unlock instructions?"
     sign-in-with: "Sign in with"
 
+# ############################################################################################
+# Page 2 - LEADS/SHOW
+# ############################################################################################
+
+# Lead body
+  leadsshow-lead:
+    business_type: "Kdo se išče"
+    location: "Region"
+    zip: "Zip"
+    link: "Spletna stran"
+    time: "Kdaj"
+    description: "Description"
+    name: "Name"
+    send-message:
+      placeholder: "Pošlji sporočilo avtorju projekta"
+      submit: "Pošlji"
+
+#Price
+    price: "Price: 10 €"
+
+# Links
+  leadsshow-links:
+    follow: "Get in touch"
+    buy: "Buy"
+
 
 # ############################################################################################
 # USER MAILER
@@ -260,10 +285,10 @@ en:
 
 # Payment buttons
   ordersshow-payment-buttons:
-    choose-payment-text: "Choose type of payment"
+    choose-payment-text: "Choose Payment Type"
     paypal-checkout: "Paypal"
     wallet: "Wallet"
-    bank-transfer: "Bank transfer"
+    bank-transfer: "Bank Wire"
 
 
 # Notification
@@ -387,7 +412,7 @@ en:
     offer_mojsosed_address: "Radehova 39"
     offer_city: "City"
     offer_mojsosed_city: "2230 Lenart"
-    offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
+    offer_instructions: "After your payment is processed, you will find lead in the address book (with other bought leads)."
     lead:
       location: "Country"
       zip: "Zip"
@@ -407,24 +432,27 @@ en:
 # ############################################################################################
 
   wallet-payment:
-    offer_title: "Topping up the wallet"
+    offer_title: "Topp up your wallet"
+    offer_promotions: "You can add money on your walet by paying amount of your choice on bank account provided below. After your payment is processed, we will add money to your wallet. You will then be able to go back to the lead you want to buy and choose Payment type: Wallet. Costs of one lead are 10€."
     offer_item_username: "User name"
     offer_date: "Date"
     offer_price: "Price"
-    offer_price_amount: "10 €"
+    offer_price_amount: "Transfer amount of your choice"
     offer_purpose: "Payment purpose"
     offer_purpose_text: "Lead payment"
-    offer_account: "Account number"
-    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_account: "IBAN"
+    offer_mojsosed_account: "DE09 1004 0000 0222 9656 00"
+    offer_bic: "BIC (Commerzbank)"
+    offer_mojsosed_bic: "COBADEFFXXX"
     offer_company: "Company"
-    offer_company_mojsosed: "Moj sosed d.o.o."
-    offer_tax_id: "TAX ID"
-    offer_tax_id_mojsosed: "49595105"
+    offer_company_mojsosed: "Vision Baker Ltd."
+    offer_tax_id: "Company number"
+    offer_tax_id_mojsosed: "09657161"
     offer_address: "Address"
-    offer_mojsosed_address: "Radehova 39"
+    offer_mojsosed_address: "Apt 2765 Blackwater, Chynoweth House, Trevissome Park, Truro"
     offer_city: "City"
-    offer_mojsosed_city: "2230 Lenart"
-    offer_instructions: "After your payment is processed, we will add money to your wallet. You can check your status under Profile. For more information don't hesitate to contact us on info@sosed.si"
+    offer_mojsosed_city: "Cornwall, United Kingdom, TR4 8UN"
+    offer_instructions: "If you have any problems or questions, don't hesitate to "
 
 
 # ############################################################################################
