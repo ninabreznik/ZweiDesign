@@ -6,7 +6,7 @@
 
     <div class="lead_box">
       <div class ="profile_dashboard_title">
-        Stats page for
+        DASHBOARD
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_username">
@@ -23,15 +23,16 @@
 
     <div class="lead_box">
     <div class ="profile_dashboard_title">
-      LEADS
     </div>
     <div class="profile_dashboard_body">
       <div class="profile_dashboard_body_wallet_amount">
-        <i class="fa fa-users"></i>
+        <%= link_to messages_path do %>
+          <i class="fa fa-envelope"></i>
+        <% end %>
       </div>
       <div class="profile_dashboard_body_wallet_buttons">
         <div class="profile_dashboard_body_wallet_button">
-          <%= link_to "See all leads", leads_path %>
+          <%= link_to "Conversations", messages_path %>
         </div>
       </div>
     </div>
@@ -39,7 +40,6 @@
 
     <div class="lead_box">
     <div class ="profile_dashboard_title">
-      <%= I18n.t'staticpagesprofile-notification.wallet' %>:
     </div>
     <div class="profile_dashboard_body">
       <div class="profile_dashboard_body_wallet_amount">
@@ -53,10 +53,25 @@
     </div>
   </div>
 
+    <div class="lead_box">
+    <div class ="profile_dashboard_title">
+    </div>
+    <div class="profile_dashboard_body">
+      <div class="profile_dashboard_stats_data">
+        <%= @all_projects %>
+      </div>
+      <div class="profile_dashboard_body_wallet_buttons">
+        <div class="profile_dashboard_body_wallet_button">
+          <%= link_to "Browse leads", leads_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <% if current_user.orders.where(paid:true).any? %>
     <div class="lead_box">
       <div class ="profile_dashboard_title">
-        ADDRESS BOOK
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
@@ -71,7 +86,6 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          PROJECTS
         </div>
         <div class="profile_dashboard_body">
       <% if current_user.projects.any? %>
@@ -86,7 +100,7 @@
           0
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "Publish a project", new_project_path %>
+          <%= link_to "Add new project", new_project_path %>
         </div>
       <% end %>
       </div>
@@ -96,14 +110,13 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-           USERS
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
-          <%= @new_users %>
+          <%= @all_users %>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "See new users", users_path %>
+          <%= link_to "Browse users", users_path %>
         </div>
         </div>
       </div>
@@ -111,28 +124,26 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          List of projects:
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
-          <%= @new_projects %>
+          <%= @all_projects %>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "See new projects", projects_path %>
+          <%= link_to "Browse projects", projects_path %>
         </div>
         </div>
       </div>
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          Last update at:
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
           <%= @updated_at %>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "My profile", user_path(current_user) %>
+          <%= link_to "My last update", user_path(current_user) %>
         </div>
         </div>
       </div>

@@ -1091,7 +1091,6 @@
         .plans_faq_item_answer
           font-weight italics
           padding-bottom 20px
-
       /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
     .project_show_send_message
       color black
@@ -1110,3 +1109,420 @@
         padding 4px
         text-transform uppercase
         font-size 11px
+  /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
+  .body_project_index
+    body-mixin()
+    padding-bottom 1600px
+    #filters
+      list-style-type: none;
+      text-align: center;
+      margin: 0 6% 0px 0%;
+      padding-top 50px
+      position relative
+      z-index 3
+      top 50px
+    #filters li
+      cursor: pointer;
+      margin: 0 0.5% 6px 0.5%;
+      button(#F6F6F6)
+      color #606060
+      font-size 14px
+      border 3px solid white
+      -webkit-transition: all 0.15s ease-out;
+      -moz-transition: all 0.15s ease-out;
+      -o-transition: all 0.15s ease-out;
+      transition: all 0.15s ease-out;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    #filters li.active
+      button(Lead-Orange)
+      font-size 14px
+      border 3px solid white
+      border-radius: 3px;
+    .columns
+      column-mixin()
+      padding-top 0px
+      .index_welcome_message
+        background-image  url(/images/interior1.png)
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
+        position: relative
+        padding-top: 0px
+        padding-bottom: 250px
+        text-align center
+        text-shadow 1px 1px #606060
+        .index_welcome_message_title
+          z-index 2
+          position: relative;
+          top 110px
+          shift 0.1
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          color white
+          width 85%
+          text-transform: uppercase
+          margin-bottom: 6.25px
+          font-size 60px
+          font-weight: 700
+          -webkit-font-smoothing: antialiased
+          line-height: 1.1;
+          letter-spacing 1px
+          text-rendering: optimize legibility
+        .index_welcome_message_subtitle
+          z-index 2
+          position: relative;
+          top 115px
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          color white
+          width 60%
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          float: none;
+          margin-left: auto;
+          margin-right: auto
+          min-height: 1px;
+          padding-left: 12.5px;
+          padding-right: 12.5px;
+          margin-bottom: 25px
+          font-weight bold
+          line-height: 1.6em
+          letter-spacing 1px
+          font-size 26px
+      .index_container
+        z-index 2
+        position: relative;
+        top 85px
+        padding 50px
+        background-color #F6F6F6
+        .index_container_title
+          text-align center
+          margin-top 15px
+          color #606060
+          margin-bottom: 6.25px
+          font-size 26px
+          font-weight: 700
+          -webkit-font-smoothing: antialiased
+          line-height: 1.5em
+          letter-spacing 1px
+          text-rendering: optimize legibility
+        .index_container_subtitle
+          font-size: 18px
+          margin-top: 20px
+          text-align: center
+          line-height: 1.8em
+          letter-spacing 1px
+          color: #606060
+      .wookmark
+        wookmarkMixin()
+        top 100px
+        font-size 14px
+        #tiles
+          margin 0
+          #tiles li.inactive
+            visibility: hidden;
+            opacity: 0;
+        .lead_box.inactive
+          visibility: hidden;
+          opacity: 0;
+        .lead_box
+          leadBoxMixin()
+          .lead_title
+            background-color #F6F6F6
+            padding 15px
+            color Offer-Font-Color
+            font-weight bold
+            font-size 14px
+            .fa.fa-star
+              color #fcd229
+              font-size 16px
+              shift 0.05
+              &:hover
+                color Offer-Font-Color
+          .lead_body
+            font-size 14px
+            padding 15px
+            padding-top 0px
+            padding-bottom 0px
+            padding-left 0px
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+            color Offer-Font-Color
+            line-height 150%
+            width 300px
+            a:hover
+              opacity 0.7
+            .lead_subtitle
+              font-weight bold
+              -webkit-font-smoothing: antialiased
+            a
+              font-weight bold
+            .lead_subtitle_button a
+              text-decoration underline
+            .lead_subtitle_image
+              padding-left 0px
+              padding-right 0px
+            .like_heart
+              margin-left 260px
+              font-size 12px
+            .like_heart a
+              &:hover
+                color Lead-Orange
+            .new_like,
+            .edit_like,
+            .new_like input,
+            .edit_like input,
+            .edit_like button,
+            .new_like button,
+            .edit_like a,
+            .new_like a
+              font-size 10px
+              margin-left 125px
+              decoration none
+              border 0px
+              background-color white
+              .fa.fa-heart
+                color Lead-Orange
+                font-size 12px
+                &:hover
+                  color black
+              .fa.fa-heart-o
+                color black
+                font-size 12px
+                &:hover
+                  color Lead-Orange
+    .leads_index_no_leads_available
+      position: absolute
+      margin-top 30px
+      margin-left 210px
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      position fixed
+      blur-mixin(intensity = 0px)
+      padding: 50px;
+      top: 200px;
+      font-size 28px
+      font-weight bold
+      -webkit-font-smoothing: antialiased
+      max-width 1000px
+      min-width 400px
+      color: white;
+      letter-spacing: -1px;
+      line-height 150%
+  /* :::::::::::: STATICPAGES/INFO landing singlepage :::::::::::: */
+  .body_info_singlepage
+    font-family App-Font-Family
+    .section_welcome
+      padding 5% 10% 5% 10%
+      background-color white
+      color black
+      line-height: 1.8em;
+      letter-spacing: 1px;
+      .section_welcome_title
+        margin-top 70px
+        font-size 18px
+        button(black)
+        color white
+        margin-bottom 10px
+        font-weight: 700
+      .section_welcome_subtitle
+        font-size 14px
+        letter-spacing 1px
+        margin-top 30px
+        font-weight: 500
+      .section_welcome_subtitle a
+        text-decoration none
+        color #606060
+        &:hover
+          color Lead-Orange
+      .section_welcome_text
+        font-size 18px
+        line-height: 1.5em
+    .section_divided
+      font-size 18px
+      text-align center
+      .section_divided_part a
+        text-decoration none
+        button(black)
+        color Lead-Orange
+        &:hover
+          color white
+      .section_divided_part
+        width 33.3%
+        float left
+        padding 50px
+        background-color Lead-Orange
+        border 10px solid white
+        .section_divided_part_title
+          button(black)
+          color white
+        .section_divided_part_subtitle
+          color black
+    .section_how_it_works
+      padding 10px 0px 0px 0px
+      background-color white
+      letter-spacing 1.4px
+      font-weight: 700
+      font-size 22px
+      color black
+      .section_how_it_works_image
+        padding-bottom 100px
+        width:100%;
+        height:20em;
+        display:block;
+        background:url('/images/interior1.png')no-repeat center center;
+        /* Here, you have to add a basic/normal version of your image, which will be loaded by default, so for the background, set the path to your image-1*/
+        background-size:cover;
+        border:4px solid transparent
+      .section_how_it_works_title
+        margin 5% 0% 5% 0%
+        text-align center
+        font-size 22px
+        letter-spacing 1.4px
+        color black
+      .section_how_it_works_text
+        margin 60px 60px 60px 30px
+        font-size 14px
+        line-height 150%
+    .section_our_team
+      padding 0px 30px 60px 30px
+      background-color black
+      letter-spacing 1.4px
+      font-weight: 300
+      color white
+      .fa.fa-heart
+        color Lead-Orange
+        margin 60px 0px 15px 0px
+        font-size 40px
+        text-align center
+      .section_our_team_title
+        margin 20px 0px 60px 0px
+        font-size 28px
+        color white
+        text-align center
+        text-decoration none
+      .section_our_team_title a
+        margin 20px 0px 60px 0px
+        font-size 22px
+        color white
+        text-align center
+        text-decoration none
+        &:hover
+          color Lead-Orange
+      .section_our_team_text
+        margin 60px 60px 60px 30px
+        font-size 16px
+        line-height 150%
+    .section_budget
+      padding 0px 0px 60px 0px
+      background-color #606060
+      letter-spacing 1.4px
+      font-weight: 300
+      color Lead-Orange
+      text-align center
+      .fa.fa-calculator
+        margin 60px 60px 20px 30px
+        font-size 80px
+        color Lead-Orange
+      .section_budget_title
+        margin 20px 60px 60px 30px
+        font-size 32px
+        color Lead-Orange
+      .section_budget_text
+        margin 60px 60px 60px 30px
+        font-size 18px
+        line-height 150%
+    .section_what_customers_want
+      padding 60px 60px 60px 60px
+      background-color black
+      color #82c0c7
+      text-transform: uppercase
+      text-align center
+      .section_what_customers_want_title
+        margin-bottom 50px
+        font-size 48px
+      .fa.fa-check-square-o
+        font-size 30px
+        margin-right 10px
+      .section_what_customers_want_item
+        margin-bottom 20px
+        font-size 18px
+    .section_join_sosed
+      background-color Lead-Orange
+      color black
+      font-size 18px
+      text-transform: uppercase
+      font-weight bold
+      letter-spacing 1.4px
+      line-height 200%
+      .section_why_sosed_image
+        body-mixin(backgroundImage: url(/images/interior5.png))
+        padding-bottom 300px
+      .fa.fa-line-chart,
+      .fa.fa-paper-plane-o,
+      .fa.fa-thumbs-up
+        shift 0.44
+        padding 50px 0px 0px 0px
+        font-size 100px
+        background-color Lead-Orange
+        color black
+      .section_join_sosed_introduce,
+      .section_join_sosed_cooperation,
+      .section_join_sosed_success
+        text-align center
+        color black
+        padding 30px 50px 20px 50px
+        background-color Lead-Orange
+    .section_why_sosed
+      padding 0px 0px 60px 0px
+      letter-spacing 1.4px
+      font-weight: 300
+      color black
+      .section_why_sosed_title
+        margin 60px 60px 60px 30px
+        font-size 32px
+        color Lead-Blue
+        font-weight bold
+      .section_why_sosed_text
+        margin 60px 60px 30px 30px
+        font-size 18px
+        line-height 150%
+    .section_form
+      letter-spacing 1.4px
+      font-weight: 300
+      color black
+      #mc_embed_signup
+        background-color white
+        padding 0px 0px 30px 0px
+      #mc_embed_signup label
+        font-size 23px
+        color black
+        text-align center
+      #mce-EMAIL
+        width 85%
+        left 9%
+      #mc-embedded-subscribe
+        left 11%
+        background-color Lead-Orange
+        width 80%
+    .section_company_info
+      text-align center
+      background-color white
+      color black
+      font-size 14px
+      .section_company_info_name,
+      .section_company_info_street,
+      .section_company_info_city,
+      .section_company_info_tax_number,
+      .section_company_info_bank_account,
+      .section_company_info_contact
+        padding 7px 0px 0px 0px
+      &:last-child
+        padding-bottom 80px
