@@ -1,1 +1,0 @@
-../../../db/migrate/20140822005646_add_column_to_users.rb

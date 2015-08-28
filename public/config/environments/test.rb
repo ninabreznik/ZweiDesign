@@ -1,1 +1,0 @@
-../../../config/environments/test.rb

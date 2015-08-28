@@ -1,1 +1,0 @@
-../../../db/migrate/20140821233840_change_wallet_to_users.rb

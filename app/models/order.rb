@@ -8,7 +8,7 @@ class Order < ActiveRecord::Base
 
   def paypal_url(return_url, notify_url)
     values = {
-      :business => 'nina.breznik@sosed.si',
+      :business => 'contact@visionbaker.com',
       :cmd => '_xclick',
       :upload => 1,
       :return => return_url,
@@ -17,8 +17,8 @@ class Order < ActiveRecord::Base
       :currency_code => 'EUR'
     }
       values.merge!({
-        "amount" => 10,
-        "item_name" => 'Kontakt',
+        "amount" => 1,
+        "item_name" => 'ZweiDesign Customer Lead',
         "item_number" => id,
         "quantity" => 1
       })

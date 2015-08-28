@@ -72,7 +72,7 @@
       margin: 0 0.5% 6px 0.5%;
       button(#F6F6F6)
       color #606060
-      font-size 11px
+      font-size 14px
       border 3px solid white
       -webkit-transition: all 0.15s ease-out;
       -moz-transition: all 0.15s ease-out;
@@ -83,7 +83,7 @@
       border-radius: 3px;
     #filters li.active
       button(Lead-Orange)
-      font-size 11px
+      font-size 14px
       border 3px solid white
       border-radius: 3px;
     .columns
@@ -219,7 +219,7 @@
       margin: 0 0.5% 6px 0.5%;
       button(#F6F6F6)
       color #606060
-      font-size 11px
+      font-size 14px
       border 3px solid white
       -webkit-transition: all 0.15s ease-out;
       -moz-transition: all 0.15s ease-out;
@@ -230,7 +230,7 @@
       border-radius: 3px;
     #filters li.active
       button(Lead-Orange)
-      font-size 11px
+      font-size 14px
       border 3px solid white
       border-radius: 3px;
     .columns
@@ -393,7 +393,7 @@
   /* :::::::::::: ORDERS/show => buy lead :::::::::::: */
   .body_orders_show
     body-mixin(backgroundImage: url(/images/interior3.png))
-    padding-bottom 600px
+    padding-bottom 100px
     .back_to_main_page_button
       width 100%
       height 100%
@@ -401,20 +401,23 @@
       top 0
       left 0
     .order_show
-      shift 0.15
-      opacity 0.9
-      margin 15px 15px 0px 0px
-      padding 30px
+      background: #FEFEFE;
+      border: 2px solid #FAFAFA;
+      box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+      opacity: 0.9;
+      margin 37px 7px 80px 20px
+      padding 4.5%
       width 70%
       max-width 1290px
-      min-width 600px
+      min-width 800px
       -webkit-column-break-inside: avoid
       -moz-column-break-inside: avoid
       column-break-inside: avoid
       background-color white
       line-break 1px
+      top 100px
       .order_show_title
-        background-color Lead-Orange
+        background-color #F6F6F6
         padding 30px
         font-weight bold
         text-align center
@@ -467,7 +470,7 @@
           width 70%
           line-height 150%
       .payment_buttons_choose_payment_text
-        text-align center
+        shift 0.31
         padding 50px 10px 30px 0px
       .order_show_buy_buttons
         padding 7px
@@ -523,56 +526,55 @@
         button(color = Lead-Orange-dark)
   /* :::::::::::: BANK TRANSACTION => offer for the lead :::::::::::: */
   .body_bank_transaction
-    body-mixin(backgroundImage: url(/images/interior4.png))
+    body-mixin(backgroundImage: url(/images/interior1.png))
+    font-family App-Font-Family
     margin-top 29px
     .offer
-      center(720px)
-      opacity 0.95
-      width 63%
-      position relative
-      top 10px
-      padding 40px
-      padding-top 70px
-      padding-bottom 70px
+      background: #FEFEFE;
+      border: 2px solid #FAFAFA;
+      box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+      opacity: 0.9;
+      margin 37px 7px 80px 20px
+      padding 4.5%
+      width 70%
+      max-width 1290px
+      min-width 800px
+      -webkit-column-break-inside: avoid
+      -moz-column-break-inside: avoid
+      column-break-inside: avoid
       background-color white
+      line-break 1px
+      top 100px
       .offer_title
-        color Offer-Font-Color
+        background-color #F6F6F6
+        padding 30px
         font-weight bold
-        font-size 28px
-        padding-bottom 60px
+        text-align center
+        -webkit-font-smoothing: antialiased
+        font-size 40px
+        margin-bottom 40px
       .offer_company_info
         color Offer-Font-Color
-        border 1px solid #e7e7e7
-        box-shadow inset 0 0 0 0 #CCC
-        border-radius 4px
-        padding 4px 7px 4px 10px
-        background-color Lead-Subtitle
-      .offer_company_info td:last-child
+        font-size 14px
+        padding 15px 30px 10px 15px
         text-align left
-      .offer_company_info td:first-child
-        text-align left
-        width 109px
       .offer_date
         color Offer-Font-Color
-        font-size 13px
-        margin 10px 10px 20px 10px
+        font-size 14px
+        padding 15px 30px 10px 15px
         text-align left
       .offer_sosed_info
         margin-top 20px
         color Offer-Font-Color
         text-align left
         border 1px solid #e7e7e7
-        box-shadow inset 0 0 0 0 #CCC
-        border-radius 4px
         .offer_sosed_info_price td,
           font-weight bold
-          padding 30px 30px 15px 15px
-          font-size 16px
-          background-color Lead-Subtitle
-        .offer_sosed_info_item td
-          background-color Lead-Subtitle
           padding 15px 30px 10px 15px
-          font-size 12px
+          font-size 16px
+        .offer_sosed_info_item td
+          padding 15px 30px 10px 15px
+          font-size 14px
       .offer_show_lead
         margin-top 37px
         padding-bottom 20px
@@ -583,19 +585,17 @@
         column-break-inside: avoid
         background-color white
         background-clip padding-box
-        border-radius 4px
         box-shadow 0 1px 2px rgba(0, 0, 0, 0.05)
         border 1px solid #ccc
         line-break 1px
         .offer_show_lead_title
-          background-color Lead-Orange
-          border-top-left-radius 4px
-          border-top-right-radius 4px
-          padding 10px
+          background-color #F6F6F6
+          padding 30px
           font-weight bold
+          text-align center
           -webkit-font-smoothing: antialiased
           font-size 20px
-          border-bottom 1px solid #e7e7e7
+          margin-bottom 40px
         .offer_show_lead_body
           font-size 16px
           padding-top 3px
@@ -614,8 +614,7 @@
             color red
       .offer_instructions
         margin-top 20px
-        font-size 12px
-        font-weight bold
+        font-size 14px
   /* :::::::::::: ORDERS/RESERVED => Reserved Leads :::::::::::: */
   .body_orders_reserved
     body-mixin(backgroundImage: url(/images/interior5.png))
@@ -696,7 +695,9 @@
       color Lead-Orange
   /* :::::::::::: ORDERS/ADDRESS_BOOK => Bought Leads :::::::::::: */
   .body_orders_address_book
-    body-mixin(backgroundImage: url(/images/interior6.png))
+    body-mixin()
+    background-image  url(/images/interior1.png)
+    padding-bottom 10%
     .columns
       column-mixin()
       .wookmark
@@ -781,6 +782,8 @@
   /* :::::::::::: PROFILE :::::::::::: */
   .body_profile
     body-mixin()
+    background-image  url(/images/interior1.png)
+    padding-bottom 10%
     .columns
       column-mixin()
       .wookmark
@@ -938,7 +941,8 @@
       margin-left 70px
       .signup_title
         padding-left 10%
-        font-size 24px
+        font-size 16px
+        background-color Lead-Orange-Dark
         color Lead-Orange
         text-transform uppercase
         margin-bottom 20px
@@ -1316,8 +1320,10 @@
   /* :::::::::::: WALLET_PAYMENT => adding money to the wallet :::::::::::: */
   /* :::::::::::: same styling also for ORDERS/WALLET_PAYMENT_FOR LEADS:::::::::::: */
   .body_wallet_payment
-    body-mixin(backgroundImage: url(/images/interior6.png))
-    margin-top 29px
+    body-mixin()
+    background-image  url(/images/interior1.png)
+    margin-top 35px
+    padding-bottom 100px
     .wallet_payment_offer
       center(720px)
       opacity 0.95
@@ -1458,13 +1464,13 @@
   .body_info_singlepage
     font-family App-Font-Family
     .section_welcome
-      margin-top 36px
       padding 5% 10% 5% 10%
       background-color white
       color black
       line-height: 1.8em;
       letter-spacing: 1px;
       .section_welcome_title
+        margin-top 36px
         font-size 18px
         button(black)
         color white
@@ -1474,7 +1480,6 @@
         font-size 22px
         letter-spacing 2px
         margin-bottom 30px
-        text-align justify
         font-weight: 500
       .section_welcome_subtitle a
         text-decoration none
@@ -1484,7 +1489,6 @@
       .section_welcome_text
         font-size 18px
         line-height: 1.5em
-        text-align justify
     .section_divided
       font-size 18px
       text-align center
@@ -1509,18 +1513,19 @@
       padding 0px 0px 60px 0px
       background-color white
       letter-spacing 1.4px
-      font-weight: 300
+      font-weight: 700
+      font-size 32px
       color black
       .section_how_it_works_image
         body-mixin()
         background-image  url(/images/interior1.png)
-        padding-bottom 200px
+        padding-bottom 400px
       .section_how_it_works_title
-        margin 5% 5% 5% 35%
+        margin 5% 0% 5% 0%
+        text-align center
         font-size 32px
+        letter-spacing 1.4px
         color black
-        text-align left
-        font-weight 700
       .section_how_it_works_text
         margin 60px 60px 60px 30px
         font-size 18px
@@ -1786,7 +1791,7 @@
       margin: 0 0.5% 6px 0.5%;
       button(#F6F6F6)
       color #606060
-      font-size 11px
+      font-size 14px
       border 3px solid white
       -webkit-transition: all 0.15s ease-out;
       -moz-transition: all 0.15s ease-out;
@@ -1797,47 +1802,54 @@
       border-radius: 3px;
     #filters li.active
       button(Lead-Orange)
-      font-size 11px
+      font-size 14px
       border 3px solid white
       border-radius: 3px;
     .columns
       column-mixin()
       padding-top 0px
       .index_welcome_message
+        background-image  url(/images/interior1.png)
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
         position: relative
-        padding-top: 195px
-        padding-bottom: 195px
+        padding-top: 150px
+        padding-bottom: 250px
         text-align center
         text-shadow 1px 1px #606060
-        overflow hidden
-        .video
-          z-index 1
-          opacity 0.8
-          position absolute
-          top -100px
-          left 0
-          min-width 100%
-          min-height 100%
-          width auto
-          height auto
         .index_welcome_message_title
           z-index 2
           position: relative;
           top 110px
+          shift 0.22
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
           color white
+          width 55%
           text-transform: uppercase
           margin-bottom: 6.25px
-          font-size 70px
+          font-size 60px
           font-weight: 700
           -webkit-font-smoothing: antialiased
           line-height: 1.1;
           letter-spacing 1px
-          text-rendering: optimizelegibility
+          text-rendering: optimize legibility
         .index_welcome_message_subtitle
           z-index 2
           position: relative;
           top 115px
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
           color white
+          width 60%
+          padding 20px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
           float: none;
           margin-left: auto;
           margin-right: auto
@@ -1848,7 +1860,7 @@
           font-weight bold
           line-height: 1.6em
           letter-spacing 1px
-          font-size 18px
+          font-size 26px
       .index_container
         z-index 2
         position: relative;
@@ -1860,12 +1872,12 @@
           margin-top 15px
           color #606060
           margin-bottom: 6.25px
-          font-size 32px
+          font-size 26px
           font-weight: 700
           -webkit-font-smoothing: antialiased
           line-height: 1.5em
           letter-spacing 1px
-          text-rendering: optimizelegibility
+          text-rendering: optimize legibility
         .index_container_subtitle
           font-size: 18px
           margin-top: 20px
@@ -1876,6 +1888,7 @@
       .wookmark
         wookmarkMixin()
         top 100px
+        font-size 14px
         #tiles
           margin 0
           #tiles li.inactive

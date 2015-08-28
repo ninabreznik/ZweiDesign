@@ -1,1 +1,0 @@
-../../../config/initializers/formtastic.rb

@@ -1,1 +1,0 @@
-../../../config/initializers/active_admin.rb

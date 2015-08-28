@@ -5,11 +5,11 @@
 
 // :::::::::::: BOX SIZING :::::::::::::: //
 
-html 
+html
   box-sizing border-box
   background-color #F6F6F6
 
-*, *:before, *:after 
+*, *:before, *:after
   box-sizing inherit
 
 // :::::::::::: COLORS :::::::::::::: //
@@ -21,7 +21,7 @@ Lead-Orange-dark = #FFAE4D
 Lead-Subtitle = #F0F0F0
 
 // ::: ORDER ::: //
-Order-Orange = #FFAE4D  
+Order-Orange = #FFAE4D
 Order-Orange-light = #FFAE4D
 Order-Subtitle = #FFEED9
 
@@ -29,26 +29,26 @@ Order-Subtitle = #FFEED9
 // ::: MENU ::: //
 Menu-Bottom-Color = white
 Menu-Bottom-Button-Color = black
-Menu-Bottom-Button-Hover-Color = #FFAE4D 
+Menu-Bottom-Button-Hover-Color = #FFAE4D
 Menu-Top-Color = white
 Menu-Top-Button-Color = black
-Menu-Top-Button-Hover-Color = #FFAE4D 
+Menu-Top-Button-Hover-Color = #FFAE4D
 
 // ::: BODY ::: //
 Background-Color = #EEEEEE
-Buy-Button-Color = #FFAE4D 
+Buy-Button-Color = #FFAE4D
 
 // ::: BODY ::: //
 Offer-Font-Color = #606060
 
 // ::: FONT ::: //
-App-Font-Family = Circular,"Helvetica Neue",Helvetica,Arial,sans-serif
+App-Font-Family = "Open Sans","Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif
 
 
 // :::::::::::: MIXINS :::::::::::::: //
 
-body-mixin() 
-  background-image  backgroundImage  
+body-mixin()
+  background-image  backgroundImage
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -57,15 +57,16 @@ body-mixin()
   background-color #F6F6F6
   margin 0px
   font-size 12px
+  font-weight: 300
   color Offer-Font-Color
   font-family App-Font-Family
-  a  
+  a
     text-decoration none
     color Offer-Font-Color
     font-family App-Font-Family
 
-mobile-body-mixin(backgroundImage = url(/images/cream_pixels.png)) 
-  background-image  backgroundImage  
+mobile-body-mixin(backgroundImage = url(/images/cream_pixels.png))
+  background-image  backgroundImage
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -75,28 +76,28 @@ mobile-body-mixin(backgroundImage = url(/images/cream_pixels.png))
   font-size 8px
   color Offer-Font-Color
   font-family App-Font-Family
-  a  
+  a
     text-decoration none
     color Offer-Font-Color
     font-family App-Font-Family
 
 blur-mixin(intensity = 1.6px)
-  -webkit-filter blur(intensity) 
-  -moz-filter blur(intensity) 
-  -o-filter blur(intensity) 
+  -webkit-filter blur(intensity)
+  -moz-filter blur(intensity)
+  -o-filter blur(intensity)
   filter blur(intensity)
-  
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::: 
-                LEAD LISTING MIXINS 
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                LEAD LISTING MIXINS
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  
+
 column-mixin(defaultTop = 35px)
   position: relative;
   margin-top: defaultTop
   margin-bottom 200px
   padding-top 40px
   padding-bottom 20px
-  
+
 wookmarkMixin(defautPadding = 0px)
   list-style-type: none;
   position: relative; /** Needed to ensure items are laid out relative to this container **/
@@ -120,7 +121,7 @@ mobileLeadBoxMixin(defaultMarginLeft = 40px)
   background: #FEFEFE;
   border: 2px solid #FAFAFA;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  opacity: 0.9;  
+  opacity: 0.9;
 
 bottomButtonMixin(defaultFontSize = 12px)
   padding 8px
@@ -138,7 +139,7 @@ bottomButtonMixin(defaultFontSize = 12px)
   a
     text-decoration none
     color Menu-Bottom-Button-Color
-    
+
 
 @import "app_below_5000px"
 @import "app_below_804px"
@@ -165,5 +166,5 @@ bottomButtonMixin(defaultFontSize = 12px)
 @import "footer_below_1040px"
 @import "footer_below_935px"
 @import "footer_below_740px"
-@import "footer_below_630px" 
-@import "footer_below_490px" 
+@import "footer_below_630px"
+@import "footer_below_490px"

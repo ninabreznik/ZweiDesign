@@ -37,7 +37,7 @@ class OrdersController < ApplicationController
     else
      # @order.paypal_payment_notification
     end
-    redirect_to payment_confirmation_path
+    redirect_to payment_confirmation_url
   end
 
   def destroy
