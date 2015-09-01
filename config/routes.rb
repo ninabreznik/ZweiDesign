@@ -27,7 +27,7 @@ Rails.application.routes.draw do
     match '/find_professional',                   to: 'leads#new',      via: 'get'
 
   resources :paypal_notifications, only: [:create]
-    match '/paypal_notifications',       to: 'paypal_notifications#create',        via: 'post'
+    match '/paypal_notification',       to: 'paypal_notifications#create',        via: 'post'
 
   resources :orders
     get '/messages' => 'conversations#index'

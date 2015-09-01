@@ -22,7 +22,7 @@ class Order < ActiveRecord::Base
         "item_number" => id,
         "quantity" => 1
       })
-    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
+   "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
 

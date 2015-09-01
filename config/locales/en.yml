@@ -349,7 +349,7 @@ en:
     customer-info-explanation: "available only if you buy this lead"
     to-see-address-book: "To see customers in your Address book you need to"
     signed_in_but_no_orders: "Here you will find all the leads, for which you didn't finish payment yet."
-    signed_in_but_no_orders: "Here you will find all the your bought leads - Address book of your customers."
+    signed_in_but_no_bought: "Here you will find all the your bought leads - Address book of your customers."
 # Buttons
   ordersindex-buttons:
     buy: "Buy"

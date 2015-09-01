@@ -9,12 +9,12 @@ private
     if self.status == "Completed"
       @order = Order.find_by_id(self.cart_id)
       @order.update_attributes(:paid => true)
-      @beta = User.find_by_id(@order.selected.user_id)
-      create_conversation(@beta)
+      # @beta = User.find_by_id(@order.selected.user_id)
+      # create_conversation(@beta)
     end
   end
 
-  def create_conversation(beta)
-   current_user.send_message(beta, "Hello, I am very interested in your project. Could you, please, tell me more about what exactly are you looking for? Thank you in advance.", "New offer")
-  end
+  # def create_conversation(beta)
+  #  current_user.send_message(beta, "Hello, I am very interested in your project. Could you, please, tell me more about what exactly are you looking for? Thank you in advance.", "New offer")
+  # end
 end
