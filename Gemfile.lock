@@ -187,10 +187,6 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    paypal-sdk-rest (1.3.3)
-      multi_json (~> 1.0)
-      uuidtools (~> 2.1)
-      xml-simple
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -267,10 +263,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    uuidtools (2.1.5)
     warden (1.2.3)
       rack (>= 1.0)
-    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
@@ -289,7 +283,6 @@ DEPENDENCIES
   mailboxer
   omniauth-facebook
   paperclip (~> 4.2)
-  paypal-sdk-rest
   puma
   rails (= 4.1.0)
   railties (~> 4.1.0)

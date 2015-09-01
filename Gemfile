@@ -10,8 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 
 # gem 'turbolinks'
 
-#paypal
-gem 'paypal-sdk-rest'
 
 gem 'rmagick', '2.13.2'
 

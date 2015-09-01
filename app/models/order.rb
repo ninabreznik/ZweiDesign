@@ -8,7 +8,7 @@ class Order < ActiveRecord::Base
 
   def paypal_url(return_url, notify_url)
     values = {
-      :business => 'contact@visionbaker.com',
+      :business => 'nina.breznik@sosed.si',
       :cmd => '_xclick',
       :upload => 1,
       :return => return_url,
@@ -22,7 +22,7 @@ class Order < ActiveRecord::Base
         "item_number" => id,
         "quantity" => 1
       })
-    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
+    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
 
