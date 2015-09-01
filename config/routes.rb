@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'projects#index'
 
-  post 'paypal_confirm'  => 'orders#paypal_payment_notification'  #'paypal_confirm' is a callback I provide to Paypal and it triggers 'orders#paypal_confirm'
+  # post 'paypal_confirm'  => 'orders#paypal_payment_notification'  #'paypal_confirm' is a callback I provide to Paypal and it triggers 'orders#paypal_confirm'
 
   get 'leads/index'
   get 'leads/show'

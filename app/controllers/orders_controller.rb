@@ -35,7 +35,7 @@ class OrdersController < ApplicationController
       new_wallet_status = current_user.wallet - @price
       current_user.update_attributes(:wallet => new_wallet_status)
     else
-     # @order.paypal_payment_notification
+    #  @order.paypal_payment_notification
     end
     redirect_to payment_confirmation_url
   end

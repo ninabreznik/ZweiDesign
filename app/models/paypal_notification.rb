@@ -15,6 +15,6 @@ private
   end
 
   def create_conversation(beta)
-   current_user.send_message(beta, "Hello, I am very interested in your project. Could you, please, tell me more about what exactly are you looking for? Thank you in advance.", "Someone is interested in your project")
+   current_user.send_message(beta, "Hello, I am very interested in your project. Could you, please, tell me more about what exactly are you looking for? Thank you in advance.", "New offer")
   end
 end
