@@ -12,14 +12,14 @@ class Order < ActiveRecord::Base
       :cmd => '_xclick',
       :upload => 1,
       :return => return_url,
-      :invoice => SecureRandom.hex[0..9],
+      :invoice => id,
       :notify_url => notify_url,
       :currency_code => 'EUR'
     }
       values.merge!({
-        "amount" => 1,
         "item_name" => 'ZweiDesign Customer Lead',
         "item_number" => id,
+        "amount" => 1,
         "quantity" => 1
       })
    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
