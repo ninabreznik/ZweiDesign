@@ -19,7 +19,7 @@ class Order < ActiveRecord::Base
       values.merge!({
         "item_name" => 'ZweiDesign Customer Lead',
         "item_number" => id,
-        "amount" => 1,
+        "amount" => 10,
         "quantity" => 1
       })
    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query

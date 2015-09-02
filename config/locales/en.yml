@@ -345,7 +345,7 @@ en:
 
 # Notifications
   ordersindex-notifications:
-    customer-info: "Customer contact information"
+    customer-info: "CUSTOMER CONTACT INFO"
     customer-info-explanation: "available only if you buy this lead"
     to-see-address-book: "To see customers in your Address book you need to"
     signed_in_but_no_orders: "Here you will find all the leads, for which you didn't finish payment yet."
