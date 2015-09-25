@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     match '/users',                   to: 'users#index',      via: 'get'
     member do
       post 'tracking_id'
+      post 'affiliator'
     end
   end
   resources :projects

@@ -11,8 +11,6 @@
         <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
           <%= u.label :"Type your desired tracking id "  %>
           <%= u.text_field :tracking_id %>
-          <%= u.hidden_field :affiliator, value: true %>
-
           <%= u.submit "Save" %>
         <% end %>
       <% else %>
