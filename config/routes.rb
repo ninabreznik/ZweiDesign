@@ -11,11 +11,14 @@ Rails.application.routes.draw do
       end
     end
 
-  resources :users
+  resources :users do
     # match '/users/:id/edit',          to: 'users#edit',       via: 'edit'
     match '/users/:id',               to: 'users#show',       via: 'get'
     match '/users',                   to: 'users#index',      via: 'get'
-
+    member do
+      post 'tracking_id'
+    end
+  end
   resources :projects
     match '/projects/:id',            to: 'projects#show',     via: 'get'
     match '/projects',                to: 'projects#index',    via: 'get'
@@ -62,6 +65,7 @@ Rails.application.routes.draw do
   get '/no_message' => 'static_pages#no_message'
   get '/payment_type' => 'static_pages#payment'
   get '/payment_confirmation' => 'static_pages#payment_confirmation'
+  get '/affiliate_program' => 'static_pages#affiliate_program', :constraints => { :search => /[^\/]*/ }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

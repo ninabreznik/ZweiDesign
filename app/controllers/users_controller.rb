@@ -31,6 +31,18 @@ class UsersController < ApplicationController
     @ceramics_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-10'}").count
   end
 
+  def tracking_id
+    tracking_id = params[:user][:tracking_id].gsub(/\W/, '')
+    @user = current_user
+    @user.tracking_id = tracking_id
+    @user_tracking_link = new_lead_url(ref: @user.tracking_id)
+    # if @user.save
+    #   UserMailer.affiliation_code(@user).deliver
+    # end
+    @user.save
+    redirect_to affiliate_program_path
+  end
+
   def destroy
   end
 

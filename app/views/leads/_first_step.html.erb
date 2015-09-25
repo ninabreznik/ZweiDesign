@@ -25,6 +25,8 @@
   <%= l.label :"#{I18n.t'lead-new.form.description'}" %>
   <%= l.text_area :description %>
 </div>
-<!-- <div class="lead_new_form_description"> 
+
+<%= l.hidden_field :tracking_link, value: request.url %>
+<!-- <div class="lead_new_form_description">
   <%= l.file_field :picture %>
 </div><br> -->

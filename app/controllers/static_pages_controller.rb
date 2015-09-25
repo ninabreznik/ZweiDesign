@@ -18,6 +18,20 @@ class StaticPagesController < ApplicationController
   def privacy
   end
 
+  def affiliate_program
+    @user = current_user
+    if @user.present?
+      @tracking_id = @user.tracking_id
+      @affiliate_link = new_lead_url(ref: @user.tracking_id)
+      @my_affiliations = Lead.all.where(tracking_link: @affiliate_link)
+    end
+  end
+
+  def tracking_link
+    @tracking_id = current_user.tracking_id
+    @tracking_link = leads_new_path(id: @tracking_id)
+  end
+
   def membership
   end
 

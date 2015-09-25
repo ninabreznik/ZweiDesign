@@ -1,5 +1,6 @@
 class LeadsController < ApplicationController
 
+
   def index
     @leads = Lead.all
     @lead = Lead.find_by_id(params[:id])
@@ -107,6 +108,8 @@ class LeadsController < ApplicationController
 
   private
 
+
+
   def lead_params
     params.require(:lead).permit(
       :name,
@@ -124,7 +127,8 @@ class LeadsController < ApplicationController
       :selected_id,
       :payer_id,
       :paid_id,
-      :paid
+      :paid,
+      :tracking_link
     )
   end
 

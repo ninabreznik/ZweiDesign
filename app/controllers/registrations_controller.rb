@@ -1,5 +1,6 @@
 class RegistrationsController < Devise::RegistrationsController
 
+after_filter :store_location
 
 def create
   super()
@@ -11,8 +12,14 @@ def create
   end
 end
 
+
+def store_location
+  # store last url as long as it isn't a /users path
+  session[:previous_url] = request.fullpath unless request.fullpath =~ /\/users/
+end
+
 def after_sign_up_path_for(resource)
-  edit_user_registration_path(resource)
+  session[:previous_url] || edit_user_registration_path(resource)
 end
 
 
@@ -23,6 +30,7 @@ end
 def account_update_params
   devise_parameter_sanitizer.sanitize(:account_update)
 end
+
 
 private
 
@@ -50,7 +58,9 @@ private
       :country,
       :password,
       :password_confirmation,
-      :current_password)
+      :current_password,
+      :tracking_id,
+      :affiliator)
   end
 
   def account_update_params
@@ -73,7 +83,10 @@ private
       :country,
       :password,
       :password_confirmation,
-      :current_password)
+      :current_password,
+      :tracking_id,
+      :provider,
+      :affiliator)
   end
 
   protected
