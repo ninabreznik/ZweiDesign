@@ -1404,8 +1404,8 @@
       padding-top 70px
       padding-bottom 70px
       background-color white
+      line-height: 1.8em;
       .affiliate_program_offer_title
-        center(420px)
         color Offer-Font-Color
         font-weight bold
         font-size 28px
@@ -1413,10 +1413,70 @@
       .affiliate_program_offer_promotion
         margin-top 20px
         margin-bottom 50px
-        font-size 13px
+        font-size 14px
         font-weight bold
         background-color Lead-Orange
-        padding 4px
+        padding 10px
+        [type="submit"]
+          button(color: Offer-Font-Color)
+          &:hover
+            button(color: black)
+        [type="text"]
+          position relative
+          blur-mixin(intensity = 0.7px)
+          background: rgb(0, 0, 0); /* fallback color */
+          background-color white
+          opacity 0.95
+          -webkit-column-break-inside: avoid
+          -moz-column-break-inside: avoid
+          column-break-inside: avoid
+          text-decoration none
+          color Offer-Font-Color
+          padding 20px
+          font-size 16px
+          -webkit-font-smoothing: antialiased
+          height 15px
+          width 190px
+          max-width 250px
+          min-width 100px
+          margin-bottom 7px
+          margin-top 7px
+          line-break 1px
+          border 2px solid #F6F6F6
+          &:hover
+            background-color #F0F0F0
+        .js-textareacopybtn
+          button(color: Offer-Font-Color)
+          &:hover
+            button(color: black)
+        .js-copytextarea
+          position relative
+          blur-mixin(intensity = 0.7px)
+          background: rgb(0, 0, 0); /* fallback color */
+          background-color white
+          opacity 0.95
+          -webkit-column-break-inside: avoid
+          -moz-column-break-inside: avoid
+          column-break-inside: avoid
+          text-decoration none
+          color Offer-Font-Color
+          padding 20px
+          font-size 16px
+          -webkit-font-smoothing: antialiased
+          height 50px
+          width 500px
+          max-width 510px
+          min-width 50px
+          margin-bottom 7px
+          margin-top 7px
+          line-break 1px
+          border 2px solid #F6F6F6
+          &:hover
+            background-color #F0F0F0
+      .affiliate_program_offer_promotion a
+        button(color: Offer-Font-Color)
+        &:hover
+          button(color: black)
       .affiliate_program_offer_company_info
         color Offer-Font-Color
         border 1px solid #e7e7e7
@@ -1431,7 +1491,7 @@
         width 109px
       .affiliate_program_offer_date
         color Offer-Font-Color
-        font-size 13px
+        font-size 14px
         margin 10px 10px 20px 10px
         text-align left
       .affiliate_program_offer_sosed_info
@@ -1451,13 +1511,12 @@
           font-weight bold
           background-color #F6F6F6
           padding 15px 30px 0px 30px
-          font-size 12px
+          font-size 14px
         .affiliate_program_offer_sosed_info_item td:last-child
           padding 15px 30px 15px 30px
       .affiliate_program_offer_instructions
         margin-top 20px
-        font-size 12px
-        font-weight bold
+        font-size 14px
   /* :::::::::::: DEVISE ALERTS :::::::::::: */
   .alert.alert-notice
     position relative

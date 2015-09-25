@@ -1,45 +1,68 @@
 <div class="body_affiliate_program">
 <div class="affiliate_program_offer">
+  <div class="affiliate_program_offer_title">
+    Welcome to affiliate program!
+  </div>
   <div class="affiliate_program_offer_promotion">
       <% if current_user.tracking_id == nil %>
-      Generate a referral URL (www.zweidesign.co/your_refferal_code)
-      <br>
+      GENERATE YOUR TRACKING ID
       <br>
       <br>
         <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
-          <%= u.label :"Type your url refferal code /?ref="  %>
+          <%= u.label :"Type your desired tracking id "  %>
           <%= u.text_field :tracking_id %>
-          
-          <%= u.submit "Save the refferal code" %>
+          <%= u.hidden_field :affiliator, value: true %>
+
+          <%= u.submit "Save" %>
         <% end %>
       <% else %>
-          Your tracking code = <%= @tracking_id %>
+          YOUR TRACKING LINK
           <br>
-          Your referral link = <%= @affiliate_link %>
-          <br>
-          <br>
-          Leads from your affiliations:
-          <br>
-          <% @my_affiliations.each do |lead| %>
-          <%= link_to ">>#{lead.business_type}", lead_path(lead) %>
-          <br>
+            <textarea class="js-copytextarea"><%= @affiliate_link %></textarea>
+            <br>
+            <button class="js-textareacopybtn">Copy</button>
+<!-- ******************** START of Copy to clipboard script ***************************** -->
+          <script>
+            var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+
+            copyTextareaBtn.addEventListener('click', function(event) {
+            var copyTextarea = document.querySelector('.js-copytextarea');
+            copyTextarea.select();
+
+            try {
+              var successful = document.execCommand('copy');
+              var msg = successful ? 'successful' : 'unsuccessful';
+              console.log('Copying text command was ' + msg);
+            } catch (err) {
+              console.log('Oops, unable to copy');
+            }
+            });
+          </script>
+<!-- ******************** END of Copy to clipboard script ***************************** -->
+          <% if @my_affiliations.any? %>
+            <br>
+            <br>
+            <br>
+            LEADS THROUGH YOUR REFFERALS:
+            <br>
+            <% @my_affiliations.each do |lead| %>
+            <br>
+            <%= link_to "#{lead.business_type}", lead_path(lead) %>
+            <br>
+            <% end %>
           <% end %>
       <% end %>
   </div>
   <div class="affiliate_program_offer_title">
-    Become an affiliate
-  </div>
-  <div class="affiliate_program_offer_promotion">
-    Join an affiliate network that pays out more than $2 million dollars per year
-  </div>
-  <div class="affiliate_program_offer_title">
     How the affiliate program works
   </div>
+  <iframe src="http://kni.sh/rejectjs-2015/", width=100%, height=100%>
+  </iframe>
   <div class="affiliate_program_offer_promotion">
-    Create an Envato Account, then send traffic to any page on Envato Market while adding your account username to the end of the URL.
+    Create a ZweiDesign Account, then send traffic to the Find & hire page while adding your tracking id to the end of the URL.
   </div>
   <div class="affiliate_program_offer_instructions">
-    When a new user clicks your referral link, signs up for an account and purchases an item (or deposits money) via any of the Envato Market sites, you will receive 30% of that person's first cash deposit or purchase price. If they deposit $20 into their account, you get $6. If they buy a $200 item, you get $60.
+    When a new user clicks your referral link and places an order, providers are notified. When a provider purchases the lead (or deposits money), you will receive 50% of that person's first cash deposit or purchase price. If they deposit €20 into their account, you get €10. If they buy leads worth €100, you get €50.
     By becoming an Affiliate, you agree to the Affiliate Program Terms.
   </div>
   <br>
