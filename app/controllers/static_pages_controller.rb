@@ -48,6 +48,8 @@ class StaticPagesController < ApplicationController
         @published_projects = current_user.projects.count
         @time_of_last_published_project = current_user.projects.last.created_at
       end
+      @affiliate_link = new_lead_url(ref: current_user.tracking_id)
+      @my_affiliations = Lead.all.where(tracking_link: @affiliate_link)
     end
   end
 

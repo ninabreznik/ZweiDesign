@@ -233,7 +233,7 @@ html {
                 LEAD LISTING MIXINS
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
+/* line 2112 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/tables.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -4448,7 +4448,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #606060;
+    background-color: #222;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -4463,13 +4463,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:hover,
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:focus {
-    background-color: #5b5b5b;
+    background-color: #202020;
     color: #f7f7f7;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:active {
-    background-color: #565656;
+    background-color: #1f1f1f;
   }
 
 /* line 1450 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4477,7 +4477,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #222;
+    background-color: #606060;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -4492,13 +4492,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:hover:hover,
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:hover:focus {
-    background-color: #202020;
+    background-color: #5b5b5b;
     color: #f7f7f7;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion .js-textareacopybtn:hover:active {
-    background-color: #1f1f1f;
+    background-color: #565656;
   }
 
 /* line 1452 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4539,7 +4539,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #606060;
+    background-color: #222;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -4554,13 +4554,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:hover,
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:focus {
-    background-color: #5b5b5b;
+    background-color: #202020;
     color: #f7f7f7;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:active {
-    background-color: #565656;
+    background-color: #1f1f1f;
   }
 
 /* line 1478 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4568,7 +4568,7 @@ html {
     font-size: 13px;
     padding: 10px 22px;
     border-radius: 3px;
-    background-color: #222;
+    background-color: #606060;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -4583,13 +4583,13 @@ html {
 /* line 72 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:hover:hover,
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:hover:focus {
-    background-color: #202020;
+    background-color: #5b5b5b;
     color: #f7f7f7;
   }
 
 /* line 76 : /usr/local/lib/node_modules/axis/axis/buttons.styl */
   .body_affiliate_program .affiliate_program_offer .affiliate_program_offer_promotion a:hover:active {
-    background-color: #1f1f1f;
+    background-color: #565656;
   }
 
 /* line 1480 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */

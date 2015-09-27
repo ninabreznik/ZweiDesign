@@ -2,8 +2,117 @@
   <div class="columns">
   <ul class="wookmark">
 
-  <% if user_signed_in? %>
+<!-- :::::::::::::::::  START of user_signed_in? ::::::::::::::::-->
+<% if user_signed_in? %>
+  <!-- :::::::::::::::::  START of user.affiliator ::::::::::::::::-->
+  <% if current_user.affiliator == 't' %>
 
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          YOUR DASHBOARD
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_username">
+            <%= current_user.email %>
+          </div>
+          <div class="profile_dashboard_body_logout">
+            <%= link_to "#{I18n.t'staticpagesprofile-links.logout'}", destroy_user_session_path, method: :get %>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          AFFILIATE PROGRAM
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_wallet_amount">
+            <%= link_to affiliate_program_path do %>
+              <i class="fa fa-university"></i>
+            <% end %>
+          </div>
+          <div class="profile_dashboard_body_wallet_buttons">
+            <div class="profile_dashboard_body_wallet_button">
+              <% if current_user.tracking_id.present? %>
+                <%= link_to "Tracking id: #{current_user.tracking_id}", affiliate_program_path %>
+              <% else %>
+                <%= link_to "Create your tracking id", affiliate_program_path %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          MY LEADS
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_wallet_amount">
+            <%= link_to dashboard_path do %>
+              <i class="fa fa-money"></i>
+            <% end %>
+          </div>
+          <div class="profile_dashboard_body_username">
+            Your turnover: comming soon
+          </div>
+          <div class="profile_dashboard_body_wallet_buttons">
+            <div class="profile_dashboard_body_wallet_button">
+              <% if @my_affiliations.any? %>
+                <% @my_affiliations[0..4].each do |affiliate_lead| %>
+                <br>
+                <%= link_to "#{affiliate_lead.business_type}", lead_path(affiliate_lead) %>
+                <br>
+                <br>
+                <% end %>
+              <% else %>
+                <%= link_to "No leads yet :)", affiliate_program_path %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          MESSAGES
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_wallet_amount">
+            <%= link_to messages_path do %>
+              <i class="fa fa-envelope"></i>
+            <% end %>
+          </div>
+          <div class="profile_dashboard_body_wallet_buttons">
+            <div class="profile_dashboard_body_wallet_button">
+              <%= link_to "See conversations", messages_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          ABOUT ZweiDesign
+        </div>
+        <div class="profile_dashboard_body">
+        <div class="profile_dashboard_body_wallet_amount">
+        <i class="fa fa-users"></i>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          <%= link_to "See leads", leads_path %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          <%= link_to "See users", users_path %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          <%= link_to "See projects", projects_path %>
+        </div>
+        </div>
+      </div>
+
+
+  <% else %>
     <div class="lead_box">
       <div class ="profile_dashboard_title">
         DASHBOARD
@@ -119,6 +228,8 @@
         </div>
       </div>
 
+  <% end %>
+  <!-- :::::::::::::::::  END of user.affiliator ::::::::::::::::-->
 
     <!-- <div class="lead_box">
       <div class ="profile_dashboard_title">
@@ -199,7 +310,7 @@
 
 <div class="lead_box">
   <div class ="profile_dashboard_title">
-    Outsourcing:
+    Find & hire:
   </div>
   <div class="profile_dashboard_body">
     <div class="profile_dashboard_body_not_signed_in">
@@ -249,6 +360,7 @@
   </div> -->
 
 <% end %>
+<!-- :::::::::::::::::  END of user_signed_in? ::::::::::::::::-->
 
   </ul>
   </div>

@@ -40,7 +40,8 @@ class UsersController < ApplicationController
     # if @user.save
     #   UserMailer.affiliation_code(@user).deliver
     # end
-
+    beta = @user
+    User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Thank you for joining us and succesfully creating your tracking id. How to get started? Check our suggestions on affilation program page (zweidesign.co/affiliate_program). The longer you wait, the more you're missing out on. Log in, download banners and other materials, create a strategy and get started. Once you do, you'll get first feedback and see what works and what can be improved. If you have questions, please contact me and I'll get back to you shortly.", ":)")
     @user.save
     redirect_to affiliate_program_path
   end

@@ -37,18 +37,6 @@
             });
           </script>
 <!-- ******************** END of Copy to clipboard script ***************************** -->
-          <% if @my_affiliations.any? %>
-            <br>
-            <br>
-            <br>
-            LEADS THROUGH YOUR REFFERALS:
-            <br>
-            <% @my_affiliations.each do |lead| %>
-            <br>
-            <%= link_to "#{lead.business_type}", lead_path(lead) %>
-            <br>
-            <% end %>
-          <% end %>
       <% end %>
   </div>
   <div class="affiliate_program_offer_title">
@@ -66,7 +54,7 @@
   <br>
   <br>
   <div class="affiliate_program_offer_promotion">
-    Banners and logos
+    Banners and logos (coming soon)
   </div>
   <div class="affiliate_program_offer_promotion">
     Find out more about our affiliate program

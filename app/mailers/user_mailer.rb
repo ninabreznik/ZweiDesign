@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
     @sosed_signin_url = 'http://zweidesign.co/users/sign_in'
 
     #@url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Start getting clients on ZweiDesign')
+    mail(to: @user.email, subject: 'Get started with ZweiDesign')
   end
 
 

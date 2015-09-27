@@ -175,7 +175,7 @@ en:
       submit: "Pošlji"
 
 #Price
-    price: "Price: 10 €"
+    price: "Price: 35 €"
 
 # Links
   leadsshow-links:
@@ -249,7 +249,7 @@ en:
       submit: "Send"
 
 #Price
-    price: "Price: 10 €"
+    price: "Price: 35 €"
 
 # Links
   leadsshow-links:
@@ -275,7 +275,7 @@ en:
     notes: "Notes"
 
 # Price
-    price: "Price: 10 €"
+    price: "Price: 35 €"
 
 # Links
   ordersshow-links:
@@ -312,7 +312,7 @@ en:
 # Notification
   staticpagesprofile-notification:
     wallet: "My wallet status"
-    wallet-text: "You can top up your wallet when you buy a new lead. At your nex buy simply transfer desired amount. 10€ from that amount will be subtrackted for chosen lead and the rest will be added to your wallet."
+    wallet-text: "You can top up your wallet when you buy a new lead. At your nex buy simply transfer desired amount. 35€ from that amount will be subtrackted for chosen lead and the rest will be added to your wallet."
     wallet-buttons:
       bank: "Top the wallet"
     logged-in-as: "Logged in as"
@@ -399,7 +399,7 @@ en:
     offer_item_username: "User name"
     offer_date: "Date"
     offer_price: "Price"
-    offer_price_amount: "10 €"
+    offer_price_amount: "35 €"
     offer_purpose: "Payment purpose"
     offer_purpose_text: "Lead payment"
     offer_account: "Account number"
