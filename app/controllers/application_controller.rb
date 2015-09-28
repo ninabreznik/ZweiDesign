@@ -3,10 +3,12 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
 protect_from_forgery with: :exception
 after_filter :store_location
+before_filter :capture_refferal
+
 
 def store_location
   # store last url - this is needed for post-login redirect to whatever the user last visited.
-  return unless request.get? 
+  return unless request.get?
   if (request.path != "/users/sign_in" &&
       request.path != "/users/sign_up" &&
       request.path != "/users/password/new" &&
@@ -14,7 +16,7 @@ def store_location
       request.path != "/users/confirmation" &&
       request.path != "/users/sign_out" &&
       !request.xhr?) # don't store ajax calls
-    session[:previous_url] = request.fullpath 
+    session[:previous_url] = request.fullpath
   end
 end
 
@@ -38,6 +40,12 @@ def after_cancel_user_registration_path_for(resource)
   root_path
 end
 
+private
 
+def capture_refferal
+  cookies[:tracking_link] = request.url
+  cookies[:tracking_link] = params[:tracking_link] if params[:tracking_link]
 end
 
+
+end

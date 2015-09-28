@@ -1,6 +1,5 @@
 class LeadsController < ApplicationController
 
-
   def index
     @leads = Lead.all
     @lead = Lead.find_by_id(params[:id])
@@ -19,6 +18,7 @@ class LeadsController < ApplicationController
   def new
     session[:lead_params] ||= {}
     @lead = Lead.new(session[:lead_params])
+    @lead.tracking_link = cookies[:tracking_link]
     @lead.current_step = session[:lead_step]
      @business_types = [
       ["#{I18n.t'lead-new.form.business-types.field-11'}"],
@@ -107,7 +107,6 @@ class LeadsController < ApplicationController
 
 
   private
-
 
 
   def lead_params
