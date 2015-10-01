@@ -86,6 +86,7 @@ class LeadsController < ApplicationController
     if @lead.save
       auto_create_user!(@lead)
       session[:lead_step] = session[:lead_params] = nil
+      cookies[:ref] = params[:ref] = nil                               # Delete cookie if lead is saved
       lead_user = @lead.email
       lead = @lead
       UserMailer.send_new_lead(lead)

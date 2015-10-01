@@ -2,7 +2,7 @@ class Mailboxer::MessageMailer < Mailboxer::BaseMailer
   #Sends and email for indicating a new message or a reply to a receiver.
   #It calls new_message_email if notifing a new message and reply_message_email
   #when indicating a reply to an already created conversation.
-  default from: "ZweiDesign <contact@zweidesign.co>"
+  default from: "Nina from ZweiDesign <contact@zweidesign.co>"
   layout 'mailer'
 
   def send_email(message, receiver)

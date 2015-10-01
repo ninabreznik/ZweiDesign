@@ -44,7 +44,7 @@ private
 
 def capture_refferal
   cookies[:tracking_link] = request.url
-  cookies[:tracking_link] = params[:tracking_link] if params[:tracking_link]
+  cookies[:ref] = params[:ref] if params[:ref]
 end
 
 

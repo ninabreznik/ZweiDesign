@@ -6,6 +6,7 @@ def create
   super()
   user = User.last
   if user.created_at > Time.now - 3.seconds
+    user.update(provider: true)
     UserMailer.welcome_email(user, pass=nil).deliver
   end
 end

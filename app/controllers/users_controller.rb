@@ -35,6 +35,7 @@ class UsersController < ApplicationController
     tracking_id = params[:user][:tracking_id].gsub(/\W/, '')
     @user = current_user
     @user.tracking_id = tracking_id
+    @user.provider = nil
     @user.affiliator = true
     @user_tracking_link = new_lead_url(ref: @user.tracking_id)
     # if @user.save
