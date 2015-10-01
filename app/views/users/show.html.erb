@@ -60,7 +60,7 @@
               <div class="project_show_send_message">
                 <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
                 <%= form_for :conversation, url: :conversations do |f| %>
-                  <%= f.text_field :recipients, type: "hidden", value: "Hi" %>
+                  <%= f.text_field :recipients, type: "hidden", value: @user.email %>
                   <%= f.text_field  :subject, type: "hidden", value: "Hi" %>
                   <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'user-show.send-message.placeholder'}" %>
                   <div class="project_show_send_message_button">
