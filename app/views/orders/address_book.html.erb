@@ -24,21 +24,22 @@
             <div class="address_book_lead_subtitle">
               <%= I18n.t'ordersindex-lead.name' %>:</div> <%= order.selected.name %>
             <br>
-            <div class="address_book_lead_customer_info">
-              <%= I18n.t'ordersindex-notifications.customer-info' %>:</div>
             <div class="address_book_lead_subtitle">
               <%= I18n.t'ordersindex-lead.phone' %>:</div> <%= order.selected.phone %>
             <div class="address_book_lead_subtitle">
               <%= I18n.t'ordersindex-lead.email' %>:</div> <%= order.selected.email %>
           </div>
-            <div class="address_book_lead_notes">
-              <%= form_for (order) do |l| %>
-                <%= text_area(:order, :notes, :size => 20, :value => "#{order.notes}") %>
-                <div class="address_book_lead_notes_button">
-                  <%= l.submit "#{I18n.t'ordersindex-buttons.save'}" %>
-                </div>
-              <% end %>
-            </div>
+          <div class="project_show_send_message">
+            <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
+            <%= form_for :conversation, url: :conversations do |f| %>
+              <%= f.text_field :recipients, type: "hidden", value: "Hi" %>
+              <%= f.text_field  :subject, type: "hidden", value: "Hi" %>
+              <%= f.text_area  :body, as: :text, placeholder: "Send a message to the customer" %>
+              <div class="project_show_send_message_button">
+                <%= f.button :"#{I18n.t'user-show.send-message.submit'}" %>
+              </div>
+            <% end %>
+          </div>
         </div>
       <% end %>
   </ul>
