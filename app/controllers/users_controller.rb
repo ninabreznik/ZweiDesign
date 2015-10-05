@@ -36,7 +36,9 @@ class UsersController < ApplicationController
     @user = current_user
     @user.tracking_id = tracking_id
     @user.provider = nil
-    @user.affiliator = true
+    if @user.projects.any? == false
+      @user.affiliator = true
+    end
     @user_tracking_link = new_lead_url(ref: @user.tracking_id)
     # if @user.save
     #   UserMailer.affiliation_code(@user).deliver

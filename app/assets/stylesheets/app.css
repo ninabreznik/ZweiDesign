@@ -5894,7 +5894,7 @@ html {
 
 /* line 2059 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body a {
-    font-weight: bold;
+    font-size: 11px;
   }
 
 /* line 2061 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -22300,7 +22300,7 @@ html {
   }
 }
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_650px.styl */
+/* line 93 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_650px.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_500px.styl */
 @media only screen and (max-width: 500px) {
