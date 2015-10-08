@@ -59,6 +59,8 @@ en:
       field-8: "Landscape Contractors"
       field-9: "Stone, Paving & Concrete"
       field-10: "Cheramics, Stone & Marble"
+      field-11: "Interior & Exterior Photographers"
+      field-12: "Other"
       field-prompt: "Choose your main field"
       services: "Services"
       bio: "Bio - short description"
@@ -480,7 +482,8 @@ en:
         field-8: "Landscape Contractors"
         field-9: "Stone, Paving & Concrete"
         field-10: "Cheramics, Stone & Marble"
-        field-11: "Many different professionals"
+        field-11: "Interior & Exterior Photographer"
+        field-12: "Many different professionals"
       country: "Country"
       country-1: "Austria"
       country-2: "Belgium"
@@ -1217,11 +1220,11 @@ en:
 # ############################################################################################
 
   project-new:
-    exaplanation-1: "Finished project?"
-    exaplanation-2: "Publish it for free"
+    exaplanation-1: "Show your work"
+    exaplanation-2: "Create portfolio"
     exaplanation-3: "Get hired"
     title: "PUBLISH YOUR PROJECT"
-    instructions: "Do you have a succesfully finished project? Publish it and let clients & partners see your portfolio."
+    instructions: "Do you have a succesfully finished project? Publish it for free and let clients & partners see your portfolio."
     instructions-additional: "First you need to sign-in."
     form:
       business-type-prompt: "What is your project about?"
@@ -1286,7 +1289,8 @@ en:
     field-8: "Landscape Contractors"
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
-    field-11: "Other"
+    field-11: "Interior & Exterior Photographers"
+    field-12: "Other"
 
 # ############################################################################################
 # TOP MENU

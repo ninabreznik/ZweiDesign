@@ -1,20 +1,17 @@
 <div class="body_affiliate_program">
 <div class="affiliate_program_offer">
   <div class="affiliate_program_offer_title">
-    Welcome to affiliate program!
+    Welcome to affiliates program!
   </div>
   <div class="affiliate_program_offer_promotion">
       <% if current_user.tracking_id == nil %>
-      GENERATE YOUR TRACKING ID
-      <br>
-      <br>
+      CREATE YOUR PARTNER ID
         <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
-          <%= u.label :"Type your desired tracking id "  %>
           <%= u.text_field :tracking_id %>
           <%= u.submit "Save" %>
         <% end %>
       <% else %>
-          YOUR TRACKING LINK
+          YOUR PARTNER LINK
           <br>
             <textarea class="js-copytextarea"><%= @affiliate_link %></textarea>
             <br>
@@ -43,20 +40,31 @@
     How the affiliate program works
   </div>
   <div class="affiliate_program_offer_promotion">
-    Create a ZweiDesign Account, then send traffic to the Find & hire page while adding your tracking id to the end of the URL.
+    #1
+    <br>
+    Create a ZweiDesign Account. Then send traffic to the Find & hire page while adding your partner id to the end of the URL. Don't sign up for an affiliate program because there's a high commission rate. Sign up for a program if you like our services. Remember, your name is behind this and your clients are counting on your to be the tastemaker and seal of approval. It's your reputation on the line here.
+    <br>
+    <br>
+    #2
+    <br>
+    Once you sign up for a program, how are you going to start making money? Will you just use these affiliate links on your blog/social media channels as a tastemaker by creating mood boards? Will you use them for your design projects? Figure out how you can best use them to your advantage.
+    <br>
+    <br>
+    One idea is to create a search engine optimized blog post about the "Renovate apartment in Berlin under €1000". And maybe throw in some ideas and links for readers to compare prices of talented pros with ZweiDesign.
+    <br>
+    <br>
+    #3
+    <br>
+    There's a ton of ways you can make this work for your business. How are you using affiliates currently? Let us know if you need more inspiration, feedback or help!    <br>
+    <br>
   </div>
-  <div class="affiliate_program_offer_instructions">
-    When a new user clicks your referral link and places an order, providers are notified. When a provider purchases the lead (or deposits money), you will receive 50% of that person's first cash deposit or purchase price. If they deposit €200 into their account, you get €100. If they buy leads worth €70, you get €35.
-    By becoming an Affiliate, you agree to the Affiliate Program Terms.
+  <div class="affiliate_program_offer_title">
+    Find out more
   </div>
-  <br>
-  <br>
   <div class="affiliate_program_offer_promotion">
-    Find out more about our affiliate program
+    To help you along, we've summarized a few of the key Do's and Don'ts below but for detailed information we are available on our email contact@zweidesign.co
   </div>
-
   <table class="affiliate_program_offer_sosed_info">
-    To help you along, we've summarized a few of the key Do's and Don'ts below but for detailed information read the Affiliate Program Terms
     <tr class="affiliate_program_offer_sosed_info_price">
       <td>DO:</td>
       <td></td>
