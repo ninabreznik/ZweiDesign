@@ -1033,15 +1033,19 @@
           center(550px)
           color Offer-Font-Color
           font-weight bold
-          font-size 28px
-          padding-bottom 50px
+          font-size 18px
+          padding-bottom 20px
         .affiliate_program_offer_promotion
           margin-top 20px
           margin-bottom 50px
-          font-size 13px
+          font-size 14px
           font-weight bold
           background-color Lead-Orange
           padding 4px
+          .js-copytextarea
+            font-size 9px
+            width 269px
+            padding 10px
         .affiliate_program_offer_company_info
           color Offer-Font-Color
           border 1px solid #e7e7e7
@@ -1056,7 +1060,7 @@
           width 109px
         .affiliate_program_offer_date
           color Offer-Font-Color
-          font-size 13px
+          font-size 14px
           margin 10px 10px 20px 10px
           text-align left
         .affiliate_program_offer_sosed_info
@@ -1069,19 +1073,19 @@
           .affiliate_program_offer_sosed_info_price td
             font-weight bold
             padding 15px 30px 15px 30px
-            font-size 16px
+            font-size 14px
             background-color Lead-Orange
             color white
           .affiliate_program_offer_sosed_info_item td
             font-weight bold
             background-color #F6F6F6
             padding 15px 30px 0px 30px
-            font-size 12px
+            font-size 14px
           .affiliate_program_offer_sosed_info_item td:last-child
             padding 15px 30px 15px 30px
         .affiliate_program_offer_instructions
           margin-top 20px
-          font-size 12px
+          font-size 14px
           font-weight bold
     /* :::::::::::: DEVISE ALERTS :::::::::::: */
     .alert.alert-notice
@@ -1185,16 +1189,16 @@
       list-style-type: none;
       text-align: center;
       margin: 0 6% 0px 0%;
-      padding-top 50px
+      padding-top 30px
       position relative
       z-index 3
-      top 50px
+      top 0px
     #filters li
       cursor: pointer;
       margin: 0 0.5% 6px 0.5%;
       button(#F6F6F6)
       color #606060
-      font-size 14px
+      font-size 10px
       border 3px solid white
       -webkit-transition: all 0.15s ease-out;
       -moz-transition: all 0.15s ease-out;
@@ -1205,11 +1209,11 @@
       border-radius: 3px;
     #filters li.active
       button(Lead-Orange)
-      font-size 14px
+      font-size 10px
       border 3px solid white
       border-radius: 3px;
     .columns
-      column-mixin()
+      column-mixin(margin-top = 30px)
       padding-top 0px
       .index_welcome_message
         background-image  url(/images/interior1.png)
@@ -1235,7 +1239,7 @@
           width 85%
           text-transform: uppercase
           margin-bottom: 6.25px
-          font-size 60px
+          font-size 40px
           font-weight: 700
           -webkit-font-smoothing: antialiased
           line-height: 1.1;
@@ -1263,11 +1267,11 @@
           font-weight bold
           line-height: 1.6em
           letter-spacing 1px
-          font-size 26px
+          font-size 20px
       .index_container
         z-index 2
         position: relative;
-        top 85px
+        top 0px
         padding 50px
         background-color #F6F6F6
         .index_container_title
@@ -1275,7 +1279,7 @@
           margin-top 15px
           color #606060
           margin-bottom: 6.25px
-          font-size 26px
+          font-size 14px
           font-weight: 700
           -webkit-font-smoothing: antialiased
           line-height: 1.5em
@@ -1395,7 +1399,7 @@
       letter-spacing: 1px;
       .section_welcome_title
         margin-top 70px
-        font-size 18px
+        font-size 14px
         button(black)
         color white
         margin-bottom 10px
@@ -1411,10 +1415,12 @@
         &:hover
           color Lead-Orange
       .section_welcome_text
-        font-size 18px
+        font-size 14px
         line-height: 1.5em
+      .slides
+        display none
     .section_divided
-      font-size 18px
+      font-size 14px
       text-align center
       .section_divided_part a
         text-decoration none
@@ -1438,7 +1444,7 @@
       background-color white
       letter-spacing 1.4px
       font-weight: 700
-      font-size 22px
+      font-size 14px
       color black
       .section_how_it_works_image
         padding-bottom 100px
@@ -1452,7 +1458,7 @@
       .section_how_it_works_title
         margin 5% 0% 5% 0%
         text-align center
-        font-size 22px
+        font-size 14px
         letter-spacing 1.4px
         color black
       .section_how_it_works_text
@@ -1472,21 +1478,23 @@
         text-align center
       .section_our_team_title
         margin 20px 0px 60px 0px
-        font-size 28px
+        font-size 14px
         color white
         text-align center
         text-decoration none
       .section_our_team_title a
         margin 20px 0px 60px 0px
-        font-size 22px
+        font-size 14px
         color white
         text-align center
         text-decoration none
         &:hover
           color Lead-Orange
+      .section_our_team_subtitle
+        font-size 14px
       .section_our_team_text
         margin 60px 60px 60px 30px
-        font-size 16px
+        font-size 14px
         line-height 150%
     .section_budget
       padding 0px 0px 60px 0px
@@ -1555,12 +1563,12 @@
       color black
       .section_why_sosed_title
         margin 60px 60px 60px 30px
-        font-size 32px
+        font-size 14px
         color Lead-Blue
         font-weight bold
       .section_why_sosed_text
         margin 60px 60px 30px 30px
-        font-size 18px
+        font-size 14px
         line-height 150%
     .section_form
       letter-spacing 1.4px
@@ -1570,7 +1578,7 @@
         background-color white
         padding 0px 0px 30px 0px
       #mc_embed_signup label
-        font-size 23px
+        font-size 14px
         color black
         text-align center
       #mce-EMAIL

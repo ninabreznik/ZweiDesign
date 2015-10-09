@@ -19,39 +19,50 @@
       .find-provider,
       .messages
         padding-bottom 2px
-        font-size 13px
+        font-size 11px
         -webkit-font-smoothing: antialiased
         font-weight bold
         display inline-block
       .publish_project
-        shift 0.47
+        shift 0.52
         button(Lead-Orange-dark)
-        bottom 4px
+        padding 8px 15px
+        bottom 8px
         &:hover
           opacity 0.7
+          transition color .1s
         a
           text-decoration none
           color Menu-Top-Button-Color
+          font-size 11px
       .find_provider
-        shift 0.46
+        shift 0.5
         button(black)
-        bottom 4px
+        padding 8px 15px
+        bottom 8px
         margin-left 4px
         &:hover
           opacity 0.7
+          transition color .1s
         a
           text-decoration none
           color white
+          font-size 11px
       .messages
-        shift(0.14)
+        shift(0.22)
         font-size 22px
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
       .logo
-        top 9px
+        top 6px
+        bottom 6px
         shift(0.04)
-        height 37px
+        height 35px
         display inline-block
         &:hover
           opacity 0.7
+          transition color .1s
       .select_bar
         shift(0.4)
         display: inline-block;
@@ -64,6 +75,19 @@
         color: #606060;
         vertical-align: middle;
         border: 0px
+      .menu_bar_login
+        shift(0.4)
+        button(white)
+        padding 8px 15px
+        border 1px solid #606060
+        bottom 8px
+        &:hover
+          opacity 0.7
+          transition color .1s
+        a
+          text-decoration none
+          color Menu-Top-Button-Color
+          font-size 11px
       .info
         padding-bottom 2px
         shift(0.63)
@@ -72,4 +96,5 @@
         .fa.fa-info-circle
           color Offer-Font-Color
           &:hover
-            color Lead-Orange
+            opacity 0.7
+            transition color .1s
