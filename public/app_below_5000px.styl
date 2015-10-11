@@ -158,7 +158,24 @@
               -webkit-font-smoothing: antialiased
               padding-top 7px
             .lead_subtitle_button a
-              text-decoration underline
+              margin-top 5px
+              decoration none
+              position: relative;
+              font-size: 10px;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #494949;
+              cursor: pointer;
+              font-weight: bold;
+              line-height: 1em;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: none;
+              padding: 8px 15px;
+              border: 1px solid #606060;
+              &:hover
+                background-color #eee
             .like_heart
               margin-left 260px
               font-size 12px
@@ -1916,7 +1933,7 @@
   /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
   .project_show_send_message
     color black
-    background-color #F6F6F6
+    background-color transparent
     border-radius: 6px
     padding 3px
     #conversation_body
@@ -1930,13 +1947,23 @@
       line-height: 20px;
       height auto
       max-height: 284px
-    .project_show_send_message_button,
     .project_show_send_message_button button,
     .project_show_send_message_button a
-      button(color = Lead-Orange)
-      padding 4px
+      button()
+      padding 6px 9px
       text-transform uppercase
       font-size 11px
+      text-transform uppercase
+      color: #606060;
+      font-weight: bold;
+      border-width: 2px;
+      border-radius: 5px;
+      background-color: transparent;
+      text-align: center;
+      border: 1px solid #606060;
+      &:hover
+        background-color #eee
+        color #606060
   /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
   .body_project_index
     body-mixin()
@@ -2120,7 +2147,24 @@
             a
               font-size 11px
             .lead_subtitle_button a
-              text-decoration underline
+              decoration none
+              position: relative;
+              font-size: 10px;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #494949;
+              cursor: pointer;
+              font-weight: bold;
+              line-height: 1em;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: none;
+              padding: 8px 15px;
+              border: 1px solid #606060;
+              bottom: 8px;
+              &:hover
+                background-color #eee
             .lead_subtitle_image
               padding-left 0px
               padding-right 0px

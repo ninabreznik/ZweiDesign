@@ -28,47 +28,6 @@
     Browse some succesfully finished projects
   </div>
 </div>
-<ol id="filters">
-
-  <li data-filter='Architects & Building Designers'>
-    <%= I18n.t'users-index.field-1'%>
-  </li>
-  <li data-filter="Interior Designers & Decorators">
-    <%= I18n.t'users-index.field-4'%>
-  </li>
-  <li data-filter="Kitchen and Bathroom Designers & Fitters">
-    <%= I18n.t'users-index.field-5'%>
-  </li>
-  <li data-filter="Kitchen and Bathroom Renovators">
-    <%= I18n.t'users-index.field-6'%>
-  </li>
-  <li data-filter="Landscape Architects & Garden Designers">
-    <%= I18n.t'users-index.field-7'%>
-  </li>
-  <li data-filter="Landscape Contractors">
-    <%= I18n.t'users-index.field-8'%>
-  </li>
-  <li data-filter="General Home Builders">
-    <%= I18n.t'users-index.field-2'%>
-  </li>
-  <li data-filter="Masonry">
-    <%= I18n.t'users-index.field-3'%>
-  </li>
-  <li data-filter="Stone, Paving & Concrete">
-    <%= I18n.t'users-index.field-9'%>
-  </li>
-  <li data-filter="Cheramics, Stone & Marble">
-    <%= I18n.t'users-index.field-10'%>
-  </li>
-  <li data-filter="Interior & Exterior Photographers">
-    <%= I18n.t'users-index.field-11'%>
-  </li>
-  <li data-filter="Other">
-    <%= I18n.t'users-index.field-12'%>
-  </li>
-
-</ol>
-
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @projects.each do |project| %>
@@ -77,48 +36,17 @@
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
         <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br>
-      <div class="lead_subtitle"></div>
-        <% if current_user.present? %>
-          <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>
-                  <%= form_for(current_user.likes.build(likee_id: project.id)) do |l| %>
-                    <%= l.hidden_field :likee_id %>
-                    <%= l.button do %>
-                      <% if @likes.where(likee_id: project.id).count == nil %>
-                        <i class="fa fa-heart-o"></i>
-                      <% else %>
-                        <i class="fa fa-heart-o"></i> <%= @likes.where(likee_id: project.id).count %>
-                      <% end %>
-                    <% end %>
-                  <% end %>
-          <% else %>
-             <%= form_for(current_user.likes.find_by_likee_id(project.id),
-                html: { method: :delete }) do |l| %>
-                <%= l.button do %>
-                  <% if @likes.where(likee_id: project.id).count == nil %>
-                    <i class="fa fa-heart-o"></i>
-                  <% else %>
-                    <i class="fa fa-heart"></i> <%= @likes.where(likee_id: project.id).count %>
-                  <% end %>
-                <% end %>
-              <% end %>
-          <% end %>
-        <% else %>
-          <div class="like_heart">
-            <%= link_to '<i class="fa fa-heart-o"></i>'.html_safe, new_user_session_path %>
-            <%= @likes.where(likee_id: project.id).count %>
-          </div>
-        <% end %>
       <br>
       <div class="lead_subtitle"></div>
-          <% if project.title.present? %>
+          <% if project.user.business_type.present? %>
             <div class="lead_subtitle_button">
-              <%= project.title %>
+              <%= link_to "#{project.user.business_type}", users_path %>
             </div>
+            <br>
           <% end %>
-          <br>
-        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.company}".html_safe, user_path(project.user) %>
-        <br>
-          <br>
+          <div class="lead_subtitle_button">
+          <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.company}".html_safe, user_path(project.user) %>
+        </div>
     </div>
   </div>
   <% end %>

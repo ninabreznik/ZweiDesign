@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
+    @users = User.all.shuffle
     check_if_user_company_present(@users)
     if @edited_users.any?
       @edited_users.each do |user|

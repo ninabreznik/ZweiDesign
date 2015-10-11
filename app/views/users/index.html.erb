@@ -62,12 +62,6 @@
             <%= user.city %>, <%= user.country %>
           </div>
         <% end %>
-        <% if user.business_type.present? %>
-            <div class="lead_subtitle_button" >
-              <%= link_to "#{@user.business_type}", user_path(@user)  %>
-            </div>
-            <br>
-        <% end %>
         <% if user.service.present? %>
             <%= user.service %>
         <% end %>

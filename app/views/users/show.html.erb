@@ -15,12 +15,12 @@
         <% if @user.country.present? && @user.city.present? %>
           <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= @user.city %>, <%= @user.country %></div>
         <% end %>
-
         <% if @user.business_type.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.business_type'%>:</div>
-            <%= @user.business_type %><br>
+            <div class="lead_subtitle_button" >
+              <%= link_to "#{@user.business_type}", users_path  %>
+            </div>
+            <br>
         <% end %>
-
         <% if @user.service.present? %>
           <div class="lead_subtitle"><%=I18n.t'user-show.services'%>:</div>
             <%= @user.service %> <br>
