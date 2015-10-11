@@ -1,6 +1,14 @@
 
 <div class="body_users_index">
 <div class="columns" id="main" role="main">
+<div class="users_container">
+  <div class="users_container_title">
+    Experts For Hire
+    <br>
+    <br>
+    View freelancers' profiles and chat with them!
+  </div>
+</div>
 <ol id="filters">
   <li data-filter='Architects & Building Designers'>
     <%= I18n.t'users-index.field-1'%>
@@ -65,14 +73,6 @@
         <% end %>
         <br>
         <br>
-      <% if user.projects.any? %>
-        <div class="lead_subtitle"></div>
-        <% user.projects[0..2].each do |project| %>
-          <%=link_to "#{image_tag project.picture.url(:thumb), width: "77", height: "80",  title: "#{project.title}" }".html_safe, project_path(project) %>
-        <% end %>
-      <% end %>
-      <br>
-      <br>
         <% if user_signed_in? && current_user != user %>
               <div class="lead_subtitle"></div>
                 <div class="project_show_send_message">
