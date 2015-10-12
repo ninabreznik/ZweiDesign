@@ -1990,14 +1990,14 @@
   /* :::::::::::: PROJECT/INDEX => homepage :::::::::::: */
   .body_project_index
     body-mixin()
-    padding-bottom 1000px
+    padding-bottom 1600px
     #filters
       list-style-type: none;
       text-align: center;
       padding 50px 100px
       position relative
       z-index 3
-      top 100px
+      top 20px
     #filters li
       cursor: pointer;
       margin: 0 0.1% 6px 0.1%;
@@ -2067,9 +2067,6 @@
           background: rgba(0, 0, 0, 0.7);
           color white
           width 60%
-          padding 20px
-          background: rgb(0, 0, 0); /* fallback color */
-          background: rgba(0, 0, 0, 0.7);
           float: none;
           margin-left: auto;
           margin-right: auto
@@ -2093,7 +2090,6 @@
             text-shadow: 0 -1px transparent
             font-weight: bold
             cursor: pointer;
-            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif
             -webkit-font-smoothing: antialiased
             line-height: 18px
             text-align: center
@@ -2101,33 +2097,80 @@
             display: inline-block
             &:hover
               background-color #aaa
+      .index_container_browse
+        z-index 2
+        position: relative;
+        width 66%
+        left 15%
+        font-size: 13px;
+        border-width: 2px
+        padding: 4%
+        background-color white
+        color: white
+        -webkit-font-smoothing: antialiased
+        line-height: 18px
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        .index_container_browse_title
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          padding 20px
+          text-align center
+          margin-top 15px
+          margin-bottom: 6.25px
+          line-height: 1.6em
+          letter-spacing 1px
+          font-size 20px
+          -webkit-font-smoothing: antialiased
+          text-rendering: optimize legibility
       .index_container
         z-index 2
         position: relative;
-        top 85px
-        padding 0px
-        background-color #F6F6F6
+        background-image  url(/images/interior1.png)
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
+        background
+        margin-bottom 3%
+        width 100%
+        font-size: 13px;
+        border-width: 2px
+        padding: 4%
+        background-color white
+        color: white
+        -webkit-font-smoothing: antialiased
+        line-height: 18px
+        text-align: center
+        text-decoration: none
+        display: inline-block
         .index_container_title
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          padding 5% 10% 5% 10%
           text-align center
           margin-top 15px
-          color #606060
           margin-bottom: 6.25px
           font-size 22px
-          font-weight: 700
-          -webkit-font-smoothing: antialiased
-          line-height: 1.5em
+          line-height: 1.6em
           letter-spacing 1px
+          font-size 26px
+          -webkit-font-smoothing: antialiased
           text-rendering: optimize legibility
         .index_container_subtitle
-          font-size: 18px
+          background: rgb(0, 0, 0); /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          padding 20px
+          font-size: 13px
           margin-top: 20px
           text-align: center
           line-height: 1.8em
           letter-spacing 1px
-          color: #606060
       .wookmark
         wookmarkMixin()
-        top 100px
+        top 50px
         font-size 14px
         #tiles
           margin 0

@@ -308,8 +308,8 @@ en:
     edit-profile: "Edit my profile"
     logout: "Logout"
     logged-as: "Logged in as"
-    sign-in: "Sign in"
-    sign-up: "Sign up"
+    sign-in: "Login"
+    sign-up: "Signup"
 
 # Notification
   staticpagesprofile-notification:
