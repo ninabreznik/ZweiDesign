@@ -8,11 +8,11 @@
     Hire freelance Architects, Interior Designers and Construction experts for your job.
     <br>
     <div class="index_welcome_button">
-      <%= link_to "HIRE", leads_new_path %>
+      <%= link_to "HIRE", info_path %>
       <% if current_user.present? %>
         <%= link_to "WORK", leads_path %>
       <% else %>
-        <%= link_to "WORK", new_user_registration_path %>
+        <%= link_to "WORK", membership_path %>
       <% end %>
     </div>
   </div>

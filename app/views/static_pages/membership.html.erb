@@ -2,13 +2,47 @@
   <section class="section_welcome">
     <div class="section_welcome_title">Membership and Signup</div>
     <br><br><br>
-    <div class="section_welcome_subtitle">ZweiDesign is a community of Architecture, Interior design and Construction professionals. Most of our members are also founders. We encourage you to invite your offline partners and professionalize your business network.</div>
-    <iframe src="//slides.com/ninabreznik/how-much-does-one-customer-cost-you/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="section_welcome_subtitle">ZweiDesign is a professional community for people who like what they do and are good at it.</div>
+    <div class="section_welcome_subtitle">
+      We represents many of very talented and successful freelance experts, working in architecture, interior design and construction,
+      and provides a range of different short or long term job opportunities.
+    </div>
   </section>
-    <!-- <div class="section_welcome_subtitle">
-      ZweiDesign represents many of very talented and successful professionals working in architecture, interior design and construction,
-      and provides a range of strategic marketing and consulting services to their clients.
-    </div> -->
+  <section class="section_how_it_works">
+    <div class="section_how_it_works_image"></div>
+  </section>
+  <section class="section_welcome">
+    <div class="section_welcome_title">What kind of work can I do?</div><br><br>
+    <div class="section_welcome_subtitle">
+      How does "anything you want" sound? You can apply for:
+      <ul>
+        <li>Small jobs, large jobs, anything in-between</li>
+        <li>Fixed price or hourly terms</li>
+        <li>Specific skills, cost and schedule requirements</li>
+      </ul>
+      <br>
+      Just create a profile, let us know what you do and what kind of jobs you are looking for and we will notify you about new opportunities for free.</div>
+  </section>
+  <section class="section_our_team">
+    <i class="fa fa-heart"></i>
+    <div class="section_our_team_title">90-DAY MONEY BACK GUARANTEE</div>
+    <div class="section_our_team_subtitle">No contracts. No risk. Cancel or put your account on hold at anytime.</div>
+  </section>
+
+ <section class="section_our_team">
+    <i class="fa fa-heart"></i>
+    <div class="section_our_team_title">MEASURABLE COSTS</div>
+    <div class="section_our_team_subtitle">No percentage of project fees. Keep 100% of your earnings and only pay fixed fee for a new client. </div>
+  </section>
+
+   <section class="section_our_team">
+    <i class="fa fa-heart"></i>
+    <div class="section_our_team_title">COMPETE WITH TENS, NOT HUNDREDS</div>
+    <div class="section_our_team_subtitle">A small, exclusive professionals' community place. Every portfolio is reviewed for quality. Outsource your work for free.</div>
+  </section>
+  <section class="section_how_it_works">
+    <div class="section_how_it_works_image"></div>
+  </section>
   <section class="section_divided">
     <div class="section_divided_part">
       <div class="section_divided_part_title">FREE</div>
@@ -19,14 +53,17 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"></i>  You can outsource work </div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"></i>  You can outsource parts of your work </div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-times"></i>  Contacts of potencial customer </div>
-      <br>
+      <div class="section_divided_part_subtitle"><i class="fa fa-times"></i>  Notifications about potencial clients </div>
       <br><br><br><br>
       <div class="section_divided_part_price">FREE</div>
       <br>
-      <%= link_to "APPLY NOW", new_user_registration_path %>
+      <% if current_user.present? %>
+        <%= link_to "GET STARTED", new_project_path %>
+      <% else %>
+        <%= link_to "APPLY NOW", new_user_registration_path %>
+      <% end %>
     </div>
     <div class="section_divided_part">
       <div class="section_divided_part_title">PAY-AS-YOU-GO</div>
@@ -37,11 +74,11 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource work</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource parts of your work</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Contacts of potencial customers </div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Direct client connections </div>
       <br><br><br><br><br>
-      <div class="section_divided_part_price">35€ PER LEAD</div>
+      <div class="section_divided_part_price">35€ PER CLIENT</div>
       <br>
       <%=link_to "REQUEST MORE INFO", "mailto:contact@zweidesign.co" %>
       </div>
@@ -54,34 +91,14 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource work</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource parts of your work</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Unlimited contacts of potencial customers </div>
-      <br><br><br><br>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Unlimited direct client connections </div>
+      <br><br><br><br><br>
       <div class="section_divided_part_price">199€ PER MONTH</div>
       <br>
       <%= link_to "REQUEST INVITATION", "mailto:contact@zweidesign.co" %>
     </div>
-  </section>
-  <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title">90-DAY MONEY BACK GUARANTEE</div>
-    <div class="section_our_team_subtitle">No contracts. No risk. Cancel or put your account on hold at anytime.</div>
-  </section>
-
- <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title">MONTHLY MEMBERSHIP FEE</div>
-    <div class="section_our_team_subtitle">No percentage of project fees. Keep 100% of your earnings. Outsource your work for free.</div>
-  </section>
-
-   <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title">CONNECT WITH TENS, NOT HUNDREDS</div>
-    <div class="section_our_team_subtitle">A small, exclusive professionals' community place. Every portfolio is reviewed for quality.</div>
-  </section>
-  <section class="section_welcome">
-    <div class="section_welcome_subtitle">Are your not sure what would best suit your company? <%= link_to "Send us an email!", "mailto:contact@zweidesign.co" %></div>
   </section>
   <section class="section_form">
     <!-- Begin MailChimp Signup Form -->
@@ -102,5 +119,14 @@
     </form>
     </div>
     <!--End mc_embed_signup-->
+  </section>
+  <section class="section_welcome">
+    <div class="section_welcome_subtitle">Create a profile and upload your portfolio. We will notify you about new project opportunities for free.
+      <% if current_user.present? %>
+        <%= link_to "Get started now!", new_project_path %>
+      <% else %>
+        <%= link_to "Get started now!", new_user_registration_path %>
+      <% end %>
+      </div>
   </section>
 </div>
