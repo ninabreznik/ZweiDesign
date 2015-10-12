@@ -56,31 +56,19 @@
       <div class="lead_subtitle_image" ></div>
         <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %>
         <br>
-        <% if user.country.present? && user.city.present? %>
+        <% if user.country.present? %>
           <div class="lead_subtitle" >
             <i class="fa fa-map-marker"></i>
-            <%= user.city %>, <%= user.country %>
+              <%= user.country %>
+              <% if user.city.present? %>
+                / <%= user.city %>
+              <% end %>
           </div>
         <% end %>
         <% if user.service.present? %>
+          <div class="lead_subtitle">Services:</div>
             <%= user.service %>
         <% end %>
-        <br>
-        <br>
-        <% if user_signed_in? && current_user != user %>
-              <div class="lead_subtitle"></div>
-                <div class="project_show_send_message">
-                  <%= form_for :conversation, url: :conversations do |f| %>
-                    <%= f.text_field :recipients, type: "hidden", value: "#{user.email}" %>
-                    <%= f.text_field  :subject, type: "hidden", value: "Hi"  %>
-                    <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'user-show.contact-provider'}" %>
-                    <div class="project_show_send_message_button">
-                      <%= f.button :"#{I18n.t'user-show.send-message.submit'}" %>
-                    </div>
-                  <% end %>
-                </div>
-            <% end %>
-        <br>
     </div>
   </div>
   <% end %>
