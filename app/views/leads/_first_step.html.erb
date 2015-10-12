@@ -1,9 +1,9 @@
 <div class="lead_new_form_zip">
-  <%= l.label :"#{I18n.t'lead-new.form.title'}" %>
+  <%= l.label :"What work do you need done?" %>
   <%= l.text_field :title %>
 </div>
 <div class="lead_new_form_time">
-  <%= l.select :time, @time, {:prompt=>"#{I18n.t'lead-new.form.prompt-time'}"}%> <br>
+  <%= l.select :time, @time, {:prompt=>"When?"}%> <br>
 </div>
 <div class="lead_new_form_business_type">
   <%= l.select :business_type, [
@@ -19,7 +19,7 @@
       ["#{I18n.t'lead-new.form.business-types.field-9'}"],
       ["#{I18n.t'lead-new.form.business-types.field-10'}"],
       ["#{I18n.t'lead-new.form.business-types.field-11'}"]
-    ], :prompt=>"#{I18n.t'lead-new.form.business-types.field'}"%>  <br>
+    ], :prompt=>"Select a Category"%>  <br>
 </div>
 
 <div class="lead_new_form_description">
