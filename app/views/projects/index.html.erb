@@ -45,7 +45,7 @@
             <br>
           <% end %>
           <div class="lead_subtitle_button">
-          <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.company}".html_safe, user_path(project.user) %>
+          <%=link_to "#{image_tag project.user.picture.url(:thumb), :height => "15"} #{project.user.company}".html_safe, user_path(project.user) %>
         </div>
     </div>
   </div>
