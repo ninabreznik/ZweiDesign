@@ -60,7 +60,9 @@ en:
       field-9: "Stone, Paving & Concrete"
       field-10: "Cheramics, Stone & Marble"
       field-11: "Interior & Exterior Photographers"
-      field-12: "Other"
+      field-12: "Architectural Visualisation"
+      field-13: "Furniture Designers"
+      field-14: "Other"
       field-prompt: "Choose your main field"
       services: "Top skills"
       bio: "Bio - short description"
@@ -704,8 +706,10 @@ en:
         field-8: "Landscape Contractors"
         field-9: "Stone, Paving & Concrete"
         field-10: "Cheramics, Stone & Marble"
-        field-11: "Interior & Exterior Photographer"
-        field-12: "Many different professionals"
+        field-11: "Interior & Exterior Photographers"
+        field-12: "Architectural Visualisation"
+        field-13: "Furniture Designers"
+        field-14: "Many different professionals"
       country: "Country"
       country-0: "Remote/Online"
       country-1: "Afghanistan"
@@ -993,6 +997,10 @@ en:
     field-8: "Landscape Contractors"
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
+    field-11: "Interior & Exterior Photographers"
+    field-12: "Architectural Visualisation"
+    field-13: "Furniture Designers"
+    field-14: "Other"
 
 # ############################################################################################
 # Page 11 - ACTIVE ADMIN
@@ -1688,6 +1696,10 @@ en:
     field-8: "Landscape Contractors"
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
+    field-11: "Interior & Exterior Photographers"
+    field-12: "Architectural Visualisation"
+    field-13: "Furniture Designers"
+    field-14: "Other"
 # ############################################################################################
 # PROJECTS/EDIT
 # ############################################################################################
@@ -1734,7 +1746,9 @@ en:
     field-9: "Stone, Paving & Concrete"
     field-10: "Cheramics, Stone & Marble"
     field-11: "Interior & Exterior Photographers"
-    field-12: "Other"
+    field-12: "Architectural Visualisation"
+    field-13: "Furniture Designers"
+    field-14: "Other"
 
 # ############################################################################################
 # TOP MENU

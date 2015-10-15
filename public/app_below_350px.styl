@@ -41,54 +41,6 @@
         font-size 21px
         padding-right 5px
         text-align center
-    /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
-    .body_leads_index
-      body-mixin(backgroundImage: url(/images/interior1.png))
-      .columns
-        column-mixin(margin-top = 58px)
-        .wookmark
-          wookmarkMixin()
-          top 0px
-          .lead_box
-            leadBoxMixin()
-              .fa.fa-star
-                color #fcd229
-                font-size 16px
-                shift 0.05
-                &:hover
-                  color Offer-Font-Color
-            .lead_body
-              font-size 14px
-              padding 15px
-              padding-bottom 0px
-              padding-left 0px
-              -webkit-font-smoothing: antialiased
-              -moz-osx-font-smoothing: grayscale
-              color Offer-Font-Color
-              line-height 150%
-              width 300px
-              .lead_subtitle
-                font-weight bold
-                -webkit-font-smoothing: antialiased
-                padding-top 7px
-      .leads_index_no_leads_available
-        position: absolute
-        margin-top 20px
-        margin-left 50px
-        background: rgb(0, 0, 0); /* fallback color */
-        background: rgba(0, 0, 0, 0.7);
-        position fixed
-        blur-mixin(intensity = 0px)
-        padding: 50px;
-        top: 200px;
-        font-size 12px
-        font-weight bold
-        -webkit-font-smoothing: antialiased
-        max-width 550px
-        min-width 200px
-        color: white;
-        letter-spacing: -1px;
-        line-height 150%
     /* :::::::::::: LEADS/show => individual lead :::::::::::: */
     .body_leads_show
       body-mixin(backgroundImage: url(/images/interior2.png))
@@ -1247,16 +1199,6 @@
               decoration none
               border 0px
               background-color white
-              .fa.fa-heart
-                color Lead-Orange
-                font-size 12px
-                &:hover
-                  color black
-              .fa.fa-heart-o
-                color black
-                font-size 12px
-                &:hover
-                  color Lead-Orange
     .leads_index_no_leads_available
       position: absolute
       margin-top 30px
@@ -1358,11 +1300,6 @@
       letter-spacing 1.4px
       font-weight: 300
       color white
-      .fa.fa-heart
-        color Lead-Orange
-        margin 60px 0px 15px 0px
-        font-size 40px
-        text-align center
       .section_our_team_title
         margin 20px 0px 60px 0px
         font-size 14px

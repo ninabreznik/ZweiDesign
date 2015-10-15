@@ -21,7 +21,7 @@ class LeadsController < ApplicationController
     @lead.tracking_link = cookies[:tracking_link]
     @lead.current_step = session[:lead_step]
      @business_types = [
-      ["#{I18n.t'lead-new.form.business-types.field-11'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-14'}"],
       ["#{I18n.t'lead-new.form.business-types.field-1'}"],
       ["#{I18n.t'lead-new.form.business-types.field-2'}"],
       ["#{I18n.t'lead-new.form.business-types.field-3'}"],
@@ -31,7 +31,10 @@ class LeadsController < ApplicationController
       ["#{I18n.t'lead-new.form.business-types.field-7'}"],
       ["#{I18n.t'lead-new.form.business-types.field-8'}"],
       ["#{I18n.t'lead-new.form.business-types.field-9'}"],
-      ["#{I18n.t'lead-new.form.business-types.field-10'}"]
+      ["#{I18n.t'lead-new.form.business-types.field-10'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-11'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-12'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-13'}"]
     ]
 
     @time = [

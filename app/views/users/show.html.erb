@@ -9,9 +9,11 @@
         <div class="lead_title"><%= @user.company %> </div>
       <% end %>
       <div class="lead_body">
-        <div class="lead_subtitle" ></div>
-          <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
-
+        <div class="lead_subtitle" >
+          <div class="lead_subtitle_profile_image"%>
+            <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
+          </div>
+        </div>
         <% if @user.country.present? && @user.city.present? %>
           <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= @user.city %>, <%= @user.country %></div>
         <% end %>
@@ -58,7 +60,6 @@
           <% if user_signed_in? && current_user != @user %>
             <div class="lead_subtitle"></div>
               <div class="project_show_send_message">
-                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
                 <%= form_for :conversation, url: :conversations do |f| %>
                   <%= f.text_field :recipients, type: "hidden", value: @user.email %>
                   <%= f.text_field  :subject, type: "hidden", value: "Hi" %>
@@ -70,7 +71,7 @@
               </div>
           <% elsif user_signed_in? && current_user == @user %>
           <br>
-            <div class="project_show_send_message">
+            <div class="users_show_edit_profile-button">
               <%= link_to "#{I18n.t'user-show.edit-profile'}", edit_user_registration_path %>
             </div>
           <% else %>

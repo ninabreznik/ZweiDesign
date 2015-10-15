@@ -9,7 +9,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          YOUR DASHBOARD
+          Your dashboard
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_username">
@@ -18,12 +18,15 @@
           <div class="profile_dashboard_body_logout">
             <%= link_to "#{I18n.t'staticpagesprofile-links.logout'}", destroy_user_session_path, method: :get %>
           </div>
+          <div class="profile_dashboard_body_edit">
+            <%= link_to "Edit my profile", user_path(current_user) %>
+          </div>
         </div>
       </div>
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          AFFILIATE PROGRAM
+          Affiliate program
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_wallet_amount">
@@ -45,7 +48,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          MY LEADS
+          My leads
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_username">
@@ -70,7 +73,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          TURNOVER
+          Turnover
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_wallet_amount">
@@ -86,7 +89,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          MESSAGES
+          Inbox
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_wallet_amount">
@@ -104,7 +107,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          ABOUT ZweiDesign
+          Links
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_wallet_amount">
@@ -126,7 +129,7 @@
   <% else %>
     <div class="lead_box">
       <div class ="profile_dashboard_title">
-        DASHBOARD
+        My dashboard
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_username">

@@ -1,14 +1,13 @@
 <div class="lead_body">
-  <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.business_type' %>:</div>
-    <%= lead.business_type %><br>
+  <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= lead.location %></div>
+  <div class="lead_subtitle">
+    <div class="lead_subtitle_button"%>
+      <%= lead.business_type %><br>
+    </div>
+  </div>
+  <br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.time' %></div>
     <%= lead.time %>       <br>
   <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.description' %>:</div>
     <%= lead.description %><br><br>
-  <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.location' %>:</div>
-    <%= lead.location %>   <br>
-  <% if lead.zip.present? && lead.zip != 0 %>
-    <div class="lead_subtitle"><%= I18n.t'leadsindex-lead.zip' %>:</div>
-      <%= lead.zip %>        <br>
-  <% end %>
 </div>

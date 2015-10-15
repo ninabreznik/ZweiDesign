@@ -140,7 +140,7 @@
               &:hover
                 color Offer-Font-Color
           .lead_body
-            font-size 14px
+            font-size 12px
             padding 15px
             padding-bottom 0px
             padding-left 0px
@@ -157,6 +157,8 @@
               font-weight bold
               -webkit-font-smoothing: antialiased
               padding-top 7px
+              .lead_subtitle_profile_image a img
+                border-radius 5px
             .lead_subtitle_button a
               margin-top 5px
               decoration none
@@ -300,7 +302,6 @@
             border-radius: 5px;
             background-color: Lead-Orange;
             text-align center
-            border: 1px solid Offer-Font-Color
             .fa.fa-star
               color #fcd229
               font-size 16px
@@ -308,10 +309,8 @@
               &:hover
                 color Offer-Font-Color
           .lead_body
-            font-size 14px
-            padding 15px
-            padding-bottom 0px
-            padding-left 0px
+            font-size 12px
+            padding 20px
             -webkit-font-smoothing: antialiased
             -moz-osx-font-smoothing: grayscale
             color Offer-Font-Color
@@ -321,6 +320,9 @@
               font-weight bold
               -webkit-font-smoothing: antialiased
               padding-top 7px
+              .lead_subtitle_button
+                transparent-button-mixin()
+                margin-bottom 10px
             .lead_subtitle_image
               padding-left 0px
               padding-right 0px
@@ -350,7 +352,7 @@
                   color black
               .fa.fa-heart-o
                 color black
-                font-size 12px
+                font-size 10px
                 &:hover
                   color Lead-Orange
     .leads_index_no_leads_available
@@ -399,8 +401,13 @@
       line-break 1px
       top 100px
       .lead_show_title
-        background-color #F6F6F6
+        background-color transparent
+        border: 1px solid #606060;
+        cursor: pointer;
+        font-weight: bold;
+        line-height: 1em;
         padding 30px
+        border-radius 5px
         font-weight bold
         text-align center
         -webkit-font-smoothing: antialiased
@@ -840,12 +847,14 @@
         .lead_box
           leadBoxMixin()
           .profile_dashboard_title
-            text-align center
-            opacity 0.85
-            background-color #82c0c7
             padding 15px
+            color Offer-Font-Color
             font-weight bold
             font-size 14px
+            border-width: 2px;
+            border-radius: 5px;
+            background-color: Lead-Orange;
+            text-align center
           .profile_dashboard_body
             padding 30px 0px 20px 0px
             -webkit-font-smoothing: antialiased
@@ -854,12 +863,26 @@
             text-align center
             width 280px
             .profile_dashboard_stats_title
-              button(#82c0c7)
-              font-size 14px
-              color white
-              margin-top 20px
+              decoration none
+              position: relative;
+              font-size: 10px;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #494949;
+              cursor: pointer;
+              font-weight: bold;
+              line-height: 1em;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: none;
+              padding: 8px 15px;
+              top 8px
+              border: 1px solid #606060;
+              margin-bottom 7px
+              bottom: 8px;
               &:hover
-                color white
+                background-color #eee
             .profile_dashboard_stats_data
               margin-left 32%
               border 10px dotted #82c0c7
@@ -879,19 +902,53 @@
               padding-left 0px
             .profile_dashboard_body_logout,
             .profile_dashboard_body_edit
-              padding-top 30px
-              button(#82c0c7)
-              color white
+              decoration none
+              position: relative;
+              font-size: 10px;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #494949;
+              cursor: pointer;
+              font-weight: bold;
+              line-height: 1em;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: none;
+              padding: 8px 15px;
+              top 8px
+              border: 1px solid #606060;
               margin-bottom 7px
-            .profile_dashboard_body_wallet_amount
-              font-size 57px
-              padding 24px
-            .profile_dashboard_body_wallet_buttons
-              display inline-block
-              padding-top 30px
-              .profile_dashboard_body_wallet_button
-                button(#82c0c7)
-                color white
+              bottom: 8px;
+              &:hover
+                background-color #eee
+            .profile_dashboard_body_wallet_amount,
+            .profile_dashboard_body_wallet_amount a
+              font-size 50px
+              color #606060
+              padding-top 0px
+              padding-bottom 24px
+            .profile_dashboard_body_wallet_buttons a
+              decoration none
+              position: relative;
+              font-size: 10px;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #494949;
+              cursor: pointer;
+              font-weight: bold;
+              line-height: 1em;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: none;
+              padding: 8px 15px;
+              top 8px
+              border: 1px solid #606060;
+              margin-bottom 7px
+              bottom: 8px;
+              &:hover
+                background-color #eee
             .profile_dashboard_body_bought_leads_amount
               font-size 100px
               padding 24px
@@ -1970,6 +2027,22 @@
       line-height: 20px;
       height auto
       max-height: 284px
+    .users_show_edit_profile-button a
+      button()
+      padding 6px 9px
+      text-transform uppercase
+      font-size 11px
+      text-transform uppercase
+      color: #606060;
+      font-weight: bold;
+      border-width: 2px;
+      border-radius: 5px;
+      background-color: Lead-Orange;
+      text-align: center;
+      border: 1px solid #606060;
+      &:hover
+        background-color #eee
+        color #606060
     .project_show_send_message_button button,
     .project_show_send_message_button a
       button()
@@ -2196,7 +2269,7 @@
               &:hover
                 color Offer-Font-Color
           .lead_body
-            font-size 14px
+            font-size 12px
             padding 15px
             padding-top 0px
             padding-bottom 0px
