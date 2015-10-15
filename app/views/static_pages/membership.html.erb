@@ -1,6 +1,6 @@
 <div class="body_info_singlepage">
   <section class="section_welcome">
-    <div class="section_welcome_title">Membership and Signup</div>
+    <div class="section_welcome_title"><a href="#pricelist">Membership and Signup</a></div>
     <br><br><br>
     <div class="section_welcome_subtitle">ZweiDesign is a professional community for people who like what they do and are good at it.</div>
     <div class="section_welcome_subtitle">
@@ -23,10 +23,17 @@
       <br>
       Just create a profile, let us know what you do and what kind of jobs you are looking for and we will notify you about new opportunities for free.</div>
   </section>
+   <section class="section_our_team">
+    <i class="fa fa-heart"></i>
+    <div class="section_our_team_title">EXCLUSIVE ACCESS TO THE CUSTOMER</div>
+    <div class="section_our_team_subtitle">For each new lead only up to 5 different freelancers can apply.
+      <br>
+      Stop competing with hundreds. Pay a small fee of 10€ and be amongst only 5 candidates for potencial job. </div>
+  </section>
   <section class="section_our_team">
     <i class="fa fa-heart"></i>
     <div class="section_our_team_title">90-DAY MONEY BACK GUARANTEE</div>
-    <div class="section_our_team_subtitle">No contracts. No risk. Cancel or put your account on hold at anytime.</div>
+    <div class="section_our_team_subtitle">If you are not satisfied with the lead, we give you money back. No questions asked.</div>
   </section>
 
  <section class="section_our_team">
@@ -35,15 +42,10 @@
     <div class="section_our_team_subtitle">No percentage of project fees. Keep 100% of your earnings and only pay fixed fee for a new client. </div>
   </section>
 
-   <section class="section_our_team">
-    <i class="fa fa-heart"></i>
-    <div class="section_our_team_title">COMPETE WITH TENS, NOT HUNDREDS</div>
-    <div class="section_our_team_subtitle">A small, exclusive professionals' community place. Every portfolio is reviewed for quality. Outsource your work for free.</div>
-  </section>
   <section class="section_how_it_works">
     <div class="section_how_it_works_image"></div>
   </section>
-  <section class="section_divided">
+  <section class="section_divided" id="pricelist">
     <div class="section_divided_part">
       <div class="section_divided_part_title">FREE</div>
       <br>
@@ -53,10 +55,10 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"></i>  You can outsource parts of your work </div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"></i>  You can outsource tasks & find collaborators </div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-times"></i>  Notifications about potencial clients </div>
-      <br><br><br><br>
+      <div class="section_divided_part_subtitle"><i class="fa fa-times"></i>  Apply for jobs </div>
+      <br><br><br><br><br>
       <div class="section_divided_part_price">FREE</div>
       <br>
       <% if current_user.present? %>
@@ -74,13 +76,13 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource parts of your work</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource tasks & find collaborators</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Direct client connections </div>
-      <br><br><br><br><br>
-      <div class="section_divided_part_price">35€ PER CLIENT</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Exclusive access to potencial customer (with max 4 more candidates) </div>
+      <br><br><br>
+      <div class="section_divided_part_price">10€ PER LEAD</div>
       <br>
-      <%=link_to "REQUEST MORE INFO", "mailto:contact@zweidesign.co" %>
+      <%=link_to "BROWSE LEADS", leads_path %>
       </div>
     <div class="section_divided_part">
       <div class="section_divided_part_title">MEMEBERSHIP</div>
@@ -91,11 +93,11 @@
       <br>
       <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource parts of your work</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource tasks & find collaborators</div>
       <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Unlimited direct client connections </div>
-      <br><br><br><br><br>
-      <div class="section_divided_part_price">199€ PER MONTH</div>
+      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Unlimited exclusive access to potencial customers (with max 4 more candidates/lead) </div>
+      <br><br><br>
+      <div class="section_divided_part_price">59€ PER MONTH</div>
       <br>
       <%= link_to "REQUEST INVITATION", "mailto:contact@zweidesign.co" %>
     </div>

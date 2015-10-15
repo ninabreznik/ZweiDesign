@@ -77,7 +77,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all.shuffle[0..39]
+    @projects = Project.all.all.sort.reverse[0..49]
     @users = User.all
     @users.each do |user|
       @user = user
