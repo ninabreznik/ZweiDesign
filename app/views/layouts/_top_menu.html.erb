@@ -3,7 +3,7 @@
   <% if user_signed_in? %>
     <% if current_user.affiliator == 't' %>
     <div class="menu_bar_login">
-      <%= link_to "Dashboard", dashboard_path %>
+      <%= link_to "My profile", dashboard_path %>
     </div>
     <div class="find_provider">
       <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
@@ -13,7 +13,7 @@
     </div>
     <% else %>
         <div class="menu_bar_login">
-          <%= link_to "#{current_user.email.split('@').first}", dashboard_path %>
+          <%= link_to "My profile", dashboard_path %>
         </div>
         <div class="find_provider">
           <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
