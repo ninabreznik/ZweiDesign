@@ -11,24 +11,14 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all.shuffle
-    check_if_user_company_present(@users)
+    @users = User.all
+    check_if_user_business_type_present(@users)
     if @edited_users.any?
       @edited_users.each do |user|
         @user = user
       end
     end
-      @sorted_users = @edited_users.sort_by{|updated| @user.updated_at}.reverse
-    @architects_count                      = User.all.where(business_type: "#{I18n.t'users-index.field-1'}").count
-    @constructions_count                   = User.all.where(business_type: "#{I18n.t'users-index.field-2'}").count
-    @builders_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-3'}").count
-    @designers_count                       = User.all.where(business_type: "#{I18n.t'users-index.field-4'}").count
-    @kitchen_bathroom_architects_count     = User.all.where(business_type: "#{I18n.t'users-index.field-5'}").count
-    @kitchen_bathroom_renovators_count     = User.all.where(business_type: "#{I18n.t'users-index.field-6'}").count
-    @landscape_planning_count              = User.all.where(business_type: "#{I18n.t'users-index.field-7'}").count
-    @landscape_maintainance_count          = User.all.where(business_type: "#{I18n.t'users-index.field-8'}").count
-    @stone_count                           = User.all.where(business_type: "#{I18n.t'users-index.field-9'}").count
-    @ceramics_count                        = User.all.where(business_type: "#{I18n.t'users-index.field-10'}").count
+    @sorted_users = @edited_users.shuffle
   end
 
   def tracking_id
@@ -54,10 +44,10 @@ class UsersController < ApplicationController
 
   private
 
-  def check_if_user_company_present(users)
+  def check_if_user_business_type_present(users)
     @edited_users = []
     users.each do |user|
-      if user.company == nil || user.company == ""
+      if user.business_type == nil || user.business_type == ""
       else
         @edited_users << user
       end
