@@ -77,7 +77,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all.all.sort.reverse[0..49]
+    @projects = Project.all.sort.reverse[0..49]
     @users = User.all
     @users.each do |user|
       @user = user

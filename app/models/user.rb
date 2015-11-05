@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   has_many :leads, dependent: :destroy
   has_many :projects, dependent: :destroy
   has_many :likes, as: :likeable
+  has_many :offers, as: :offerer
 
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_size :picture, less_than: 5.megabytes

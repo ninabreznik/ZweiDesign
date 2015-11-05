@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150925040521) do
+ActiveRecord::Schema.define(version: 20151021034555) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20150925040521) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.string   "tracking_link"
+    t.integer  "project_id"
   end
 
   create_table "likes", force: true do |t|
@@ -129,6 +130,14 @@ ActiveRecord::Schema.define(version: 20150925040521) do
 
   add_index "mailboxer_receipts", ["notification_id"], name: "index_mailboxer_receipts_on_notification_id"
   add_index "mailboxer_receipts", ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type"
+
+  create_table "offers", force: true do |t|
+    t.integer  "price"
+    t.integer  "user_id"
+    t.integer  "lead_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "orders", force: true do |t|
     t.integer  "selector_id"

@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
   belongs_to :user
   has_many :likes, as: :likeable
+  has_many :leads, as: :leadable_project
   # attr_accessible :picture
   validates :email, presence: true, format: {with: /.+@.+\..+/i}
 
