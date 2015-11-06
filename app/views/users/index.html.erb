@@ -60,7 +60,7 @@
     <div class="lead_title"><%= link_to "#{user.company}", user_path(user) %></div>
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
-        <%= link_to "#{image_tag user.picture.url(:medium), :width => '287'}".html_safe, user_path(user) %>
+        <%= link_to "#{image_tag user.picture.url(:thumb)}".html_safe, user_path(user) %>
         <br>
         <% if user.country.present? %>
           <div class="lead_subtitle" >
