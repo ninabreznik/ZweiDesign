@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by_id(params[:id])
     @likes = Like.all
+    @projects = Project.all.where(user_id: @user.id).reverse
   end
 
   def edit

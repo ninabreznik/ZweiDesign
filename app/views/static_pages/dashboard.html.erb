@@ -111,16 +111,10 @@
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_wallet_amount">
-        <i class="fa fa-users"></i>
+        <i class="fa fa-cubes"></i>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "See leads", leads_path %>
-        </div>
-        <div class="profile_dashboard_stats_title">
-          <%= link_to "See users", users_path %>
-        </div>
-        <div class="profile_dashboard_stats_title">
-          <%= link_to "See projects", projects_path %>
+          <%= link_to "New job offers", leads_path %>
         </div>
         </div>
       </div>
@@ -129,7 +123,7 @@
   <% else %>
     <div class="lead_box">
       <div class ="profile_dashboard_title">
-        My dashboard
+        Settings
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_username">
@@ -145,7 +139,22 @@
     </div>
 
     <div class="lead_box">
+      <div class ="profile_dashboard_title">
+        Jobs
+      </div>
+      <div class="profile_dashboard_body">
+      <div class="profile_dashboard_body_wallet_amount">
+      <i class="fa fa-cubes"></i>
+      </div>
+      <div class="profile_dashboard_stats_title">
+        <%= link_to "New job offers", leads_path %>
+      </div>
+      </div>
+    </div>
+
+    <div class="lead_box">
     <div class ="profile_dashboard_title">
+      Inbox
     </div>
     <div class="profile_dashboard_body">
       <div class="profile_dashboard_body_wallet_amount">
@@ -163,6 +172,7 @@
 
     <div class="lead_box">
     <div class ="profile_dashboard_title">
+      Wallet
     </div>
     <div class="profile_dashboard_body">
       <div class="profile_dashboard_body_wallet_amount">
@@ -176,29 +186,11 @@
     </div>
   </div>
 
-  <div class="lead_box">
-    <div class ="profile_dashboard_title">
-    </div>
-    <div class="profile_dashboard_body">
-    <div class="profile_dashboard_body_wallet_amount">
-    <i class="fa fa-users"></i>
-    </div>
-    <div class="profile_dashboard_stats_title">
-      <%= link_to "See leads", leads_path %>
-    </div>
-    <div class="profile_dashboard_stats_title">
-      <%= link_to "See users", users_path %>
-    </div>
-    <div class="profile_dashboard_stats_title">
-      <%= link_to "See projects", projects_path %>
-    </div>
-    </div>
-  </div>
-
 
 <% if current_user.orders.where(paid:true).any? %>
     <div class="lead_box">
       <div class ="profile_dashboard_title">
+        CRM
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_wallet_amount">
@@ -207,7 +199,7 @@
           <% end %>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "My Address book", address_book_path %>
+          <%= link_to "Address book", address_book_path %>
         </div>
         </div>
       </div>
@@ -215,6 +207,7 @@
 
       <div class="lead_box">
         <div class ="profile_dashboard_title">
+          Profile
         </div>
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_wallet_amount">
@@ -223,24 +216,11 @@
           <% end %>
         </div>
           <div class="profile_dashboard_stats_title">
-            <%= link_to "Add new project", new_project_path %>
+            <%= link_to "Update my busines profile", new_project_path %>
           </div>
       </div>
     </div>
 
-
-      <div class="lead_box">
-        <div class ="profile_dashboard_title">
-        </div>
-        <div class="profile_dashboard_body">
-        <div class="profile_dashboard_stats_data">
-          <%= @updated_at %>
-        </div>
-        <div class="profile_dashboard_stats_title">
-          <%= link_to "My last update", user_path(current_user) %>
-        </div>
-        </div>
-      </div>
 
   <% end %>
   <!-- :::::::::::::::::  END of user.affiliator ::::::::::::::::-->

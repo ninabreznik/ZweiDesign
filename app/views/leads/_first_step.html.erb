@@ -1,5 +1,14 @@
+<div class="lead_new_title">
+  <%= I18n.t'lead-new.title' %>
+</div>
+<div class="lead_new_instructions">
+  <%= I18n.t'lead-new.instructions' %>
+  <div class="lead_new_title">
+    Step 1/2
+  </div>
+</div>
 <div class="lead_new_form_zip">
-  <%= l.label :"What work do you need done?" %>
+  <%= l.label :"What needs to be done?" %>
   <%= l.text_field :title %>
 </div>
 <div class="lead_new_form_business_type">
@@ -18,7 +27,7 @@
       ["#{I18n.t'lead-new.form.business-types.field-11'}"],
       ["#{I18n.t'lead-new.form.business-types.field-12'}"],
       ["#{I18n.t'lead-new.form.business-types.field-13'}"]
-    ], :prompt=>"Select a Category"%>  <br>
+    ], :prompt=>"Which pro do you need?"%>  <br>
 </div>
 <div class="lead_new_form_time">
   <%= l.select :time, @time, {:prompt=>"When?"}%> <br>
@@ -276,7 +285,7 @@
       ["#{I18n.t'lead-new.form.country-247'}", "#{I18n.t'lead-new.form.country-247'}"],
       ["#{I18n.t'lead-new.form.country-248'}", "#{I18n.t'lead-new.form.country-248'}"],
       ["#{I18n.t'lead-new.form.country-249'}", "#{I18n.t'lead-new.form.country-249'}"]
-    ], :prompt=>"#{I18n.t'lead-new.form.country-prompt'}"%>
+    ], :prompt=>"Where?"%>
 </div>
 
 <%=l.hidden_field :tracking_link, :value => cookies[:ref] %>

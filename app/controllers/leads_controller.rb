@@ -38,11 +38,10 @@ class LeadsController < ApplicationController
     ]
 
     @time = [
+      ["As soon as possible"],
       ["#{I18n.t'lead-new.form.form-time.fourteendays'}"],
       ["#{I18n.t'lead-new.form.form-time.onetothreemonths'}"],
-      ["#{I18n.t'lead-new.form.form-time.flexible'}"],
-      ["#{I18n.t'lead-new.form.form-time.consulting'}"],
-      ["#{I18n.t'lead-new.form.form-time.informative'}"]
+      ["#{I18n.t'lead-new.form.form-time.flexible'}"]
     ]
   end
 

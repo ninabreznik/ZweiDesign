@@ -2,16 +2,16 @@
 <div class="body_leads_new">
 <section class="lead_new_photo">
   <div class="lead_new_explanation">
-    <div class="lead_new_explanation_first">
-      <i class="fa fa-check-square-o"></i> <%=I18n.t'project-new.exaplanation-1'%></div>
     <div class="lead_new_explanation_second">
       <i class="fa fa-pencil"></i> <%=I18n.t'project-new.exaplanation-2'%></div>
-    <div class="lead_new_explanation_third">
-      <i class="fa fa-files-o"></i> <%=I18n.t'project-new.exaplanation-3'%></div>
+      <div class="lead_new_explanation_third">
+        <i class="fa fa-files-o"></i> <%=I18n.t'project-new.exaplanation-3'%></div>
+    <div class="lead_new_explanation_first">
+      <i class="fa fa-check-square-o"></i> <%=I18n.t'project-new.exaplanation-1'%></div>
   </div>
   <div class="lead_new">
     <div class="lead_new_title">
-      <%=I18n.t'project-new.title'%>
+      UPDATE A PORTFOLIO
     </div>
     <div class="lead_new_instructions">
       <%=I18n.t'project-new.instructions'%>
@@ -24,7 +24,10 @@
       </div>
       <br>
       <div class="lead_new_form_description">
-        <%= p.file_field :picture %>
+        <%= p.label "Choose a cover photo" %>
+        <br>
+        <br>
+        <%= p.file_field :picture%>
       </div><br>
       <div class="lead_new_form_description">
         <%= p.label "#{I18n.t'project-new.form.description'}" %>

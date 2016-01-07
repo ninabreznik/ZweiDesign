@@ -2,19 +2,13 @@
 <section class="lead_new_photo">
   <div class="lead_new_explanation">
     <div class="lead_new_explanation_first">
-      <i class="fa fa-pencil"></i>         Post a project       </div>
+      <i class="fa fa-pencil"></i>         Tell what you need       </div>
     <div class="lead_new_explanation_second">
       <i class="fa fa-files-o"></i>      Receive offers             </div>
     <div class="lead_new_explanation_third">
-      <i class="fa fa-check-square-o"></i> Get things done  </div>
+      <i class="fa fa-check-square-o"></i> Hire the right pro  </div>
   </div>
   <div class="lead_new">
-    <div class="lead_new_title">
-      <%= I18n.t'lead-new.title' %>
-    </div>
-    <div class="lead_new_instructions">
-      <%= I18n.t'lead-new.instructions' %>
-    </div>
 
     <%= form_for @lead, :url => leads_path, :html => { :multipart => true } do |l| %>
       <%= render "#{@lead.current_step}_step", :l => l %>

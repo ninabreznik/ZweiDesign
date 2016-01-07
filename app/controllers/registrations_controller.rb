@@ -5,8 +5,7 @@ after_filter :store_location
 def create
   super()
   user = User.last
-  if user.created_at > Time.now - 3.seconds
-    user.update(provider: true)
+  if user.provider == "provider"
     UserMailer.welcome_email(user, pass=nil).deliver
   end
 end
@@ -63,6 +62,7 @@ private
       :password_confirmation,
       :current_password,
       :tracking_id,
+      :provider,
       :affiliator)
   end
 

@@ -5,20 +5,19 @@
     Zwei Design
   </div>
   <div class="index_welcome_message_subtitle">
-    Hire freelance Architects, Interior Designers and Construction experts for your job.
-    <br>
+    From house painting to interior design, we find the right pros for every todo on your list.
     <div class="index_welcome_button">
-      <%= link_to "HIRE", info_path %>
-      <% if current_user.present? %>
-        <%= link_to "WORK", leads_path %>
+      <%= link_to "FIND A PRO", info_path %>
+      <!-- <% if current_user.present? %>
+        <%= link_to "JOIN AS A PRO", leads_path %>
       <% else %>
-        <%= link_to "WORK", membership_path %>
-      <% end %>
+        <%= link_to "JOIN AS A PRO", membership_path %>
+      <% end %> -->
     </div>
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="index_welcome_message_subtitle">
-  Need to get work done? Click 'Find & Hire' to get started!
+  Tell us what you need. Get free offers. Hire the right Pro for your project.
 </div>
   <!-- <video class="video" autoplay loop muted="muted" >
     <source src="/videos/zd-movie.mp4" type="video/mp4", codecs="avc1.42E01E, mp4a.40.2">
@@ -26,7 +25,7 @@
 </div>
 <div class="index_container">
   <div class="index_container_title">
-    Browse latest succesfully finished projects
+    Recently published portfolios
   </div>
 </div>
 
@@ -37,7 +36,7 @@
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
       <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br>
+        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, user_path(project.user) %> <br>
       <br>
       <div class="lead_subtitle"></div>
           <% if project.user.business_type.present? %>
@@ -57,5 +56,5 @@
 </div>
 </div>
 <div class="index_welcome_see_profiles">
-  <%= link_to "SEE FREELANCERS' PROFILES", users_path %>
+  <%= link_to "GET STARTED", new_lead_path %>
 </div>

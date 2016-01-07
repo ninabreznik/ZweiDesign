@@ -1,17 +1,12 @@
-<div class="lead_new_form_description">
-  <%= l.label :"#{I18n.t'lead-new.form.description'}" %>
-  <%= l.text_area :description %>
+<div class="lead_new_title">
+  <%= I18n.t'lead-new.title' %>
 </div>
-
-<!-- <div class="lead_new_form_zip">
-  <%= l.label :"#{I18n.t'lead-new.form.zip'}" %>
-  <%= l.text_field :zip %>
-</div> -->
-<br>
-<!-- <div class="lead_new_form_zip">
-  <%= l.label :"#{I18n.t'lead-new.form.link'}" %>
-  <%= l.text_field :link %>
-</div> -->
+<div class="lead_new_instructions">
+  Please,  add your contact information.
+</div>
+<div class="lead_new_title">
+  Step 2/2
+</div>
 <% if user_signed_in? %>
   <div class="lead_new_form_name">
     <%= l.label :"#{I18n.t'lead-new.form.name'}"  %>
@@ -28,3 +23,9 @@
       <%= l.text_field :email %>
     </div>
 <% end %>
+
+<br>
+<div class="lead_new_form_description">
+  <%= l.label :"Is there anything else we need to know?" %>
+  <%= l.text_area :description %>
+</div>

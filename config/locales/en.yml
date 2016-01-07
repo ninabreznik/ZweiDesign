@@ -597,9 +597,9 @@ en:
 
   staticpages-info:
     title: "Welcome to ZweiDesign.co"
-    subtitle: "WE HELP YOU HIRE EXPERIENCED PROFESSIONALS AT A PRICE THAT'S RIGHT FOR YOU."
+    subtitle: "Find experienced professionals in your area who are ready to complete your project."
     welcome-text-1: "Create a portfolio and get more clients."
-    welcome-text-2: "Hire freelance Architects, Interior Designers and Construction experts for your job."
+    welcome-text-2: "Get free offers and hire professionals at a price that's right for you."
     welcome-text-3: "Many businesses use ZweiDesign.co to turn their ideas into reality. Need to get work done? Click 'Find & Hire' to get started!"
     heart-section-1: "Free Sign Up"
     heart-section-2: "Open communication"
@@ -691,8 +691,8 @@ en:
     explanation-1: "BROWSE the list of providers"
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
-    title:  "FIND & HIRE"
-    instructions: "Post your project and receive competitive bids from freelancers."
+    title:  "FIND A PRO"
+    instructions: "      Tell us about your needs and we'll introduce you to several experienced professionals in your area who are ready to complete your project."
     form:
       business-types:
         field: "Select a category of work"
@@ -1672,11 +1672,11 @@ en:
 # ############################################################################################
 
   project-new:
-    exaplanation-1: "Show your work"
-    exaplanation-2: "Create portfolio"
-    exaplanation-3: "Get hired"
+    exaplanation-1: "Grow your business"
+    exaplanation-2: "Update a portfolio"
+    exaplanation-3: "Get new customers"
     title: "PUBLISH YOUR PROJECT"
-    instructions: "Do you have a succesfully finished project? Publish it for free and let clients & partners see your portfolio."
+    instructions: "Publish your succesfully finished portfolio project and update your business profile! "
     instructions-additional: "First you need to sign-in."
     form:
       business-type-prompt: "What is your project about?"

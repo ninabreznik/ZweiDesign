@@ -16,10 +16,10 @@
           <%= link_to "My profile", dashboard_path %>
         </div>
         <div class="find_provider">
-          <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
+          <%= link_to "FIND A PRO", find_professional_path %>
         </div>
         <div class="publish_project">
-          <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %>
+          <%= link_to "UPDATE A PORTFOLIO", new_project_path %>
         </div>
         <div class="messages">
           <%= link_to messages_path do %>
@@ -32,20 +32,11 @@
         <%= link_to "LOGIN", new_user_session_path %>
       </div>
       <div class="find_provider">
-        <%= link_to "INFO", info_path %>
+        <%= link_to "Join as a Pro", membership_path %>
       </div>
       <div class="publish_project">
-        <%= link_to "FIND & HIRE", new_lead_path %>
+        <%= link_to "FIND A PRO", new_lead_path %>
       </div>
   <% end %>
-
-
-  <script>
-    document.getElementById("menu_bar_select").onchange = function() {
-        if (this.selectedIndex!==0) {
-            window.location.href = this.value;
-        }
-    };
-  </script>
 
 </div>

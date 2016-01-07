@@ -82,7 +82,7 @@
           <% end %>
       </div>
     </div>
-  <% Project.all.where(user_id: @user.id).each do |project| %>
+  <% @projects.each do |project| %>
     <div class="lead_box">
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>
       <div class="lead_body">
