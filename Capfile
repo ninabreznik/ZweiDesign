@@ -1,6 +1,6 @@
 # load 'deploy'
 # load 'config/deploy'
-load 'deploy/assets'
+# load 'deploy/assets'
 
 require 'capistrano/setup'
 
