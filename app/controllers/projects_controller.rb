@@ -77,7 +77,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all.sort.reverse[0..79]
+    @projects = Project.all.sort.reverse[0..49]
     # make a variable that includes 10 last project from users from each business_type
     @users = User.all
     @users.each do |user|
