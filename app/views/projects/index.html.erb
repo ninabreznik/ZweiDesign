@@ -28,7 +28,50 @@
     Recently published portfolios
   </div>
 </div>
-
+<ol id="filters">
+  <li data-filter='Architects & Building Designers'>
+    <%= I18n.t'users-index.field-1'%>
+  </li>
+  <li data-filter="Interior Designers & Decorators">
+    <%= I18n.t'users-index.field-4'%>
+  </li>
+  <li data-filter="Kitchen and Bathroom Designers & Fitters">
+    <%= I18n.t'users-index.field-5'%>
+  </li>
+  <li data-filter="Kitchen and Bathroom Renovators">
+    <%= I18n.t'users-index.field-6'%>
+  </li>
+  <li data-filter="Landscape Architects & Garden Designers">
+    <%= I18n.t'users-index.field-7'%>
+  </li>
+  <li data-filter="Landscape Contractors">
+    <%= I18n.t'users-index.field-8'%>
+  </li>
+  <li data-filter="General Home Builders">
+    <%= I18n.t'users-index.field-2'%>
+  </li>
+  <li data-filter="Masonry">
+    <%= I18n.t'users-index.field-3'%>
+  </li>
+  <li data-filter="Stone, Paving & Concrete">
+    <%= I18n.t'users-index.field-9'%>
+  </li>
+  <li data-filter="Cheramics, Stone & Marble">
+    <%= I18n.t'users-index.field-10'%>
+  </li>
+  <li data-filter="Interior & Exterior Photographers">
+    <%= I18n.t'users-index.field-11'%>
+  </li>
+  <li data-filter="Architectural Visualisation">
+    <%= I18n.t'users-index.field-12'%>
+  </li>
+  <li data-filter="Furniture Designers">
+    <%= I18n.t'users-index.field-13'%>
+  </li>
+  <li data-filter="Other">
+    <%= I18n.t'users-index.field-14'%>
+  </li>
+</ol>
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @projects.each do |project| %>
