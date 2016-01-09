@@ -692,7 +692,7 @@ en:
     explanation-2: "Receive offers"
     explanation-3: "Start browsing"
     title:  "FIND A PRO"
-    instructions: "      Tell us about your needs and we'll introduce you to several experienced professionals in your area who are ready to complete your project."
+    instructions: "Tell us about your needs and we'll introduce you to several experienced professionals in your area who are ready to complete your project."
     form:
       business-types:
         field: "Select a category of work"

@@ -1,6 +1,6 @@
 # load 'deploy'
 # load 'config/deploy'
-# load 'deploy/assets'
+load 'deploy/assets'
 
 require 'capistrano/setup'
 
@@ -17,5 +17,3 @@ require 'capistrano/bundler'
 require 'capistrano/rails/migrations'
 
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
-
-

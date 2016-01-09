@@ -9,7 +9,7 @@ Rails.application.configure do
     password:             'GnUQAUKHxIO7YpSGcY2Lzg',
     authentication:       'plain',
     enable_starttls_auto: true  }
-    
+
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # In the development environment your application's code is reloaded on
@@ -37,7 +37,7 @@ Rails.application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
+  config.assets.debug = false
 
   #dashing-gem-related stuff
   config.allow_concurrency = true
@@ -46,7 +46,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
