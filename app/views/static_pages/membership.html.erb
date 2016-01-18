@@ -1,17 +1,22 @@
 <div class="body_info_singlepage">
+
   <section class="section_welcome">
-    <div class="section_welcome_title"><a href="#pricelist">Membership and Signup</a></div>
+    <div class="section_welcome_title"><%=link_to "Signup as a Pro", new_user_registration_path%></div>
     <br><br><br>
-    <div class="section_welcome_subtitle">ZweiDesign is a professional community for people who like what they do and are good at it.</div>
+    <div class="section_welcome_subtitle">ZweiDesign is a Professional Community for people who like what they do, are good at it and who want to be part of Like-minded Community.</div>
     <div class="section_welcome_subtitle">
-      We represent many small business experts, working in home renovation, architecture, interior design and construction field,
-      and provide a range of different short or long term job opportunities.
+      We connect many Small Business Experts, working in Home Renovation, Architecture, Interior Design and similar fields,
+      and provide a range of different short or long term Job Opportunities.
+    </div>
+    <div class="section_welcome_subtitle">
+      Join ZweiDesign community and <%=link_to "SIGNUP AS A PRO!", new_user_registration_path%>
     </div>
   </section>
 
   <section class="section_how_it_works">
     <div class="section_how_it_works_image"></div>
   </section>
+
   <section class="section_welcome">
     <div class="section_welcome_title">What kind of work can I do?</div><br><br>
     <div class="section_welcome_subtitle">
@@ -22,87 +27,33 @@
         <li>Specific skills, cost and schedule requirements</li>
       </ul>
       <br>
-      Just create a profile, let us know what you do and what kind of jobs you are looking for and we will notify you about new opportunities for free.</div>
+      <%=link_to "Create a profile", new_user_registration_path%>, let us know what you do and what kind of Jobs you are looking for and we will notify you about new Opportunities for Free.</div>
   </section>
+
   <section class="section_our_team">
    <i class="fa fa-heart"></i>
    <div class="section_our_team_title">CHOOSE YOUR CUSTOMERS</div>
-   <div class="section_our_team_subtitle">For each new lead only up to 5 different freelancers can apply.
-     <br>
-     Stop competing with hundreds. Pay a small fee of 10€ and be amongst only 5 candidates for potencial job. </div>
+   <div class="section_our_team_subtitle">
+     Apply only when you like the job.
+   </div>
  </section>
  <section class="section_our_team">
    <i class="fa fa-heart"></i>
-   <div class="section_our_team_title">QUOTE YOUR PRICE</div>
-   <div class="section_our_team_subtitle">If you are not satisfied with the lead, we give you money back. No questions asked.</div>
+   <div class="section_our_team_title">THANK-YOU-FEE</div>
+   <div class="section_our_team_subtitle">When you find a project you like, support community back
+     <br>with a small thank-you-fee of 10€ and get in touch with the customer.</div>
  </section>
 
 <section class="section_our_team">
    <i class="fa fa-heart"></i>
    <div class="section_our_team_title">KEEP WHAT YOU EARN</div>
-   <div class="section_our_team_subtitle">No percentage of project fees. Keep 100% of your earnings and only pay fixed fee for a new client. </div>
+   <div class="section_our_team_subtitle">No percentage of project fees. No hidden costs.
+     <br>Keep 100% of your earnings and grow your business. </div>
  </section>
  <section class="section_how_it_works">
    <div class="section_how_it_works_image"></div>
  </section>
 
-  <!-- <section class="section_divided" id="pricelist">
-    <div class="section_divided_part">
-      <div class="section_divided_part_title">FREE</div>
-      <br>
-      <br>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Profile & portfolio</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"></i>  You can outsource tasks & find collaborators </div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-times"></i>  Apply for jobs </div>
-      <br><br><br><br><br>
-      <div class="section_divided_part_price">FREE</div>
-      <br>
-      <% if current_user.present? %>
-        <%= link_to "GET STARTED", new_project_path %>
-      <% else %>
-        <%= link_to "APPLY NOW", new_user_registration_path %>
-      <% end %>
-    </div>
-    <div class="section_divided_part">
-      <div class="section_divided_part_title">PAY-AS-YOU-GO</div>
-      <br>
-      <br>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Profile & portfolio</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource tasks & find collaborators</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Exclusive access to potencial customer (with max 4 more candidates) </div>
-      <br><br><br>
-      <div class="section_divided_part_price">10€ PER LEAD</div>
-      <br>
-      <%=link_to "BROWSE LEADS", leads_path %>
-      </div>
-    <div class="section_divided_part">
-      <div class="section_divided_part_title">MEMEBERSHIP</div>
-      <br>
-      <br>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Profile & portfolio</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Clients can find & contact you</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i>  You can outsource tasks & find collaborators</div>
-      <br>
-      <div class="section_divided_part_subtitle"><i class="fa fa-check"> </i> Unlimited exclusive access to potencial customers (with max 4 more candidates/lead) </div>
-      <br><br><br>
-      <div class="section_divided_part_price">59€ PER MONTH</div>
-      <br>
-      <%= link_to "REQUEST INVITATION", "mailto:contact@zweidesign.co" %>
-    </div>
-  </section> -->
   <section class="section_our_team">
      <i class="fa fa-heart"></i>
      <div class="section_our_team_title">
@@ -114,25 +65,9 @@
      </div>
    </section>
 
-  <section class="section_form">
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-    <form action="//sosed.us4.list-manage.com/subscribe/post?u=e833ef94f0704d1475029ac8e&amp;id=5387f2bff4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-      <label for="mce-EMAIL"><%=I18n.t'staticpages-info.mailchimp.title'%></label>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<%=I18n.t'staticpages-info.mailchimp.placeholder'%>" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div class="clear"><input type="submit" value="<%=I18n.t'staticpages-info.mailchimp.submit'%>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-    </div>
-    <!--End mc_embed_signup-->
-  </section>
+   <section class="section_how_it_works">
+     <div class="section_how_it_works_image"></div>
+   </section>
+
 
 </div>
