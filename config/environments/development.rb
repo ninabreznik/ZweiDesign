@@ -5,8 +5,8 @@ Rails.application.configure do
     address:              'smtp.mandrillapp.com',
     port:                 587,
     #domain:               'gmail.com',
-    user_name:            'ninabreznik@gmail.com',
-    password:             'Doip2CHLFIPaf7txiZ08gw',
+    user_name:            'contact@zweidesign.co',
+    password:             'ptboxi165Mh5WxklVgTz9w',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
