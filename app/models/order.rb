@@ -6,25 +6,6 @@ class Order < ActiveRecord::Base
   validates :selected_id, presence: true
   validates :selector_id, presence: true
 
-  def paypal_url(return_url, notify_url)
-    values = {
-      :business => 'contact@visionbaker.com',
-      :cmd => '_xclick',
-      :upload => 1,
-      :return => return_url,
-      :invoice => id,
-      :notify_url => notify_url,
-      :currency_code => 'EUR'
-    }
-      values.merge!({
-        "item_name" => 'ZweiDesign Customer Lead',
-        "item_number" => id,
-        "amount" => 10,
-        "quantity" => 1
-      })
-   "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
-  end
-
 
 
   # def paypal_payment_notification   #IPN - instant payment notification (by PayPal)

@@ -15,8 +15,10 @@ class OrdersController < ApplicationController
   def create
     @lead = Lead.find_by_id(params[:order][:selected_id])
     current_user.select!(@lead)
-    @price = 12.25
+    # @price = 10
     @user = current_user
+    order = Order.all.where(selector_id: current_user.id, selected_id: @lead.id).first
+    # UserMailer.new_order(order).deliver
     redirect_to order_path(id: @lead.reverse_orders.where(selector_id: current_user.id).first.id)
   end
 
@@ -27,17 +29,8 @@ class OrdersController < ApplicationController
 
   def edit
     @order = Order.find(params[:id])
-    if current_user.wallet >= 12.25
-      @order.update_attributes(:paid => true)
-      # @beta = User.find_by_id(@order.selected.user_id)
-      # create_conversation(@beta)
-      @price = 12.25
-      new_wallet_status = current_user.wallet - @price
-      current_user.update_attributes(:wallet => new_wallet_status)
-    else
-    #  @order.paypal_payment_notification
-    end
-    redirect_to payment_confirmation_url
+    @order.update_attributes(:paid => true)
+    redirect_to address_book_path
   end
 
   def destroy

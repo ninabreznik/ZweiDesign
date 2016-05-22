@@ -61,13 +61,13 @@
         <%= form_for(current_user.orders.build(selected_id: @lead.id)) do |o| %>
           <%= o.hidden_field :selected_id %>
           <div class="order_show_buy">
-            <%= o.submit "#{I18n.t'ordersshow-links.buy'}" %>
+            <%= o.submit "Proceed" %>
           </div>
         <% end %>
       <% end %>
     <% else%>
       <div class="order_show_buy">
-        <%= link_to "#{I18n.t'ordersshow-links.buy'}", user_registration_path %>
+        <%= link_to "Proceed", user_registration_path %>
       </div>
     <% end %>
   <% else %>
