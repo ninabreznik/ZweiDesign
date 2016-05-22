@@ -75,7 +75,7 @@
 <%= will_paginate @project, :page_links => false %>
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
-  <% @projects.sort.reverse.each do |project| %>
+  <% @projects.reverse.each do |project| %>
   <div class="lead_box" data-filter-class='["<%=project.user.business_type%>"]' >
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
@@ -98,7 +98,4 @@
 <% end %>
 </ul>
 </div>
-</div>
-<div class="index_welcome_see_profiles">
-  <%= link_to "GET STARTED", new_lead_path %>
 </div>
