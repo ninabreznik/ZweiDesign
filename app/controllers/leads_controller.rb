@@ -91,7 +91,7 @@ class LeadsController < ApplicationController
       cookies[:ref] = params[:ref] = nil                               # Delete cookie if lead is saved
       lead_user = @lead.email
       lead = @lead
-      UserMailer.send_new_lead(lead)
+      #UserMailer.send_new_lead(lead)
       redirect_to leads_url
     else
       redirect_to leads_new_url
@@ -150,7 +150,7 @@ class LeadsController < ApplicationController
                )
         lead.user_id = user.id
         user.leads << lead
-        UserMailer.welcome_email(user, pass).deliver
+        #UserMailer.welcome_email(user, pass).deliver
       end
     end
     lead.save

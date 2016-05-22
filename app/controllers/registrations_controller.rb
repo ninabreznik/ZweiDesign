@@ -6,7 +6,7 @@ def create
   super()
   user = User.last
   if user.provider == "provider"
-    UserMailer.welcome_email(user, pass=nil).deliver
+    #UserMailer.welcome_email(user, pass=nil).deliver
   end
 end
 

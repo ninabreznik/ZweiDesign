@@ -65,8 +65,8 @@ class User < ActiveRecord::Base
       pass = user.password
       beta = user
       if user.created_at > Time.now - 15.seconds
-        UserMailer.welcome_email(user, pass).deliver
-        user.send_message(beta, "Congrats on creating your account. Don't forget to set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). If you have questions, please send an email to contact@zweidesign.co", ":)")
+        #UserMailer.welcome_email(user, pass).deliver
+        user.send_message(beta, "Congrats on creating your account. Don't forget to set up your profile. Log in, add your information, and upload the best three examples of your work (projects). Then you can check other users' profiles and connect. If you have questions, please send an email to contact@zweidesign.co", ":)")
       end
     end
   end
