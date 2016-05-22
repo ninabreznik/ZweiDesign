@@ -10,6 +10,9 @@ gem 'uglifier', '>= 1.3.0'
 
 # gem 'turbolinks'
 
+# Pagination
+gem 'will_paginate', '~> 3.1.0'
+#gem 'will_paginate-bootstrap'
 
 gem 'rmagick', '2.13.2'
 

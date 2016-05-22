@@ -77,8 +77,8 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all.sort.reverse
-    # make a variable that includes 10 last project from users from each business_type
+    @projects = Project.paginate(:page => params[:page], :per_page => 5)
+    #@projects = paginated_projects.all.sort.reverse
     @users = User.all
     @users.each do |user|
       @user = user
