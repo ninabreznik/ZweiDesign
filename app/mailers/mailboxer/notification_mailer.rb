@@ -6,12 +6,12 @@ class Mailboxer::NotificationMailer < Mailboxer::BaseMailer
   end
 
   #Sends an email for indicating a new message for the receiver
-  def new_notification_email(notification, receiver)
-    @notification = notification
-    @receiver     = receiver
-    set_subject(notification)
-    mail :to => receiver.send(Mailboxer.email_method, notification),
-         :subject => t('mailboxer.notification_mailer.subject', :subject => @subject),
-         :template_name => 'new_message_email.html.erb'
-  end
+  # def new_notification_email(notification, receiver)
+  #   @notification = notification
+  #   @receiver     = receiver
+  #   set_subject(notification)
+  #   mail :to => receiver.send(Mailboxer.email_method, notification),
+  #        :subject => t('mailboxer.notification_mailer.subject', :subject => @subject),
+  #        :template_name => 'new_message_email.html.erb'
+  # end
 end
