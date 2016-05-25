@@ -77,7 +77,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.paginate(:page => params[:page], :per_page => 48)
+    @projects = Project.paginate(:page => params[:page], :per_page => 48).order('created_at DESC')
     #@projects = paginated_projects.all.sort.reverse
     @users = User.all
     @users.each do |user|
