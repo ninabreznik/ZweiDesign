@@ -9,13 +9,9 @@ class ProjectsController < ApplicationController
     @user = current_user
       if @project.save
         auto_create_user!(@project)
-        # if params[:images]
-        #   #===== The magic is here ;)
-        #   params[:images].each { |image|
-        #     @project.pictures.create(image: image)
-        #   }
-        # end
-      redirect_to user_path(current_user)
+        project = @project
+        UserMailer.send_new_project(project).deliver
+        redirect_to user_path(current_user)
       else
       redirect_to new_project_path
       end

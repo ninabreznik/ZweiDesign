@@ -43,6 +43,9 @@ gem "font-awesome-rails"
 gem 'devise'
 gem 'omniauth-facebook'
 
+#SECRETS
+gem 'figaro'
+
 #ACTIVE ADMIN
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'sass-rails', github: 'rails/sass-rails'
