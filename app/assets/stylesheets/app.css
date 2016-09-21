@@ -9,7 +9,7 @@
 
 /* line 13 : /usr/local/lib/node_modules/rupture/rupture/index.styl */
 
-/* line 1 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/index.styl */
+/* line 190 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/index.styl */
 
 /* line 10 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/index.styl */
 
@@ -29,7 +29,7 @@
 
 /* line 90 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/flex.styl */
 
-/* line 1 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/gradients.styl */
+/* line 190 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/gradients.styl */
 
 /* line 11 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/gradients.styl */
 
@@ -57,7 +57,7 @@
 
 /* line 5 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/reset.styl */
 
-/* line 1 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/text/index.styl */
+/* line 190 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/text/index.styl */
 
 /* line 12 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/text/index.styl */
 
@@ -93,7 +93,7 @@
 
 /* line 28 : /usr/local/lib/node_modules/axis/node_modules/nib/lib/nib/size.styl */
 
-/* line 1 : /usr/local/lib/node_modules/axis/axis/index.styl */
+/* line 190 : /usr/local/lib/node_modules/axis/axis/index.styl */
 
 /* line 61 : /usr/local/lib/node_modules/axis/axis/index.styl */
 
@@ -161,7 +161,7 @@
 
 /* line 28 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/jeet/stylus/jeet/_grid.styl */
 
-/* line 1 : /usr/local/lib/node_modules/axis/axis/index.styl */
+/* line 190 : /usr/local/lib/node_modules/axis/axis/index.styl */
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/node_modules/axis/axis/index.styl */
 
@@ -246,7 +246,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.4px;
   }
 
@@ -478,7 +478,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 1500px;
   }
 
@@ -486,7 +486,7 @@ html {
   .body_users_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 47 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -713,7 +713,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
     line-height: 150%;
-    width: 300px;
+    width: 260px;
   }
 
 /* line 152 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -791,7 +791,7 @@ html {
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like a,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like a {
     font-size: 10px;
-    margin-left: 125px;
+    margin-left: 120px;
     decoration: none;
     border: 0px;
     background-color: #fff;
@@ -886,7 +886,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -904,7 +904,7 @@ html {
   .body_leads_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 242 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1099,7 +1099,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
     line-height: 150%;
-    width: 300px;
+    width: 260px;
   }
 
 /* line 321 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1164,7 +1164,7 @@ html {
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like a,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like a {
     font-size: 10px;
-    margin-left: 125px;
+    margin-left: px;
     decoration: none;
     border: 0px;
     background-color: #fff;
@@ -1259,7 +1259,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f6f6f6;
     padding-bottom: 100px;
   }
@@ -1268,7 +1268,7 @@ html {
   .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 383 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1418,7 +1418,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -1426,7 +1426,7 @@ html {
   .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 454 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1723,8 +1723,8 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -1732,7 +1732,7 @@ html {
   .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 589 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -1877,14 +1877,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 678 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2090,7 +2090,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     padding-bottom: 10%;
   }
@@ -2099,7 +2099,7 @@ html {
   .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 758 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2284,7 +2284,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: -3px;
     background-image: url("/images/interior1.png");
     padding-bottom: 10%;
@@ -2294,7 +2294,7 @@ html {
   .body_profile a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 845 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2541,7 +2541,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -2551,7 +2551,7 @@ html {
   .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 991 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2659,7 +2659,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2678,7 +2678,7 @@ html {
   .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1041 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2840,7 +2840,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -2850,7 +2850,7 @@ html {
   .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1100 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -2944,7 +2944,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -2954,7 +2954,7 @@ html {
   .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1134 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -3162,7 +3162,7 @@ html {
 /* line 1193 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   .body_leads_new {
     margin-top: 35px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1196 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -3180,7 +3180,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: -3px;
     background-image: url("/images/interior1.png");
     background-image: backgroundImage;
@@ -3199,7 +3199,7 @@ html {
   .body_leads_new .lead_new_photo a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1208 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4195,7 +4195,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     margin-top: 35px;
     padding-bottom: 100px;
@@ -4205,7 +4205,7 @@ html {
   .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1436 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4363,7 +4363,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     margin-top: 31px;
     padding-bottom: 100px;
@@ -4373,7 +4373,7 @@ html {
   .body_affiliate_program a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1506 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4429,7 +4429,7 @@ html {
     cursor: pointer;
     font-size: 13px;
     font-weight: bold;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 2em;
     text-decoration: none;
     display: inline-block;
@@ -4717,7 +4717,7 @@ html {
     cursor: pointer;
     font-size: 13px;
     font-weight: bold;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 2em;
     text-decoration: none;
     display: inline-block;
@@ -4779,7 +4779,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-bottom: 1500px;
   }
@@ -4788,7 +4788,7 @@ html {
   .body_payment_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1661 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4887,7 +4887,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     background-attachment: fixed;
     margin-top: 52px;
@@ -4898,7 +4898,7 @@ html {
   .body_no_message a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1697 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -4956,7 +4956,7 @@ html {
 
 /* line 1722 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
   .body_info_singlepage {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1724 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5172,7 +5172,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("/images/interior1.png");
     padding-bottom: 400px;
   }
@@ -5181,7 +5181,7 @@ html {
   .body_info_singlepage .section_how_it_works .section_how_it_works_image a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1788 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5329,7 +5329,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 300px;
   }
 
@@ -5337,7 +5337,7 @@ html {
   .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1870 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5463,7 +5463,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 26px;
     padding-top: 200px;
     padding-bottom: 300px;
@@ -5473,7 +5473,7 @@ html {
   .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1939 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5533,7 +5533,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-bottom: 50px;
   }
@@ -5542,7 +5542,7 @@ html {
   .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1958 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -5797,7 +5797,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100%;
   }
 
@@ -5805,7 +5805,7 @@ html {
   .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 2075 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -6154,7 +6154,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
     line-height: 150%;
-    width: 300px;
+    width: 260px;
   }
 
 /* line 2279 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_5000px.styl */
@@ -6232,7 +6232,7 @@ html {
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like a,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like a {
     font-size: 10px;
-    margin-left: 125px;
+    margin-left: px;
     decoration: none;
     border: 0px;
     background-color: #fff;
@@ -6330,7 +6330,7 @@ html {
     text-shadow: 0 -1px transparent;
     font-weight: bold;
     cursor: pointer;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 18px;
     text-align: center;
@@ -6381,7 +6381,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.4px;
   }
 
@@ -6613,7 +6613,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -6621,7 +6621,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 50 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -6765,7 +6765,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -6773,7 +6773,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 118 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7072,7 +7072,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -7080,7 +7080,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 251 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7256,14 +7256,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 345 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7468,14 +7468,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 422 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7660,7 +7660,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -7670,7 +7670,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 509 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7777,7 +7777,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -7787,7 +7787,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 551 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -7896,7 +7896,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -7906,7 +7906,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 594 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8000,7 +8000,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -8010,7 +8010,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 628 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8197,7 +8197,7 @@ html {
 /* line 682 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
   body .body_leads_new {
     margin-top: 35px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 685 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -8916,7 +8916,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -8924,7 +8924,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 865 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9082,7 +9082,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -9090,7 +9090,7 @@ html {
   body .body_affiliate_program a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 933 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9257,7 +9257,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 26px;
     padding-top: 200px;
     padding-bottom: 300px;
@@ -9267,7 +9267,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1010 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9327,7 +9327,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-bottom: 50px;
   }
@@ -9336,7 +9336,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1029 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_804px.styl */
@@ -9486,15 +9486,15 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-    padding-bottom: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 200%;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -9534,7 +9534,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.4px;
   }
 
@@ -9787,7 +9787,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -9795,7 +9795,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 59 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -9941,7 +9941,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -9949,7 +9949,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 129 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10251,7 +10251,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
   }
 
@@ -10259,7 +10259,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 265 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10435,14 +10435,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 359 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10647,14 +10647,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 436 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10839,14 +10839,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 520 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -10910,7 +10910,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -10920,7 +10920,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 540 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11027,7 +11027,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -11037,7 +11037,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 582 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11146,7 +11146,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -11156,7 +11156,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 625 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11250,7 +11250,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -11260,7 +11260,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 659 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -11447,7 +11447,7 @@ html {
 /* line 713 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
   body .body_leads_new {
     margin-top: 35px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 716 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12165,7 +12165,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
   }
 
@@ -12173,7 +12173,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 896 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12331,7 +12331,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
   }
 
@@ -12339,7 +12339,7 @@ html {
   body .body_affiliate_program a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 964 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12506,7 +12506,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 26px;
     padding-top: 200px;
     padding-bottom: 300px;
@@ -12517,7 +12517,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1041 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12577,7 +12577,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-bottom: 50px;
   }
@@ -12586,7 +12586,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1059 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
@@ -12735,19 +12735,19 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-    padding-bottom: 200%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 300%;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
-/* line 1 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
+/* line 1471 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_706px.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
 @media only screen and (max-width: 550px) {
@@ -12782,7 +12782,7 @@ html {
     z-index: 999;
     width: 100%;
     font-weight: bold;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.4px;
   }
 
@@ -13040,7 +13040,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -13048,7 +13048,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 61 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -13190,7 +13190,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -13198,7 +13198,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -13499,7 +13499,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -13507,7 +13507,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 263 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -13683,14 +13683,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 357 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -13888,14 +13888,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 434 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14070,7 +14070,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -14080,7 +14080,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 522 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14187,7 +14187,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -14197,7 +14197,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 564 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14306,7 +14306,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -14316,7 +14316,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 607 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14410,7 +14410,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -14420,7 +14420,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 641 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -14607,7 +14607,7 @@ html {
 /* line 695 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   body .body_leads_new {
     margin-top: 33px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 698 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15325,7 +15325,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -15333,7 +15333,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 879 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15491,7 +15491,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -15499,7 +15499,7 @@ html {
   body .body_affiliate_program a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 947 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15673,7 +15673,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 16px;
     padding-top: 200px;
     padding-bottom: 300px;
@@ -15683,7 +15683,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1028 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15743,7 +15743,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
     padding-bottom: 50px;
 /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
@@ -15753,7 +15753,7 @@ html {
   body .body_plans a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1046 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -15854,7 +15854,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 500%;
   }
 
@@ -15862,7 +15862,7 @@ html {
   .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1102 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16123,7 +16123,7 @@ html {
 
 /* line 1264 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
   .body_info_singlepage {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1266 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16453,7 +16453,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 300px;
   }
 
@@ -16461,7 +16461,7 @@ html {
   .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1411 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_550px.styl */
@@ -16599,7 +16599,7 @@ html {
     bottom: 0px;
     z-index: 999;
     width: 100%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 13 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -16839,7 +16839,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -16847,7 +16847,7 @@ html {
   body .body_leads_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 48 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17012,7 +17012,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 100px;
   }
 
@@ -17020,7 +17020,7 @@ html {
   body .body_orders_show a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 116 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17333,7 +17333,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -17341,7 +17341,7 @@ html {
   body .body_bank_transaction a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 244 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17534,14 +17534,14 @@ html {
     margin: 0px;
     font-size: 8px;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 79 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_reserved a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 337 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17750,14 +17750,14 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 63 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app.styl */
   body .body_orders_address_book a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 418 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -17932,7 +17932,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -17942,7 +17942,7 @@ html {
   body .body_devise_login a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 506 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18049,7 +18049,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -18059,7 +18059,7 @@ html {
   body .body_devise_signup a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 548 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18167,7 +18167,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 1050px;
@@ -18177,7 +18177,7 @@ html {
   body .body_devise_password_new a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 590 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18271,7 +18271,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 59px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -18281,7 +18281,7 @@ html {
   body .body_devise_users_edit a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 624 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -18468,7 +18468,7 @@ html {
 /* line 678 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
   body .body_leads_new {
     margin-top: 75px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 681 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19055,7 +19055,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -19063,7 +19063,7 @@ html {
   body .body_wallet_payment a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 858 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19221,7 +19221,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 29px;
   }
 
@@ -19229,7 +19229,7 @@ html {
   body .body_affiliate_program a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 926 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19403,7 +19403,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 16px;
     padding-top: 200px;
     padding-bottom: 300px;
@@ -19414,7 +19414,7 @@ html {
   body .body_new_lead_confirmation a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1007 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19483,7 +19483,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 500%;
   }
 
@@ -19491,7 +19491,7 @@ html {
   .body_project_index a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1032 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -19707,7 +19707,7 @@ html {
 
 /* line 1167 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
   .body_info_singlepage {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1169 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20037,7 +20037,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 300px;
   }
 
@@ -20045,7 +20045,7 @@ html {
   .body_info_singlepage .section_join_sosed .section_why_sosed_image a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 1314 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/app_below_350px.styl */
@@ -20176,7 +20176,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_5000px.styl */
@@ -20423,7 +20423,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_1100px.styl */
@@ -20669,7 +20669,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_1000px.styl */
@@ -20915,7 +20915,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_900px.styl */
@@ -21161,7 +21161,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_800px.styl */
@@ -21407,7 +21407,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_720px.styl */
@@ -21652,7 +21652,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 18 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_650px.styl */
@@ -21898,7 +21898,7 @@ html {
     background: rgba(255,255,255,0.8);
     border-bottom: 1px solid #ccc;
     padding-top: 3px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 19 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/top_menu_below_500px.styl */
@@ -22119,7 +22119,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -22127,7 +22127,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -22318,7 +22318,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -22326,7 +22326,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_5000px.styl */
@@ -22482,7 +22482,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -22490,7 +22490,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -22681,7 +22681,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -22689,7 +22689,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1150px.styl */
@@ -22845,7 +22845,7 @@ html {
     width: 100%;
     padding-right: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -22853,7 +22853,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -23044,7 +23044,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23052,7 +23052,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_1000px.styl */
@@ -23214,7 +23214,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -23222,7 +23222,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -23413,7 +23413,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23421,7 +23421,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_900px.styl */
@@ -23583,7 +23583,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -23591,7 +23591,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -23782,7 +23782,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -23790,7 +23790,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_800px.styl */
@@ -23952,7 +23952,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -23960,7 +23960,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -24151,7 +24151,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24159,7 +24159,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_700px.styl */
@@ -24323,7 +24323,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -24331,7 +24331,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -24522,7 +24522,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24530,7 +24530,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_600px.styl */
@@ -24694,7 +24694,7 @@ html {
     width: 100%;
     padding-left: 5%;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
   }
 
@@ -24702,7 +24702,7 @@ html {
   body .body_messages a {
     text-decoration: none;
     color: #606060;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 16 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -24893,7 +24893,7 @@ html {
   body .body_conversations {
     width: 100%;
     margin-top: 30px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     padding: 0 0px 100px 0px;
   }
@@ -24901,7 +24901,7 @@ html {
 /* line 125 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
   body .body_conversations a {
     text-decoration: none;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* line 128 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/messages_below_500px.styl */
@@ -25057,7 +25057,7 @@ html {
 /* line 2 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/footer.styl */
   .footer_container {
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 14px;
@@ -25185,7 +25185,7 @@ html {
 /* line 2 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/footer_below_1040px.styl */
   .footer_container {
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 12px;
@@ -25313,7 +25313,7 @@ html {
 /* line 2 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/footer_below_935px.styl */
   .footer_container {
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 12px;
@@ -25441,7 +25441,7 @@ html {
 /* line 2 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/footer_below_740px.styl */
   .footer_container {
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 12px;
@@ -25569,7 +25569,7 @@ html {
 /* line 2 : /Users/ninabreznik/Code/Ruby/LeadShareApp/public/footer_below_630px.styl */
   .footer_container {
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 12px;
@@ -25697,7 +25697,7 @@ html {
   .footer_container {
     text-align: center;
     padding: 5% 5% 5% 5%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #606060;
     font-size: 12px;
