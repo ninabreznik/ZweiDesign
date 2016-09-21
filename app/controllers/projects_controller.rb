@@ -10,8 +10,8 @@ class ProjectsController < ApplicationController
       if @project.save
         auto_create_user!(@project)
         project = @project
-        UserMailer.send_new_project(project).deliver
         redirect_to user_path(current_user)
+        UserMailer.send_new_project(project).deliver
       else
       redirect_to new_project_path
       end
@@ -73,26 +73,14 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.paginate(:page => params[:page], :per_page => 48).order('created_at DESC')
-    #@projects = paginated_projects.all.sort.reverse
+    @projects = Project.all.sort.reverse
+    # make a variable that includes 10 last project from users from each business_type
     @users = User.all
     @users.each do |user|
       @user = user
     end
     @sorted_users = @users.sort_by{|updated| @user.updated_at}
     @likes = Like.all
-    # @projects = []
-    # projects_old = -1
-    # i=0
-    # while projects_old < @projects.count
-    #   projects_old = @projects.count
-    #   @sorted_users.reverse.each do |user|
-    #     if user.projects[i]
-    #       @projects << user.projects[i]
-    #     end
-    #   end
-    #   i+=1
-    # end
   end
 
   def show

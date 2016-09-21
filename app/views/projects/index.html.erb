@@ -72,15 +72,15 @@
     <%= I18n.t'users-index.field-14'%>
   </li>
 </ol>
-<%= will_paginate @project, :page_links => false %>
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @projects.each do |project| %>
   <div class="lead_box" data-filter-class='["<%=project.user.business_type%>"]' >
     <!-- <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>      -->
     <div class="lead_body">
-      <div class="lead_subtitle" ></div>
-        <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, user_path(project.user) %> <br>
+      <div class="lead_subtitle_image">
+        <%= link_to "#{image_tag project.picture.url(:medium), :width => '250'}".html_safe, user_path(project.user) %> <br>
+      </div>
       <br>
       <div class="lead_subtitle"></div>
           <% if project.user.business_type.present? %>
